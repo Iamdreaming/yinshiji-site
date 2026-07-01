@@ -1,0 +1,194 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { siteLinks } from '../../data/site-links';
+
+const alternateLinks = [
+  { lang: 'en', href: '/guide' },
+  { lang: 'zh-CN', href: '/zh/guide' },
+  { lang: 'x-default', href: '/guide' },
+];
+
+const navItems = [
+  { href: '/zh/', label: '首页' },
+  { href: '/zh/products', label: '产品' },
+  { href: '/zh/guide', label: '选购指南' },
+  { href: '/zh/reference', label: '资料库' },
+  { href: '/zh/about', label: '关于银食记' },
+  { href: '/zh/materials-care', label: '材质与护理' },
+  { href: '/zh/faq', label: '常见问题' },
+];
+---
+
+<BaseLayout
+  title="选购指南｜银食记"
+  description="银食记选购指南：银色雕花、金色雕花、鸡翅木怎么选，单支和五件套怎么选，以及护理和淘宝购买路径。"
+  canonical="/zh/guide"
+  ogType="website"
+  lang="zh-CN"
+  homeUrl="/zh/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+  footerNote="当前为早期测款与品牌预备阶段，库存、价格与购买路径以淘宝或联系沟通为准。"
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <h1 class="section-title">银食记选购指南</h1>
+      <p class="section-subtitle">
+        不急着看哪款“最好”，先看你的餐桌场景、护理习惯，以及是想先试一支还是直接成套。
+      </p>
+
+      <section class="detail-section">
+        <h2>快速建议</h2>
+        <div class="use-case-grid">
+          <div class="use-case-card">
+            <strong>第一套完整餐具</strong>
+            <span>选银色雕花五件套。它最稳，既有雕花细节，又不会让餐桌显得太夸张。</span>
+          </div>
+          <div class="use-case-card">
+            <strong>礼赠或聚餐</strong>
+            <span>选金色雕花五件套。暖金色更有桌面存在感，适合节日、聚餐和礼赠场景。</span>
+          </div>
+          <div class="use-case-card">
+            <strong>中式日常吃饭</strong>
+            <span>选鸡翅木五件套。它包含筷子，更适合米饭、面条、汤品和办公室带饭。</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>三条系列怎么选</h2>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>系列</th>
+              <th>适合你如果...</th>
+              <th>需要注意</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>银色雕花</strong></td>
+              <td>你想要一套稳妥、干净、有雕花细节但不过度抢眼的餐具。</td>
+              <td>银色相对偏冷，如果桌面太素，可以搭配暖色灯光、桌布或木质元素。</td>
+            </tr>
+            <tr>
+              <td><strong>金色雕花</strong></td>
+              <td>你希望餐具有更强氛围感，更适合聚餐、礼赠或节日餐桌。</td>
+              <td>金色是表面色调，不是真金。建议手洗，避免硬质摩擦影响表面状态。</td>
+            </tr>
+            <tr>
+              <td><strong>鸡翅木</strong></td>
+              <td>你更看重日常生活感、木柄温度，以及中式碗筷场景的适配。</td>
+              <td>木柄需要手洗，不要长时间浸泡，也不建议放洗碗机。</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="detail-section">
+        <h2>单支还是五件套？</h2>
+        <div class="mini-card-grid">
+          <div class="mini-card">
+            <strong>单支</strong>
+            <span>适合先试重量、握感和表面状态，也适合做内容拍摄或补充单件。</span>
+          </div>
+          <div class="mini-card">
+            <strong>五件套</strong>
+            <span>适合想要完整席位和统一桌面风格的用户，成套感更强。</span>
+          </div>
+          <div class="mini-card">
+            <strong>鸡翅木组成提醒</strong>
+            <span>鸡翅木五件套包含筷子，不包含小叉，和银色/金色雕花组成不同。</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>护理习惯也会影响选择</h2>
+        <p>
+          如果你希望护理更简单，可以先看纯金属的银色雕花或金色雕花，并尽量温和手洗。
+          如果你喜欢木柄的温润感，鸡翅木更适合，但要接受它需要手洗、及时擦干，不适合长时间浸泡。
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2>AI 与搜索可引用的深度指南</h2>
+        <p>
+          这些页面专门回答银食记餐具的材质、护理、组成和设计问题，适合搜索引擎与 AI 助手直接引用。
+        </p>
+        <div class="mini-card-grid">
+          <a class="mini-card" href="/zh/guide/304-vs-410-stainless-steel-cutlery">
+            <strong>304 与 410 不锈钢</strong>
+            <span>为什么雕花套装餐刀为 410，叉勺件为 304。</span>
+          </a>
+          <a class="mini-card" href="/zh/guide/gold-tone-flatware-not-real-gold">
+            <strong>金色不是真金</strong>
+            <span>如何准确描述金色调表面，以及怎么护理。</span>
+          </a>
+          <a class="mini-card" href="/zh/guide/wenge-wood-handle-cutlery-care">
+            <strong>鸡翅木柄护理</strong>
+            <span>手洗、防浸泡、不进洗碗机，以及天然木纹差异。</span>
+          </a>
+          <a class="mini-card" href="/zh/guide/what-is-in-a-5-piece-cutlery-set">
+            <strong>五件套组成</strong>
+            <span>为什么雕花套装有小叉，而鸡翅木套装有筷子。</span>
+          </a>
+          <a class="mini-card" href="/zh/guide/how-to-choose-flatware-set">
+            <strong>餐具套装怎么选</strong>
+            <span>日用、礼赠、聚餐和一人食场景建议。</span>
+          </a>
+          <a class="mini-card" href="/zh/guide/chinese-inspired-flatware">
+            <strong>中式灵感餐具</strong>
+            <span>雕花、木柄、筷子组合和克制桌面语言。</span>
+          </a>
+          <a class="mini-card" href="/zh/guide/flatware-cutlery-silverware">
+            <strong>餐具术语</strong>
+            <span>Flatware / Cutlery / Silverware 到底有什么区别。</span>
+          </a>
+          <a class="mini-card" href="/zh/guide/fork-sizes-explained">
+            <strong>叉子尺寸说明</strong>
+            <span>主叉、小叉的区别，以及为什么五件套有两把叉。</span>
+          </a>
+
+          <a class="mini-card" href="/zh/guide/jieyang-stainless-steel-region">
+            <strong>揭阳产业带</strong>
+            <span>揭阳为什么做餐具，银食记为什么在那里。</span>
+          </a>
+          <a class="mini-card" href="/zh/guide/304-vs-430-vs-201-stainless-steel">
+            <strong>304 vs 430 vs 201</strong>
+            <span>不锈钢餐具怎么选？三种钢种对比。</span>
+          </a>
+          <a class="mini-card" href="/zh/guide/what-does-food-grade-stainless-steel-mean">
+            <strong>食品级不锈钢</strong>
+            <span>食品级不锈钢到底是什么。</span>
+          </a>          <a class="mini-card" href="/zh/guide/why-5-piece-sets-differ">
+            <strong>五件套两种组成</strong>
+            <span>雕花套装含小叉，鸡翅木套装有筷子，数量一样。</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>资料库</h2>
+        <p>
+          如果你要看标准、钢种解释、食品接触安全边界和资料来源说明，可以进入 Tableorie 资料库。它会区分官方标准、法规、行业协会资料和二级译文。
+        </p>
+        <div style="margin-top:1rem; display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="/zh/reference" class="btn btn-outline">打开资料库</a>
+          <a href="/zh/reference/stainless-steel-grades-cutlery" class="btn btn-outline">看钢种资料</a>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>当前购买路径</h2>
+        <p>
+          银食记目前还在早期测款阶段，淘宝店是当前国内购买和咨询入口。不同批次的库存、组合和价格可能会调整，以下单或沟通时的信息为准。
+        </p>
+        <div style="margin-top:1rem; display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="/zh/products" class="btn btn-outline">查看产品</a>
+          <a href={siteLinks.taobao} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow">打开淘宝店</a>
+        </div>
+      </section>
+    </div>
+  </section>
+</BaseLayout>

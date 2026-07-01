@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteLinks } from '../data/site-links';
+
+const alternateLinks = [
+  { lang: 'en', href: '/contact' },
+  { lang: 'zh-CN', href: '/zh/contact' },
+  { lang: 'x-default', href: '/contact' },
+];
+---
+
+<BaseLayout
+  title="Contact – Yinshiji Tableware"
+  description="Get in touch with Yinshiji — product inquiries, wholesale, gifting, or general questions."
+  canonical="/contact"
+  ogType="website"
+  lang="en"
+  homeUrl="/"
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container" style="max-width:680px;">
+      <h1 class="section-title">Contact</h1>
+
+      <div class="prose">
+
+        <p>
+          For product availability, batch inquiries, wholesale discussions, or general questions,
+          fill in the form below or email us directly at
+          <strong><a href="mailto:hello@tableorie.com">hello@tableorie.com</a></strong>.
+        </p>
+
+        <form id="contact-form" style="margin-top:2rem;">
+          <div style="margin-bottom:1rem;">
+            <label for="name" style="display:block; font-weight:600; margin-bottom:0.3rem;">Name *</label>
+            <input type="text" id="name" name="name" required
+              style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;" />
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <label for="email" style="display:block; font-weight:600; margin-bottom:0.3rem;">Email *</label>
+            <input type="email" id="email" name="email" required
+              style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;" />
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <label for="subject" style="display:block; font-weight:600; margin-bottom:0.3rem;">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="e.g. Wholesale inquiry, Product question"
+              style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;" />
+          </div>
+
+          <div style="margin-bottom:1rem;">
+            <label for="message" style="display:block; font-weight:600; margin-bottom:0.3rem;">Message *</label>
+            <textarea id="message" name="message" rows="6" required
+              style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff; resize:vertical; font-family:inherit;"></textarea>
+          </div>
+
+          <button type="submit" id="submit-btn"
+            style="background:var(--color-accent); color:#fff; border:none; padding:0.7rem 2rem; font-size:1rem; border-radius:var(--radius); cursor:pointer; font-weight:600;">
+            Send Message
+          </button>
+          <span id="form-status" style="margin-left:1rem; font-size:0.9rem;"></span>
+        </form>
+
+        <hr style="margin:3rem 0; border:none; border-top:1px solid var(--color-border);" />
+
+        <h2>Taobao Store</h2>
+        <p>
+          <a href={siteLinks.taobao} target="_blank" rel="noopener noreferrer nofollow">Yinshiji on Taobao</a>
+          — browse products and send us a message directly through the store.
+        </p>
+
+        <h2>Wholesale & Collaboration</h2>
+        <p>
+          For bulk orders, corporate gifting, sample requests, or collaboration ideas, please
+          email us with your intended quantity, product series of interest, and use case. We
+          will check current batch availability and get back to you.
+        </p>
+
+        <h2>Response Time</h2>
+        <p>
+          We aim to respond within 24 hours on business days. For urgent inquiries, contacting
+          us through Taobao may get a faster reply.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('contact-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const btn = document.getElementById('submit-btn');
+      const status = document.getElementById('form-status');
+
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      status.textContent = '';
+      status.style.color = '';
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: form.name.value.trim(),
+            email: form.email.value.trim(),
+            subject: form.subject.value.trim() || 'Website Inquiry',
+            message: form.message.value.trim(),
+          }),
+        });
+        const data = await res.json();
+
+        if (res.ok && data.success) {
+          status.textContent = '✓ Message sent! We will get back to you soon.';
+          status.style.color = '#2a7d4f';
+          form.reset();
+        } else {
+          status.textContent = data.error || 'Failed to send. Please try again.';
+          status.style.color = '#c0392b';
+        }
+      } catch (err) {
+        status.textContent = 'Network error. Please email us directly.';
+        status.style.color = '#c0392b';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Send Message';
+      }
+    });
+  </script>
+</BaseLayout>

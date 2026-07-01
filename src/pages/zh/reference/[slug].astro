@@ -1,0 +1,129 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { referenceArticles } from '../../../data/reference-articles';
+
+export function getStaticPaths() {
+  return referenceArticles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const site = Astro.site ?? new URL('https://tableorie.com');
+const pagePath = `/zh/reference/${article.slug}`;
+const pageUrl = new URL(pagePath, site).href;
+
+const alternateLinks = [
+  { lang: 'en', href: `/reference/${article.slug}` },
+  { lang: 'zh-CN', href: pagePath },
+  { lang: 'x-default', href: `/reference/${article.slug}` },
+];
+
+const navItems = [
+  { href: '/zh/', label: '首页' },
+  { href: '/zh/products', label: '产品' },
+  { href: '/zh/guide', label: '选购指南' },
+  { href: '/zh/reference', label: '资料库' },
+  { href: '/zh/about', label: '关于银食记' },
+  { href: '/zh/materials-care', label: '材质与护理' },
+  { href: '/zh/faq', label: '常见问题' },
+];
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: article.titleZh,
+  description: article.descriptionZh,
+  url: pageUrl,
+  mainEntityOfPage: pageUrl,
+  author: { '@type': 'Organization', name: 'Yinshiji / Tableorie' },
+  publisher: { '@type': 'Organization', name: 'Yinshiji / Tableorie', url: new URL('/', site).href },
+  inLanguage: 'zh-CN',
+  about: ['不锈钢餐具', '食品接触材料', '餐具标准'],
+  citation: article.sources.map((s) => s.url),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: new URL('/zh/', site).href },
+    { '@type': 'ListItem', position: 2, name: '资料库', item: new URL('/zh/reference', site).href },
+    { '@type': 'ListItem', position: 3, name: article.titleZh, item: pageUrl },
+  ],
+};
+---
+
+<BaseLayout
+  title={`${article.titleZh}｜Tableorie 资料库`}
+  description={article.descriptionZh}
+  canonical={pagePath}
+  ogType="article"
+  lang="zh-CN"
+  homeUrl="/zh/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+  footerNote="资料库用于解释标准、材质和食品接触原则，不等于具体产品认证声明。"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <nav style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:2rem;">
+        <a href="/zh/reference">资料库</a>
+        <span style="margin:0 0.5rem;">/</span>
+        <span>{article.eyebrowZh}</span>
+      </nav>
+
+      <article class="prose" style="max-width:760px; margin:0 auto;">
+        <p class="eyebrow">{article.eyebrowZh}</p>
+        <h1 style="font-family:var(--font-serif); font-size:clamp(1.8rem, 5vw, 3.2rem); line-height:1.12; margin:0.4rem 0 1.2rem;">
+          {article.titleZh}
+        </h1>
+        <p style="font-size:1.12rem; color:var(--color-text-muted); line-height:1.7; margin-bottom:2rem;">
+          {article.introZh}
+        </p>
+
+        {article.sectionsZh.map((section) => (
+          <section class="detail-section">
+            <h2 style="font-size:1.3rem;">{section.heading}</h2>
+            {section.paragraphs.map((pText) => <p>{pText}</p>)}
+            {section.bullets && (
+              <ul class="feature-list" style="margin-top:0.8rem;">
+                {section.bullets.map((b) => <li>{b}</li>)}
+              </ul>
+            )}
+          </section>
+        ))}
+
+        <section class="detail-section" style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--color-border);">
+          <h2 style="font-size:1.1rem; color:var(--color-text-muted);">参考来源</h2>
+          <ol style="font-size:0.85rem; color:var(--color-text-muted); line-height:1.6;">
+            {article.sources.map((source) => (
+              <li style="margin-bottom:0.5rem;">
+                <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a>
+                <br /><span>{source.organization}</span>
+                <span> · </span><span>{source.sense}</span>
+                {source.note && <span> · <em>{source.note}</em></span>}
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section class="detail-section" style="margin-top:2rem;">
+          <div style="display:flex; gap:0.8rem; flex-wrap:wrap;">
+            {article.related.map((slug) => {
+              const relatedArticle = referenceArticles.find((item) => item.slug === slug);
+              return relatedArticle ? <a href={`/zh/reference/${relatedArticle.slug}`} class="btn btn-outline">{relatedArticle.titleZh}</a> : null;
+            })}
+            <a href="/zh/reference" class="btn btn-outline">全部资料</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

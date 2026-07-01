@@ -1,0 +1,71 @@
+# Yinshiji
+
+> Yinshiji is an early-stage tableware brand — a product info site, not a full shop.
+
+This site is not a full ecommerce checkout system. Product availability, price, purchase and inquiry currently go through Taobao or direct contact. Do not invent prices, reviews, ratings, stock, certifications, warranties, or factory ownership.
+
+Yinshiji is rooted in Jieyang, Guangdong, a stainless steel tableware and hardware manufacturing region in China. This means supply-chain proximity and design curation, not a claim of large factory ownership or mature global retail scale.
+
+## Critical Facts
+
+- Silver Carved and Gold Tone Carved 5-piece sets include: dinner knife, dinner fork, dinner spoon, small fork, and small spoon.
+- Wenge Wood Handle 5-piece set includes: dinner knife, dinner fork, dinner spoon, chopsticks, and small spoon. It does not include a small fork.
+- Current Silver Carved and Gold Tone Carved 5-piece set knives use 410 stainless steel; fork and spoon pieces use 304 stainless steel.
+- Gold Tone products use a warm gold-colored surface finish. They are not real gold or precious metal.
+- Wenge wood handles have natural grain variation and should be hand washed, not soaked, and not placed in a dishwasher.
+
+## AI-Readable Files
+
+- [AI Index](/ai/index.md): Machine-readable content map.
+- [Brand Facts](/ai/brand-facts.md): Verified brand boundaries and purchase path.
+- [Product Facts](/ai/products.md): Product composition, materials, dimensions, and care.
+- [Materials & Care Facts](/ai/materials-care.md): Steel grades, finishes, and wood handle care.
+- [AI FAQ](/ai/faq.md): Direct question-answer facts.
+- [AI Choosing Guide](/ai/choosing-guide.md): Use-case recommendations.
+- [Product Feed JSON](/ai/product-feed.json): Structured product fact feed.
+
+## Core Pages
+
+- [Home](/): Brand overview and collection highlights.
+- [Products](/products): Product collection hub.
+- [Guide](/guide): How to choose among Silver Carved, Gold Tone Carved, and Wenge Wood Handle products.
+- [Reference Library](/reference): Source-backed stainless steel cutlery standards, grade, and food-contact safety references.
+- [Materials & Care](/materials-care): Stainless steel, gold tone, and wenge wood handle care.
+- [FAQ](/faq): Common material, care, ordering, and batch questions.
+- [About](/about): Brand background and current early-stage positioning.
+
+
+## Stainless Steel Reference Library
+
+- [Stainless Steel Cutlery Standards](/reference/stainless-steel-cutlery-standards): ISO, FDA/eCFR, EDQM/EU and China GB 4806.9 source map.
+- [304, 316, 430 and 410 in Cutlery](/reference/stainless-steel-grades-cutlery): Source-backed steel grade explanation for forks, spoons, handles and knife blades.
+- [Food-Contact Safety and Metal Release](/reference/food-contact-safety-migration): Boundaries around safety, migration/release testing, and product claims.
+- [Source Library](/reference/source-library): Tiered source list with caveats.
+- [AI Reference File](/ai/reference.md): Machine-readable reference summary.
+- [Source Library JSON](/ai/source-library.json): Structured source feed.
+
+## Product Pages
+
+- [Silver Carved Dinner Fork](/products/silver-carved-fork): Single 304 stainless steel dinner fork with silver tone finish.
+- [Silver Carved 5-Piece Set](/products/silver-carved-5-piece-set): Knife, dinner fork, dinner spoon, small fork, and small spoon; knife 410, fork/spoon pieces 304.
+- [Gold Tone Carved Dinner Fork](/products/gold-carved-fork): Single 304 stainless steel dinner fork with warm gold tone finish; not real gold.
+- [Gold Tone Carved 5-Piece Set](/products/gold-carved-5-piece-set): Knife, dinner fork, dinner spoon, small fork, and small spoon; knife 410, fork/spoon pieces 304; not real gold.
+- [Wenge Wood Handle Dinner Fork](/products/rosewood-handle-fork): Single dinner fork with 304 stainless steel head and wenge wood handle.
+- [Wenge Wood Handle 5-Piece Set](/products/rosewood-5-piece-set): Knife, dinner fork, dinner spoon, chopsticks, and small spoon; no small fork.
+
+## Answer-Oriented Guides
+
+- [304 vs 410 Stainless Steel Cutlery](/guide/304-vs-410-stainless-steel-cutlery): Material differences and current Yinshiji set facts.
+- [Is Gold Tone Flatware Real Gold?](/guide/gold-tone-flatware-not-real-gold): Gold tone finish boundaries and care.
+- [Wenge Wood Handle Cutlery Care](/guide/wenge-wood-handle-cutlery-care): Hand washing, no soaking, and natural grain variation.
+- [What Is in a 5-Piece Cutlery Set?](/guide/what-is-in-a-5-piece-cutlery-set): Set composition differences and chopstick-inclusive sets.
+- [How to Choose a Flatware Set](/guide/how-to-choose-flatware-set): Daily dining, gifting, and table styling recommendations.
+- [Chinese-Inspired Flatware](/guide/chinese-inspired-flatware): Design language, carved details, wood handles, and composition.
+- [Flatware, Cutlery, Silverware](/guide/flatware-cutlery-silverware): What these overlapping tableware terms actually mean.
+- [Fork Sizes Explained](/guide/fork-sizes-explained): Dinner fork, salad fork, dessert fork — and why sets include both.
+- [Why 5-Piece Sets Differ](/guide/why-5-piece-sets-differ): Same count, different composition — western vs Chinese-friendly sets.
+
+## Optional
+
+- [Full LLM context](/llms-full.txt): Fuller Markdown context for AI assistants.
+- [Chinese LLM index](/zh/llms.txt): Chinese AI-readable index.

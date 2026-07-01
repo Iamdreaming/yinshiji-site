@@ -1,0 +1,56 @@
+{
+  "$schema": "https://agentskills.io/schemas/agent-skills-index-v0.2.json",
+  "name": "Yinshiji Agent Skills",
+  "description": "Static content discovery skills for verified Yinshiji / Tableorie product and brand facts.",
+  "skills": [
+    {
+      "name": "read_yinshiji_brand_facts",
+      "type": "content",
+      "description": "Read verified brand positioning and boundaries for Yinshiji.",
+      "url": "/ai/brand-facts.md",
+      "sha256": "1d957fe21a766a3eb525dcdaa8d6fb163b8a9d93cc757c54a01de3f219d7ede9"
+    },
+    {
+      "name": "read_yinshiji_product_facts",
+      "type": "content",
+      "description": "Read verified product composition, materials, dimensions, and care facts.",
+      "url": "/ai/products.md",
+      "sha256": "2fdecd5f7bdcdc805248509b0a04c1c762649a5dcd75f7f8a43523f4dc5bee4d"
+    },
+    {
+      "name": "read_yinshiji_materials_care",
+      "type": "content",
+      "description": "Read verified 304/410 stainless steel, gold tone, and wenge wood handle care facts.",
+      "url": "/ai/materials-care.md",
+      "sha256": "91b850e87cd64af03f8358d7b2c1779f07aebcff492b8f96832797c7cab1086d"
+    },
+    {
+      "name": "read_yinshiji_faq",
+      "type": "content",
+      "description": "Read direct Q&A facts for Yinshiji products and purchase path.",
+      "url": "/ai/faq.md",
+      "sha256": "f7bb89030345ab0adaa26fa1db62a089b10cc761cb44e48e1116624535c545cb"
+    },
+    {
+      "name": "read_yinshiji_choosing_guide",
+      "type": "content",
+      "description": "Read collection selection guidance for daily use, gifting, and Chinese-Western meals.",
+      "url": "/ai/choosing-guide.md",
+      "sha256": "b28dba1af23ddb2fe7138b7dd729d293163903396043ac0368b4625129361a58"
+    },
+    {
+      "name": "read_tableorie_reference_library",
+      "type": "content",
+      "description": "Read source-backed stainless steel cutlery reference pages and citation rules.",
+      "url": "/ai/reference.md",
+      "sha256": "7ff6cb9041ed037d61794ae8c5592b16e451e70ed5a9cf4997b44904377c3e6b"
+    },
+    {
+      "name": "read_tableorie_source_library_feed",
+      "type": "content",
+      "description": "Read tiered source list with source caveats for stainless steel cutlery reference content.",
+      "url": "/ai/source-library.json",
+      "sha256": "9d0ba0d5ceb50c9418513c75a286394723fbffb4250b792029e52b0808168691"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+# 银食记（中文）
+
+> 银食记是早期餐具品牌和轻量信息站，围绕不锈钢雕花餐具、鸡翅木柄餐具与中式灵感餐桌进行产品展示和知识说明。
+
+当前站点不是完整独立商城，不承担购物车、支付、库存和评价系统。国内购买、询价和拿样当前主要通过淘宝或直接联系完成。不要编造价格、评分、评价、库存、认证、保修或自有工厂事实。
+
+银食记扎根广东揭阳附近的不锈钢餐具与五金产业带，这代表供应链靠近、产品甄选和材质透明，不代表大型自有工厂或成熟全球零售规模。
+
+## 关键事实
+
+- 银色雕花和金色雕花五件套包含：餐刀、主叉、主勺、小叉、小勺。
+- 鸡翅木五件套包含：餐刀、主叉、主勺、筷子、小勺，不包含小叉。
+- 当前银色雕花和金色雕花五件套中，餐刀为 410 不锈钢，主叉、主勺、小叉、小勺为 304 不锈钢。
+- 金色雕花为暖金色调表面处理，不是真金或贵金属。
+- 鸡翅木手柄存在天然木纹差异，建议手洗，不要浸泡，不建议洗碗机。
+
+## AI 可读文件
+
+- [AI 索引](/zh/ai/index.md): 机器可读内容地图。
+- [品牌事实](/zh/ai/brand-facts.md): 已验证品牌边界和购买路径。
+- [产品事实](/zh/ai/products.md): 产品组成、材质、尺寸和护理。
+- [材质与护理事实](/zh/ai/materials-care.md): 不锈钢钢种、表面处理和木柄护理。
+- [AI FAQ](/zh/ai/faq.md): 直接问答事实。
+- [AI 选购指南](/zh/ai/choosing-guide.md): 按使用场景推荐。
+- [产品数据 JSON](/ai/product-feed.json): 结构化产品事实。
+
+## 核心页面
+
+- [中文首页](/zh/): 品牌入口与系列概览。
+- [产品列表](/zh/products): 当前产品集合。
+- [资料库](/zh/reference): 有来源支撑的不锈钢餐具标准、钢种和食品接触安全资料。
+- [选购指南](/zh/guide): 银色雕花、金色雕花、鸡翅木怎么选。
+- [材质与护理](/zh/materials-care): 不锈钢、金色调、鸡翅木护理说明。
+- [常见问题](/zh/faq): 材质、护理、购买、批次问题。
+- [关于银食记](/zh/about): 品牌背景与早期定位。
+
+
+## 不锈钢资料库
+
+- [不锈钢餐具标准资料](/zh/reference/stainless-steel-cutlery-standards): ISO、FDA/eCFR、EDQM/欧洲和中国 GB 4806.9 来源地图。
+- [餐具里的 304、316、430 和 410](/zh/reference/stainless-steel-grades-cutlery): 叉、勺、手柄和餐刀里的钢种解释。
+- [食品接触安全与金属迁移](/zh/reference/food-contact-safety-migration): 安全、迁移/释放测试和产品声明边界。
+- [资料源库](/zh/reference/source-library): 带层级和边界说明的来源列表。
+- [AI 资料库入口](/zh/ai/reference.md): 机器可读资料摘要。
+- [资料源 JSON](/ai/source-library.json): 结构化资料源 feed。
+
+## 产品页面
+
+- [银色雕花主叉](/zh/products/silver-carved-fork): 304 不锈钢单支主叉，银色调表面。
+- [银色雕花五件套](/zh/products/silver-carved-5-piece-set): 餐刀、主叉、主勺、小叉、小勺；餐刀 410，叉勺件 304。
+- [金色雕花主叉](/zh/products/gold-carved-fork): 304 不锈钢单支主叉，暖金色表面，不是真金。
+- [金色雕花五件套](/zh/products/gold-carved-5-piece-set): 餐刀、主叉、主勺、小叉、小勺；餐刀 410，叉勺件 304；不是真金。
+- [鸡翅木主叉](/zh/products/rosewood-handle-fork): 304 不锈钢叉头 + 鸡翅木手柄。
+- [鸡翅木五件套](/zh/products/rosewood-5-piece-set): 餐刀、主叉、主勺、筷子、小勺；不包含小叉。
+
+## 答案型指南
+
+- [304 和 410 不锈钢餐具](/zh/guide/304-vs-410-stainless-steel-cutlery): 材质差异和银食记当前套装事实。
+- [金色餐具是真金吗](/zh/guide/gold-tone-flatware-not-real-gold): 金色调表面边界和护理。
+- [鸡翅木柄餐具护理](/zh/guide/wenge-wood-handle-cutlery-care): 手洗、防浸泡、木纹差异。
+- [五件套包含什么](/zh/guide/what-is-in-a-5-piece-cutlery-set): 套装组成差异和含筷子套装。
+- [餐具套装怎么选](/zh/guide/how-to-choose-flatware-set): 日用、礼赠、一人食场景推荐。
+- [中式灵感餐具](/zh/guide/chinese-inspired-flatware): 雕花、木柄、筷子组合与克制审美。
+
+## 可选补充
+
+- [英文 llms 索引](/llms.txt)
+- [英文完整上下文](/llms-full.txt)

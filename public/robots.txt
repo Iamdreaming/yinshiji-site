@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Content-Signal: ai-train=no, ai-input=yes, search=yes
+
+Sitemap: https://tableorie.com/sitemap.xml

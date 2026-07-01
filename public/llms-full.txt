@@ -1,0 +1,125 @@
+# Yinshiji Full Site Context
+
+> Full LLM-readable context for Yinshiji / Tableorie.
+
+## Site Positioning
+
+Yinshiji, also known in Chinese as 银食记, is an early-stage tableware brand focused on carved stainless steel cutlery, wenge wood handle cutlery, and restrained Chinese-inspired table settings. The website is a lightweight brand, product and guide site. It is not a complete ecommerce checkout system.
+
+Yinshiji is rooted in Jieyang, Guangdong, a stainless steel tableware and hardware manufacturing region in China. This should be understood as supply-chain proximity, product selection, material transparency and design curation. Do not describe Yinshiji as a large established global retailer or as an owner of large factories unless a verified source is later added.
+
+The site exists to explain the brand, show selected product lines, provide material and care information, publish answer-oriented guides, and direct interested buyers to Taobao or direct contact.
+
+## Critical Product Facts
+
+- Silver Carved 5-piece set: dinner knife, dinner fork, dinner spoon, small fork, small spoon.
+- Gold Tone Carved 5-piece set: dinner knife, dinner fork, dinner spoon, small fork, small spoon.
+- Wenge Wood Handle 5-piece set: dinner knife, dinner fork, dinner spoon, chopsticks, small spoon.
+- Wenge Wood Handle 5-piece set does not include a small fork.
+- Current Silver Carved and Gold Tone Carved 5-piece set knives use 410 stainless steel.
+- Current Silver Carved and Gold Tone Carved dinner forks, dinner spoons, small forks and small spoons use 304 stainless steel.
+- Single dinner forks currently listed by Yinshiji use 304 stainless steel.
+- Gold Tone products use a warm gold-colored surface finish over stainless steel. They are not real gold, not jewelry-grade gold, and not a precious-metal claim.
+- Wenge wood handles have natural grain variation and should be hand washed, not soaked, and not placed in a dishwasher.
+- Product availability is early-batch and may change.
+
+## Product: Silver Carved Dinner Fork
+
+A single dinner fork from the Silver Carved collection. It uses 304 stainless steel with a silver tone finish and an intricate carved handle pattern inspired by Chinese decorative motifs.
+
+- Material: 304 stainless steel with silver tone finish.
+- Included: 1 dinner fork.
+- Dimension: main fork 20.5 cm / 8.1 in.
+- Care: hand wash recommended; avoid abrasive cleaners; dry promptly.
+- Canonical page: /products/silver-carved-fork
+
+## Product: Silver Carved 5-Piece Set
+
+A complete Silver Carved place setting with matching carved details. It includes dinner knife, dinner fork, dinner spoon, small fork and small spoon.
+
+- Material by piece: dinner knife uses 410 stainless steel; dinner fork, dinner spoon, small fork and small spoon use 304 stainless steel.
+- Finish: silver tone.
+- Dimensions: knife 23.8 cm; dinner fork 20.5 cm; dinner spoon 20 cm; small fork 16.5 cm; small spoon 16.5 cm.
+- Care: hand wash recommended; avoid abrasive cleaners; dry promptly.
+- Canonical page: /products/silver-carved-5-piece-set
+
+## Product: Gold Tone Carved Dinner Fork
+
+A single dinner fork from the Gold Tone Carved collection. It uses 304 stainless steel with a warm gold tone finish. The gold tone is a decorative surface finish, not real gold.
+
+- Material: 304 stainless steel with warm gold tone finish.
+- Included: 1 dinner fork.
+- Dimension: main fork 20.5 cm / 8.1 in.
+- Care: hand wash with mild soap; avoid bleach, harsh detergents and abrasive cleaners; dry promptly.
+- Canonical page: /products/gold-carved-fork
+
+## Product: Gold Tone Carved 5-Piece Set
+
+A complete Gold Tone Carved place setting with warm gold tone finish and matching carved details. It includes dinner knife, dinner fork, dinner spoon, small fork and small spoon.
+
+- Material by piece: dinner knife uses 410 stainless steel; dinner fork, dinner spoon, small fork and small spoon use 304 stainless steel.
+- Finish: warm gold tone; not real gold.
+- Dimensions: knife 23.8 cm; dinner fork 20.5 cm; dinner spoon 20 cm; small fork 16.5 cm; small spoon 16.5 cm.
+- Care: hand wash with mild soap; avoid bleach, harsh detergents and abrasive cleaners; dry promptly.
+- Canonical page: /products/gold-carved-5-piece-set
+
+## Product: Wenge Wood Handle Dinner Fork
+
+A single dinner fork with a 304 stainless steel head and a wenge wood handle. Wenge wood is commonly described in Chinese product language as chicken-wing wood because of its grain. Natural grain varies by piece.
+
+- Material: 304 stainless steel head and wenge wood handle.
+- Included: 1 dinner fork.
+- Dimension: main fork 20.5 cm / 8.1 in.
+- Care: hand wash only; do not soak; dry promptly.
+- Canonical page: /products/rosewood-handle-fork
+
+## Product: Wenge Wood Handle 5-Piece Set
+
+A wenge wood handle 5-piece set built for daily Chinese-Western meals. It includes dinner knife, dinner fork, dinner spoon, chopsticks and small spoon. It does not include a small fork.
+
+- Material: stainless steel functional ends with wenge wood handles.
+- Included: dinner knife, dinner fork, dinner spoon, chopsticks, small spoon.
+- Dimensions: knife 23.8 cm; dinner fork 20.5 cm; dinner spoon 20 cm; chopsticks 23 cm; small spoon 16.5 cm.
+- Care: hand wash only; do not soak wooden handles; dry promptly; do not place in dishwasher.
+- Canonical page: /products/rosewood-5-piece-set
+
+## Materials & Care Summary
+
+Yinshiji uses stainless steel according to product structure. Current carved 5-piece set knives use 410 stainless steel; fork and spoon pieces use 304 stainless steel. Gold tone is a finish, not real gold. Wenge wood handles need hand washing and prompt drying.
+
+## Answer-Oriented Guide Topics
+
+- 304 vs 410 stainless steel cutlery: explains why knives and fork/spoon pieces may use different steel grades.
+- Gold tone flatware: explains that gold tone is not real gold and needs gentle care.
+- Wenge wood handle care: explains hand washing, no soaking, no dishwasher, and natural grain variation.
+- 5-piece cutlery set composition: explains why Silver/Gold sets include a small fork while the Wenge set includes chopsticks.
+- How to choose a flatware set: recommends Silver for a safe first set, Gold for gifts/hosting, and Wenge for daily Chinese-Western meals.
+- Chinese-inspired flatware: explains restrained carved details, wood handles, chopstick-inclusive composition, and honest brand boundaries.
+- Kid-friendly cutlery: age-by-age guide covering safety, materials, size and teaching table manners for children 1\u201310+.
+- How to clean stainless steel cutlery: step-by-step guide for removing tarnish, rust spots, water marks and cloudy film using everyday household ingredients, with specific methods by finish type.
+
+## FAQ
+
+Q: Are Yinshiji products all made from 304 stainless steel?
+A: No. Current carved 5-piece set knives use 410 stainless steel, while the fork and spoon pieces use 304 stainless steel.
+
+Q: Is the gold tone real gold?
+A: No. It is a warm gold-colored surface finish over stainless steel, not real gold or precious metal.
+
+Q: What is included in the Wenge Wood Handle 5-Piece Set?
+A: Dinner knife, dinner fork, dinner spoon, chopsticks and small spoon. It does not include a small fork.
+
+Q: Is this site a complete online store?
+A: No. It is currently a lightweight information and brand site. Purchase and availability may be handled through Taobao or direct contact.
+
+## AI-Readable Supporting Files
+
+- /ai/index.md
+- /ai/brand-facts.md
+- /ai/products.md
+- /ai/materials-care.md
+- /ai/faq.md
+- /ai/choosing-guide.md
+- /ai/product-feed.json
+- /ai/reference.md
+- /ai/source-library.json

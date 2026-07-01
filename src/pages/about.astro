@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const alternateLinks = [
+  { lang: 'en', href: '/about' },
+  { lang: 'zh-CN', href: '/zh/about' },
+  { lang: 'x-default', href: '/about' },
+];
+
+const navItems = [
+  { href: '/', label: 'Home' },
+  { href: '/products', label: 'Products' },
+  { href: '/guide', label: 'Guide' },
+  { href: '/reference', label: 'Reference' },
+  { href: '/about', label: 'About' },
+  { href: '/materials-care', label: 'Materials & Care' },
+  { href: '/faq', label: 'FAQ' },
+];
+---
+
+<BaseLayout
+  title="About Yinshiji – Chinese-Inspired Stainless Steel Cutlery Brand"
+  description="Yinshiji (银食记) designs carved stainless steel cutlery and wenge wood handle tableware from Jieyang, China — where Chinese aesthetics meet everyday dining."
+  ogType="website"
+  lang="en"
+  homeUrl="/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <h1 class="section-title">About Yinshiji</h1>
+
+      <div class="prose">
+
+        <p class="lead" style="font-size:1.25rem; line-height:1.7; max-width:760px;">
+          <strong>Yinshiji</strong> designs carved stainless steel cutlery and wenge wood handle
+          tableware from <strong>Jieyang, Guangdong</strong> — China's stainless steel manufacturing
+          region. We make Chinese-inspired flatware that works on Western tables, with honest
+          materials and no unnecessary stories.
+        </p>
+
+        <h2>Why Yinshiji Exists</h2>
+        <p>
+          Most stainless steel cutlery on the market follows European or Japanese design language.
+          Chinese decorative traditions — intricate carving, symbolic motifs, natural wood accents
+          — are rarely translated into everyday flatware. That gap is where Yinshiji starts.
+        </p>
+        <p>
+          We are not trying to reinvent the dinner table. We are asking a simpler question: why
+          shouldn't a fork or a spoon carry the same visual care as the food it serves? Our carved
+          handles draw from Chinese decorative arts. Our wenge wood pieces bring a natural warmth
+          that stainless steel alone cannot offer. The result is tableware that feels considered
+          without asking for attention.
+        </p>
+
+        <h2>Our Philosophy</h2>
+        <p>
+          We believe good tableware rests on <strong>three things: material honesty, purposeful
+          design, and everyday usability</strong>.
+        </p>
+        <ul>
+          <li><strong>Material honesty</strong> means stating the exact steel grade by SKU — not a vague "premium stainless steel." Current carved 5-piece sets use 304 stainless steel for fork and spoon pieces and 410 for the knife. Product pages say so.</li>
+          <li><strong>Purposeful design</strong> means every visual detail — the carved handle, the wood grain, the finish tone — serves the experience of eating, not just the experience of looking.</li>
+          <li><strong>Everyday usability</strong> means these are pieces for daily tables, not display cabinets. They are meant to be used, washed, and used again.</li>
+        </ul>
+
+        <h2>Rooted in Jieyang, Guangdong</h2>
+        <p>
+          Yinshiji grows from Jieyang, a region in southern China that produces a significant share
+          of the world's stainless steel tableware. This proximity shapes everything about how we
+          work: we compare materials, finishes, and production details directly, without layers of
+          intermediaries.
+        </p>
+        <p>
+          Being close to the supply chain does not make us a factory owner. It makes us <strong>better
+          selectors</strong>. We sample, evaluate, and refine until a piece feels worth keeping — then
+          we offer it in curated batches rather than endless inventory. This approach keeps our focus
+          on product quality rather than volume.
+        </p>
+
+        <h2>Our Collections</h2>
+        <p>
+          Yinshiji currently offers three collections, each defined by its materials and mood:
+        </p>
+        <ul>
+          <li><strong>Silver Carved</strong> — classic silver tone with detailed carving. Clean, balanced, for everyday refined tables.</li>
+          <li><strong>Gold Tone Carved</strong> — warm gold finish with the same carved patterns. More expressive, for hosting and gifting.</li>
+          <li><strong>Wenge Wood Handle</strong> — natural wood handles paired with stainless steel heads. Warm, tactile, Chinese-Western everyday use.</li>
+        </ul>
+        <p>
+          Each collection is available as single pieces and 5-piece place settings. We start with
+          these three because they cover the range from neutral to warm to natural — most tables
+          will find a fit somewhere among them.
+        </p>
+
+        <h2>Where We Are Now — and Where We Are Going</h2>
+        <p>
+          Yinshiji is an <strong>early-stage brand</strong>. We do not pretend to have thousands
+          of reviews, live inventory counters, or a global fulfillment network. What we do have is a
+          clear direction: build Chinese-inspired tableware that earns its place on real tables,
+          one batch at a time.
+        </p>
+        <p>
+          Currently we sell through our Taobao store and direct inquiry. Domestically, customers
+          can browse, inquire, and purchase through Taobao. For wholesale, gifting, or collaboration
+          inquiries, we welcome direct contact.
+        </p>
+        <p>
+          In the near term, we are focused on:
+        </p>
+        <ul>
+          <li>Expanding our product line within the same material philosophy</li>
+          <li>Building a visual and content presence that reflects the brand's aesthetic</li>
+          <li>Making it easier for international customers to discover and purchase Yinshiji pieces</li>
+        </ul>
+
+        <h2>Why "Silver Food Records"?</h2>
+        <p>
+          <strong>Yinshiji</strong> (银食记) translates roughly to "Silver Food Records." The
+          name comes from the idea that good meals are worth remembering — and the right tableware
+          quietly helps make them so. Silver-toned pieces (and gold, and wood) that accompany
+          dinners, celebrations, and morning coffees alike. It is a name rooted in everyday ritual,
+          not in luxury.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          For product availability, batch inquiries, wholesale discussions, or general questions:
+        </p>
+        <ul>
+          <li><a href="https://m.tb.cn/h.Rj3EGL9ZID9HRkE" target="_blank" rel="noopener noreferrer nofollow">Taobao Store</a> (domestic customers)</li>
+          <li>Direct inquiry — contact us through Taobao or reach out for wholesale and collaboration</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>

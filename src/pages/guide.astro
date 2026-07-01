@@ -1,0 +1,194 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteLinks } from '../data/site-links';
+
+const alternateLinks = [
+  { lang: 'en', href: '/guide' },
+  { lang: 'zh-CN', href: '/zh/guide' },
+  { lang: 'x-default', href: '/guide' },
+];
+
+const navItems = [
+  { href: '/', label: 'Home' },
+  { href: '/products', label: 'Products' },
+  { href: '/guide', label: 'Guide' },
+  { href: '/reference', label: 'Reference' },
+  { href: '/about', label: 'About' },
+  { href: '/materials-care', label: 'Materials & Care' },
+  { href: '/faq', label: 'FAQ' },
+];
+---
+
+<BaseLayout
+  title="How to Choose – Yinshiji Tableware Guide"
+  description="A practical guide to choosing between Silver Carved, Gold Tone Carved, and Wenge Wood Handle Yinshiji tableware, including single pieces, 5-piece sets, care, and ordering."
+  canonical="/guide"
+  ogType="website"
+  lang="en"
+  homeUrl="/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <h1 class="section-title">How to Choose Yinshiji Tableware</h1>
+      <p class="section-subtitle">
+        Choose by table mood, daily use, care preference, and whether you need a single piece or a full place setting.
+      </p>
+
+      <section class="detail-section">
+        <h2>Quick Recommendation</h2>
+        <div class="use-case-grid">
+          <div class="use-case-card">
+            <strong>First full set</strong>
+            <span>Choose Silver Carved 5-Piece Set. It is the safest starting point: classic, detailed, and not too loud.</span>
+          </div>
+          <div class="use-case-card">
+            <strong>Gift or hosting</strong>
+            <span>Choose Gold Tone Carved 5-Piece Set when table presence and warm visual impact matter more.</span>
+          </div>
+          <div class="use-case-card">
+            <strong>Daily Chinese meals</strong>
+            <span>Choose Wenge Wood Handle 5-Piece Set. It includes chopsticks and fits bowls, rice, noodles, and home meals better.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>Compare the Three Collections</h2>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Collection</th>
+              <th>Choose it if...</th>
+              <th>Watch out for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Silver Carved</strong></td>
+              <td>You want a balanced, classic table look with visible carved detail but not too much shine.</td>
+              <td>It is less visually warm than gold or wood, so pair it with plates, linen, or warm lighting if the table feels cold.</td>
+            </tr>
+            <tr>
+              <td><strong>Gold Tone Carved</strong></td>
+              <td>You want the set to look more festive, decorative, and suitable for gifting or hosting.</td>
+              <td>The gold tone is a finish, not real gold. Hand washing is recommended to preserve the surface condition.</td>
+            </tr>
+            <tr>
+              <td><strong>Wenge Wood Handle</strong></td>
+              <td>You want a warmer Chinese-Western daily table, especially for bowls, chopsticks, and one-person dining.</td>
+              <td>Wood handles need hand washing and should not be soaked or put in the dishwasher.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="detail-section">
+        <h2>Single Piece or 5-Piece Set?</h2>
+        <div class="mini-card-grid">
+          <div class="mini-card">
+            <strong>Single piece</strong>
+            <span>Best for sampling the weight and finish, replacing one item, or styling a small content scene.</span>
+          </div>
+          <div class="mini-card">
+            <strong>5-piece set</strong>
+            <span>Best when you want a complete place setting and a more coherent table look.</span>
+          </div>
+          <div class="mini-card">
+            <strong>Wenge composition note</strong>
+            <span>The Wenge Wood 5-Piece Set includes chopsticks and does not include a small fork.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>Care Preference Matters</h2>
+        <p>
+          If you want the easiest care path, start with the metal-only Silver Carved or Gold Tone Carved pieces and hand wash them gently.
+          If you like the warmer feel of wood, choose Wenge Wood Handle, but accept that it needs more careful hand washing and drying.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Answer Guides for AI and Search</h2>
+        <p>
+          These pages answer the specific material, care, composition, and design questions that AI assistants and search engines are likely to ask about Yinshiji tableware.
+        </p>
+        <div class="mini-card-grid">
+          <a class="mini-card" href="/guide/304-vs-410-stainless-steel-cutlery">
+            <strong>304 vs 410 Stainless Steel</strong>
+            <span>Why carved-set knives use 410 while fork and spoon pieces use 304.</span>
+          </a>
+          <a class="mini-card" href="/guide/gold-tone-flatware-not-real-gold">
+            <strong>Gold Tone Is Not Real Gold</strong>
+            <span>How to describe gold tone finish accurately and care for it.</span>
+          </a>
+          <a class="mini-card" href="/guide/wenge-wood-handle-cutlery-care">
+            <strong>Wenge Wood Handle Care</strong>
+            <span>Hand washing, no soaking, no dishwasher, and natural grain variation.</span>
+          </a>
+          <a class="mini-card" href="/guide/what-is-in-a-5-piece-cutlery-set">
+            <strong>5-Piece Set Composition</strong>
+            <span>Why some sets include a small fork while the wenge set includes chopsticks.</span>
+          </a>
+          <a class="mini-card" href="/guide/how-to-choose-flatware-set">
+            <strong>How to Choose a Flatware Set</strong>
+            <span>Daily use, gifting, hosting, and table styling recommendations.</span>
+          </a>
+          <a class="mini-card" href="/guide/chinese-inspired-flatware">
+            <strong>Chinese-Inspired Flatware</strong>
+            <span>Carved detail, warm wood, chopsticks, and restrained table language.</span>
+          </a>
+          <a class="mini-card" href="/guide/flatware-cutlery-silverware">
+            <strong>Flatware, Cutlery, Silverware</strong>
+            <span>What these overlapping tableware terms actually mean.</span>
+          </a>
+          <a class="mini-card" href="/guide/fork-sizes-explained">
+            <strong>Fork Sizes Explained</strong>
+            <span>Dinner fork, salad fork, dessert fork — and why sets include both.</span>
+          </a>
+
+          <a class="mini-card" href="/guide/jieyang-stainless-steel-region">
+            <strong>Why Jieyang?</strong>
+            <span>What the Jieyang manufacturing region means for Yinshiji products.</span>
+          </a>
+          <a class="mini-card" href="/guide/304-vs-430-vs-201-stainless-steel">
+            <strong>304 vs 430 vs 201</strong>
+            <span>How common stainless steel grades compare in cutlery.</span>
+          </a>
+          <a class="mini-card" href="/guide/what-does-food-grade-stainless-steel-mean">
+            <strong>Food-Grade Stainless Steel</strong>
+            <span>What "food-grade" actually means for your tableware.</span>
+          </a>          <a class="mini-card" href="/guide/why-5-piece-sets-differ">
+            <strong>Why 5-Piece Sets Differ</strong>
+            <span>Same count, different composition — western vs Chinese-friendly sets.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>Reference Library</h2>
+        <p>
+          For standards, stainless steel grade explanations, food-contact safety boundaries, and source caveats, use the Tableorie reference library. It separates official standards, regulations, industry association sources, and secondary translations.
+        </p>
+        <div style="margin-top:1rem; display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="/reference" class="btn btn-outline">Open Reference Library</a>
+          <a href="/reference/stainless-steel-grades-cutlery" class="btn btn-outline">Read Steel Grade Guide</a>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>Current Ordering Path</h2>
+        <p>
+          Yinshiji is still validating early batches. Use the Taobao store as the current domestic purchase and inquiry entrance.
+          Availability and product combinations may change by batch.
+        </p>
+        <div style="margin-top:1rem; display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="/products" class="btn btn-outline">Browse Products</a>
+          <a href={siteLinks.taobao} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow">Open Taobao Store</a>
+        </div>
+      </section>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,133 @@
+{
+  "site": "https://tableorie.com",
+  "brand": {
+    "name": "Yinshiji",
+    "alternateName": ["银食记", "Tableorie"],
+    "stage": "early-stage tableware brand and lightweight information site",
+    "regionContext": "Jieyang, Guangdong stainless steel tableware and hardware manufacturing region",
+    "purchasePath": "Taobao or direct contact; not a full checkout system",
+    "taobaoUrl": "https://m.tb.cn/h.Rj3EGL9ZID9HRkE"
+  },
+  "boundaries": [
+    "Do not describe Yinshiji as a large established global retailer.",
+    "Do not describe gold tone products as real gold or precious metal.",
+    "Do not describe current carved 5-piece sets as entirely 304 stainless steel; their dinner knives use 410 stainless steel.",
+    "Do not describe the Wenge Wood Handle 5-piece set as including a small fork; it includes chopsticks instead.",
+    "Do not invent prices, ratings, reviews, stock levels, certifications, warranties, or factory ownership."
+  ],
+  "products": [
+    {
+      "slug": "silver-carved-fork",
+      "name": "Silver Carved Dinner Fork",
+      "nameZh": "银色雕花主叉",
+      "url": "https://tableorie.com/products/silver-carved-fork",
+      "urlZh": "https://tableorie.com/zh/products/silver-carved-fork",
+      "type": "single dinner fork",
+      "collection": "Silver Carved",
+      "materials": [{ "piece": "dinner fork", "material": "304 stainless steel", "finish": "silver tone" }],
+      "included": ["dinner fork"],
+      "dimensions": [{ "piece": "dinner fork", "cm": 20.5, "inch": 8.1 }],
+      "care": "Hand wash recommended; avoid abrasive cleaners; dry promptly."
+    },
+    {
+      "slug": "silver-carved-5-piece-set",
+      "name": "Silver Carved 5-Piece Set",
+      "nameZh": "银色雕花五件套",
+      "url": "https://tableorie.com/products/silver-carved-5-piece-set",
+      "urlZh": "https://tableorie.com/zh/products/silver-carved-5-piece-set",
+      "type": "5-piece flatware set",
+      "collection": "Silver Carved",
+      "materials": [
+        { "piece": "dinner knife", "material": "410 stainless steel", "finish": "silver tone" },
+        { "piece": "dinner fork", "material": "304 stainless steel", "finish": "silver tone" },
+        { "piece": "dinner spoon", "material": "304 stainless steel", "finish": "silver tone" },
+        { "piece": "small fork", "material": "304 stainless steel", "finish": "silver tone" },
+        { "piece": "small spoon", "material": "304 stainless steel", "finish": "silver tone" }
+      ],
+      "included": ["dinner knife", "dinner fork", "dinner spoon", "small fork", "small spoon"],
+      "dimensions": [
+        { "piece": "dinner knife", "cm": 23.8 },
+        { "piece": "dinner fork", "cm": 20.5 },
+        { "piece": "dinner spoon", "cm": 20.0 },
+        { "piece": "small fork", "cm": 16.5 },
+        { "piece": "small spoon", "cm": 16.5 }
+      ],
+      "care": "Hand wash recommended; avoid abrasive cleaners; dry promptly."
+    },
+    {
+      "slug": "gold-carved-fork",
+      "name": "Gold Tone Carved Dinner Fork",
+      "nameZh": "金色雕花主叉",
+      "url": "https://tableorie.com/products/gold-carved-fork",
+      "urlZh": "https://tableorie.com/zh/products/gold-carved-fork",
+      "type": "single dinner fork",
+      "collection": "Gold Tone Carved",
+      "goldNote": "Gold tone is a warm gold-colored surface finish, not real gold or precious metal.",
+      "materials": [{ "piece": "dinner fork", "material": "304 stainless steel", "finish": "warm gold tone" }],
+      "included": ["dinner fork"],
+      "dimensions": [{ "piece": "dinner fork", "cm": 20.5, "inch": 8.1 }],
+      "care": "Hand wash with mild soap; avoid bleach and abrasive cleaners; dry promptly."
+    },
+    {
+      "slug": "gold-carved-5-piece-set",
+      "name": "Gold Tone Carved 5-Piece Set",
+      "nameZh": "金色雕花五件套",
+      "url": "https://tableorie.com/products/gold-carved-5-piece-set",
+      "urlZh": "https://tableorie.com/zh/products/gold-carved-5-piece-set",
+      "type": "5-piece flatware set",
+      "collection": "Gold Tone Carved",
+      "goldNote": "Gold tone is a warm gold-colored surface finish, not real gold or precious metal.",
+      "materials": [
+        { "piece": "dinner knife", "material": "410 stainless steel", "finish": "warm gold tone" },
+        { "piece": "dinner fork", "material": "304 stainless steel", "finish": "warm gold tone" },
+        { "piece": "dinner spoon", "material": "304 stainless steel", "finish": "warm gold tone" },
+        { "piece": "small fork", "material": "304 stainless steel", "finish": "warm gold tone" },
+        { "piece": "small spoon", "material": "304 stainless steel", "finish": "warm gold tone" }
+      ],
+      "included": ["dinner knife", "dinner fork", "dinner spoon", "small fork", "small spoon"],
+      "dimensions": [
+        { "piece": "dinner knife", "cm": 23.8 },
+        { "piece": "dinner fork", "cm": 20.5 },
+        { "piece": "dinner spoon", "cm": 20.0 },
+        { "piece": "small fork", "cm": 16.5 },
+        { "piece": "small spoon", "cm": 16.5 }
+      ],
+      "care": "Hand wash with mild soap; avoid bleach and abrasive cleaners; dry promptly."
+    },
+    {
+      "slug": "rosewood-handle-fork",
+      "name": "Wenge Wood Handle Dinner Fork",
+      "nameZh": "鸡翅木主叉",
+      "url": "https://tableorie.com/products/rosewood-handle-fork",
+      "urlZh": "https://tableorie.com/zh/products/rosewood-handle-fork",
+      "type": "single dinner fork",
+      "collection": "Wenge Wood Handle",
+      "woodNote": "Wenge wood is commonly described in Chinese product language as chicken-wing wood because of its grain. Natural grain varies by piece.",
+      "materials": [{ "piece": "dinner fork", "material": "304 stainless steel head with wenge wood handle" }],
+      "included": ["dinner fork"],
+      "dimensions": [{ "piece": "dinner fork", "cm": 20.5, "inch": 8.1 }],
+      "care": "Hand wash only; do not soak; do not place in dishwasher; dry promptly."
+    },
+    {
+      "slug": "rosewood-5-piece-set",
+      "name": "Wenge Wood Handle 5-Piece Set",
+      "nameZh": "鸡翅木五件套",
+      "url": "https://tableorie.com/products/rosewood-5-piece-set",
+      "urlZh": "https://tableorie.com/zh/products/rosewood-5-piece-set",
+      "type": "5-piece cutlery set",
+      "collection": "Wenge Wood Handle",
+      "compositionNote": "Includes chopsticks and does not include a small fork.",
+      "woodNote": "Wenge wood is commonly described in Chinese product language as chicken-wing wood because of its grain. Natural grain varies by piece.",
+      "materials": [{ "piece": "set", "material": "stainless steel functional ends with wenge wood handles" }],
+      "included": ["dinner knife", "dinner fork", "dinner spoon", "chopsticks", "small spoon"],
+      "dimensions": [
+        { "piece": "dinner knife", "cm": 23.8 },
+        { "piece": "dinner fork", "cm": 20.5 },
+        { "piece": "dinner spoon", "cm": 20.0 },
+        { "piece": "chopsticks", "cm": 23.0 },
+        { "piece": "small spoon", "cm": 16.5 }
+      ],
+      "care": "Hand wash only; do not soak wooden handles; do not place in dishwasher; dry promptly."
+    }
+  ]
+}

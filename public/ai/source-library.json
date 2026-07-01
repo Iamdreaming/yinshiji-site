@@ -1,0 +1,152 @@
+{
+  "site": "https://tableorie.com",
+  "name": "Tableorie Stainless Steel Cutlery Reference Library",
+  "purpose": "Plain-language reference pages backed by cited sources. Separates official standards, regulations, industry sources, and secondary materials.",
+  "rules": [
+    "No fake certifications, test reports, or product endorsements disguised as research.",
+    "Each source is labeled by type so readers and AI systems know how much weight to give it.",
+    "Product-specific compliance claims require product-specific evidence."
+  ],
+  "sources": [
+    {
+      "id": "iso-8442",
+      "name": "ISO 8442-2:1997 — public record",
+      "org": "International Organization for Standardization",
+      "url": "https://www.iso.org/standard/23095.html",
+      "tier": "official-standard",
+      "region": "International"
+    },
+    {
+      "id": "fda-117",
+      "name": "21 CFR 117.40 — Equipment and utensils (FDA)",
+      "org": "U.S. eCFR / FDA",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-117/subpart-B/section-117.40",
+      "tier": "official-regulation",
+      "region": "United States"
+    },
+    {
+      "id": "eu-1935",
+      "name": "Regulation (EC) No 1935/2004",
+      "org": "European Union",
+      "url": "https://eur-lex.europa.eu/eli/reg/2004/1935/oj/eng",
+      "tier": "official-regulation",
+      "region": "European Union"
+    },
+    {
+      "id": "edqm-metals",
+      "name": "Metals and alloys used in food contact materials",
+      "org": "EDQM / Council of Europe",
+      "url": "https://www.edqm.eu/en/metals-and-alloys-used-in-food-contact-materials-and-articles",
+      "tier": "official-regulation",
+      "region": "Europe"
+    },
+    {
+      "id": "nhc-gb-4806",
+      "name": "GB 4806.9-2023 食品安全国家标准 食品接触用金属材料及制品",
+      "org": "National Health Commission of PRC",
+      "url": "https://www.nhc.gov.cn/wjw/c100175/202309/bb7158019984496ca14e51e41cc2d1c2.shtml",
+      "tier": "official-regulation",
+      "region": "China"
+    },
+    {
+      "id": "nickel-institute-fcm",
+      "name": "The role of nickel in Food Contact Materials",
+      "org": "Nickel Institute",
+      "url": "https://nickelinstitute.org/en/nickel-applications/food-contact-materials",
+      "tier": "industry-association",
+      "region": "International"
+    },
+    {
+      "id": "bssa-cutlery-grades",
+      "name": "Cutlery stainless steel grades 18/8, 18/10, 18/0",
+      "org": "British Stainless Steel Association",
+      "url": "https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades",
+      "tier": "industry-association",
+      "region": "United Kingdom"
+    },
+    {
+      "id": "worldstainless-food-beverage",
+      "name": "Stainless Steel in the Food and Beverage Industry",
+      "org": "Worldstainless / Euro Inox",
+      "url": "https://worldstainless.org/wp-content/uploads/2025/02/StSt_in_FoodandBeverage_EN.pdf",
+      "tier": "industry-association",
+      "region": "International"
+    },
+    {
+      "id": "nickel-fact-sheet-4",
+      "name": "Human Health Fact Sheet 4: Nickel and Metallic Food Contact Material",
+      "org": "Nickel Institute",
+      "url": "https://nickelinstitute.org/en/science/human-health-fact-sheets/fact-sheet-4-nickel-and-metallic-food-contact-material",
+      "tier": "industry-association",
+      "region": "International"
+    }
+  ],
+  "articles": [
+    {
+      "slug": "stainless-steel-cutlery-standards",
+      "title": "Who Decides What Makes a Safe Stainless Steel Fork?",
+      "zh": "一把不锈钢叉子到底谁说了算？",
+      "url": "https://tableorie.com/reference/stainless-steel-cutlery-standards"
+    },
+    {
+      "slug": "stainless-steel-grades-cutlery",
+      "title": "304 vs 410 vs 430: The Stainless Steel Grades You Actually See in Cutlery",
+      "zh": "304、410、430：你餐具上那些数字到底代表什么",
+      "url": "https://tableorie.com/reference/stainless-steel-grades-cutlery"
+    },
+    {
+      "slug": "food-contact-safety-migration",
+      "title": "Does Food Grade Stainless Steel Actually Mean Something Specific?",
+      "zh": "'食品级'不锈钢到底是不是一个明确的概念",
+      "url": "https://tableorie.com/reference/food-contact-safety-migration"
+    },
+    {
+      "slug": "passive-layer-explained",
+      "title": "The Passive Layer: Why Stainless Steel Doesn't Rust (Usually)",
+      "zh": "钝化膜：不锈钢为什么通常不生锈（但也会出问题）",
+      "url": "https://tableorie.com/reference/passive-layer-explained"
+    },
+    {
+      "slug": "why-stainless-steel-can-rust",
+      "title": "Why Stainless Steel Can Still Rust — and How to Prevent It",
+      "zh": "不锈钢为什么也会生锈——以及怎么预防",
+      "url": "https://tableorie.com/reference/why-stainless-steel-can-rust"
+    },
+    {
+      "slug": "magnetism-in-stainless-steel",
+      "title": "Is Your Fork Magnetic? What Magnetism Does and Does Not Tell You About Stainless Steel",
+      "zh": "叉子带磁正常吗？磁性到底能不能判断不锈钢好坏",
+      "url": "https://tableorie.com/reference/magnetism-in-stainless-steel"
+    },
+    {
+      "slug": "cutlery-surface-finishes",
+      "title": "Mirror Polish, Brushed, PVD: How Surface Finish Affects Your Cutlery",
+      "zh": "镜面、拉丝、PVD：表面处理怎么影响你的餐具",
+      "url": "https://tableorie.com/reference/cutlery-surface-finishes"
+    },
+    {
+      "slug": "jieyang-stainless-industry",
+      "title": "Jieyang: The City Behind Much of the World's Stainless Steel Cutlery",
+      "zh": "揭阳：全球大量不锈钢餐具背后的城市",
+      "url": "https://tableorie.com/reference/jieyang-stainless-industry"
+    },
+    {
+      "slug": "dishwasher-and-cutlery",
+      "title": "Can Your Stainless Steel Cutlery Go in the Dishwasher? What Actually Happens",
+      "zh": "不锈钢餐具能进洗碗机吗？实际会发生什么",
+      "url": "https://tableorie.com/reference/dishwasher-and-cutlery"
+    },
+    {
+      "slug": "surgical-grade-stainless",
+      "title": "What Does \"Surgical Grade Stainless Steel\" Actually Mean?",
+      "zh": "\"手术级不锈钢\"到底是什么",
+      "url": "https://tableorie.com/reference/surgical-grade-stainless"
+    },
+    {
+      "slug": "nickel-allergy-cutlery",
+      "title": "Nickel Allergy, Nickel Release, and Stainless Steel Cutlery",
+      "zh": "镍过敏、镍释放与不锈钢餐具——你需要知道什么",
+      "url": "https://tableorie.com/reference/nickel-allergy-cutlery"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { productsZh } from '../../../data/products.zh';
+
+const alternateLinks = [
+  { lang: 'en', href: '/products' },
+  { lang: 'zh-CN', href: '/zh/products' },
+  { lang: 'x-default', href: '/products' },
+];
+
+const navItems = [
+  { href: '/zh/', label: '首页' },
+  { href: '/zh/products', label: '产品' },
+  { href: '/zh/guide', label: '选购指南' },
+  { href: '/zh/reference', label: '资料库' },
+  { href: '/zh/about', label: '关于银食记' },
+  { href: '/zh/materials-care', label: '材质与护理' },
+  { href: '/zh/faq', label: '常见问题' },
+];
+---
+
+<BaseLayout
+  title="产品列表｜银食记"
+  description="查看银食记当前产品：银色雕花、金色雕花、鸡翅木系列，包括单支与五件套配置。"
+  canonical="/zh/products"
+  ogType="website"
+  lang="zh-CN"
+  homeUrl="/zh/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+  footerNote="当前为早期测款与品牌预备阶段，库存、价格与购买路径以淘宝或联系沟通为准。"
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <h1 class="section-title">全部产品</h1>
+      <p class="section-subtitle">
+        当前站点优先呈现银食记第一阶段的核心产品结构：银色雕花、金色雕花、鸡翅木系列，
+        同时覆盖单支与五件套两种展示逻辑。
+      </p>
+
+      <div class="product-grid">
+        {productsZh.map((p) => (
+          <div class="product-card">
+            <div class="product-card-img">
+              {p.imagePlaceholder.startsWith('/images/products/') ? (
+                <img src={p.imagePlaceholder} alt={`${p.name} - 银食记`} loading="eager" decoding="async" width="1254" height="1254" />
+              ) : (
+                <span style="opacity: 0.4;">[ {p.name} ]</span>
+              )}
+            </div>
+            <div class="product-card-body">
+              <span class="tag">{p.category === 'set' ? '五件套' : '单支'}</span>
+              <span class="tag" style="background:var(--color-accent); color:#fff;">
+                {p.collection === 'silver-carved' ? '银色雕花' : p.collection === 'gold-carved' ? '金色雕花' : '鸡翅木'}
+              </span>
+              <h3>{p.name}</h3>
+              <p>{p.material}</p>
+              <p style="font-size:0.85rem;">组成：{p.pieces.join('、')}</p>
+              <div class="product-card-actions">
+                <a href={`/zh/products/${p.slug}`} class="btn btn-outline" style="font-size:0.85rem; padding:0.4rem 1.2rem;">
+                  查看详情
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

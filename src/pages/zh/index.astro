@@ -1,0 +1,248 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { productsZh, collectionsZh } from '../../data/products.zh';
+import { siteLinks } from '../../data/site-links';
+
+const alternateLinks = [
+  { lang: 'en', href: '/' },
+  { lang: 'zh-CN', href: '/zh/' },
+  { lang: 'x-default', href: '/' },
+];
+
+const navItems = [
+  { href: '/zh/', label: '首页' },
+  { href: '/zh/products', label: '产品' },
+  { href: '/zh/guide', label: '选购指南' },
+  { href: '/zh/reference', label: '资料库' },
+  { href: '/zh/about', label: '关于银食记' },
+  { href: '/zh/materials-care', label: '材质与护理' },
+  { href: '/zh/faq', label: '常见问题' },
+];
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: '银食记',
+  alternateName: ['Yinshiji', 'Tableorie'],
+  url: 'https://tableorie.com/zh/',
+  description: '早期中式灵感餐具品牌，聚焦不锈钢雕花餐具、鸡翅木柄餐具和揭阳供应链审美筛选。',
+  areaServed: 'China',
+  knowsAbout: ['不锈钢餐具', '304 不锈钢餐具', '410 不锈钢餐刀', '鸡翅木餐具', '中式灵感餐具'],
+};
+
+const webSiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: '银食记 / Yinshiji',
+  url: 'https://tableorie.com/zh/',
+  inLanguage: 'zh-CN',
+  description: '银食记餐具品牌、产品、材质护理和选购指南站。',
+};
+---
+
+<BaseLayout
+  title="银食记｜中式灵感餐具与不锈钢刀叉勺"
+  description="银食记是一家早期测试中的轻量餐具品牌站，聚焦银色雕花、金色雕花、鸡翅木系列，以中式灵感、不锈钢材质和真实产品信息为核心。"
+  ogType="website"
+  lang="zh-CN"
+  homeUrl="/zh/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+  footerNote="库存、价格与购买以淘宝或直接沟通为准。"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(webSiteSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-surface">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">揭阳供应链审美筛选</div>
+            <h1>让餐具回到餐桌本身</h1>
+            <p>
+              银食记想做的不是夸张的轻奢故事，而是把有雕花细节、有材质温度、能真正日常使用的餐具，
+              更克制地带回到家里的餐桌上。
+            </p>
+            <div class="hero-cta">
+              <a href="/zh/products" class="btn btn-primary">查看产品</a>
+              <a href="/zh/guide" class="btn btn-outline">查看选购指南</a>
+              <a href={siteLinks.taobao} class="btn btn-outline" target="_blank" rel="noopener noreferrer nofollow">淘宝店购买 / 咨询</a>
+              <a href="/zh/about" class="btn btn-outline">了解品牌</a>
+            </div>
+            <div class="hero-meta">
+              <div class="hero-meta-card">
+                <strong>材质</strong>
+                <span>叉勺 304 不锈钢、雕花套装餐刀 410 不锈钢、金色表面处理与鸡翅木手柄。</span>
+              </div>
+              <div class="hero-meta-card">
+                <strong>阶段</strong>
+                <span>先做真实产品说明，不做虚假购物车和夸张承诺。</span>
+              </div>
+              <div class="hero-meta-card">
+                <strong>用途</strong>
+                <span>覆盖单支与五件套，服务日常餐桌。</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-visual-card">
+              <img src="/images/products/collection-gold-carved.webp" alt="" loading="eager" decoding="async" width="1254" height="1254" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section content-band">
+    <div class="container">
+      <div class="statement-panel">
+        <div class="eyebrow">银食记</div>
+        <h2 class="section-title">中端质感餐具，不装贵也不将就。</h2>
+        <p>
+          从揭阳不锈钢餐具源头筛选有材质、有细节、有日常实用性的餐具。
+          每一条系列都经过材质对比和选择，不靠夸张故事支撑价格，也不靠低端白牌逻辑走量。
+          这里的产品信息是真实的：材质、组成、护理、当前批次状态，都会说清楚。
+        </p>
+        <div class="mini-card-grid">
+          <div class="mini-card">
+            <strong>源头筛选</strong>
+            <span>从揭阳不锈钢餐具产业带筛选靠谱品类。比起直接生产，我们更重视材质对比和组件搭配。</span>
+          </div>
+          <div class="mini-card">
+            <strong>材质优先</strong>
+            <span>按 SKU 写清材质：雕花五件套餐刀为 410 不锈钢，叉勺为 304 不锈钢；金色与鸡翅木护理也会明确说明。</span>
+          </div>
+          <div class="mini-card">
+            <strong>批次供应</strong>
+            <span>产品按批次生产和供应。不同批次、颜色和系列的具体库存状态，以淘宝页面或直接沟通为准。</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">三条系列怎么选</h2>
+      <p class="section-subtitle">
+        三条系列不是简单换颜色，而是对应不同的餐桌气质和使用场景。
+      </p>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>系列</th>
+            <th>餐桌气质</th>
+            <th>更适合</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>银色雕花</strong></td>
+            <td>干净、克制，有细节但不厚重。</td>
+            <td>日常精致餐桌、第一套餐具、偏素雅空间。</td>
+          </tr>
+          <tr>
+            <td><strong>金色雕花</strong></td>
+            <td>更暖、更醒目，更有聚餐氛围。</td>
+            <td>礼赠、节日餐桌、暖光和木质桌面。</td>
+          </tr>
+          <tr>
+            <td><strong>鸡翅木</strong></td>
+            <td>自然、温润，更贴近日常中式家庭餐桌。</td>
+            <td>一人食、办公室带饭、碗筷和刀叉勺混合使用。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section" style="background: #fff;">
+    <div class="container">
+      <h2 class="section-title">三条系列</h2>
+      <p class="section-subtitle">
+        银色雕花、金色雕花、鸡翅木，各自对应不同的餐桌气质，但都遵守同一套克制、耐看、好用的原则。
+      </p>
+      <div class="product-grid">
+        {collectionsZh.map((col) => (
+          <div class="product-card">
+            <div class="product-card-img">
+              <img src={col.image} alt={`${col.name}宣传图`} loading="eager" decoding="async" width="1254" height="1254" />
+            </div>
+            <div class="product-card-body">
+              <h3>{col.name}</h3>
+              <p>{col.description}</p>
+              <div class="product-card-actions">
+                <a href="/zh/products" class="btn btn-outline" style="font-size:0.85rem; padding:0.4rem 1.2rem;">
+                  查看系列
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">当前主推产品</h2>
+      <p class="section-subtitle">
+        当前优先展示品牌起步阶段的核心产品，完整套装与单支产品并行，后续将逐步扩展。
+      </p>
+      <div class="featured-grid">
+        {productsZh.slice(0, 4).map((p) => (
+          <div class="product-card">
+            <div class="product-card-img">
+              {p.imagePlaceholder.startsWith('/images/products/') ? (
+                <img src={p.imagePlaceholder} alt={`${p.name} - 银食记`} loading="eager" decoding="async" width="1254" height="1254" />
+              ) : (
+                <span style="opacity: 0.4;">[ {p.name} ]</span>
+              )}
+            </div>
+            <div class="product-card-body">
+              <span class="tag">{p.category === 'set' ? '五件套' : '单支'}</span>
+              <h3>{p.name}</h3>
+              <p>{p.tagline}</p>
+              <div class="product-card-actions">
+                <a href={`/zh/products/${p.slug}`} class="btn btn-outline" style="font-size:0.85rem; padding:0.4rem 1.2rem;">
+                  查看详情
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div style="text-align:center; margin-top:2rem;">
+        <a href="/zh/products" class="btn btn-primary">查看全部产品</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: #fff;">
+    <div class="container">
+      <h2 class="section-title">为什么是银食记</h2>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <h3>中式细节</h3>
+          <p>雕花不是为了堆砌繁复，而是让餐具在日常场景里也有一点中式纹样的克制表达。</p>
+        </div>
+        <div class="trust-card">
+          <h3>安心材质</h3>
+          <p>按 SKU 标明真实钢种与护理方式，强调日常使用的耐久、食品接触安全和可持续维护。</p>
+        </div>
+        <div class="trust-card">
+          <h3>靠近揭阳供应链</h3>
+          <p>扎根揭阳与广东本地不锈钢餐具产业带，更接近材料、表面处理与打样环节。</p>
+        </div>
+        <div class="trust-card">
+          <h3>批次供应</h3>
+          <p>产品按批次生产和供应。每个产品页写明材质、组成和护理方式，当前批次状态以咨询确认或淘宝页面为准。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { referenceArticles } from '../../data/reference-articles';
+
+const alternateLinks = [
+  { lang: 'en', href: '/reference' },
+  { lang: 'zh-CN', href: '/zh/reference' },
+  { lang: 'x-default', href: '/reference' },
+];
+
+const navItems = [
+  { href: '/zh/', label: '首页' },
+  { href: '/zh/products', label: '产品' },
+  { href: '/zh/guide', label: '选购指南' },
+  { href: '/zh/reference', label: '资料库' },
+  { href: '/zh/about', label: '关于银食记' },
+  { href: '/zh/materials-care', label: '材质与护理' },
+  { href: '/zh/faq', label: '常见问题' },
+];
+---
+
+<BaseLayout
+  title="不锈钢餐具资料库｜Tableorie"
+  description="关于不锈钢餐具标准、钢种和食品接触安全的白话资料。写给人类读，每个结论都有来源可查。"
+  canonical="/zh/reference"
+  ogType="website"
+  lang="zh-CN"
+  homeUrl="/zh/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+  footerNote="资料库内容用于解释标准和材质，不等于具体产品认证声明。"
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <p class="eyebrow">资料库</p>
+      <h1 class="section-title">不锈钢餐具资料库</h1>
+      <p class="section-subtitle">
+        标准、钢种、食品接触安全——每篇都有来源可查。
+      </p>
+
+      <section class="statement-panel" style="margin-top:2rem;">
+        <p style="font-size:1rem;">
+          每篇资料页末尾列出参考来源。官方标准、法规、行业协会报告分别标注，方便你判断可信度。
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2>资料页</h2>
+        <div class="mini-card-grid">
+          {referenceArticles.map((article) => (
+            <a class="mini-card" href={`/zh/reference/${article.slug}`}>
+              <strong>{article.titleZh}</strong>
+              <span>{article.descriptionZh}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    </div>
+  </section>
+</BaseLayout>

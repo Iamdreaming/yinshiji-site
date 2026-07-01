@@ -1,0 +1,20 @@
+/*
+  Link: </llms.txt>; rel="service-doc"; type="text/markdown", </ai/index.md>; rel="service-doc"; type="text/markdown", </.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json", </.well-known/agent-skills/index.json>; rel="service-desc"; type="application/json"
+
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+/.well-known/api-catalog
+  Content-Type: application/linkset+json; charset=utf-8
+
+/.well-known/agent-skills/index.json
+  Content-Type: application/json; charset=utf-8
+
+/ai/product-feed.json
+  Content-Type: application/json; charset=utf-8
+
+/auth.md
+  Content-Type: text/markdown; charset=utf-8

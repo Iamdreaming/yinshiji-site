@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { referenceArticles } from '../../data/reference-articles';
+
+export function getStaticPaths() {
+  return referenceArticles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const site = Astro.site ?? new URL('https://tableorie.com');
+const pagePath = `/reference/${article.slug}`;
+const pageUrl = new URL(pagePath, site).href;
+
+const alternateLinks = [
+  { lang: 'en', href: pagePath },
+  { lang: 'zh-CN', href: `/zh/reference/${article.slug}` },
+  { lang: 'x-default', href: pagePath },
+];
+
+const navItems = [
+  { href: '/', label: 'Home' },
+  { href: '/products', label: 'Products' },
+  { href: '/guide', label: 'Guide' },
+  { href: '/reference', label: 'Reference' },
+  { href: '/about', label: 'About' },
+  { href: '/materials-care', label: 'Materials & Care' },
+  { href: '/faq', label: 'FAQ' },
+];
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: article.title,
+  description: article.description,
+  url: pageUrl,
+  mainEntityOfPage: pageUrl,
+  author: { '@type': 'Organization', name: 'Yinshiji / Tableorie' },
+  publisher: { '@type': 'Organization', name: 'Yinshiji / Tableorie', url: new URL('/', site).href },
+  inLanguage: 'en',
+  about: ['stainless steel cutlery', 'food-contact materials', 'tableware standards'],
+  citation: article.sources.map((s) => s.url),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', site).href },
+    { '@type': 'ListItem', position: 2, name: 'Reference', item: new URL('/reference', site).href },
+    { '@type': 'ListItem', position: 3, name: article.title, item: pageUrl },
+  ],
+};
+---
+
+<BaseLayout
+  title={`${article.title} – Tableorie Reference`}
+  description={article.description}
+  canonical={pagePath}
+  ogType="article"
+  lang="en"
+  homeUrl="/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <nav style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:2rem;">
+        <a href="/reference">Reference</a>
+        <span style="margin:0 0.5rem;">/</span>
+        <span>{article.eyebrow}</span>
+      </nav>
+
+      <article class="prose" style="max-width:760px; margin:0 auto;">
+        <p class="eyebrow">{article.eyebrow}</p>
+        <h1 style="font-family:var(--font-serif); font-size:clamp(2rem, 5vw, 3.4rem); line-height:1.08; margin:0.4rem 0 1.2rem;">
+          {article.title}
+        </h1>
+        <p style="font-size:1.12rem; color:var(--color-text-muted); line-height:1.7; margin-bottom:2rem;">
+          {article.intro}
+        </p>
+
+        {article.sections.map((section) => (
+          <section class="detail-section">
+            <h2 style="font-size:1.3rem;">{section.heading}</h2>
+            {section.paragraphs.map((pText) => <p>{pText}</p>)}
+            {section.bullets && (
+              <ul class="feature-list" style="margin-top:0.8rem;">
+                {section.bullets.map((b) => <li>{b}</li>)}
+              </ul>
+            )}
+          </section>
+        ))}
+
+        <section class="detail-section" style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--color-border);">
+          <h2 style="font-size:1.1rem; color:var(--color-text-muted);">Sources</h2>
+          <ol style="font-size:0.85rem; color:var(--color-text-muted); line-height:1.6;">
+            {article.sources.map((source) => (
+              <li style="margin-bottom:0.5rem;">
+                <a href={source.url} target="_blank" rel="noopener noreferrer">{source.title}</a>
+                <br /><span>{source.organization}</span>
+                <span> · </span><span>{source.sense}</span>
+                {source.note && <span> · <em>{source.note}</em></span>}
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section class="detail-section" style="margin-top:2rem;">
+          <div style="display:flex; gap:0.8rem; flex-wrap:wrap;">
+            {article.related.map((slug) => {
+              const relatedArticle = referenceArticles.find((item) => item.slug === slug);
+              return relatedArticle ? <a href={`/reference/${relatedArticle.slug}`} class="btn btn-outline">{relatedArticle.title}</a> : null;
+            })}
+            <a href="/reference" class="btn btn-outline">All reference pages</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </section>
+</BaseLayout>

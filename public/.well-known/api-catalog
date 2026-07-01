@@ -1,0 +1,46 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://tableorie.com/ai/product-feed.json",
+      "service-desc": [
+        {
+          "href": "https://tableorie.com/ai/product-feed.json",
+          "type": "application/json"
+        },
+        {
+          "href": "https://tableorie.com/ai/source-library.json",
+          "type": "application/json",
+          "title": "Reference source library feed"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://tableorie.com/ai/index.md",
+          "type": "text/markdown",
+          "title": "AI content index"
+        },
+        {
+          "href": "https://tableorie.com/ai/products.md",
+          "type": "text/markdown",
+          "title": "Product facts"
+        },
+        {
+          "href": "https://tableorie.com/ai/materials-care.md",
+          "type": "text/markdown",
+          "title": "Materials and care facts"
+        },
+        {
+          "href": "https://tableorie.com/ai/reference.md",
+          "type": "text/markdown",
+          "title": "Stainless steel cutlery reference library"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://tableorie.com/llms.txt",
+          "type": "text/markdown"
+        }
+      ]
+    }
+  ]
+}

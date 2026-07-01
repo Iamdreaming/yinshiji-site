@@ -1,0 +1,170 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqs = [
+  {
+    '@type': 'Question',
+    name: 'What is the best way to clean stainless steel cutlery?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Hand washing with warm water and mild soap is the gentlest option. Silver-tone pieces can tolerate more regular daily use, but abrasive scrubbers and harsh chemicals should always be avoided.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'Can wenge wood handle cutlery go in the dishwasher?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'No. Wenge wood handle pieces should be hand washed only. Long exposure to hot water and dishwasher cycles can dry, warp, or damage the wooden handle over time.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'Is the gold tone made of real gold?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: "No. The 'silver' and 'gold' refer to the tone of the finish — silver tone and gold tone — not the actual metal. For carved 5-piece sets, the knife uses 410 stainless steel while the fork and spoon pieces use 304 stainless steel; see each product page for SKU details.",
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'What is 304 stainless steel?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: '304 stainless steel is a food-grade alloy containing 18% chromium and 8% nickel. It is highly resistant to rust, corrosion, and staining — making it the industry standard for quality cutlery and kitchenware.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'How should I care for gold-tone cutlery?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Gold-tone pieces should be hand washed with mild soap and dried immediately. Avoid soaking, bleach, and abrasive cleaners to help preserve the finish.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'How often should I oil wooden handles?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'If your wenge wood handles begin to look dry, a small amount of food-safe mineral oil can be applied occasionally. This is a maintenance step, not something needed after every wash.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'Does stainless steel cutlery need to be dried right away?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Yes. Drying promptly helps maintain surface clarity and reduces water spotting, especially on polished finishes and decorative details.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'Is Yinshiji cutlery suitable for daily use?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Absolutely. Yinshiji stainless steel pieces are designed for daily use. Product pages list the exact grade by SKU — including carved-set knives made with 410 stainless steel and fork/spoon pieces made with 304 stainless steel.',
+    },
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs,
+};
+
+const alternateLinks = [
+  { lang: 'en', href: '/materials-care' },
+  { lang: 'zh-CN', href: '/zh/materials-care' },
+  { lang: 'x-default', href: '/materials-care' },
+];
+
+const navItems = [
+  { href: '/', label: 'Home' },
+  { href: '/products', label: 'Products' },
+  { href: '/guide', label: 'Guide' },
+  { href: '/reference', label: 'Reference' },
+  { href: '/about', label: 'About' },
+  { href: '/materials-care', label: 'Materials & Care' },
+  { href: '/faq', label: 'FAQ' },
+];
+---
+
+<BaseLayout
+  title="Materials & Care – Yinshiji | Stainless Steel & Wenge Wood Cutlery Guide"
+  description="Learn about the materials and proper care for Yinshiji cutlery. Guide to stainless steel grades, silver tone and gold tone finishes, wenge wood handles, and maintenance best practices."
+  ogType="website"
+  lang="en"
+  homeUrl="/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <h1 class="section-title">Materials &amp; Care</h1>
+      <div class="prose">
+        <p>
+          Good tableware should not only look right on the table — it should also hold up in real life.
+          This guide explains how we think about stainless steel grades, gold-tone finishes, and wenge wood
+          handles, plus the simple care habits that help each piece last longer.
+        </p>
+
+        <h2>Stainless Steel Grades</h2>
+        <p>
+          Yinshiji uses stainless steel according to the product structure. Fork and spoon pieces in the carved
+          collections use <strong>304 stainless steel</strong>, while the carved-set dinner knife uses
+          <strong>410 stainless steel</strong>. Each product page lists the exact material for that SKU.
+          304 is widely used for food-contact cutlery because it resists corrosion well and holds up to daily use. 410 is
+          used for the carved-set knives because knife hardness and blade structure are different from
+          forks and spoons.
+        </p>
+
+        <h2>Silver Tone &amp; Gold Tone</h2>
+        <p>
+          The silver and gold collections are both stainless steel at their core. The difference is the
+          surface presentation.
+        </p>
+        <p>
+          <strong>Silver tone</strong> is the most straightforward option for daily use: cleaner,
+          quieter, easier to maintain, and visually closer to the natural look of polished steel.
+        </p>
+        <p>
+          <strong>Gold tone</strong> is a warm surface finish over stainless steel. It is used for color
+          and atmosphere, not to imitate precious metal. For that reason, it should be treated more
+          gently than silver tone pieces.
+        </p>
+
+        <h2>Wenge Wood Handles</h2>
+        <p>
+          Our wenge wood handle pieces combine stainless steel working ends with a natural wood grip.
+          The idea is to make the fork feel warmer in hand — less cold metal, more natural grip.
+        </p>
+        <p>
+          Because wood is a natural material, grain and tone will vary slightly from piece to piece.
+          That variation is part of the character of the product, not a defect.
+        </p>
+
+        <h2>Daily Care Principles</h2>
+        <ul>
+          <li>Wash with mild soap and warm water.</li>
+          <li>Dry soon after washing to reduce spots and keep the finish clearer.</li>
+          <li>Avoid bleach, harsh acids, and abrasive scrubbers.</li>
+          <li>Gold-tone pieces should be hand washed for better finish longevity.</li>
+          <li>Wenge wood handle pieces should never be soaked or put in a dishwasher.</li>
+        </ul>
+
+        <h2>Why This Matters</h2>
+        <p>
+          Yinshiji is rooted in Jieyang, Guangdong, where stainless steel manufacturing is part of the local industry.
+          Being close to that supply chain means we can be more specific about materials and care —
+          things we prefer to say honestly rather than gloss over.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,164 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const faqsZh = [
+  {
+    '@type': 'Question',
+    name: '不锈钢餐具日常怎么清洗更稳妥？',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: '使用温水和中性清洁剂手洗是最稳妥的方式。银色调产品更适合高频日常使用，但依然建议避免钢丝球、漂白剂和强腐蚀性清洁剂。',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: '鸡翅木手柄可以进洗碗机吗？',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: '不建议。鸡翅木手柄产品应以手洗为主，长时间高温水流和洗碗机循环可能让木柄变干、变形或影响后续使用状态。',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: '金色是不是纯金或镀真金？',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: '不是。金色指暖金色表面处理，不是纯金、真金或贵金属镀层。当前雕花五件套中，餐刀为 410 不锈钢，主叉、主勺、小叉、小勺为 304 不锈钢；具体以各 SKU 页面为准。',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: '304 不锈钢为什么常被用于餐具？',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: '304 不锈钢兼顾食品接触安全、耐腐蚀和日常耐用性，是常见的优先餐具材料之一。相比更低规格的不锈钢，它在长期使用中的稳定性通常更好。',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: '金色餐具应该怎么护理？',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: '建议手洗并及时擦干，避免长时间浸泡、漂白剂和强摩擦清洁工具，以减少表面状态受损的风险。',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: '木柄要经常上油吗？',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: '不需要频繁处理。若木柄明显发干，可少量使用食品级木器保养油做基础养护，但不必每次清洗后都上油。',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: '清洗后是否要尽快擦干？',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: '建议尽快擦干。这样能减少水痕，也有助于保持表面反光和雕花细节的清爽状态。',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: '银食记的餐具适合日常使用吗？',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: '适合。银食记不锈钢餐具本身就是围绕日常餐桌使用来选择的，但不同钢种、表面处理和木柄材质仍需要对应的护理方式。',
+    },
+  },
+];
+
+const faqSchemaZh = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqsZh,
+};
+
+const alternateLinks = [
+  { lang: 'en', href: '/materials-care' },
+  { lang: 'zh-CN', href: '/zh/materials-care' },
+  { lang: 'x-default', href: '/materials-care' },
+];
+
+const navItems = [
+  { href: '/zh/', label: '首页' },
+  { href: '/zh/products', label: '产品' },
+  { href: '/zh/guide', label: '选购指南' },
+  { href: '/zh/reference', label: '资料库' },
+  { href: '/zh/about', label: '关于银食记' },
+  { href: '/zh/materials-care', label: '材质与护理' },
+  { href: '/zh/faq', label: '常见问题' },
+];
+---
+
+<BaseLayout
+  title="材质与护理｜银食记"
+  description="了解银食记餐具的材质逻辑与护理方式：304/410 不锈钢、金色表面处理、鸡翅木手柄，以及更适合日常使用的保养建议。"
+  ogType="website"
+  lang="zh-CN"
+  homeUrl="/zh/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+  footerNote="当前批次 — 库存、价格与购买以淘宝或直接沟通为准。"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchemaZh)} />
+  </Fragment>
+
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <h1 class="section-title">材质与护理</h1>
+      <div class="prose">
+        <p>
+          一套餐具好不好，不只看摆在桌上的瞬间，也要看它在真实生活里能否经得起使用。
+          这页集中说明银食记当前对不锈钢钢种、金色表面处理、鸡翅木手柄以及日常护理方式的理解。
+        </p>
+
+        <h2>不锈钢钢种</h2>
+        <p>
+          银食记按产品结构标明具体钢种。当前雕花五件套中，餐刀为 <strong>410 不锈钢</strong>，
+          主叉、主勺、小叉、小勺为 <strong>304 不锈钢</strong>。每个 SKU 页面会写清对应材质。
+        </p>
+        <p>
+          我们更关注材质在实际餐桌上的表现：叉勺部分强调耐腐蚀和日常食品接触稳定性，餐刀部分也要考虑刀具结构与硬度需求。把这些差异写清楚，比笼统说“全 304”更重要。
+        </p>
+
+        <h2>银色调与金色调</h2>
+        <p>
+          银色系列和金色系列的核心材质都还是不锈钢，差别主要在表面视觉表达。
+        </p>
+        <p>
+          <strong>银色调</strong> 更安静、也更适合高频日常使用；
+          <strong>金色调</strong> 更偏氛围感和礼赠感，但护理上需要更温和一些。
+        </p>
+        <p>
+          这里的“金色”是暖金色调处理，不是真金，也不应该被描述成贵金属镀层。
+        </p>
+
+        <h2>鸡翅木手柄</h2>
+        <p>
+          鸡翅木系列的重点，不只是视觉上的木与金属对比，更在于握持时的温润感。
+          它更适合偏生活感、偏新中式气质的餐桌。
+        </p>
+        <p>
+          木材是天然材料，纹理、深浅和轻微差异都属于正常现象，不应被视为瑕疵。
+        </p>
+
+        <h2>日常护理原则</h2>
+        <ul>
+          <li>用温水和中性清洁剂清洗即可。</li>
+          <li>洗后尽快擦干，减少水痕与表面状态变化。</li>
+          <li>避免钢丝球、漂白剂、强酸碱清洁剂。</li>
+          <li>金色调更建议手洗。</li>
+          <li>鸡翅木手柄和筷子不要长时间浸泡，也不建议进洗碗机。</li>
+        </ul>
+
+        <h2>为什么这件事值得认真写清楚</h2>
+        <p>
+          银食记扎根揭阳与广东本地不锈钢餐具产业带，离供应链更近，也就更应该对材质、表面处理和日常维护说得更诚实。
+          与其许诺“完全免维护”，不如把该怎么用、怎么洗、怎么保存，直接讲清楚。
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

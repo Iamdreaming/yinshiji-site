@@ -1,0 +1,279 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { products } from '../../data/products';
+import { siteLinks } from '../../data/site-links';
+
+export function getStaticPaths() {
+  return products.map((p) => ({
+    params: { slug: p.slug },
+    props: { product: p },
+  }));
+}
+
+const { product } = Astro.props;
+const site = Astro.site ?? new URL('https://tableorie.com');
+const productUrl = new URL(`/products/${product.slug}`, site).href;
+const productImage = new URL(product.imagePlaceholder, site).href;
+
+const collectionNames: Record<string, string> = {
+  'silver-carved': 'Silver Carved Collection',
+  'gold-carved': 'Gold Tone Carved Collection',
+  'rosewood-handle': 'Wenge Wood Handle Collection',
+};
+
+const collectionComparison = [
+  {
+    name: 'Silver Carved',
+    look: 'Clean, classic, detailed',
+    bestFor: 'Daily refined table, first full set, neutral settings',
+  },
+  {
+    name: 'Gold Tone Carved',
+    look: 'Warm, decorative, more eye-catching',
+    bestFor: 'Hosting, gifting, festive meals, warm-toned tables',
+  },
+  {
+    name: 'Wenge Wood Handle',
+    look: 'Natural, tactile, Chinese-Western everyday use',
+    bestFor: 'One-person dining, home meals, bowls, chopsticks, casual tables',
+  },
+];
+
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: product.name,
+  sku: product.slug,
+  brand: { '@type': 'Brand', name: 'Yinshiji' },
+  description: product.description,
+  material: product.material,
+  category: product.category === 'set' ? 'Flatware set' : 'Flatware single piece',
+  image: [productImage],
+  url: productUrl,
+  offers: {
+    '@type': 'Offer',
+    url: productUrl,
+    priceCurrency: 'CNY',
+    price: product.price,
+    availability: 'https://schema.org/InStock',
+    seller: { '@type': 'Organization', name: 'Yinshiji' },
+  },
+  additionalProperty: product.specs.map((item) => ({
+    '@type': 'PropertyValue',
+    name: item.label,
+    value: item.value,
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: new URL('/', site).href },
+    { '@type': 'ListItem', position: 2, name: 'Products', item: new URL('/products', site).href },
+    { '@type': 'ListItem', position: 3, name: product.name, item: productUrl },
+  ],
+};
+
+// Product-specific FAQ — dynamically generated from product data
+const isWenge = product.collection === 'rosewood-handle';
+const isGold = product.collection === 'gold-carved';
+const faqEntries: { q: string; a: string }[] = [
+  {
+    q: `What material is the ${product.name} made of?`,
+    a: product.material,
+  },
+  {
+    q: `Can the ${product.name} go in the dishwasher?`,
+    a: isWenge
+      ? 'No. Wenge wood handle pieces must be hand washed only. Long exposure to hot water and dishwasher cycles can damage the wood handle.'
+      : 'Hand washing is recommended for long-term finish quality. While stainless steel is dishwasher-safe, prompt drying after washing helps maintain the surface lustre.',
+  },
+  {
+    q: `What's included in the ${product.name}?`,
+    a: product.pieces.join(', ') + '.',
+  },
+];
+if (isGold) {
+  faqEntries.push({
+    q: `Is the gold tone on the ${product.name} real gold?`,
+    a: 'No. The gold tone refers to the visual finish and color. It is not real gold, not a precious-metal claim, and should not be understood as gold-plated jewelry-grade metal.',
+  });
+}
+faqEntries.push({
+  q: `Where can I buy the ${product.name}?`,
+  a: `Domestic customers can purchase through the Taobao store when in stock. For current availability or wholesale inquiries, contact us directly.`,
+});
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqEntries.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
+
+const alternateLinks = [
+  { lang: 'en', href: `/products/${product.slug}` },
+  { lang: 'zh-CN', href: `/zh/products/${product.slug}` },
+  { lang: 'x-default', href: `/products/${product.slug}` },
+];
+---
+
+<BaseLayout
+  title={`${product.name} – Yinshiji`}
+  description={`${product.name}: ${product.tagline} ${product.material}. ${product.pieces.join(', ')}. Current batch — contact for availability.`}
+  canonical={`/products/${product.slug}`}
+  ogType="product"
+  ogImage={product.imagePlaceholder}
+  alternateLinks={alternateLinks}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <nav style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:2rem;">
+        <a href="/products">Products</a>
+        <span style="margin:0 0.5rem;">/</span>
+        <span>{product.name}</span>
+      </nav>
+
+      <div class="product-detail-grid">
+        <div class="product-media">
+          {product.imagePlaceholder.startsWith('/images/products/') ? (
+            <img src={product.imagePlaceholder} alt={`${product.name} by Yinshiji`} loading="eager" decoding="async" width="1254" height="1254" />
+          ) : (
+            <span style="opacity:0.4;">[ {product.name} ]</span>
+          )}
+        </div>
+
+        <div>
+          <span class="tag">{product.category === 'set' ? '5-Piece Set' : 'Single Piece'}</span>
+          <span class="tag" style="background:var(--color-accent); color:#fff;">
+            {collectionNames[product.collection] || product.collection}
+          </span>
+
+          <h1 style="font-family:var(--font-serif); font-size:2rem; margin:1rem 0 0.5rem;">
+            {product.name}
+          </h1>
+          <p style="font-size:1.05rem; color:var(--color-text-muted); margin-bottom:1.5rem;">
+            {product.tagline}
+          </p>
+
+          <h3 style="font-size:0.9rem; font-weight:600; margin-bottom:0.3rem;">Material</h3>
+          <p style="color:var(--color-text-muted); margin-bottom:1.5rem;">{product.material}</p>
+
+          <h3 style="font-size:0.9rem; font-weight:600; margin-bottom:0.3rem;">What's Included</h3>
+          <ul class="feature-list" style="margin-bottom:1.5rem;">
+            {product.pieces.map((piece) => (
+              <li>{piece}</li>
+            ))}
+          </ul>
+
+          <h3 style="font-size:0.9rem; font-weight:600; margin-bottom:0.3rem;">Features</h3>
+          <ul class="feature-list" style="margin-bottom:1.5rem;">
+            {product.features.map((f) => (
+              <li>{f}</li>
+            ))}
+          </ul>
+
+          <div style="background:#f9f7f4; border:1px solid var(--color-border); border-radius:var(--radius); padding:1.25rem; margin-bottom:1.5rem;">
+            <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:0.5rem;">
+              <strong style="color:var(--color-text);">Selected Batch</strong>
+            </p>
+            <p style="font-size:0.85rem; color:var(--color-text-muted);">
+              {product.priceNote}
+            </p>
+          </div>
+
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href={siteLinks.taobao} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
+              Buy on Taobao
+            </a>
+            <a href="/materials-care" class="btn btn-outline" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
+              Materials &amp; Care Guide
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section class="detail-section">
+        <h2>Product Specs</h2>
+        <p>Clear product facts first: material, composition, measured dimensions, intended use, and care. These facts are also mirrored in the AI-readable product feed.</p>
+        <div class="spec-grid">
+          {product.specs.map((item) => (
+            <div class="spec-item">
+              <strong>{item.label}</strong>
+              <span>{item.value}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>Design Note</h2>
+        <p>{product.designNote}</p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Best Used For</h2>
+        <div class="use-case-grid">
+          {product.useCases.map((item) => (
+            <div class="use-case-card">
+              <strong>{item.title}</strong>
+              <span>{item.description}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>How to Order</h2>
+        <p>Yinshiji products are available in curated batches. The site focuses on product information and material transparency first, without displaying fake inventory or reviews.</p>
+        <ol class="order-list">
+          {product.orderSteps.map((step) => <li>{step}</li>)}
+        </ol>
+      </section>
+
+      <section class="detail-section">
+        <h2>Compare Collections</h2>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Collection</th>
+              <th>Look</th>
+              <th>Best for</th>
+            </tr>
+          </thead>
+          <tbody>
+            {collectionComparison.map((item) => (
+              <tr>
+                <td><strong>{item.name}</strong></td>
+                <td>{item.look}</td>
+                <td>{item.bestFor}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
+      <div class="prose" style="margin-top:3rem;">
+        <h2>About This Product</h2>
+        <p>{product.description}</p>
+
+        <h3>Care Instructions</h3>
+        <p>{product.careNotes}</p>
+        <p>
+          For detailed care guidance, visit our{' '}
+          <a href="/materials-care">Materials &amp; Care page</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

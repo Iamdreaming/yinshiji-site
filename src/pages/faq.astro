@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteLinks } from '../data/site-links';
+
+const alternateLinks = [
+  { lang: 'en', href: '/faq' },
+  { lang: 'zh-CN', href: '/zh/faq' },
+  { lang: 'x-default', href: '/faq' },
+];
+
+const navItems = [
+  { href: '/', label: 'Home' },
+  { href: '/products', label: 'Products' },
+  { href: '/guide', label: 'Guide' },
+  { href: '/reference', label: 'Reference' },
+  { href: '/about', label: 'About' },
+  { href: '/materials-care', label: 'Materials & Care' },
+  { href: '/faq', label: 'FAQ' },
+];
+
+const faqs = [
+  {
+    q: 'Are Yinshiji products all made from 304 stainless steel?',
+    a: 'No. Product pages state the material for each SKU. For the current carved 5-piece sets, the knife uses 410 stainless steel while the fork and spoon pieces use 304 stainless steel. Single dinner forks remain 304 stainless steel. If a future batch changes material or finish, the product page should be updated before sale.',
+  },
+  {
+    q: 'Is the gold tone real gold?',
+    a: 'No. Gold tone refers to the visual finish and color. It is not real gold, not a precious-metal claim, and should not be understood as gold-plated jewelry-grade metal.',
+  },
+  {
+    q: 'How should I care for wenge wood handle pieces?',
+    a: 'Hand wash only, avoid long soaking, and dry promptly. Wood handles may show natural grain differences. Occasional light maintenance with food-safe mineral oil can help preserve the handle feel.',
+  },
+  {
+    q: 'Can I put the cutlery in a dishwasher?',
+    a: 'For long-term finish quality, hand washing is recommended. Wood handle items should not go into the dishwasher. For metal-only pieces, mild cleaning and prompt drying are safer for the finish.',
+  },
+  {
+    q: 'Where can I buy Yinshiji products?',
+    a: 'Domestic customers can purchase through the Taobao store when the item is available. For current batch status, sample requests, wholesale, or collaboration inquiries, please contact us directly first.',
+  },
+  {
+    q: 'Do you support wholesale or sample inquiries?',
+    a: 'Yes. Please share the target quantity, product series, use case, and timeline so the current batch availability can be checked.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+};
+---
+
+<BaseLayout
+  title="FAQ – Yinshiji | Materials, Care, Ordering"
+  description="Common questions about Yinshiji tableware: stainless steel grades, gold tone finish, wenge wood care, ordering, samples, and early-batch availability."
+  canonical="/faq"
+  ogType="website"
+  lang="en"
+  homeUrl="/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <h1 class="section-title">FAQ</h1>
+      <p class="section-subtitle">
+        Straightforward answers about materials, care, ordering, and working with an early-stage brand.
+      </p>
+      <div class="faq-list">
+        {faqs.map((item) => (
+          <article class="faq-item">
+            <h2>{item.q}</h2>
+            <p>{item.a}</p>
+          </article>
+        ))}
+      </div>
+      <div class="statement-panel" style="margin-top:2rem;">
+        <h2 class="section-title" style="font-size:1.5rem;">Interested in this collection?</h2>
+        <p>Products are available by curated batch. Use the Taobao store for domestic purchase and inquiry.</p>
+        <div style="margin-top:1rem;">
+          <a href={siteLinks.taobao} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow">Visit Taobao Store</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { products } from '../../data/products';
+
+const alternateLinks = [
+  { lang: 'en', href: '/products' },
+  { lang: 'zh-CN', href: '/zh/products' },
+  { lang: 'x-default', href: '/products' },
+];
+---
+
+<BaseLayout
+  title="Products – Yinshiji | Chinese Inspired Cutlery & Flatware Sets"
+  description="Browse Yinshiji's collections of Chinese-inspired cutlery: carved stainless steel flatware, gold tone tableware, and wenge wood handle pieces. Single items and 5-piece sets available."
+  canonical="/products"
+  ogType="website"
+  alternateLinks={alternateLinks}
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <h1 class="section-title">All Products</h1>
+      <p class="section-subtitle">
+        Explore our complete range of Chinese-inspired cutlery and tableware. Each SKU lists its real
+        material grade — available as single items or complete 5-piece sets.
+      </p>
+
+      <div class="product-grid">
+        {products.map((p) => (
+          <div class="product-card">
+            <div class="product-card-img">
+              {p.imagePlaceholder.startsWith('/images/products/') ? (
+                <img src={p.imagePlaceholder} alt={`${p.name} by Yinshiji`} loading="eager" decoding="async" width="1254" height="1254" />
+              ) : (
+                <span style="opacity: 0.4;">[ {p.name} ]</span>
+              )}
+            </div>
+            <div class="product-card-body">
+              <span class="tag">{p.category === 'set' ? '5-Piece Set' : 'Single Piece'}</span>
+              <span class="tag" style="background:var(--color-accent); color:#fff;">
+                {p.collection === 'silver-carved' ? 'Silver Carved'
+                  : p.collection === 'gold-carved' ? 'Gold Tone'
+                  : 'Wenge Wood'}
+              </span>
+              <h3>{p.name}</h3>
+              <p>{p.material}</p>
+              <p style="font-size:0.85rem;">
+                Includes: {p.pieces.join(', ')}
+              </p>
+              <div class="product-card-actions">
+                <a href={`/products/${p.slug}`} class="btn btn-outline" style="font-size:0.85rem; padding:0.4rem 1.2rem;">
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

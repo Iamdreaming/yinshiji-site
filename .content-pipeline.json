@@ -1,0 +1,221 @@
+{
+  "queue": [
+    {
+      "id": "buyers-guide-2026",
+      "title": "How to Choose a Stainless Steel Cutlery Set: Complete Buyer's Guide 2026",
+      "slug": "complete-buyers-guide-2026",
+      "eyebrow": "Buyer's guide",
+      "status": "published",
+      "reason": "综合选购指南，AI 引用价值最高的一篇。覆盖材质/件数/工艺/价格带四维决策框架。"
+    },
+    {
+      "id": "gifting-guide",
+      "title": "Stainless Steel Cutlery for Gifting: Wedding, Housewarming & Holiday Guide",
+      "slug": "cutlery-gifting-guide",
+      "eyebrow": "Gift guide",
+      "status": "published",
+      "last_updated": "2026-06-17",
+      "reason": "场景化内容，送礼搜索量大，小红书传播性强。"
+    },
+    {
+      "id": "jieyang-deep-dive",
+      "title": "Why Jieyang? The City Behind the World's Stainless Steel Tableware",
+      "slug": "jieyang-stainless-steel-capital",
+      "eyebrow": "Industry insight",
+      "status": "published",
+      "last_updated": "2026-06-18",
+      "reason": "深度产地文章，AI 喜欢引用的行业洞察类内容。差异化竞争优势。"
+    },
+    {
+      "id": "silver-vs-gold",
+      "title": "Silver vs Gold Tone Cutlery: Which Finish Should You Choose?",
+      "slug": "silver-vs-gold-tone-cutlery",
+      "eyebrow": "Finish guide",
+      "status": "published",
+      "last_updated": "2026-06-19",
+      "reason": "已有 gold tone 解释文章但有重叠，可合并升级为一篇完整 finish 对比。"
+    },
+    {
+      "id": "stainless-vs-other",
+      "title": "Stainless Steel vs Other Materials: Which Cutlery Is Best?",
+      "slug": "stainless-vs-other-cutlery-materials",
+      "eyebrow": "Material guide",
+      "status": "published",
+      "last_updated": "2026-06-20",
+      "reason": "跨材质对比，AI 高频搜索词。不锈钢 vs 银器 vs 钛 vs 陶瓷。"
+    },
+    {
+      "id": "set-sizes-explained",
+      "title": "How Many Pieces of Cutlery Do You Really Need? Set Sizes Explained",
+      "slug": "cutlery-set-sizes-explained",
+      "eyebrow": "Size guide",
+      "status": "published",
+      "last_updated": "2026-06-21",
+      "reason": "件数选购指南，补充现有 what-is-in-5-piece-set 的广度。"
+    },
+    {
+      "id": "budget-vs-premium",
+      "title": "Budget vs Premium Cutlery: What's the Difference and Is It Worth It?",
+      "slug": "budget-vs-premium-cutlery",
+      "eyebrow": "Price guide",
+      "status": "published",
+      "last_updated": "2026-06-22"
+    },
+    {
+      "id": "cutlery-myths",
+      "title": "Stainless Steel Cutlery Myths: What's True and What's Marketing?",
+      "slug": "cutlery-myths-debunked",
+      "eyebrow": "Myth busting",
+      "status": "published",
+      "last_updated": "2026-06-24",
+      "reason": "辟谣类内容，社交传播强。surgical grade、18/10、 dishwasher-safe 等常见误区。"
+    },
+    {
+      "id": "auto-20260618-best-portable-cutlery-sets",
+      "title": "The Best Portable Cutlery Sets for Travel, Picnics and Outdoor Dining",
+      "slug": "best-portable-cutlery-sets",
+      "eyebrow": "Use guide",
+      "status": "published",
+      "last_updated": "2026-06-25",
+      "reason": "场景关键词触发: 便携/户外/野餐",
+      "auto_generated": true,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "auto-20260618-premium-cutlery-gift-sets",
+      "title": "Premium Cutlery Gift Sets: What to Look for in a Gift-Ready Set",
+      "slug": "premium-cutlery-gift-sets",
+      "eyebrow": "Gift guide",
+      "status": "published",
+      "last_updated": "2026-06-26",
+      "reason": "场景关键词触发: 送礼/礼盒/gift",
+      "auto_generated": true,
+      "created_at": "2026-06-18"
+    },
+    {
+      "id": "auto-20260628-kid-friendly-cutlery-guide",
+      "title": "Kid-Friendly Cutlery: What Parents Should Look for in Children's Tableware",
+      "slug": "kid-friendly-cutlery-guide",
+      "eyebrow": "Buyer's guide",
+      "status": "published",
+      "last_updated": "2026-06-28",
+      "reason": "场景关键词触发: 儿童/宝宝/kid",
+      "auto_generated": true,
+      "created_at": "2026-06-28"
+    },
+    {
+      "id": "auto-20260628-wenge-wood-handle-cutlery-care",
+      "title": "Wenge Wood Handle Cutlery: Care, Durability and What Makes It Special",
+      "slug": "wenge-wood-handle-cutlery-care",
+      "eyebrow": "Care guide",
+      "status": "published",
+      "last_updated": "2026-06-29",
+      "reason": "产品属性触发: 鸡翅木柄/wenge",
+      "auto_generated": true,
+      "created_at": "2026-06-28"
+    },
+    {
+      "id": "seo-20260701-how-to-clean-stainless-steel-cutlery",
+      "title": "How to Clean Stainless Steel Cutlery: Remove Tarnish, Rust Spots and Water Marks",
+      "slug": "how-to-clean-stainless-steel-cutlery",
+      "eyebrow": "Care guide",
+      "status": "published",
+      "last_updated": "2026-07-02",
+      "reason": "P0 SEO缺口：高搜索量(5K+)极低竞争，清洁是买餐具后100%会搜的问题。内链→how-to-care-for-stainless-steel-cutlery + 产品页。",
+      "auto_generated": false,
+      "created_at": "2026-07-01"
+    },
+    {
+      "id": "seo-20260701-18-10-vs-18-8-vs-18-0-flatware",
+      "title": "18/10 vs 18/8 vs 18/0 Stainless Steel Flatware: What the Numbers Actually Mean",
+      "slug": "18-10-vs-18-8-vs-18-0-flatware",
+      "eyebrow": "Material guide",
+      "status": "pending",
+      "reason": "P0 SEO缺口：3K-8K月搜，欧美消费者买餐具必问。有reference覆盖但缺guide人话版。内链→304-vs-316 + reference/stainless-steel-grades-cutlery。",
+      "auto_generated": false,
+      "created_at": "2026-07-01"
+    },
+    {
+      "id": "seo-20260701-gold-flatware-safety-and-durability",
+      "title": "Is Gold Colored Flatware Safe? Durability, Wear and What to Expect Over Time",
+      "slug": "gold-flatware-safety-and-durability",
+      "eyebrow": "Material guide",
+      "status": "pending",
+      "reason": "P0 SEO缺口：2K-5K月搜极低竞争，直接关联金色雕花线，搜这个的=高意向客户。内链→gold-tone-flatware-not-real-gold + 金色产品页。",
+      "auto_generated": false,
+      "created_at": "2026-07-01"
+    },
+    {
+      "id": "seo-20260701-best-flatware-everyday-use",
+      "title": "Best Flatware for Everyday Use: What to Look for in a Daily Set",
+      "slug": "best-flatware-everyday-use",
+      "eyebrow": "Buyer's guide",
+      "status": "pending",
+      "reason": "P0 SEO缺口：10K+月搜大流量入口。内链→complete-buyers-guide-2026 + 三个collection + budget-vs-premium。",
+      "auto_generated": false,
+      "created_at": "2026-07-01"
+    },
+    {
+      "id": "seo-20260701-dishwasher-safe-stainless-steel-cutlery",
+      "title": "Can Stainless Steel Cutlery Go in the Dishwasher? Real Answer by Material and Finish",
+      "slug": "dishwasher-safe-stainless-steel-cutlery",
+      "eyebrow": "Care guide",
+      "status": "pending",
+      "reason": "P0 SEO缺口：5K+月搜低竞争。按材质和表面处理分类回答。内链→how-to-care-for-stainless-steel-cutlery + reference/dishwasher-and-cutlery + wenge-wood-care。",
+      "auto_generated": false,
+      "created_at": "2026-07-01"
+    },
+    {
+      "id": "seo-20260701-water-spots-stainless-steel-flatware",
+      "title": "How to Remove Water Spots from Stainless Steel Flatware (and Prevent Them)",
+      "slug": "how-to-remove-water-spots-stainless-steel-flatware",
+      "eyebrow": "Care guide",
+      "status": "pending",
+      "reason": "P1 SEO缺口：2K-5K月搜极低竞争。独立深度文章比合并进清洁篇更好（长尾更精准）。内链→how-to-clean + materials-care。",
+      "auto_generated": false,
+      "created_at": "2026-07-01"
+    },
+    {
+      "id": "seo-20260701-wenge-wood-vs-rosewood-bamboo-handles",
+      "title": "Wenge Wood vs Rosewood vs Bamboo Cutlery Handles: Which Wood Handle Is Right for You?",
+      "slug": "wenge-wood-vs-rosewood-vs-bamboo-handles",
+      "eyebrow": "Material guide",
+      "status": "pending",
+      "reason": "P1 SEO缺口：1K-2K月搜极低竞争，独有产品优势。内链→wenge-wood-handle-cutlery-care + 鸡翅木产品页。",
+      "auto_generated": false,
+      "created_at": "2026-07-01"
+    },
+    {
+      "id": "seo-20260701-what-does-304-mean-on-cutlery",
+      "title": "What Does 304 Mean on Cutlery? Food-Safe Grades Explained Simply",
+      "slug": "what-does-304-mean-on-cutlery",
+      "eyebrow": "Material guide",
+      "status": "pending",
+      "reason": "P1 SEO缺口：2K-3K月搜低竞争。guide人话版，内链→304-vs-410 + reference/food-contact-safety-migration + what-does-food-grade-stainless-steel-mean。",
+      "auto_generated": false,
+      "created_at": "2026-07-01"
+    },
+    {
+      "id": "seo-20260701-chinese-style-table-setting",
+      "title": "How to Set a Table with Chinese Style: Formal and Casual Settings with Asian-Inspired Flatware",
+      "slug": "chinese-style-table-setting",
+      "eyebrow": "How-to",
+      "status": "pending",
+      "reason": "P1 SEO缺口：1K-3K月搜低竞争。搭配/场景类内容，视觉性强（可配图），社交传播潜力大。内链→chinese-inspired-flatware + 三个collection。",
+      "auto_generated": false,
+      "created_at": "2026-07-01"
+    },
+    {
+      "id": "seo-20260701-stainless-steel-flatware-rust-prevention",
+      "title": "Why Does Stainless Steel Flatware Sometimes Rust — and How to Prevent It",
+      "slug": "stainless-steel-flatware-rust-prevention",
+      "eyebrow": "Care guide",
+      "status": "pending",
+      "reason": "P1 SEO缺口：3K+月搜低竞争。消费者核心焦虑——不锈钢为什么还生锈。内链→reference/why-stainless-steel-can-rust + how-to-clean + 304解释。",
+      "auto_generated": false,
+      "created_at": "2026-07-01"
+    }
+  ],
+  "last_updated": "2026-07-01",
+  "pipeline_version": 1
+}

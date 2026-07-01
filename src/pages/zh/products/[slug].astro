@@ -1,0 +1,244 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { productsZh } from '../../../data/products.zh';
+import { siteLinks } from '../../../data/site-links';
+
+export function getStaticPaths() {
+  return productsZh.map((p) => ({
+    params: { slug: p.slug },
+    props: { product: p },
+  }));
+}
+
+const { product } = Astro.props;
+const site = Astro.site ?? new URL('https://tableorie.com');
+const productUrl = new URL(`/zh/products/${product.slug}`, site).href;
+const productImage = new URL(product.imagePlaceholder, site).href;
+
+const collectionNames: Record<string, string> = {
+  'silver-carved': '银色雕花系列',
+  'gold-carved': '金色雕花系列',
+  'rosewood-handle': '鸡翅木系列',
+};
+
+const collectionComparison = [
+  {
+    name: '银色雕花',
+    look: '干净、克制、有雕花细节',
+    bestFor: '日常精致餐桌、基础成套、稳妥礼赠',
+  },
+  {
+    name: '金色雕花',
+    look: '暖色、更醒目、更有氛围',
+    bestFor: '聚餐、节日餐桌、偏礼赠场景',
+  },
+  {
+    name: '鸡翅木',
+    look: '温润、自然、偏中式日常',
+    bestFor: '一人食、办公室带饭、碗筷混合使用的日常餐桌',
+  },
+];
+
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: product.name,
+  sku: product.slug,
+  brand: { '@type': 'Brand', name: 'Yinshiji' },
+  description: product.description,
+  material: product.material,
+  category: product.category === 'set' ? '餐具五件套' : '单支餐具',
+  image: [productImage],
+  url: productUrl,
+  additionalProperty: product.specs.map((item) => ({
+    '@type': 'PropertyValue',
+    name: item.label,
+    value: item.value,
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: new URL('/zh/', site).href },
+    { '@type': 'ListItem', position: 2, name: '产品', item: new URL('/zh/products', site).href },
+    { '@type': 'ListItem', position: 3, name: product.name, item: productUrl },
+  ],
+};
+
+const alternateLinks = [
+  { lang: 'en', href: `/products/${product.slug}` },
+  { lang: 'zh-CN', href: `/zh/products/${product.slug}` },
+  { lang: 'x-default', href: `/products/${product.slug}` },
+];
+
+const navItems = [
+  { href: '/zh/', label: '首页' },
+  { href: '/zh/products', label: '产品' },
+  { href: '/zh/guide', label: '选购指南' },
+  { href: '/zh/reference', label: '资料库' },
+  { href: '/zh/about', label: '关于银食记' },
+  { href: '/zh/materials-care', label: '材质与护理' },
+  { href: '/zh/faq', label: '常见问题' },
+];
+---
+
+<BaseLayout
+  title={`${product.name}｜银食记`}
+  description={`${product.name}：${product.tagline}。材质：${product.material}。组成：${product.pieces.join('、')}。当前批次，可咨询库存与拿样。`}
+  canonical={`/zh/products/${product.slug}`}
+  ogType="product"
+  ogImage={product.imagePlaceholder}
+  lang="zh-CN"
+  homeUrl="/zh/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+  footerNote="当前批次 — 库存、价格与购买以淘宝或直接沟通为准。"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <nav style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:2rem;">
+        <a href="/zh/products">产品</a>
+        <span style="margin:0 0.5rem;">/</span>
+        <span>{product.name}</span>
+      </nav>
+
+      <div class="product-detail-grid">
+        <div class="product-media">
+          {product.imagePlaceholder.startsWith('/images/products/') ? (
+            <img src={product.imagePlaceholder} alt={`${product.name} - 银食记`} loading="eager" decoding="async" width="1254" height="1254" />
+          ) : (
+            <span style="opacity:0.4;">[ {product.name} ]</span>
+          )}
+        </div>
+
+        <div>
+          <span class="tag">{product.category === 'set' ? '五件套' : '单支'}</span>
+          <span class="tag" style="background:var(--color-accent); color:#fff;">
+            {collectionNames[product.collection] || product.collection}
+          </span>
+
+          <h1 style="font-family:var(--font-serif); font-size:2rem; margin:1rem 0 0.5rem;">
+            {product.name}
+          </h1>
+          <p style="font-size:1.05rem; color:var(--color-text-muted); margin-bottom:1.5rem;">
+            {product.tagline}
+          </p>
+
+          <h3 style="font-size:0.9rem; font-weight:600; margin-bottom:0.3rem;">材质</h3>
+          <p style="color:var(--color-text-muted); margin-bottom:1.5rem;">{product.material}</p>
+
+          <h3 style="font-size:0.9rem; font-weight:600; margin-bottom:0.3rem;">组成</h3>
+          <ul class="feature-list" style="margin-bottom:1.5rem;">
+            {product.pieces.map((piece) => (
+              <li>{piece}</li>
+            ))}
+          </ul>
+
+          <h3 style="font-size:0.9rem; font-weight:600; margin-bottom:0.3rem;">产品特点</h3>
+          <ul class="feature-list" style="margin-bottom:1.5rem;">
+            {product.features.map((f) => (
+              <li>{f}</li>
+            ))}
+          </ul>
+
+          <div style="background:#f9f7f4; border:1px solid var(--color-border); border-radius:var(--radius); padding:1.25rem; margin-bottom:1.5rem;">
+            <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:0.5rem;">
+              <strong style="color:var(--color-text);">当前批次</strong>
+            </p>
+            <p style="font-size:0.85rem; color:var(--color-text-muted);">
+              {product.priceNote}
+            </p>
+          </div>
+
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href={siteLinks.taobao} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
+              去淘宝购买 / 咨询
+            </a>
+            <a href="/zh/materials-care" class="btn btn-outline" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
+              查看材质与护理
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section class="detail-section">
+        <h2>产品规格</h2>
+        <p>先把真实信息说清楚：材质、组成、实测尺寸、适用场景和护理方式。这些事实也同步到 AI 可读产品数据中。</p>
+        <div class="spec-grid">
+          {product.specs.map((item) => (
+            <div class="spec-item">
+              <strong>{item.label}</strong>
+              <span>{item.value}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>设计说明</h2>
+        <p>{product.designNote}</p>
+      </section>
+
+      <section class="detail-section">
+        <h2>适合场景</h2>
+        <div class="use-case-grid">
+          {product.useCases.map((item) => (
+            <div class="use-case-card">
+              <strong>{item.title}</strong>
+              <span>{item.description}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <h2>如何购买</h2>
+        <p>银食记产品按批次供应。站点先做真实的产品信息和材质说明，不做虚假库存和评价。</p>
+        <ol class="order-list">
+          {product.orderSteps.map((step) => <li>{step}</li>)}
+        </ol>
+      </section>
+
+      <section class="detail-section">
+        <h2>三条系列怎么选</h2>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>系列</th>
+              <th>视觉气质</th>
+              <th>更适合</th>
+            </tr>
+          </thead>
+          <tbody>
+            {collectionComparison.map((item) => (
+              <tr>
+                <td><strong>{item.name}</strong></td>
+                <td>{item.look}</td>
+                <td>{item.bestFor}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
+      <div class="prose" style="margin-top:3rem;">
+        <h2>产品说明</h2>
+        <p>{product.description}</p>
+
+        <h3>护理建议</h3>
+        <p>{product.careNotes}</p>
+        <p>
+          如需更完整的材质和使用说明，可前往
+          <a href="/zh/materials-care">材质与护理页面</a>。
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

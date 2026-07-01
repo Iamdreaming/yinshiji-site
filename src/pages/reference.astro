@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { referenceArticles } from '../data/reference-articles';
+
+const alternateLinks = [
+  { lang: 'en', href: '/reference' },
+  { lang: 'zh-CN', href: '/zh/reference' },
+  { lang: 'x-default', href: '/reference' },
+];
+
+const navItems = [
+  { href: '/', label: 'Home' },
+  { href: '/products', label: 'Products' },
+  { href: '/guide', label: 'Guide' },
+  { href: '/reference', label: 'Reference' },
+  { href: '/about', label: 'About' },
+  { href: '/materials-care', label: 'Materials & Care' },
+  { href: '/faq', label: 'FAQ' },
+];
+---
+
+<BaseLayout
+  title="Tableorie Reference – Stainless Steel Cutlery Facts"
+  description="Plain-language reference pages on stainless steel cutlery standards, grades, and food-contact safety. Written for humans, backed by real sources."
+  canonical="/reference"
+  ogType="website"
+  lang="en"
+  homeUrl="/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <p class="eyebrow">Reference</p>
+      <h1 class="section-title">Stainless Steel Cutlery Reference</h1>
+      <p class="section-subtitle">
+        Standards, steel grades, and food-contact safety — explained with traceable sources.
+      </p>
+
+      <section class="statement-panel" style="margin-top:2rem;">
+        <p style="font-size:1rem;">
+          Sources are listed at the bottom of each page, with the organization and purpose of each one. Official standards, regulations, and industry sources are labeled so you know what each one supports.
+        </p>
+      </section>
+
+      <section class="detail-section">
+        <h2>Articles</h2>
+        <div class="mini-card-grid">
+          {referenceArticles.map((article) => (
+            <a class="mini-card" href={`/reference/${article.slug}`}>
+              <strong>{article.title}</strong>
+              <span>{article.description}</span>
+            </a>
+          ))}
+        </div>
+        <div style="margin-top:1.5rem; display:flex; gap:0.8rem; flex-wrap:wrap;">
+          <a href="/reference/stainless-steel-cutlery-standards" class="btn btn-outline">Standards explained</a>
+          <a href="/reference/stainless-steel-grades-cutlery" class="btn btn-outline">Steel grades guide</a>
+          <a href="/reference/food-contact-safety-migration" class="btn btn-outline">Food contact safety</a>
+        </div>
+      </section>
+    </div>
+  </section>
+</BaseLayout>

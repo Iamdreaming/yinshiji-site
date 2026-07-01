@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { siteLinks } from '../../data/site-links';
+
+const alternateLinks = [
+  { lang: 'en', href: '/contact' },
+  { lang: 'zh-CN', href: '/zh/contact' },
+  { lang: 'x-default', href: '/contact' },
+];
+---
+
+<BaseLayout
+  title="联系我们｜银食记 Yinshiji"
+  description="联系银食记 — 产品咨询、批发采购、礼品定制或一般问题。"
+  canonical="/zh/contact"
+  ogType="website"
+  lang="zh-CN"
+  homeUrl="/zh/"
+  footerNote="当前批次 — 库存、价格与购买以淘宝或直接沟通为准。"
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container" style="max-width:680px;">
+      <h1 class="section-title">联系我们</h1>
+
+      <div class="prose">
+
+        <p>
+          了解产品库存、批发采购、礼品定制或合作事宜，可以通过以下渠道联系我们。
+        </p>
+
+        <h2>邮箱</h2>
+        <p>
+          <strong><a href="mailto:hello@tableorie.com">hello@tableorie.com</a></strong>
+        </p>
+
+        <h2>淘宝店</h2>
+        <p>
+          <a href={siteLinks.taobao} target="_blank" rel="noopener noreferrer nofollow">银食记淘宝店</a>
+          — 浏览产品并通过店铺直接咨询。
+        </p>
+
+        <h2>批发与合作</h2>
+        <p>
+          大宗采购、企业定制、拿样或合作想法，请邮件告知数量、感兴趣的产品系列和用途，
+          我们会查看当前批次情况后回复。
+        </p>
+
+        <h2>回复时间</h2>
+        <p>
+          工作日通常在 24 小时内回复。紧急事宜建议通过淘宝店联系，回复更快。
+        </p>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
