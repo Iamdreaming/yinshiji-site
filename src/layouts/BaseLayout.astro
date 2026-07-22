@@ -73,9 +73,11 @@ const languageLinks = [
     <meta name="description" content={description} />
 
     <link rel="canonical" href={canonicalUrl} />
-    {alternateLinks.map((link) => (
-      <link rel="alternate" hreflang={link.lang} href={new URL(link.href, site).href} />
-    ))}
+    {alternateLinks.map((link) => {
+      const altHref = new URL(link.href, site).href;
+      const altUrl = altHref.endsWith('/') ? altHref : altHref + '/';
+      return <link rel="alternate" hreflang={link.lang} href={altUrl} />;
+    })}
 
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -811,6 +813,237 @@ const languageLinks = [
         font-weight: 700;
       }
 
+      /* ── Animation Infrastructure ── */
+      @keyframes reveal-up {
+        from { opacity: 0; transform: translateY(32px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes reveal-scale {
+        from { opacity: 0; transform: scale(0.92); }
+        to   { opacity: 1; transform: scale(1); }
+      }
+      @keyframes reveal-left {
+        from { opacity: 0; transform: translateX(-40px); }
+        to   { opacity: 1; transform: translateX(0); }
+      }
+      @keyframes reveal-right {
+        from { opacity: 0; transform: translateX(40px); }
+        to   { opacity: 1; transform: translateX(0); }
+      }
+      @keyframes hero-title-in {
+        from { opacity: 0; transform: translateY(48px) scale(0.96); letter-spacing: 0.04em; }
+        to   { opacity: 1; transform: translateY(0) scale(1); letter-spacing: normal; }
+      }
+      @keyframes hero-img-in {
+        from { opacity: 0; transform: scale(1.08) rotate(1deg); }
+        to   { opacity: 1; transform: scale(1) rotate(0deg); }
+      }
+      @keyframes shimmer {
+        0%   { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50%      { transform: translateY(-6px); }
+      }
+      @keyframes btn-ripple {
+        to { transform: scale(4); opacity: 0; }
+      }
+
+      :root {
+        --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+        --ease-out: cubic-bezier(0.33, 1, 0.68, 1);
+        --dur-reveal: 0.7s;
+        --dur-hover: 0.3s;
+        --stagger: 0.1s;
+      }
+
+      /* Reveal base — hidden until triggered */
+      .reveal {
+        opacity: 0;
+        will-change: opacity, transform;
+      }
+      .reveal.visible {
+        animation: reveal-up var(--dur-reveal) var(--ease-expo) both;
+      }
+      .reveal-scale.visible {
+        animation: reveal-scale var(--dur-reveal) var(--ease-expo) both;
+      }
+      .reveal-left.visible {
+        animation: reveal-left var(--dur-reveal) var(--ease-expo) both;
+      }
+      .reveal-right.visible {
+        animation: reveal-right var(--dur-reveal) var(--ease-expo) both;
+      }
+
+      /* Stagger delays */
+      .stagger-1 { animation-delay: calc(var(--stagger) * 0); }
+      .stagger-2 { animation-delay: calc(var(--stagger) * 1); }
+      .stagger-3 { animation-delay: calc(var(--stagger) * 2); }
+      .stagger-4 { animation-delay: calc(var(--stagger) * 3); }
+      .stagger-5 { animation-delay: calc(var(--stagger) * 4); }
+      .stagger-6 { animation-delay: calc(var(--stagger) * 5); }
+
+      /* Hero-specific animations (auto-play, no observer needed) */
+      .hero-animate-title {
+        animation: hero-title-in 0.9s var(--ease-expo) 0.15s both;
+      }
+      .hero-animate-eyebrow {
+        animation: reveal-up 0.6s var(--ease-expo) 0s both;
+      }
+      .hero-animate-body {
+        animation: reveal-up 0.7s var(--ease-expo) 0.35s both;
+      }
+      .hero-animate-cta {
+        animation: reveal-up 0.6s var(--ease-expo) 0.55s both;
+      }
+      .hero-animate-meta {
+        animation: reveal-up 0.6s var(--ease-expo) 0.7s both;
+      }
+      .hero-animate-img {
+        animation: hero-img-in 1s var(--ease-expo) 0.3s both;
+      }
+
+      /* Card 3D tilt on hover */
+      .tilt-card {
+        transition: transform var(--dur-hover) var(--ease-out), box-shadow 0.3s var(--ease-out);
+        transform-style: preserve-3d;
+        perspective: 800px;
+      }
+      .tilt-card:hover {
+        box-shadow: 0 20px 50px rgba(28, 25, 23, 0.12);
+      }
+
+      /* Button ripple */
+      .btn-ripple {
+        position: relative;
+        overflow: hidden;
+      }
+      .btn-ripple::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        background-image: radial-gradient(circle, rgba(255,255,255,0.35) 10%, transparent 10.01%);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        transform: scale(10);
+        opacity: 0;
+        transition: transform 0.5s, opacity 0.8s;
+      }
+      .btn-ripple:active::after {
+        transform: scale(0);
+        opacity: 1;
+        transition: 0s;
+      }
+
+      /* Shimmer accent on hero surface */
+      .hero-surface::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: linear-gradient(
+          105deg,
+          transparent 40%,
+          rgba(255, 250, 243, 0.45) 45%,
+          rgba(255, 250, 243, 0.08) 50%,
+          transparent 55%
+        );
+        background-size: 200% 100%;
+        animation: shimmer 6s ease-in-out infinite;
+        pointer-events: none;
+        z-index: 1;
+      }
+      .hero-surface {
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-surface > * {
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Floating product image */
+      .hero-visual-card img {
+        animation: float 5s ease-in-out infinite;
+      }
+
+      /* Section title reveal with underline grow */
+      .section-title-reveal {
+        position: relative;
+        display: inline-block;
+      }
+      .section-title-reveal::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: var(--color-accent);
+        border-radius: 2px;
+        transition: width 0.6s var(--ease-expo) 0.3s;
+      }
+      .section-title-reveal.visible::after {
+        width: 48px;
+      }
+
+      /* Comparison table row stagger */
+      .comparison-table tbody tr {
+        opacity: 0;
+        transform: translateX(-16px);
+        transition: opacity 0.5s var(--ease-expo), transform 0.5s var(--ease-expo);
+      }
+      .comparison-table.visible tbody tr {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      .comparison-table.visible tbody tr:nth-child(1) { transition-delay: 0.1s; }
+      .comparison-table.visible tbody tr:nth-child(2) { transition-delay: 0.2s; }
+      .comparison-table.visible tbody tr:nth-child(3) { transition-delay: 0.3s; }
+
+      /* Trust card hover glow */
+      .trust-card {
+        transition: transform var(--dur-hover) var(--ease-out), box-shadow 0.3s var(--ease-out), border-color 0.3s;
+      }
+      .trust-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 40px rgba(124, 90, 62, 0.1);
+        border-color: rgba(124, 90, 62, 0.3);
+      }
+
+      /* Mini card hover */
+      .mini-card {
+        transition: transform var(--dur-hover) var(--ease-out), border-color 0.3s;
+      }
+      .mini-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(124, 90, 62, 0.35);
+      }
+
+      /* Reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        .reveal, .reveal.visible, .reveal-scale.visible, .reveal-left.visible, .reveal-right.visible,
+        .hero-animate-title, .hero-animate-eyebrow, .hero-animate-body, .hero-animate-cta,
+        .hero-animate-meta, .hero-animate-img {
+          animation: none !important;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+        .hero-visual-card img { animation: none !important; }
+        .hero-surface::before { animation: none !important; }
+        .comparison-table tbody tr {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none !important;
+        }
+        .section-title-reveal::after { transition: none !important; width: 48px !important; }
+      }
+
       @media (max-width: 720px) {
         .hero h1 {
           font-size: 2rem;
@@ -925,5 +1158,58 @@ const languageLinks = [
         </div>
       </div>
     </footer>
+    <script is:inline>
+      // ── Scroll Reveal via IntersectionObserver ──
+      (function() {
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReduced) {
+          document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right, .section-title-reveal, .comparison-table')
+            .forEach(el => el.classList.add('visible'));
+          return;
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right, .section-title-reveal, .comparison-table')
+          .forEach(el => observer.observe(el));
+      })();
+
+      // ── 3D Tilt on product cards ──
+      (function() {
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReduced) return;
+
+        document.querySelectorAll('.tilt-card').forEach(card => {
+          card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width;
+            const y = (e.clientY - rect.top) / rect.height;
+            const tiltX = (y - 0.5) * -8;  // max 4deg
+            const tiltY = (x - 0.5) * 8;
+            card.style.transform = `perspective(800px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-2px)`;
+          });
+          card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+          });
+        });
+      })();
+
+      // ── Stagger children auto-assign ──
+      (function() {
+        document.querySelectorAll('[data-stagger-children]').forEach(parent => {
+          const children = parent.children;
+          for (let i = 0; i < children.length; i++) {
+            children[i].classList.add('stagger-' + (i + 1));
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

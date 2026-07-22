@@ -35,7 +35,13 @@ const alternateLinks = [
               )}
             </div>
             <div class="product-card-body">
-              <span class="tag">{p.category === 'set' ? '5-Piece Set' : 'Single Piece'}</span>
+              <span class="tag">{
+                p.category === 'set'
+                  ? p.pieces.length === 3 ? '3-Piece Set'
+                    : p.pieces.length === 8 ? '8-Piece Set'
+                    : '5-Piece Set'
+                  : 'Single Piece'
+              }</span>
               <span class="tag" style="background:var(--color-accent); color:#fff;">
                 {p.collection === 'silver-carved' ? 'Silver Carved'
                   : p.collection === 'gold-carved' ? 'Gold Tone'

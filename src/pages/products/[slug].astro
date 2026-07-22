@@ -154,7 +154,13 @@ const alternateLinks = [
         </div>
 
         <div>
-          <span class="tag">{product.category === 'set' ? '5-Piece Set' : 'Single Piece'}</span>
+          <span class="tag">{
+            product.category === 'set'
+              ? product.pieces.length === 3 ? '3-Piece Set'
+                : product.pieces.length === 8 ? '8-Piece Set'
+                : '5-Piece Set'
+              : 'Single Piece'
+          }</span>
           <span class="tag" style="background:var(--color-accent); color:#fff;">
             {collectionNames[product.collection] || product.collection}
           </span>
@@ -192,9 +198,17 @@ const alternateLinks = [
             </p>
           </div>
 
-          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-            <a href={siteLinks.taobao} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
-              Buy on Taobao
+          <div style="display:flex; gap:1rem; flex-wrap:wrap; align-items:center;">
+            <button
+              id="buy-now-btn"
+              class="btn btn-primary"
+              style="font-size:0.85rem; padding:0.5rem 1.5rem; cursor:pointer;"
+              data-slug={product.slug}
+            >
+              Buy Now — International Shipping
+            </button>
+            <a href={siteLinks.taobao} class="btn btn-outline" target="_blank" rel="noopener noreferrer nofollow" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
+              Buy on Taobao (国内)
             </a>
             <a href="/materials-care" class="btn btn-outline" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
               Materials &amp; Care Guide
@@ -204,8 +218,32 @@ const alternateLinks = [
       </div>
 
       <section class="detail-section">
+        <!-- Trust Signal Block -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem; margin-bottom:2rem; padding:1.25rem; background:#f9f7f4; border:1px solid var(--color-border); border-radius:var(--radius);">
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <span style="font-size:1.2rem; color:#2d6a4f;">✓</span>
+            <div>
+              <div style="font-weight:600; font-size:0.9rem;">304 Food-Grade Stainless Steel</div>
+              <div style="font-size:0.8rem; color:var(--color-text-muted);">Professional kitchen standard</div>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <span style="font-size:1.2rem; color:#2d6a4f;">✓</span>
+            <div>
+              <div style="font-weight:600; font-size:0.9rem;">Jieyang — China's Stainless Steel Capital</div>
+              <div style="font-size:0.8rem; color:var(--color-text-muted);">Origin of China's cutlery industry</div>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.5rem;">
+            <span style="font-size:1.2rem; color:#2d6a4f;">✓</span>
+            <div>
+              <div style="font-weight:600; font-size:0.9rem;">SGS Testing (Pending)</div>
+             <div style="font-size:0.8rem; color:var(--color-text-muted);">Independent safety verification</div>
+            </div>
+          </div>
+        </div>
+
         <h2>Product Specs</h2>
-        <p>Clear product facts first: material, composition, measured dimensions, intended use, and care. These facts are also mirrored in the AI-readable product feed.</p>
         <div class="spec-grid">
           {product.specs.map((item) => (
             <div class="spec-item">
@@ -276,4 +314,36 @@ const alternateLinks = [
       </div>
     </div>
   </section>
+
+  <script>
+    const buyBtn = document.getElementById('buy-now-btn');
+    if (buyBtn) {
+      buyBtn.addEventListener('click', async () => {
+        const slug = buyBtn.dataset.slug;
+        buyBtn.textContent = 'Processing…';
+        buyBtn.setAttribute('disabled', '');
+
+        try {
+          const resp = await fetch('/api/checkout', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ slug, quantity: 1 }),
+          });
+          const data = await resp.json();
+
+          if (data.url) {
+            window.location.href = data.url;
+          } else {
+            alert(data.error || 'Failed to start checkout. Please try again.');
+            buyBtn.textContent = 'Buy Now — International Shipping';
+            buyBtn.removeAttribute('disabled');
+          }
+        } catch (err) {
+          alert('Network error. Please check your connection and try again.');
+          buyBtn.textContent = 'Buy Now — International Shipping';
+          buyBtn.removeAttribute('disabled');
+        }
+      });
+    }
+  </script>
 </BaseLayout>

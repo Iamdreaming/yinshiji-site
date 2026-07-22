@@ -1,0 +1,102 @@
+---
+layout: '../layouts/Base.astro'
+title: 'Thank You — Order Confirmed'
+---
+
+<section class="thanks-page">
+  <div class="thanks-container">
+    <div class="thanks-icon">✓</div>
+    <h1>Thank you for your order!</h1>
+    <p class="thanks-subtitle">Your payment has been confirmed. We'll send you a confirmation email shortly.</p>
+    
+    <div class="thanks-details" id="order-details" style="display:none;">
+      <p>Order reference: <span id="session-id"></span></p>
+    </div>
+
+    <div class="thanks-actions">
+      <a href="/products" class="btn-primary">Continue Shopping</a>
+      <a href="/" class="btn-secondary">Back to Home</a>
+    </div>
+
+    <p class="thanks-note">Questions about your order? Email us at <a href="mailto:hello@tableorie.com">hello@tableorie.com</a></p>
+  </div>
+</section>
+
+<script>
+  // Show session ID if available
+  const params = new URLSearchParams(window.location.search);
+  const sessionId = params.get('session_id');
+  if (sessionId) {
+    document.getElementById('order-details').style.display = 'block';
+    document.getElementById('session-id').textContent = sessionId.slice(0, 20) + '…';
+  }
+</script>
+
+<style>
+  .thanks-page {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+  }
+  .thanks-container {
+    text-align: center;
+    max-width: 480px;
+  }
+  .thanks-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #2d6a4f;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+  }
+  .thanks-container h1 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .thanks-subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  .thanks-details {
+    background: #f5f3f0;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+  .thanks-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .btn-primary {
+    background: #2d6a4f;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .btn-primary:hover { background: #1b4332; }
+  .btn-secondary {
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  .btn-secondary:hover { background: #f5f3f0; }
+  .thanks-note {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  .thanks-note a { color: #2d6a4f; }
+</style>

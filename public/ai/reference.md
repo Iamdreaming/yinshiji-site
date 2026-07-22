@@ -21,6 +21,24 @@
 
 - [How to Clean Stainless Steel Cutlery: Remove Tarnish, Rust Spots and Water Marks](/guide/how-to-clean-stainless-steel-cutlery): Step-by-step cleaning methods by problem type and cutlery finish — everyday household ingredients, no special tools needed.
 
+- [18/10 vs 18/8 vs 18/0 Stainless Steel Flatware: What the Numbers Actually Mean](/guide/18-10-vs-18-8-vs-18-0-flatware): Plain-English breakdown of flatware grades — why 18/10 is mostly marketing, the real difference between 18/8 and 18/0, and how to tell what you are actually buying.
+
+- [Is Gold Colored Flatware Safe? Durability, Wear and What to Expect Over Time](/guide/gold-flatware-safety-and-durability): Everything about gold tone flatware safety — PVD coating, food-contact safety, dishwasher resistance, how gold finishes wear over years, and how Yinshiji Gold Tone Carved pieces compare.
+
+- [Best Flatware for Everyday Use: What to Look for in a Daily Set](/guide/best-flatware-everyday-use): How to choose flatware for daily meals — stainless steel grades, forged vs stamped construction, weight as a quality signal, and what pieces you actually need.
+
+- [Can Stainless Steel Cutlery Go in the Dishwasher? Real Answer by Material and Finish](/guide/dishwasher-safe-stainless-steel-cutlery): Whether your cutlery is dishwasher-safe depends on steel grade, surface finish and handle material — plain 18/8 silver tone is fine, gold tone and wood handles are not.
+
+- [How to Remove Water Spots from Stainless Steel Flatware (and Prevent Them)](/guide/how-to-remove-water-spots-stainless-steel-flatware/): How to remove mineral deposits from hard water using household ingredients, how to tell water spots from etching, finish-specific care, and a monthly maintenance routine to keep flatware spot-free.
+
+- [Wenge Wood vs Rosewood vs Bamboo Cutlery Handles: Which Wood Handle Is Right for You?](/guide/wenge-wood-vs-rosewood-vs-bamboo-handles/): Practical comparison of wenge, rosewood and bamboo handles for stainless steel cutlery — Janka hardness, moisture resistance, food safety, maintenance needs, and which handle suits everyday dining best.
+
+- [What Does 304 Mean on Cutlery? Food-Safe Grades Explained Simply](/guide/what-does-304-mean-on-cutlery/): Plain-language explanation of what 304 means stamped on flatware, how it relates to 18/8 and 18/10 labels, food-safety certification vs grade, and how to verify the steel grade on cutlery you own.
+
+- [How to Set a Table with Chinese Style: Formal and Casual Settings with Asian-Inspired Flatware](/guide/chinese-style-table-setting/): Step-by-step guide to Chinese table settings for formal banquets and casual meals — chopstick placement, bowl arrangement, how to blend Chinese and Western elements, and flatware choices for Asian-inspired dining.
+
+- [Why Does Stainless Steel Flatware Sometimes Rust — and How to Prevent It](/guide/stainless-steel-flatware-rust-prevention/): Why stainless steel flatware develops rust spots, which pieces are most vulnerable (knives vs forks/spoons), four common causes, how to prevent rust with three simple habits, and how to remove existing rust spots with household ingredients.
+
 ## Source Principles
 
 - Official standards and regulations define boundaries and terminology.

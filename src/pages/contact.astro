@@ -54,6 +54,12 @@ const alternateLinks = [
               style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff; resize:vertical; font-family:inherit;"></textarea>
           </div>
 
+          <!-- Honeypot: invisible to humans, bots will fill it -->
+          <div style="opacity:0;position:absolute;top:0;left:0;height:0;width:0;overflow:hidden;" aria-hidden="true">
+            <label for="website">Do not fill this out</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+
           <button type="submit" id="submit-btn"
             style="background:var(--color-accent); color:#fff; border:none; padding:0.7rem 2rem; font-size:1rem; border-radius:var(--radius); cursor:pointer; font-weight:600;">
             Send Message
@@ -107,6 +113,7 @@ const alternateLinks = [
             email: form.email.value.trim(),
             subject: form.subject.value.trim() || 'Website Inquiry',
             message: form.message.value.trim(),
+            website: form.website ? form.website.value.trim() : '',
           }),
         });
         const data = await res.json();

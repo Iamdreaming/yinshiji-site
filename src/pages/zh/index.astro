@@ -60,35 +60,35 @@ const webSiteSchema = {
       <div class="hero-surface">
         <div class="hero-grid">
           <div class="hero-copy">
-            <div class="eyebrow">揭阳供应链审美筛选</div>
-            <h1>让餐具回到餐桌本身</h1>
-            <p>
+            <div class="eyebrow hero-animate-eyebrow">从揭阳，到你的餐桌</div>
+            <h1 class="hero-animate-title">让餐具回到餐桌本身</h1>
+            <p class="hero-animate-body">
               银食记想做的不是夸张的轻奢故事，而是把有雕花细节、有材质温度、能真正日常使用的餐具，
               更克制地带回到家里的餐桌上。
             </p>
-            <div class="hero-cta">
-              <a href="/zh/products" class="btn btn-primary">查看产品</a>
-              <a href="/zh/guide" class="btn btn-outline">查看选购指南</a>
-              <a href={siteLinks.taobao} class="btn btn-outline" target="_blank" rel="noopener noreferrer nofollow">淘宝店购买 / 咨询</a>
-              <a href="/zh/about" class="btn btn-outline">了解品牌</a>
+            <div class="hero-cta hero-animate-cta">
+              <a href="/zh/products" class="btn btn-primary btn-ripple">查看产品</a>
+              <a href="/zh/guide" class="btn btn-outline btn-ripple">查看选购指南</a>
+              <a href={siteLinks.taobao} class="btn btn-outline btn-ripple" target="_blank" rel="noopener noreferrer nofollow">淘宝店购买 / 咨询</a>
+              <a href="/zh/about" class="btn btn-outline btn-ripple">了解品牌</a>
             </div>
-            <div class="hero-meta">
-              <div class="hero-meta-card">
+            <div class="hero-meta hero-animate-meta" data-stagger-children>
+              <div class="hero-meta-card reveal">
                 <strong>材质</strong>
                 <span>叉勺 304 不锈钢、雕花套装餐刀 410 不锈钢、金色表面处理与鸡翅木手柄。</span>
               </div>
-              <div class="hero-meta-card">
+              <div class="hero-meta-card reveal">
                 <strong>阶段</strong>
                 <span>先做真实产品说明，不做虚假购物车和夸张承诺。</span>
               </div>
-              <div class="hero-meta-card">
+              <div class="hero-meta-card reveal">
                 <strong>用途</strong>
                 <span>覆盖单支与五件套，服务日常餐桌。</span>
               </div>
             </div>
           </div>
           <div class="hero-visual" aria-hidden="true">
-            <div class="hero-visual-card">
+            <div class="hero-visual-card hero-animate-img">
               <img src="/images/products/collection-gold-carved.webp" alt="" loading="eager" decoding="async" width="1254" height="1254" />
             </div>
           </div>
@@ -99,25 +99,25 @@ const webSiteSchema = {
 
   <section class="section content-band">
     <div class="container">
-      <div class="statement-panel">
-        <div class="eyebrow">银食记</div>
-        <h2 class="section-title">中端质感餐具，不装贵也不将就。</h2>
-        <p>
+      <div class="statement-panel reveal">
+        <div class="eyebrow reveal stagger-1">银食记</div>
+        <h2 class="section-title section-title-reveal reveal stagger-2">餐具够好，价格够近</h2>
+        <p class="reveal stagger-3">
           从揭阳不锈钢餐具源头筛选有材质、有细节、有日常实用性的餐具。
-          每一条系列都经过材质对比和选择，不靠夸张故事支撑价格，也不靠低端白牌逻辑走量。
-          这里的产品信息是真实的：材质、组成、护理、当前批次状态，都会说清楚。
+          每一条系列都经过材质对比和选择，靠的是真实的产品信息，不是故事。
+          材质、组成、护理、当前批次状态，都会说清楚。
         </p>
-        <div class="mini-card-grid">
-          <div class="mini-card">
-            <strong>源头筛选</strong>
-            <span>从揭阳不锈钢餐具产业带筛选靠谱品类。比起直接生产，我们更重视材质对比和组件搭配。</span>
+        <div class="mini-card-grid" data-stagger-children>
+          <div class="mini-card reveal">
+            <strong>从源头选</strong>
+            <span>从揭阳不锈钢餐具产业带筛选靠谱品类。比起直接生产，我们更重视材质对比和搭配。</span>
           </div>
-          <div class="mini-card">
-            <strong>材质优先</strong>
+          <div class="mini-card reveal">
+            <strong>按钢号标</strong>
             <span>按 SKU 写清材质：雕花五件套餐刀为 410 不锈钢，叉勺为 304 不锈钢；金色与鸡翅木护理也会明确说明。</span>
           </div>
-          <div class="mini-card">
-            <strong>批次供应</strong>
+          <div class="mini-card reveal">
+            <strong>一批一批来</strong>
             <span>产品按批次生产和供应。不同批次、颜色和系列的具体库存状态，以淘宝页面或直接沟通为准。</span>
           </div>
         </div>
@@ -127,11 +127,11 @@ const webSiteSchema = {
 
   <section class="section">
     <div class="container">
-      <h2 class="section-title">三条系列怎么选</h2>
-      <p class="section-subtitle">
+      <h2 class="section-title section-title-reveal reveal">三条系列怎么选</h2>
+      <p class="section-subtitle reveal stagger-2">
         三条系列不是简单换颜色，而是对应不同的餐桌气质和使用场景。
       </p>
-      <table class="comparison-table">
+      <table class="comparison-table reveal stagger-3">
         <thead>
           <tr>
             <th>系列</th>
@@ -162,13 +162,13 @@ const webSiteSchema = {
 
   <section class="section" style="background: #fff;">
     <div class="container">
-      <h2 class="section-title">三条系列</h2>
-      <p class="section-subtitle">
+      <h2 class="section-title section-title-reveal reveal">三条系列</h2>
+      <p class="section-subtitle reveal stagger-2">
         银色雕花、金色雕花、鸡翅木，各自对应不同的餐桌气质，但都遵守同一套克制、耐看、好用的原则。
       </p>
-      <div class="product-grid">
+      <div class="product-grid" data-stagger-children>
         {collectionsZh.map((col) => (
-          <div class="product-card">
+          <div class="product-card tilt-card reveal">
             <div class="product-card-img">
               <img src={col.image} alt={`${col.name}宣传图`} loading="eager" decoding="async" width="1254" height="1254" />
             </div>
@@ -189,13 +189,13 @@ const webSiteSchema = {
 
   <section class="section">
     <div class="container">
-      <h2 class="section-title">当前主推产品</h2>
-      <p class="section-subtitle">
+      <h2 class="section-title section-title-reveal reveal">当前主推产品</h2>
+      <p class="section-subtitle reveal stagger-2">
         当前优先展示品牌起步阶段的核心产品，完整套装与单支产品并行，后续将逐步扩展。
       </p>
-      <div class="featured-grid">
+      <div class="featured-grid" data-stagger-children>
         {productsZh.slice(0, 4).map((p) => (
-          <div class="product-card">
+          <div class="product-card tilt-card reveal">
             <div class="product-card-img">
               {p.imagePlaceholder.startsWith('/images/products/') ? (
                 <img src={p.imagePlaceholder} alt={`${p.name} - 银食记`} loading="eager" decoding="async" width="1254" height="1254" />
@@ -216,29 +216,29 @@ const webSiteSchema = {
           </div>
         ))}
       </div>
-      <div style="text-align:center; margin-top:2rem;">
-        <a href="/zh/products" class="btn btn-primary">查看全部产品</a>
+      <div style="text-align:center; margin-top:2rem;" class="reveal">
+        <a href="/zh/products" class="btn btn-primary btn-ripple">查看全部产品</a>
       </div>
     </div>
   </section>
 
   <section class="section" style="background: #fff;">
     <div class="container">
-      <h2 class="section-title">为什么是银食记</h2>
-      <div class="trust-grid">
-        <div class="trust-card">
+      <h2 class="section-title section-title-reveal reveal">为什么是银食记</h2>
+      <div class="trust-grid" data-stagger-children>
+        <div class="trust-card reveal">
           <h3>中式细节</h3>
           <p>雕花不是为了堆砌繁复，而是让餐具在日常场景里也有一点中式纹样的克制表达。</p>
         </div>
-        <div class="trust-card">
+        <div class="trust-card reveal">
           <h3>安心材质</h3>
           <p>按 SKU 标明真实钢种与护理方式，强调日常使用的耐久、食品接触安全和可持续维护。</p>
         </div>
-        <div class="trust-card">
+        <div class="trust-card reveal">
           <h3>靠近揭阳供应链</h3>
           <p>扎根揭阳与广东本地不锈钢餐具产业带，更接近材料、表面处理与打样环节。</p>
         </div>
-        <div class="trust-card">
+        <div class="trust-card reveal">
           <h3>批次供应</h3>
           <p>产品按批次生产和供应。每个产品页写明材质、组成和护理方式，当前批次状态以咨询确认或淘宝页面为准。</p>
         </div>
