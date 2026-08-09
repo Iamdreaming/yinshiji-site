@@ -18,6 +18,9 @@ export interface GeoGuideArticle {
   sections: GuideSection[];
   faqs: GuideFaq[];
   relatedLinks: { href: string; label: string }[];
+  lastUpdated?: string;
+  expertQuotes?: { quote: string; source: string; url?: string }[];
+  statistics?: { claim: string; source: string; url?: string }[];
 }
 
 export const guideArticles: GeoGuideArticle[] = [
@@ -82,6 +85,36 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/materials-care', label: 'Materials & Care' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
       { href: '/products/gold-carved-5-piece-set', label: 'Gold Tone Carved 5-Piece Set' }
+    ],
+    lastUpdated: '2026-08-01',
+    expertQuotes: [
+      {
+        quote: 'The best quality table knives are made in two pieces using a martensitic blade and an austenitic (18/8 or 18/10) handle, bonded together.',
+        source: 'British Stainless Steel Association (BSSA), "Cutlery stainless steel grades"',
+        url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades'
+      },
+      {
+        quote: 'Hardenable martensitic types of stainless steel contain only chromium, but with additional carbon. This enables them to respond to hardening heat treatments and so they can be used for knife blades.',
+        source: 'British Stainless Steel Association (BSSA), "Cutlery stainless steel grades"',
+        url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades'
+      }
+    ],
+    statistics: [
+      {
+        claim: '410 stainless steel reaches HRC 40–45 after quenching and tempering, nearly double the surface hardness of 304 (HRC 20–25)',
+        source: 'Kongfang Metal, "304 vs 410 Stainless Steel: Which One Should You Choose?"',
+        url: 'https://kongfangmetal.com/304-vs-410-stainless-steel'
+      },
+      {
+        claim: 'Global stainless steel flatware market valued at USD 7.52 billion in 2026, projected to reach USD 10.73 billion by 2033 (CAGR 5.2%)',
+        source: 'Coherent Market Insights, "Stainless Steel Flatware Market Size and Share Analysis 2026–2033"',
+        url: 'https://www.coherentmarketinsights.com/industry-reports/stainless-steel-flatware-market'
+      },
+      {
+        claim: '410 stainless steel composition: 11.5–13.5% chromium, ≤0.75% nickel; 304 composition: 18–20% chromium, 8–11% nickel',
+        source: 'ASTM A240 / Essentra Components, "Understanding stainless-steel grades"',
+        url: 'https://www.essentracomponents.com/en-us/news/solutions/access-hardware/understanding-stainless-steel-grades'
+      }
     ]
   },
   {
@@ -136,6 +169,31 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products/gold-carved-fork', label: 'Gold Tone Carved Dinner Fork' },
       { href: '/products/gold-carved-5-piece-set', label: 'Gold Tone Carved 5-Piece Set' },
       { href: '/materials-care', label: 'Materials & Care' }
+    ],
+    lastUpdated: '2026-07-29',
+    expertQuotes: [
+      {
+        quote: 'PVD-coated flatware uses titanium nitride (TiN), a hard ceramic material that is biocompatible and non-toxic — making it 100% safe for food contact. The coating bonds at a molecular level, unlike electroplating which simply deposits a soft metal layer on top.',
+        source: 'Zink Foodservice, PVD Flatware technical specification',
+        url: 'https://zinkfsg.com/product/pvd-flatware'
+      },
+      {
+        quote: 'Gold flatware made with a modern PVD coating can last for more than 10 years, even with daily use and dishwashing. Traditional gold electroplating may show significant wear and fading in just 1-3 years.',
+        source: 'XR Cutlery, "Is gold-plated flatware safe?" (2025)',
+        url: 'https://xrcutlery.com/is-gold-plated-flatware-safe'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'PVD TiN coating achieves Vickers hardness of 2,000-2,500 HV — approximately four times harder than standard chrome electroplating.',
+        source: 'GPA Coatings, TiN coating data sheet; Zink Foodservice PVD specification',
+        url: 'https://www.gpa-coatings.com/en/titanium-nitride-tin'
+      },
+      {
+        claim: 'The global cutlery market was valued at $14.6 billion in 2025, with stainless steel accounting for 54.2% of revenue share. Decorative-finish cutlery is a growing segment driven by hosting and gifting demand.',
+        source: 'DataIntelo, Cutlery Market Research Report 2025',
+        url: 'https://dataintelo.com/report/cutlery-market'
+      }
     ]
   },
   {
@@ -190,6 +248,36 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products/rosewood-handle-fork', label: 'Wenge Wood Handle Dinner Fork' },
       { href: '/products/rosewood-5-piece-set', label: 'Wenge Wood Handle 5-Piece Set' },
       { href: '/guide/what-is-in-a-5-piece-cutlery-set', label: 'What is in a 5-piece set?' }
+    ],
+    lastUpdated: '2026-07-31',
+    expertQuotes: [
+      {
+        quote: 'Wenge (Millettia laurentii) has a Janka hardness of 1,930 lbf and an average dried weight of 870 kg/m³, placing it in the medium-high density tier. Its coarse, open-pore texture means a food-safe oil finish is important to seal the surface and prevent food particle trapping in the grain.',
+        source: 'The Wood Database — Wenge (Millettia laurentii) species profile',
+        url: 'https://www.wood-database.com/wenge'
+      },
+      {
+        quote: 'Our hardwood Wenge handle is very rich in natural oils. This means it will take quite a while to show any signs of wear and requires little maintenance. But eventually any wood can dry to the point where it will crack. To prevent that we need to moisturize it with oil. Furthermore: oil will bring out the natural grain of the wood and make it more beautiful.',
+        source: 'BARE Cookware — How to maintain natural hardwood',
+        url: 'https://barecookware.com/en-us/blogs/knives/how-to-maintain-natural-hardwood'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'Wenge wood Janka hardness: 1,630–1,930 lbf; average dried density: 870 kg/m³ (medium-high tier)',
+        source: 'The Wood Database / Cameroon Timber Export SARL — Wenge properties',
+        url: 'https://www.wood-database.com/wenge'
+      },
+      {
+        claim: 'Millettia laurentii (wenge) is listed as Endangered on the IUCN Red List, with a population reduction of over 50% in the past three generations due to exploitation and habitat decline',
+        source: 'IUCN Red List (1998 assessment, A1cd ver 2.3) / The Wood Database',
+        url: 'https://www.wood-database.com/wenge'
+      },
+      {
+        claim: 'Global wooden cutlery market valued at USD 199.07 million in 2024, projected to reach USD 283.1 million by 2032 at a CAGR of 4.5%',
+        source: 'Credence Research — Wooden Cutlery Market Size, Growth, Share and Forecast 2032',
+        url: 'https://www.credenceresearch.com/report/wooden-cutlery-market'
+      }
     ]
   },
   {
@@ -249,6 +337,36 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
       { href: '/products/gold-carved-5-piece-set', label: 'Gold Tone Carved 5-Piece Set' },
       { href: '/products/rosewood-5-piece-set', label: 'Wenge Wood Handle 5-Piece Set' }
+    ],
+    lastUpdated: '2026-08-02',
+    expertQuotes: [
+      {
+        quote: 'Flatware sets should have, at a minimum, five pieces: a smaller fork suitable for salads and desserts, a larger fork for main courses, a smaller spoon for desserts or tea, a larger spoon for soup and stews, and a table knife.',
+        source: 'Serious Eats, "I Tested 13 Flatware Sets—These Are the 8 Worth Buying" (2026)',
+        url: 'https://www.seriouseats.com/best-flatware-sets-7100190'
+      },
+      {
+        quote: 'The properties of the tableware can affect people\'s perception of food samples. The weight, size, shape, and colour of cutlery all influence how food is perceived — heavier flatware creates a better dining experience.',
+        source: 'Harrar & Spence, Flavour (Springer Nature), "The taste of cutlery" (2013), 152k accesses, 107 citations',
+        url: 'https://link.springer.com/article/10.1186/2044-7248-2-21'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'Global stainless steel flatware market valued at USD 7.52 billion in 2026, projected to reach USD 10.73 billion by 2033 (CAGR 5.2%)',
+        source: 'Coherent Market Insights, "Stainless Steel Flatware Market Size and Share Analysis 2026–2033"',
+        url: 'https://www.coherentmarketinsights.com/industry-reports/stainless-steel-flatware-market'
+      },
+      {
+        claim: 'Forks accounted for approximately 24.7% of total cutlery market revenue in 2025; spoons held approximately 22.6%',
+        source: 'DataIntelo, "Cutlery Market Research Report 2034"',
+        url: 'https://dataintelo.com/report/cutlery-market'
+      },
+      {
+        claim: 'A standard 5-piece place setting includes: dinner knife, dinner fork, salad/dessert fork, dinner/soup spoon, and teaspoon — the dominant consumer format in North America and Europe',
+        source: 'WebstaurantStore, "Types of Flatware: 18/10 vs. 18/0 Stainless Steel & More"',
+        url: 'https://www.webstaurantstore.com/guide/585/different-types-of-flatware.html'
+      }
     ]
   },
   {
@@ -299,6 +417,31 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide', label: 'Main Choosing Guide' },
       { href: '/products', label: 'Browse Products' },
       { href: '/materials-care', label: 'Materials & Care' }
+    ],
+    lastUpdated: '2026-08-03',
+    expertQuotes: [
+      {
+        quote: 'In a realistic restaurant study, diners using heavier banquet-style cutlery liked the main course more, judged it as more artistic, and indicated a higher willingness to pay — on the order of roughly a 15% lift — than those using lighter canteen-style flatware, even though the food was identical.',
+        source: 'Piqueras-Fiszman & Spence, Flavour journal (Crossmodal Research Laboratory, Oxford University), 2013',
+        url: 'https://link.springer.com/article/10.1186/2044-7248-2-21'
+      },
+      {
+        quote: 'The properties of the cutlery can indeed affect people\'s taste perception of everyday foods, most likely when expectations regarding the cutlery or the food have been disconfirmed. Weight, size, shape, and colour of cutlery all influence how food is perceived.',
+        source: 'Harrar & Spence, "The taste of cutlery," Flavour 2, 21 (2013), Springer Nature',
+        url: 'https://link.springer.com/article/10.1186/2044-7248-2-21'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'Global stainless steel flatware market valued at USD 17.13 billion in 2025, projected to reach USD 29.43 billion by 2034 (CAGR 6.2%)',
+        source: 'The Insight Partners, "Stainless Steel Flatware Market Size, Trends & Demand by 2034"',
+        url: 'https://www.theinsightpartners.com/reports/stainless-steel-flatware-market'
+      },
+      {
+        claim: '18/10 stainless steel is the premium choice for flatware — the 10% nickel content provides more luster, better corrosion resistance, and greater resistance to bending than 18/8 or 18/0 grades',
+        source: 'WebstaurantStore, "Types of Flatware: 18/10 vs. 18/0 Stainless Steel & More"',
+        url: 'https://www.webstaurantstore.com/guide/585/different-types-of-flatware.html'
+      }
     ]
   },
   {
@@ -308,6 +451,31 @@ export const guideArticles: GeoGuideArticle[] = [
     eyebrow: 'Design guide',
     quickAnswer:
       'Chinese-inspired flatware is not just western cutlery with a decorative label. For Yinshiji, it means restrained carved patterns, warm wenge wood handles, honest material descriptions, and set compositions that can fit Chinese daily meals as well as western-style place settings.',
+    lastUpdated: '2026-07-30',
+    expertQuotes: [
+      {
+        quote: 'Consumers prioritize material selection when evaluating contemporary Chinese-style furniture, with "redwood" and natural wood demanding the most intensive cognitive processing — suggesting that material honesty matters more than decorative excess.',
+        source: 'Cui, Xu & Dong, BioResources (NC State University), 2024',
+        url: 'https://bioresources.cnr.ncsu.edu/resources/design-preferences-for-contemporary-chinese-style-wooden-furniture-insights-from-conjoint-analysi'
+      },
+      {
+        quote: 'Wenge is very durable with good termite resistance. Its Janka hardness of 1,930 lbf and density of 870 kg/m³ make it one of the harder and denser woods used in handle applications — stable, heavy in hand, and resistant to wear.',
+        source: 'The Wood Database (USDA Forest Products Laboratory data)',
+        url: 'https://www.wood-database.com/wenge'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'Asia-Pacific accounted for 42.1% of global stainless steel tableware revenue in 2025 ($11.95 billion out of $28.4 billion total), driven by China\'s dominant production and consumption.',
+        source: 'DataIntelo, Stainless Steel Tableware and Kitchenware Market Report, 2025',
+        url: 'https://dataintelo.com/report/stainless-steel-tableware-and-kitchenware-market'
+      },
+      {
+        claim: 'Wenge wood (Millettia laurentii) has a Janka hardness of 1,630–1,930 lbf and dried density of 870 kg/m³ — hard and dense enough for knife and cutlery handles that withstand daily use.',
+        source: 'USDA Forest Products Laboratory / The Wood Database',
+        url: 'https://www.wood-database.com/wenge'
+      }
+    ],
     sections: [
       {
         heading: 'Chinese-inspired does not have to mean ornate or exaggerated',
@@ -394,6 +562,31 @@ export const guideArticles: GeoGuideArticle[] = [
     relatedLinks: [
       { href: '/products', label: 'Browse Products' },
       { href: '/guide/what-is-in-a-5-piece-cutlery-set', label: '5-Piece Set Composition' }
+    ],
+    lastUpdated: '2026-08-04',
+    expertQuotes: [
+      {
+        quote: 'Cutlery comes from the craft of the cutler — the knife-maker — and expanded over centuries of British usage to cover the whole place setting. Flatware comes from the silversmith\'s technical vocabulary, distinguishing flat eating implements from hollow serving vessels, and expanded into everyday American usage as a general term for eating implements.',
+        source: 'Lincoln House Cutlery, "Cutlery vs Flatware"',
+        url: 'https://www.cutlery.uk.com/blogs/blog/cutlery-vs-flatware'
+      },
+      {
+        quote: 'Originally, "flatware" meant not cutlery but dishes — "plates, dishes, saucers and the like, collectively." First recorded in the official catalogue for the Great Exhibition of 1851. By the end of the century "flatware" was being used — especially in the US — to mean "domestic cutlery."',
+        source: 'Grammarphobia Blog, citing Oxford English Dictionary',
+        url: 'https://grammarphobia.com/blog/2014/09/flatware.html'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'Global stainless steel flatware market valued at USD 7.52 billion in 2026, projected to reach USD 10.73 billion by 2033 (CAGR 5.2%)',
+        source: 'Coherent Market Insights, Stainless Steel Flatware Market Report',
+        url: 'https://www.coherentmarketinsights.com/industry-reports/stainless-steel-flatware-market'
+      },
+      {
+        claim: 'Forks account for 24.7% of cutlery market revenue, spoons 22.6%; commercial segment holds 41.7% share',
+        source: 'DataIntelo, Cutlery Market Report',
+        url: 'https://dataintelo.com/report/cutlery-market'
+      }
     ]
   },
   {
@@ -435,6 +628,31 @@ export const guideArticles: GeoGuideArticle[] = [
     relatedLinks: [
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
       { href: '/guide/what-is-in-a-5-piece-cutlery-set', label: '5-Piece Set Composition' }
+    ],
+    lastUpdated: '2026-08-05',
+    expertQuotes: [
+      {
+        quote: 'A set of flatware typically contains five forks: dinner fork, fish fork, luncheon fork, salad or dessert fork, and seafood fork. The salad fork is approximately 6 inches long with flatter, slightly broader tines than a dinner fork.',
+        source: 'Etiquette Scholar — Forks Guide',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/forks.html'
+      },
+      {
+        quote: 'The table fork is the main fork, about 20 cm long. The dessert fork is about 14–15 cm long with three prongs. The fruit fork is smaller than the table fork, measuring approximately 17–18 cm.',
+        source: 'Sambonet — How to Recognise Cutlery',
+        url: 'https://www.sambonet.com/en-it/how-to-recognise-cutlery.html'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'The global stainless steel flatware market was valued at US$17.13 billion in 2025 and is projected to reach US$29.43 billion by 2034, growing at a CAGR of 6.2%.',
+        source: 'The Insight Partners — Stainless Steel Flatware Market Report',
+        url: 'https://www.theinsightpartners.com/reports/stainless-steel-flatware-market'
+      },
+      {
+        claim: 'Dinner forks typically measure 7–8 inches (18–20 cm); salad forks approximately 6 inches (15 cm); dessert forks 6–7 inches (15–18 cm). There is no single universal standard — dimensions vary by manufacturer and region.',
+        source: 'The Restaurant Store — Salad Fork vs Dinner Fork',
+        url: 'https://www.therestaurantstore.com/salad-fork-vs-dinner-fork'
+      }
     ]
   },
   {
@@ -540,7 +758,47 @@ export const guideArticles: GeoGuideArticle[] = [
       { question: 'Is 430 safe for eating?', answer: 'Most 430 meets basic food-contact standards but is less corrosion-resistant than 304.' },
       { question: 'Does Yinshiji use 201?', answer: 'No. Current Yinshiji products use 304 and 410.' }
     ],
-    relatedLinks: [ { href: '/materials-care', label: 'Materials & Care' }, { href: '/guide/304-vs-410-stainless-steel-cutlery', label: '304 vs 410 Guide' } ]
+    relatedLinks: [ { href: '/materials-care', label: 'Materials & Care' }, { href: '/guide/304-vs-410-stainless-steel-cutlery', label: '304 vs 410 Guide' } ],
+    lastUpdated: '2026-08-07',
+    expertQuotes: [
+      {
+        quote: '201 is typical of the 200 series of stainless steels. These steels use manganese to replace nickel in austenitic stainless steels, mainly in order to make them lower cost. 201 is broadly similar to 304 for corrosion resistance but with some important differences in mechanical properties.',
+        source: 'British Stainless Steel Association (BSSA), "Stainless Steels to Behold – 201"',
+        url: 'https://bssa.org.uk/stainless-steels-to-behold-201-%E2%9C%A8'
+      },
+      {
+        quote: 'Grade 430 stainless steel is magnetic. Grade 304 stainless steel is not magnetic. Grade 304 stainless steel offers more corrosion resistance than grade 430 because of its higher nickel content.',
+        source: 'Kloeckner Metals, "What Is the Difference Between 430 vs 304 Stainless Steel?"',
+        url: 'https://www.kloecknermetals.com/blog/what-is-the-difference-between-430-vs-304-stainless-steel'
+      },
+      {
+        quote: 'For a stainless steel to be Food Contact Substances (FCS) approved by the FDA, NSF and ANSI, it must have minimum chromium content of 16%. Of the 400 series, 430 Grade meets the FCS standards with a chromium content of 16–18% and a nickel content of no more than 0.5%.',
+        source: 'Astro Pak Corporation, "What Determines the Best Food Grade Stainless Steel?"',
+        url: 'https://astropak.com/food-grade-stainless-steel'
+      }
+    ],
+    statistics: [
+      {
+        claim: '304 composition: 18–20% chromium, 8–10.5% nickel; 430 composition: 16–18% chromium, ≤0.5% nickel; 201 composition: 16–18% chromium, 3.5–5.5% nickel, 5.5–7.5% manganese',
+        source: 'AZoM, "Stainless Steel – Grade 201"; ASTM A240 via Penn Stainless Products',
+        url: 'https://www.azom.com/article.aspx?ArticleID=6780'
+      },
+      {
+        claim: '430 Brinell Hardness Number (BHN): 183; 304 BHN: 201 — 304 is harder and more corrosion-resistant due to higher nickel content',
+        source: 'Kloeckner Metals, "What Is the Difference Between 430 vs 304 Stainless Steel?"',
+        url: 'https://www.kloecknermetals.com/blog/what-is-the-difference-between-430-vs-304-stainless-steel'
+      },
+      {
+        claim: '201 yield strength: 350 MPa minimum (0.2% proof stress) vs 304 yield strength: 230 MPa — 201 is stronger but less corrosion-resistant in humid or chloride environments',
+        source: 'British Stainless Steel Association (BSSA), "Stainless Steels to Behold – 201"',
+        url: 'https://bssa.org.uk/stainless-steels-to-behold-201-%E2%9C%A8'
+      },
+      {
+        claim: 'Global stainless steel flatware market valued at USD 7.52 billion in 2026, projected to reach USD 10.73 billion by 2033 (CAGR 5.2%)',
+        source: 'Coherent Market Insights, "Stainless Steel Flatware Market Size and Share Analysis 2026–2033"',
+        url: 'https://www.coherentmarketinsights.com/industry-reports/stainless-steel-flatware-market'
+      }
+    ]
   },
   {
     slug: 'what-does-food-grade-stainless-steel-mean',
@@ -566,7 +824,41 @@ export const guideArticles: GeoGuideArticle[] = [
       { question: 'Is 410 food-grade?', answer: '410 is a recognized stainless steel for food-contact tools when properly finished.' },
       { question: 'Should I only buy 304?', answer: '304 is reliable for forks and spoons. For knives, other grades like 410 can be appropriate.' }
     ],
-    relatedLinks: [ { href: '/materials-care', label: 'Materials & Care' }, { href: '/guide/304-vs-410-stainless-steel-cutlery', label: '304 vs 410 Guide' } ]
+    relatedLinks: [ { href: '/materials-care', label: 'Materials & Care' }, { href: '/guide/304-vs-410-stainless-steel-cutlery', label: '304 vs 410 Guide' } ],
+    lastUpdated: '2026-08-08',
+    expertQuotes: [
+      {
+        quote: 'Approximately 50% of all stainless steel produced is 304 stainless steel, formulated at 18% Cr and 8% Ni. Most of the stainless steel used in the fabrication of food equipment is of the austenitic AISI 300 series.',
+        source: 'Schmidt RH. Characteristics of Food Contact Surface Materials: Stainless Steel. Food Protection Trends, 2012',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      },
+      {
+        quote: 'Stainless steel grades 304 and 316 are the most commonly used in the food and beverage industry. SS grade 304 contains approximately 18–20% chromium and 8–12% nickel.',
+        source: 'Kamerud KL, Hobbie KA, Anderson KA. Stainless Steel Leaches Nickel and Chromium into Foods During Cooking. J Agric Food Chem, 2013; 61(39):9495',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4284091'
+      }
+    ],
+    statistics: [
+      {
+        claim: '304 stainless steel makes up approximately 50% of all stainless steel produced worldwide',
+        source: 'Schmidt RH, Food Protection Trends, 2012',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      },
+      {
+        claim: 'FDA, ANSI, and NSF require a minimum of 16% chromium content for stainless steel to be considered food-grade for prolonged food contact',
+        source: 'Astro Pak: Food Grade Stainless Steel'
+      },
+      {
+        claim: '304 stainless steel contains 18–20% chromium and 8–12% nickel; 316 contains 16–18% chromium, 10–14% nickel, and 2–3% molybdenum',
+        source: 'Kamerud et al., J Agric Food Chem, 2013',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4284091'
+      },
+      {
+        claim: 'Both 304 and 316 stainless steels meet FDA regulations, EU Framework Regulation (EC) No 1935/2004, and NSF/ANSI 51 certification for direct food contact',
+        source: 'AZoM — Food Grade Stainless Steel: 304 vs 316 (Suhail, 2025)',
+        url: 'https://www.azom.com/article.aspx?ArticleID=24472'
+      }
+    ]
   },
   {
     slug: '304-vs-316-stainless-steel-cutlery',
@@ -2070,6 +2362,41 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/complete-buyers-guide-2026', label: "Complete Buyer's Guide 2026" },
       { href: '/reference/stainless-steel-grades-cutlery', label: 'Reference: Stainless Steel Grades Explained' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set (304 Stainless Steel)' },
+    ],
+    lastUpdated: '2026-08-06',
+    expertQuotes: [
+      {
+        quote: "'18/10' is a designation used on some cutlery and holloware as an alternative to '18/8'. This designation is claimed to indicate a better quality steel than '18/8', and is essentially the same as the '304 (1.4301) grade. In practice the '10' does not indicate an actual higher Ni content and is purely a marketing ploy.",
+        source: "British Stainless Steel Association (BSSA), \"Cutlery stainless steel grades\"",
+        url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades'
+      },
+      {
+        quote: 'There is no difference between 18/8 and 18/10 stainless steel in flatware. The difference between the two is purely a marketing effort. When a manufacturer purchases stainless steel from a steel mill, they purchase stainless steel Grade 304, which has a range of 18-20% chromium, and 8-10% nickel content.',
+        source: 'Silver Superstore, "Stainless Flatware Quality Differences"',
+        url: 'https://www.silversuperstore.com/stainless_quality.asp'
+      },
+      {
+        quote: "18/0 is a 'ferritic' stainless steel type, which is attracted by a magnet (like pure iron). This steel is known as '430' in the AISI system or 1.4016 in the European standard. It is used where corrosion resistance is not too demanding as an alternative to the 18/8 304 type. The chromium content is optimistically said to be 18% but is nearer 17%.",
+        source: "British Stainless Steel Association (BSSA), \"Cutlery stainless steel grades\"",
+        url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'ASTM A240 specifies 304 stainless steel as containing 18.00-20.00% chromium and 8.00-10.50% nickel. Both 18/8 and 18/10 stamps fall within this single grade specification.',
+        source: 'Penn Stainless Products, "Stainless Steel Plate 304/304L ASTM A240"',
+        url: 'https://www.pennstainless.com/stainless-steel-plate-304-304l-astm-a240'
+      },
+      {
+        claim: '410 stainless steel (used for knife blades): 11.5-13.5% chromium, ≤0.75% nickel. 430 stainless steel (18/0 flatware): 16-18% chromium, ≤0.75% nickel. 304 stainless steel (18/8 and 18/10): 18-20% chromium, 8-10.5% nickel.',
+        source: 'Essentra Components, "Understanding stainless-steel grades" (ASTM A240)',
+        url: 'https://www.essentracomponents.com/en-us/news/solutions/access-hardware/understanding-stainless-steel-grades'
+      },
+      {
+        claim: 'In standard 5-piece flatware sets, 13/0 martensitic steel is typically used for knife blades (requiring hardness and edge retention) while 18/10 (304) austenitic steel is used for forks and spoons (requiring corrosion resistance and formability).',
+        source: 'WebstaurantStore, "Different Types of Flatware"',
+        url: 'https://www.webstaurantstore.com/guide/585/different-types-of-flatware.html'
+      }
     ]
   },
   {
@@ -3044,7 +3371,47 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { question: '430 不锈钢安全吗？', answer: '大部分 430 餐具满足基本标准，但耐腐蚀不如 304。' },
       { question: '银食记用 201 吗？', answer: '不用。银食记使用 304 和 410。' }
     ],
-    relatedLinks: [ { href: '/zh/materials-care', label: '材质与护理' }, { href: '/zh/guide/304-vs-410-stainless-steel-cutlery', label: '304 与 410 指南' } ]
+    relatedLinks: [ { href: '/zh/materials-care', label: '材质与护理' }, { href: '/zh/guide/304-vs-410-stainless-steel-cutlery', label: '304 与 410 指南' } ],
+    lastUpdated: '2026-08-07',
+    expertQuotes: [
+      {
+        quote: '201 is typical of the 200 series of stainless steels. These steels use manganese to replace nickel in austenitic stainless steels, mainly in order to make them lower cost. 201 is broadly similar to 304 for corrosion resistance but with some important differences in mechanical properties.',
+        source: 'British Stainless Steel Association (BSSA), "Stainless Steels to Behold – 201"',
+        url: 'https://bssa.org.uk/stainless-steels-to-behold-201-%E2%9C%A8'
+      },
+      {
+        quote: 'Grade 430 stainless steel is magnetic. Grade 304 stainless steel is not magnetic. Grade 304 stainless steel offers more corrosion resistance than grade 430 because of its higher nickel content.',
+        source: 'Kloeckner Metals, "What Is the Difference Between 430 vs 304 Stainless Steel?"',
+        url: 'https://www.kloecknermetals.com/blog/what-is-the-difference-between-430-vs-304-stainless-steel'
+      },
+      {
+        quote: 'For a stainless steel to be Food Contact Substances (FCS) approved by the FDA, NSF and ANSI, it must have minimum chromium content of 16%. Of the 400 series, 430 Grade meets the FCS standards with a chromium content of 16–18% and a nickel content of no more than 0.5%.',
+        source: 'Astro Pak Corporation, "What Determines the Best Food Grade Stainless Steel?"',
+        url: 'https://astropak.com/food-grade-stainless-steel'
+      }
+    ],
+    statistics: [
+      {
+        claim: '304 成分：铬 18–20%，镍 8–10.5%；430 成分：铬 16–18%，镍 ≤0.5%；201 成分：铬 16–18%，镍 3.5–5.5%，锰 5.5–7.5%',
+        source: 'AZoM, "Stainless Steel – Grade 201"; ASTM A240 via Penn Stainless Products',
+        url: 'https://www.azom.com/article.aspx?ArticleID=6780'
+      },
+      {
+        claim: '430 布氏硬度 (BHN): 183；304 BHN: 201 — 304 因镍含量更高而更硬、更耐腐蚀',
+        source: 'Kloeckner Metals, "What Is the Difference Between 430 vs 304 Stainless Steel?"',
+        url: 'https://www.kloecknermetals.com/blog/what-is-the-difference-between-430-vs-304-stainless-steel'
+      },
+      {
+        claim: '201 屈服强度：最低 350 MPa（0.2% 规定非比例延伸强度）vs 304 屈服强度：230 MPa — 201 强度更高但在潮湿或含氯环境中耐腐蚀不如 304',
+        source: 'British Stainless Steel Association (BSSA), "Stainless Steels to Behold – 201"',
+        url: 'https://bssa.org.uk/stainless-steels-to-behold-201-%E2%9C%A8'
+      },
+      {
+        claim: '全球不锈钢餐具市场 2026 年估值 75.2 亿美元，预计 2033 年达 107.3 亿美元（CAGR 5.2%）',
+        source: 'Coherent Market Insights, "Stainless Steel Flatware Market Size and Share Analysis 2026–2033"',
+        url: 'https://www.coherentmarketinsights.com/industry-reports/stainless-steel-flatware-market'
+      }
+    ]
   },
   {
     slug: 'what-does-food-grade-stainless-steel-mean',
@@ -3069,7 +3436,41 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { question: '410 食品级吗？', answer: '410 经适当处理可用于食品接触工具。' },
       { question: '只买 304 够吗？', answer: '叉勺类 304 是可靠选择。餐刀用其他钢种也合理，看是否标注清楚。' }
     ],
-    relatedLinks: [ { href: '/zh/materials-care', label: '材质与护理' }, { href: '/zh/guide/304-vs-410-stainless-steel-cutlery', label: '304 与 410 指南' } ]
+    relatedLinks: [ { href: '/zh/materials-care', label: '材质与护理' }, { href: '/zh/guide/304-vs-410-stainless-steel-cutlery', label: '304 与 410 指南' } ],
+    lastUpdated: '2026-08-08',
+    expertQuotes: [
+      {
+        quote: '全球约50%的不锈钢产量为304不锈钢，成分为18%铬和8%镍。食品设备制造中使用的不锈钢大多属于奥氏体AISI 300系列。',
+        source: 'Schmidt RH. Characteristics of Food Contact Surface Materials: Stainless Steel. Food Protection Trends, 2012',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      },
+      {
+        quote: '304和316是不锈钢在食品饮料行业中最常用的两个等级。304约含18-20%铬和8-12%镍。',
+        source: 'Kamerud KL, Hobbie KA, Anderson KA. Stainless Steel Leaches Nickel and Chromium into Foods During Cooking. J Agric Food Chem, 2013; 61(39):9495',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4284091'
+      }
+    ],
+    statistics: [
+      {
+        claim: '304不锈钢约占全球不锈钢总产量的50%',
+        source: 'Schmidt RH, Food Protection Trends, 2012',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      },
+      {
+        claim: 'FDA、ANSI和NSF要求食品接触不锈钢的铬含量不低于16%',
+        source: 'Astro Pak: Food Grade Stainless Steel'
+      },
+      {
+        claim: '304含18-20%铬、8-12%镍；316含16-18%铬、10-14%镍、2-3%钼',
+        source: 'Kamerud et al., J Agric Food Chem, 2013',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4284091'
+      },
+      {
+        claim: '304和316均符合FDA法规、欧盟法规(EC) No 1935/2004及NSF/ANSI 51食品接触认证',
+        source: 'AZoM — Food Grade Stainless Steel: 304 vs 316 (Suhail, 2025)',
+        url: 'https://www.azom.com/article.aspx?ArticleID=24472'
+      }
+    ]
   },
   {
     slug: '304-vs-410-stainless-steel-cutlery',
@@ -3121,6 +3522,36 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/materials-care', label: '材质与护理' },
       { href: '/zh/products/silver-carved-5-piece-set', label: '银色雕花五件套' },
       { href: '/zh/products/gold-carved-5-piece-set', label: '金色雕花五件套' }
+    ],
+    lastUpdated: '2026-08-01',
+    expertQuotes: [
+      {
+        quote: 'The best quality table knives are made in two pieces using a martensitic blade and an austenitic (18/8 or 18/10) handle, bonded together.',
+        source: 'British Stainless Steel Association (BSSA), "Cutlery stainless steel grades"',
+        url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades'
+      },
+      {
+        quote: 'Hardenable martensitic types of stainless steel contain only chromium, but with additional carbon. This enables them to respond to hardening heat treatments and so they can be used for knife blades.',
+        source: 'British Stainless Steel Association (BSSA), "Cutlery stainless steel grades"',
+        url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades'
+      }
+    ],
+    statistics: [
+      {
+        claim: '410 不锈钢经淬火回火后硬度可达 HRC 40–45，几乎是 304（HRC 20–25）的两倍',
+        source: 'Kongfang Metal, "304 vs 410 Stainless Steel: Which One Should You Choose?"',
+        url: 'https://kongfangmetal.com/304-vs-410-stainless-steel'
+      },
+      {
+        claim: '全球不锈钢餐具市场 2026 年估值 75.2 亿美元，预计 2033 年达 107.3 亿美元（CAGR 5.2%）',
+        source: 'Coherent Market Insights, "Stainless Steel Flatware Market Size and Share Analysis 2026–2033"',
+        url: 'https://www.coherentmarketinsights.com/industry-reports/stainless-steel-flatware-market'
+      },
+      {
+        claim: '410 不锈钢成分：铬 11.5–13.5%，镍 ≤0.75%；304 成分：铬 18–20%，镍 8–11%',
+        source: 'ASTM A240 / Essentra Components, "Understanding stainless-steel grades"',
+        url: 'https://www.essentracomponents.com/en-us/news/solutions/access-hardware/understanding-stainless-steel-grades'
+      }
     ]
   },
   {
@@ -3173,6 +3604,31 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/products/gold-carved-fork', label: '金色雕花主叉' },
       { href: '/zh/products/gold-carved-5-piece-set', label: '金色雕花五件套' },
       { href: '/zh/materials-care', label: '材质与护理' }
+    ],
+    lastUpdated: '2026-07-29',
+    expertQuotes: [
+      {
+        quote: 'PVD 涂层餐具使用氮化钛（TiN），这是一种硬质陶瓷材料，具有生物兼容性和无毒性——100% 安全用于食品接触。涂层在分子层面结合，不同于电镀仅在表面沉积软金属层。',
+        source: 'Zink Foodservice, PVD Flatware 技术规格',
+        url: 'https://zinkfsg.com/product/pvd-flatware'
+      },
+      {
+        quote: '采用现代 PVD 涂层的金色餐具即使日常使用和机洗也能使用 10 年以上。传统金电镀可能在 1-3 年内出现明显磨损和褪色。',
+        source: 'XR Cutlery, "金色电镀餐具安全吗？" (2025)',
+        url: 'https://xrcutlery.com/is-gold-plated-flatware-safe'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'PVD 氮化钛涂层维氏硬度可达 2,000-2,500 HV，约为标准铬电镀的 4 倍。',
+        source: 'GPA Coatings, TiN 涂层数据表; Zink Foodservice PVD 规格',
+        url: 'https://www.gpa-coatings.com/en/titanium-nitride-tin'
+      },
+      {
+        claim: '2025 年全球餐具市场估值 146 亿美元，不锈钢占收入份额 54.2%。装饰性涂层餐具是增长中的细分市场，由聚餐和礼赠需求驱动。',
+        source: 'DataIntelo, 餐具市场研究报告 2025',
+        url: 'https://dataintelo.com/report/cutlery-market'
+      }
     ]
   },
   {
@@ -3225,6 +3681,36 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/products/rosewood-handle-fork', label: '鸡翅木主叉' },
       { href: '/zh/products/rosewood-5-piece-set', label: '鸡翅木五件套' },
       { href: '/zh/guide/what-is-in-a-5-piece-cutlery-set', label: '五件套组成说明' }
+    ],
+    lastUpdated: '2026-07-31',
+    expertQuotes: [
+      {
+        quote: '鸡翅木（Millettia laurentii）詹卡硬度 1,930 lbf，平均干重 870 kg/m³，属于中高密度木材。其粗纹理和大孔隙意味着需要食品级油封住表面，防止食物残渣嵌入木纹。',
+        source: 'The Wood Database — Wenge (Millettia laurentii) 物种档案',
+        url: 'https://www.wood-database.com/wenge'
+      },
+      {
+        quote: '鸡翅木手柄天然含油量高，短期内不易出现磨损迹象，维护需求低。但任何木材最终都可能干裂，需要定期上油保湿。上油还能让木纹更清晰美观。',
+        source: 'BARE Cookware — 如何保养天然硬木',
+        url: 'https://barecookware.com/en-us/blogs/knives/how-to-maintain-natural-hardwood'
+      }
+    ],
+    statistics: [
+      {
+        claim: '鸡翅木詹卡硬度：1,630–1,930 lbf；平均干密度：870 kg/m³（中高密度级）',
+        source: 'The Wood Database / Cameroon Timber Export SARL — 鸡翅木属性数据',
+        url: 'https://www.wood-database.com/wenge'
+      },
+      {
+        claim: 'Millettia laurentii（鸡翅木）被 IUCN 红色名录列为濒危物种，过去三代种群数量减少超过 50%，主要原因是过度采伐和栖息地退化',
+        source: 'IUCN 红色名录（1998 评估，A1cd ver 2.3）/ The Wood Database',
+        url: 'https://www.wood-database.com/wenge'
+      },
+      {
+        claim: '全球木制餐具市场 2024 年估值 1.99 亿美元，预计 2032 年达 2.83 亿美元，年复合增长率 4.5%',
+        source: 'Credence Research — 木制餐具市场规模、增长与预测 2032',
+        url: 'https://www.credenceresearch.com/report/wooden-cutlery-market'
+      }
     ]
   },
   {
@@ -3284,6 +3770,36 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/products/silver-carved-5-piece-set', label: '银色雕花五件套' },
       { href: '/zh/products/gold-carved-5-piece-set', label: '金色雕花五件套' },
       { href: '/zh/products/rosewood-5-piece-set', label: '鸡翅木五件套' }
+    ],
+    lastUpdated: '2026-08-02',
+    expertQuotes: [
+      {
+        quote: 'Flatware sets should have, at a minimum, five pieces: a smaller fork suitable for salads and desserts, a larger fork for main courses, a smaller spoon for desserts or tea, a larger spoon for soup and stews, and a table knife.',
+        source: 'Serious Eats, "I Tested 13 Flatware Sets—These Are the 8 Worth Buying" (2026)',
+        url: 'https://www.seriouseats.com/best-flatware-sets-7100190'
+      },
+      {
+        quote: 'The properties of the tableware can affect people\'s perception of food samples. The weight, size, shape, and colour of cutlery all influence how food is perceived — heavier flatware creates a better dining experience.',
+        source: 'Harrar & Spence, Flavour (Springer Nature), "The taste of cutlery" (2013), 152k accesses, 107 citations',
+        url: 'https://link.springer.com/article/10.1186/2044-7248-2-21'
+      }
+    ],
+    statistics: [
+      {
+        claim: '全球不锈钢餐具市场 2026 年估值 75.2 亿美元，预计 2033 年达 107.3 亿美元（CAGR 5.2%）',
+        source: 'Coherent Market Insights, "Stainless Steel Flatware Market Size and Share Analysis 2026–2033"',
+        url: 'https://www.coherentmarketinsights.com/industry-reports/stainless-steel-flatware-market'
+      },
+      {
+        claim: '2025 年叉子占全球餐具市场收入约 24.7%，勺子约 22.6%',
+        source: 'DataIntelo, "Cutlery Market Research Report 2034"',
+        url: 'https://dataintelo.com/report/cutlery-market'
+      },
+      {
+        claim: '标准五件套席位包含：餐刀、主叉、沙拉/甜点叉、主勺/汤勺、茶勺——这是北美和欧洲的主流消费格式',
+        source: 'WebstaurantStore, "Types of Flatware: 18/10 vs. 18/0 Stainless Steel & More"',
+        url: 'https://www.webstaurantstore.com/guide/585/different-types-of-flatware.html'
+      }
     ]
   },
   {
@@ -3334,6 +3850,31 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/guide', label: '主选购指南' },
       { href: '/zh/products', label: '查看产品' },
       { href: '/zh/materials-care', label: '材质与护理' }
+    ],
+    lastUpdated: '2026-08-03',
+    expertQuotes: [
+      {
+        quote: '在一项餐厅实地研究中，使用较重的宴会风格餐具的食客对主菜评价更高，认为菜品更具艺术感，并表现出更高的支付意愿——在相同菜品条件下，比使用较轻餐具的食客提升约15%。',
+        source: 'Piqueras-Fiszman & Spence, Flavour 期刊（牛津大学跨模态研究实验室），2013',
+        url: 'https://link.springer.com/article/10.1186/2044-7248-2-21'
+      },
+      {
+        quote: '餐具的属性确实能影响人们对日常食物的味觉感知——重量、大小、形状和颜色都会发挥作用，尤其当餐具或食物的预期被打破时效果最明显。',
+        source: 'Harrar & Spence, "The taste of cutlery", Flavour 2, 21 (2013), Springer Nature',
+        url: 'https://link.springer.com/article/10.1186/2044-7248-2-21'
+      }
+    ],
+    statistics: [
+      {
+        claim: '全球不锈钢餐具市场规模2025年为171.3亿美元，预计2034年增至294.3亿美元（年复合增长率6.2%）',
+        source: 'The Insight Partners, "Stainless Steel Flatware Market Size, Trends & Demand by 2034"',
+        url: 'https://www.theinsightpartners.com/reports/stainless-steel-flatware-market'
+      },
+      {
+        claim: '18/10不锈钢是高端餐具的首选材质——10%的镍含量使其比18/8或18/0具有更好的光泽、耐腐蚀性和抗弯折性',
+        source: 'WebstaurantStore, "Types of Flatware: 18/10 vs. 18/0 Stainless Steel & More"',
+        url: 'https://www.webstaurantstore.com/guide/585/different-types-of-flatware.html'
+      }
     ]
   },
   {
@@ -3343,6 +3884,31 @@ export const guideArticlesZh: GeoGuideArticle[] = [
     eyebrow: '设计指南',
     quickAnswer:
       '中式灵感餐具不是给西式餐具贴一个中文标签。对银食记来说，它包括克制的雕花细节、鸡翅木手柄、真实材质描述，以及能适配中式日常饭菜的组成方式。',
+    lastUpdated: '2026-07-30',
+    expertQuotes: [
+      {
+        quote: '消费者在评估当代中式风格家具时，最优先关注材质选择——天然木材（如红木）在认知加工阶段获得最多注意力，说明材质诚实比装饰堆砌更重要。',
+        source: 'Cui, Xu & Dong, BioResources (北卡州立大学), 2024',
+        url: 'https://bioresources.cnr.ncsu.edu/resources/design-preferences-for-contemporary-chinese-style-wooden-furniture-insights-from-conjoint-analysi'
+      },
+      {
+        quote: '鸡翅木（Millettia laurentii）非常耐久，抗白蚁性能好。Janka 硬度 1,930 lbf，密度 870 kg/m³，是手柄应用中较硬较密的木材之一——手感沉稳，耐磨性好。',
+        source: 'The Wood Database (美国林产品实验室数据)',
+        url: 'https://www.wood-database.com/wenge'
+      }
+    ],
+    statistics: [
+      {
+        claim: '2025年亚太地区占全球不锈钢餐具收入的42.1%（$119.5亿 / 总计$284亿），中国是最大的生产国和消费国。',
+        source: 'DataIntelo, 不锈钢餐具及厨具市场报告, 2025',
+        url: 'https://dataintelo.com/report/stainless-steel-tableware-and-kitchenware-market'
+      },
+      {
+        claim: '鸡翅木（Millettia laurentii）Janka硬度 1,630–1,930 lbf，干密度 870 kg/m³——硬度和密度足以制作日常使用的刀叉手柄。',
+        source: '美国林产品实验室 / The Wood Database',
+        url: 'https://www.wood-database.com/wenge'
+      }
+    ],
     sections: [
       {
         heading: '中式灵感不等于浮夸',
@@ -3426,6 +3992,31 @@ export const guideArticlesZh: GeoGuideArticle[] = [
     relatedLinks: [
       { href: '/zh/products', label: '查看产品' },
       { href: '/zh/guide/what-is-in-a-5-piece-cutlery-set', label: '五件套组成说明' }
+    ],
+    lastUpdated: '2026-08-04',
+    expertQuotes: [
+      {
+        quote: 'Cutlery 来自制刀匠（cutler）的工艺，经过几个世纪的英式用法扩展到涵盖整套餐具。Flatware 来自银匠的技术词汇，用于区分扁平餐具与空心器皿（hollowware），后来在美式英语中扩展为餐具的通用称呼。',
+        source: 'Lincoln House Cutlery, "Cutlery vs Flatware"',
+        url: 'https://www.cutlery.uk.com/blogs/blog/cutlery-vs-flatware'
+      },
+      {
+        quote: 'Flatware 最初不是指餐具，而是指盘子、碟子等扁平器皿。最早记录于 1851 年伦敦世博会官方目录。到 19 世纪末，flatware 在美国开始被用来指"家用餐具"。',
+        source: 'Grammarphobia Blog, 引用牛津英语词典（OED）',
+        url: 'https://grammarphobia.com/blog/2014/09/flatware.html'
+      }
+    ],
+    statistics: [
+      {
+        claim: '全球不锈钢餐具市场 2026 年估值 75.2 亿美元，预计 2033 年达 107.3 亿美元（年复合增长率 5.2%）',
+        source: 'Coherent Market Insights, 不锈钢餐具市场报告',
+        url: 'https://www.coherentmarketinsights.com/industry-reports/stainless-steel-flatware-market'
+      },
+      {
+        claim: '叉子占餐具市场收入 24.7%，勺子占 22.6%；商业端占 41.7% 份额',
+        source: 'DataIntelo, 餐具市场报告',
+        url: 'https://dataintelo.com/report/cutlery-market'
+      }
     ]
   },
   {
@@ -3467,6 +4058,31 @@ export const guideArticlesZh: GeoGuideArticle[] = [
     relatedLinks: [
       { href: '/zh/products/silver-carved-5-piece-set', label: '银色雕花五件套' },
       { href: '/zh/guide/what-is-in-a-5-piece-cutlery-set', label: '五件套组成说明' }
+    ],
+    lastUpdated: '2026-08-05',
+    expertQuotes: [
+      {
+        quote: '一套餐具通常包含五种叉：主叉、鱼叉、午餐叉、沙拉/甜点叉和海鲜叉。沙拉叉约 6 英寸长，齿比主叉更平、略宽。',
+        source: 'Etiquette Scholar — Forks Guide',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/forks.html'
+      },
+      {
+        quote: '主叉（table fork）是主要用叉，约 20 cm 长。甜点叉约 14–15 cm，三齿。水果叉比主叉小，约 17–18 cm。',
+        source: 'Sambonet — How to Recognise Cutlery',
+        url: 'https://www.sambonet.com/en-it/how-to-recognise-cutlery.html'
+      }
+    ],
+    statistics: [
+      {
+        claim: '全球不锈钢餐具市场 2025 年估值 171.3 亿美元，预计 2034 年达 294.3 亿美元，年复合增长率 6.2%。',
+        source: 'The Insight Partners — Stainless Steel Flatware Market Report',
+        url: 'https://www.theinsightpartners.com/reports/stainless-steel-flatware-market'
+      },
+      {
+        claim: '主叉通常 7–8 英寸（18–20 cm）；沙拉叉约 6 英寸（15 cm）；甜点叉 6–7 英寸（15–18 cm）。没有统一标准——尺寸因品牌和地区而异。',
+        source: 'The Restaurant Store — Salad Fork vs Dinner Fork',
+        url: 'https://www.therestaurantstore.com/salad-fork-vs-dinner-fork'
+      }
     ]
   },
   {

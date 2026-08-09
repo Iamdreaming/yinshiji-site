@@ -41,6 +41,7 @@ const articleSchema = {
   publisher: { '@type': 'Organization', name: 'Yinshiji', url: new URL('/', site).href },
   inLanguage: 'en',
   about: ['tableware', 'flatware', 'stainless steel cutlery', 'Chinese-inspired tableware'],
+  ...(article.lastUpdated ? { dateModified: article.lastUpdated } : {}),
 };
 
 const faqSchema = {
@@ -137,6 +138,48 @@ const breadcrumbSchema = {
             ))}
           </div>
         </section>
+
+        {article.expertQuotes && article.expertQuotes.length > 0 && (
+          <section class="detail-section">
+            <h2>Expert sources</h2>
+            <div class="faq-list">
+              {article.expertQuotes.map((item) => (
+                <article class="faq-item">
+                  <blockquote style="margin:0; padding:0.8rem 1.2rem; border-left:3px solid var(--color-accent, #c8a45c); background:var(--color-bg-subtle, #f8f6f2); border-radius:0 6px 6px 0;">
+                    <p style="margin:0; font-style:italic;">"{item.quote}"</p>
+                    <footer style="margin-top:0.5rem; font-size:0.85rem; color:var(--color-text-muted);">
+                      — {item.source}
+                      {item.url && <a href={item.url} target="_blank" rel="noopener" style="margin-left:0.3rem; font-size:0.8rem;">[source↗]</a>}
+                    </footer>
+                  </blockquote>
+                </article>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {article.statistics && article.statistics.length > 0 && (
+          <section class="detail-section">
+            <h2>Key data</h2>
+            <ul class="feature-list" style="margin-top:1rem;">
+              {article.statistics.map((item) => (
+                <li>
+                  {item.claim}
+                  <span style="display:block; font-size:0.8rem; color:var(--color-text-muted); margin-top:0.2rem;">
+                    Source: {item.source}
+                    {item.url && <a href={item.url} target="_blank" rel="noopener" style="margin-left:0.3rem;">[link↗]</a>}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {article.lastUpdated && (
+          <p style="font-size:0.8rem; color:var(--color-text-muted); margin-top:2rem; text-align:right;">
+            Last updated: {article.lastUpdated}
+          </p>
+        )}
       </article>
     </div>
   </section>
