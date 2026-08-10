@@ -937,6 +937,41 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/materials-care', label: 'Materials & Care' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
     ],
+    lastUpdated: '2026-08-10',
+    expertQuotes: [
+      {
+        quote: 'Stainless steel grades 304 and 316 are the most commonly used in the food and beverage industry. SS grade 304 contains approximately 18–20% chromium and 8–12% nickel. SS grade 316 contains 16–18% chromium, 10–14% nickel, and 2–3% molybdenum.',
+        source: 'Kamerud KL, Hobbie KA, Anderson KR. Stainless Steel in Food Contact Applications. Journal of Agricultural and Food Chemistry (PMC4284091)',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4284091',
+      },
+      {
+        quote: 'Both 304 and 316 stainless steels comply with FDA food contact regulations, EU Regulation 1935/2004, and NSF/ANSI 51 standards for food equipment. 304: Cr 17.5–20%, Ni 8–11%. 316: Cr 16–18.5%, Ni 10–14%, Mo 2–3%.',
+        source: 'Suhail M. Food Grade Stainless Steel: 304 vs 316. AZoM, 2025',
+        url: 'https://www.azom.com/article.aspx?ArticleID=24472',
+      },
+    ],
+    statistics: [
+      {
+        claim: 'The Pitting Resistance Equivalent Number (PREN) for 304 stainless steel is approximately 18–23, while 316 ranges from 25–27 — a measurable difference in chloride pitting resistance.',
+        source: 'MWalloys: Stainless Steel Prices Per Pound (2026)',
+        url: 'https://www.mwalloys.com/stainless-steel-prices-per-pound',
+      },
+      {
+        claim: '316 stainless steel raw material costs 20–30% more than 304, driven by higher nickel and molybdenum content. In 2025, 304 sheet averaged $2,500–$3,000/ton vs. 316 at $3,500–$4,500/ton.',
+        source: 'TBK Metal: 2025 Stainless Steel Cost Analysis',
+        url: 'https://www.tbkmetal.com/stainless-steel-cost-analysis',
+      },
+      {
+        claim: '316 stainless steel is typically 10–30% more expensive than 304 per kilogram, depending on market conditions and material specifications.',
+        source: 'Vishwa Stainless: 304 vs 316 Price Comparison',
+        url: 'https://www.vishwastainless.com/304-vs-316-stainless-steel-price',
+      },
+      {
+        claim: 'Approximately 60–80% of stainless steel produced globally uses recycled scrap as feedstock (ISSF Sustainability Report 2024), which influences both 304 and 316 pricing.',
+        source: 'MWalloys: Stainless Steel Prices Per Pound (2026)',
+        url: 'https://www.mwalloys.com/stainless-steel-prices-per-pound',
+      },
+    ],
   },
   {
     slug: 'how-to-care-for-stainless-steel-cutlery',
