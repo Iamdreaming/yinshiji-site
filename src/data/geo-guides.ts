@@ -1070,6 +1070,35 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
       { href: '/products/rosewood-5-piece-set', label: 'Wenge Wood Handle 5-Piece Set' },
     ],
+    lastUpdated: '2026-08-12',
+    expertQuotes: [
+      {
+        quote: 'Stainless steel\'s resistance to corrosion comes from its chromium content of 10.5% or more, which forms a passive film that protects the metal. If the surface is scratched, the chromium oxide layer regenerates itself in the presence of oxygen — this self-healing behavior is the biggest reason stainless steel is so reliable against corrosion.',
+        source: 'Aperam: What is Stainless Steel?',
+      },
+      {
+        quote: 'Hand washing of cutlery is recommended with mild washing-up liquid; avoid any products with abrasive properties. Wire wool or other abrasive cleaners are prohibited. Cutlery should not be left to soak at any time. Always remove and hand-dry cutlery as soon as the wash cycle has finished — cutlery left in damp conditions can become stained or damaged.',
+        source: 'SolaSwiss: Advice on Cutlery Care',
+        url: 'https://www.solaswiss.com/guidance/detail/advice-on-cutlery-care',
+      },
+      {
+        quote: 'Skip harsh chemicals: do not use bleach or harsh detergents, as they can damage the finish and cause discoloration. No steel wool: avoid scouring pads or steel wool, which can scratch the surface. Don\'t leave in ambient moisture: leaving flatware in closed, moist conditions can cause spotting or even pitting.',
+        source: 'Silver Superstore: Stainless Flatware Care',
+        url: 'https://www.silversuperstore.com/faq/stainless-flatware-care.asp',
+      },
+    ],
+    statistics: [
+      {
+        claim: 'Approximately 85% of American households have some degree of hard water, according to the U.S. Geological Survey (USGS). Hard water leaves mineral deposits (calcium and magnesium) on stainless steel surfaces, causing water spots and cloudiness — the single most common maintenance complaint for flatware.',
+        source: 'HardWaterHQ: Hard Water Statistics 2026 (citing USGS)',
+        url: 'https://hardwaterhq.com/articles/hard-water-statistics-2026',
+      },
+      {
+        claim: 'Passivation — the formation of a thin chromium oxide layer on stainless steel — is self-healing in the presence of oxygen. This passive layer is only a few atoms thick but provides continuous protection against corrosion, and reforms instantly if the surface is scratched or damaged.',
+        source: 'SilcoTek: Corrosion Resistance of Stainless Steel',
+        url: 'https://www.silcotek.com/blog/corrosion-resistance-of-stainless-steel-passivation-and-silcotek-coatings',
+      },
+    ],
   },
   {
     slug: 'complete-buyers-guide-2026',
@@ -3130,6 +3159,39 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/how-to-clean-stainless-steel-cutlery', label: 'How to Clean Stainless Steel Cutlery' },
       { href: '/guide/stainless-steel-flatware-rust-prevention', label: 'Stainless Steel Flatware Rust Prevention' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
+    ],
+    lastUpdated: '2026-08-11',
+    expertQuotes: [
+      {
+        quote: 'Approximately 50% of all stainless steel produced is 304 stainless steel, formulated at 18% Cr and 8% Ni. Most of the stainless steel used in the fabrication of food equipment is of the austenitic AISI 300 series.',
+        source: 'Schmidt RH. Characteristics of Food Contact Surface Materials: Stainless Steel. Food Protection Trends, 2012',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      },
+      {
+        quote: 'Stainless steel grades 304 and 316 are the most commonly used in the food and beverage industry. SS grade 304 contains approximately 18–20% chromium and 8–12% nickel.',
+        source: 'Kamerud KL, Hobbie KA, Anderson KR. Nickel and Chromium Leaching from Stainless Steel. J Agric Food Chem, 2013 (PMC4284091)',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4284091'
+      },
+      {
+        quote: 'For a stainless steel to be considered food grade and come in contact with food, it must be approved by the FDA and have a minimum chromium content of 16%. 304 stainless steel contains 18% chromium — above the FDA minimum.',
+        source: 'Boulder Engineering Studio: Food Contact Safe Stainless Steel',
+        url: 'https://www.boulderes.com/resource-library/food-contact-safe-stainless-steel'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'ASTM A240 specifies 304 stainless steel composition as Cr 18–20%, Ni 8–10.5%, with minimum tensile strength 515 MPa, yield strength 205 MPa, and maximum Brinell hardness 201.',
+        source: 'Penn Stainless Products: ASTM A240 304/304L Specifications',
+        url: 'https://pennstainless.com/stainless-steel-plate-304-304l-astm-a240'
+      },
+      {
+        claim: 'Global 304 stainless steel market valued at $48.3 billion in 2025, projected to reach $72.8 billion by 2034 (CAGR 5.2%). Consumer goods including kitchenware account for $10.3 billion (21.3% share).',
+        source: 'DataIntelo: Global 304 Stainless Steel Market Report 2033'
+      },
+      {
+        claim: 'Global stainless steel melt shop production reached 64.2 million tonnes in 2025, a 2.1% increase over 2024. China produced 40.8 million tonnes (64% of global output).',
+        source: 'World Stainless Association: 2025 Production Figures'
+      }
     ]
   },
   {
