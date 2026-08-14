@@ -2316,7 +2316,46 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/reference/why-stainless-steel-can-rust', label: 'Reference: Why Stainless Steel Can Still Rust' },
       { href: '/materials-care', label: 'Materials & Care Guide' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
-    ]
+    ],
+    lastUpdated: '2026-08-13',
+    expertQuotes: [
+      {
+        quote: 'Approximately 50% of all stainless steel produced is 304 stainless steel, formulated at 18% Cr and 8% Ni. Most of the stainless steel used in the fabrication of food equipment is from the austenitic AISI 300 series.',
+        source: 'Schmidt RH. Characteristics of Food Contact Surface Materials: Stainless Steel. Food Protection Trends, 2012',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf',
+      },
+      {
+        quote: 'Rinse with hot water immediately after use to reduce chemical reaction of salts or acids. Do not leave to soak in water overnight as mineral salts may attack the metal surface. Always remove and hand-dry the cutlery as soon as the wash cycle has finished.',
+        source: 'SolaSwiss: Advice on Cutlery Care',
+        url: 'https://www.solaswiss.com/guidance/detail/advice-on-cutlery-care',
+      },
+      {
+        quote: 'The passive chromium oxide layer is self-healing in the presence of oxygen, but only if the underlying surface is clean and properly conditioned. Passivation improves corrosion resistance by selectively removing surface contaminants and allowing chromium to react with oxygen to form a stable oxide layer.',
+        source: 'SilcoTek: Corrosion Resistance of Stainless Steel — Passivation and SilcoTek Coatings',
+        url: 'https://www.silcotek.com/blog/corrosion-resistance-of-stainless-steel-passivation-and-silcotek-coatings',
+      },
+      {
+        quote: 'Pitting corrosion has been reported from household bleach spills on stainless steel (304 type) sinks in domestic environments. If this occurs, immediate dilution by rinsing should avoid pitting, but if left overnight, pitting can result. The hypochlorite ion is aggressive to stainless steels, acting in a similar way to wet chlorine gas.',
+        source: 'British Stainless Steel Association (BSSA): Selection of Stainless Steels for Handling Sodium Hypochlorite',
+        url: 'https://bssa.org.uk/bssa_articles/selection-of-stainless-steels-for-handling-sodium-hypochlorite-naocl',
+      },
+    ],
+    statistics: [
+      {
+        claim: 'Approximately 85% of American households have some degree of hard water (measuring over 3.5 grains per gallon), making water spots a near-universal issue for cutlery owners.',
+        source: 'U.S. Geological Survey (USGS), via HardWaterHQ',
+        url: 'https://hardwaterhq.com/articles/hard-water-statistics-2026',
+      },
+      {
+        claim: '304 stainless steel contains 18–20% chromium and 8–12% nickel; 316 contains 16–18% chromium, 10–14% nickel, and 2–3% molybdenum. Both grades form a self-repairing chromium oxide passive layer.',
+        source: 'Kamerud et al., Journal of Agricultural and Food Chemistry (PMC4284091)',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4284091',
+      },
+      {
+        claim: 'The average household replaces its flatware every 8–12 years, with replacement cycles driven more by cosmetic wear and aesthetic preference than by material failure.',
+        source: 'DataIntelo: Global Cutlery Market Report, 2025',
+      },
+    ],
   },
   {
     slug: '18-10-vs-18-8-vs-18-0-flatware',
@@ -2943,7 +2982,7 @@ export const guideArticles: GeoGuideArticle[] = [
     title: 'Wenge Wood vs Rosewood vs Bamboo Cutlery Handles: Which Wood Handle Is Right for You?',
     description: 'A practical comparison of wenge, rosewood and bamboo handles for stainless steel cutlery. Covers hardness, moisture resistance, food safety, maintenance needs and which handle suits everyday dining best.',
     eyebrow: 'Material guide',
-    quickAnswer: 'Wenge, rosewood and bamboo each bring different strengths to cutlery handles. Wenge (Janka 1,630 lbf) is dense and stable in humid conditions. Rosewood (Janka 2,350 lbf) is the hardest and most moisture-resistant thanks to natural oils. Bamboo (Janka 1,380 lbf) is the most eco-friendly but relies on adhesives in laminated construction. For daily dining cutlery, wenge offers the best balance of durability, grip and price. Rosewood is the premium pick if budget allows. Bamboo suits occasional or eco-focused use best.',
+    quickAnswer: 'Wenge, rosewood and bamboo each bring different strengths to cutlery handles. Wenge (Janka 1,630–1,930 lbf) is dense and stable in humid conditions, though it is IUCN-listed as Endangered. Rosewood (Janka 2,350 lbf) is the hardest and most moisture-resistant thanks to natural oils, but the entire Dalbergia genus is on CITES Appendix II. Bamboo (Janka 1,410–1,610 lbf natural, up to 3,000–4,000 lbf strand-woven) is the most eco-friendly but relies on adhesives in laminated construction. For daily dining cutlery, wenge offers the best balance of durability, grip and price. Rosewood is the premium pick if budget allows. Bamboo suits occasional or eco-focused use best.',
     sections: [
       {
         heading: 'Why the handle material matters',
@@ -2955,12 +2994,13 @@ export const guideArticles: GeoGuideArticle[] = [
       {
         heading: 'Wenge wood: dense, stable and textured',
         paragraphs: [
-          'Wenge (Millettia laurentii) comes from Central Africa and is recognized by its dark brown to nearly black coloring with bold, coarse grain lines. On the Janka hardness scale it measures about 1,630 lbf, putting it well above common furniture woods like oak (1,290 lbf) but below the hardest tropical species.',
+          'Wenge (Millettia laurentii) comes from Central Africa and is recognized by its dark brown to nearly black coloring with bold, coarse grain lines. On the Janka hardness scale it measures 1,630–1,930 lbf depending on source and sample, putting it well above common furniture woods like oak (1,290 lbf) but below the hardest tropical species.',
           'What makes wenge practical for cutlery handles is its stability. The wood is dense enough (about 870 kg per cubic meter when dried) that it resists warping in humid kitchens. The open, coarse grain also gives a natural grip texture, even when your hands are wet. This is why knife makers often recommend wenge for handles that need to stay secure in the hand.',
-          'The downside is porosity. Wenge has large open pores that can trap food residue if not sealed properly. A food-safe mineral oil finish, reapplied every few months, keeps the surface closed and clean. Without regular oiling, the grain can look dull and absorb moisture over time.'
+          'The downside is porosity. Wenge has large open pores that can trap food residue if not sealed properly. A food-safe mineral oil finish, reapplied every few months, keeps the surface closed and clean. Without regular oiling, the grain can look dull and absorb moisture over time.',
+          '**Sustainability note:** Wenge (Millettia laurentii) is listed as Endangered on the IUCN Red List, with a population reduction of over 50% in the past three generations due to habitat loss and over-harvesting. It is not CITES-listed, but international trade is increasingly regulated. FSC-certified wenge is available and recommended for responsible sourcing.'
         ],
         bullets: [
-          'Janka hardness: approximately 1,630 lbf',
+          'Janka hardness: 1,630–1,930 lbf (varies by source and sample)',
           'Density: approximately 870 kg per cubic meter dried',
           'Color: dark brown to near-black with contrasting grain',
           'Moisture resistance: good, but needs periodic oiling',
@@ -2971,14 +3011,14 @@ export const guideArticles: GeoGuideArticle[] = [
       {
         heading: 'Rosewood: hard, oily and premium',
         paragraphs: [
-          'Rosewood refers to several species in the Dalbergia genus. East Indian rosewood (Dalbergia latifolia), the type most commonly used in kitchen tools, has a Janka hardness of about 2,350 lbf. That is roughly 44 percent harder than wenge and 70 percent harder than bamboo.',
+          'Rosewood refers to several species in the Dalbergia genus. East Indian rosewood (Dalbergia latifolia), the type most commonly used in kitchen tools, has a Janka hardness of about 2,350 lbf and a density of 855 kg/m³. That is roughly 44 percent harder than wenge and 70 percent harder than bamboo.',
           'The key advantage of rosewood is its natural oil content. These oils make the wood highly resistant to moisture absorption without any additional finish. A rosewood handle can sit through a humid summer or a busy dishwashing session and hold its shape better than most alternatives. The tight, fine grain also means fewer pores for food and bacteria to collect in.',
-          'There are two caveats. First, many Dalbergia species are listed on CITES Appendix II, which restricts international trade. Sourcing legal, sustainably harvested rosewood takes more effort and costs more. Second, the natural oils that protect the wood can sometimes cause skin sensitivity in rare cases, though this is uncommon with finished and sealed handles.',
+          'There are two caveats. First, the entire Dalbergia genus has been listed on CITES Appendix II since 2017, which restricts international trade for all species—including finished products over 10 kg. East Indian rosewood is also listed as Vulnerable on the IUCN Red List, with a population reduction of over 20% in the past three generations. Sourcing legal, sustainably harvested rosewood takes more effort and costs more. Second, the natural oils that protect the wood can sometimes cause skin sensitivity in rare cases, though this is uncommon with finished and sealed handles.',
           'For cutlery, rosewood handles tend to be the most expensive option. The material costs more, and the hardness makes it slower to machine. If you want a handle that lasts decades with minimal upkeep and you are willing to pay for it, rosewood is the top choice.'
         ],
         bullets: [
           'Janka hardness: approximately 2,350 lbf (East Indian)',
-          'Density: approximately 830 kg per cubic meter dried',
+          'Density: approximately 855 kg per cubic meter dried',
           'Color: rich brown to purple-brown with darker streaks',
           'Moisture resistance: excellent, thanks to natural oils',
           'Grip: smooth, fine grain; less natural texture than wenge',
@@ -2989,12 +3029,12 @@ export const guideArticles: GeoGuideArticle[] = [
         heading: 'Bamboo: fast-growing and eco-friendly',
         paragraphs: [
           'Bamboo is technically a grass, not a wood. It grows to harvestable size in three to five years, compared with decades for hardwood trees. This makes it the most renewable option of the three by a wide margin.',
-          'For cutlery handles, bamboo is used in laminated form. Strips are cut, dried, glued together under pressure and shaped. Strand-woven bamboo, the densest type, reaches a Janka hardness of about 1,380 lbf. That is decent, but it comes with an important trade-off: the hardness depends partly on the resin adhesive, not the bamboo fiber alone.',
-          'The adhesive issue matters for food contact. Low-quality bamboo products may use formaldehyde-based resins. While most reputable manufacturers have moved to food-safe adhesives, it is worth checking. The laminated construction also means bamboo handles can delaminate if water seeps into the glue lines over time, especially if the handle is frequently soaked or washed in a dishwasher.',
+          'For cutlery handles, bamboo is used in laminated form. Strips are cut, dried, glued together under pressure and shaped. Natural bamboo has a Janka hardness of 1,410–1,610 lbf; strand-woven bamboo, the densest type, can reach 3,000–4,000 lbf. That sounds impressive, but it comes with an important trade-off: the hardness of strand-woven bamboo depends partly on the resin adhesive, not the bamboo fiber alone.',
+          'The adhesive issue matters for food contact. Low-quality bamboo products may use formaldehyde-based resins. The European Commission has flagged that bamboo-plastic composite food contact articles can release elevated levels of formaldehyde and melamine above legal migration limits. While most reputable manufacturers of solid bamboo handles have moved to food-safe adhesives, it is worth checking. The laminated construction also means bamboo handles can delaminate if water seeps into the glue lines over time, especially if the handle is frequently soaked or washed in a dishwasher.',
           'Bamboo handles are lightweight and have a clean, modern look. They suit casual or eco-conscious settings well. For heavy daily use, the combination of lower hardness and glue-line vulnerability makes them less durable than solid hardwood options.'
         ],
         bullets: [
-          'Janka hardness: approximately 1,380 lbf (strand-woven)',
+          'Janka hardness: 1,410–1,610 lbf (natural); 3,000–4,000 lbf (strand-woven)',
           'Density: approximately 700 kg per cubic meter',
           'Color: light golden to pale brown',
           'Moisture resistance: moderate; glue lines are the weak point',
@@ -3008,13 +3048,13 @@ export const guideArticles: GeoGuideArticle[] = [
           'The table below puts the key specs side by side. Numbers are averages; actual values vary by species, growing conditions and processing.'
         ],
         bullets: [
-          'Janka hardness: bamboo 1,380 lbf / wenge 1,630 lbf / rosewood 2,350 lbf',
-          'Density: bamboo 700 kg/m3 / wenge 870 kg/m3 / rosewood 830 kg/m3',
+          'Janka hardness: bamboo 1,410–1,610 lbf (natural) / wenge 1,630–1,930 lbf / rosewood 2,350 lbf',
+          'Density: bamboo 700 kg/m3 / wenge 870 kg/m3 / rosewood 855 kg/m3',
           'Natural moisture resistance: bamboo moderate / wenge good / rosewood excellent',
           'Maintenance frequency: bamboo low-to-moderate / wenge moderate / rosewood low',
           'Food safety concern: bamboo glue lines / wenge open pores / rosewood generally none',
           'Price tier: bamboo lowest / wenge mid-range / rosewood highest',
-          'Sustainability: bamboo best (fast regrowth) / wenge moderate / rosewood restricted (CITES)'
+          'Sustainability: bamboo best (fast regrowth) / wenge IUCN Endangered (FSC available) / rosewood CITES Appendix II + IUCN Vulnerable'
         ]
       },
       {
@@ -3060,6 +3100,44 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/stainless-vs-other-cutlery-materials', label: 'Stainless Steel vs Other Cutlery Materials' },
       { href: '/guide/dishwasher-safe-stainless-steel-cutlery', label: 'Dishwasher-Safe Stainless Steel Cutlery' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
+    ],
+    lastUpdated: '2026-08-14',
+    expertQuotes: [
+      {
+        quote: 'This wood species is not listed in the CITES Appendices, but is on the IUCN Red List. It is listed as endangered due to a population reduction of over 50% in the past three generations, caused by a decline in its natural range, and exploitation.',
+        source: 'The Wood Database: Wenge (Millettia laurentii)',
+        url: 'https://www.wood-database.com/wenge'
+      },
+      {
+        quote: 'East Indian rosewood is listed on CITES appendix II under the genus-wide restriction on all Dalbergia species—which also includes finished products over 22 pounds (10 kg) made of the wood. It is also listed on the IUCN Red List as vulnerable due to a population reduction of over 20% in the past three generations.',
+        source: 'The Wood Database: East Indian Rosewood (Dalbergia latifolia)',
+        url: 'https://www.wood-database.com/east-indian-rosewood'
+      },
+      {
+        quote: 'There is no acute health risk from food contact articles but continual exposure to the elevated levels of formaldehyde and melamine has the potential to cause a health concern.',
+        source: 'European Commission: EU Coordinated Action "Bamboo-zling" on bamboo-plastic food contact materials',
+        url: 'https://food.ec.europa.eu/food-safety/eu-agri-food-fraud-network/eu-coordinated-actions/bamboo-zling_en'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'Wenge Janka hardness: 1,930 lbf (8,600 N); average dried weight: 870 kg/m³',
+        source: 'The Wood Database: Wenge (Millettia laurentii)',
+        url: 'https://www.wood-database.com/wenge'
+      },
+      {
+        claim: 'East Indian rosewood Janka hardness: 2,350 lbf (10,440 N); average dried weight: 855 kg/m³',
+        source: 'The Wood Database: East Indian Rosewood (Dalbergia latifolia)',
+        url: 'https://www.wood-database.com/east-indian-rosewood'
+      },
+      {
+        claim: 'Natural bamboo Janka hardness: 1,410–1,610 lbf; strand-woven bamboo Janka: 3,000–4,000 lbf',
+        source: 'The Wood Database: Bamboo; Ambient Bamboo Products Janka Scale'
+      },
+      {
+        claim: 'All Dalbergia species listed on CITES Appendix II since 2017 CoP17, restricting international trade including finished products over 10 kg',
+        source: 'CITES Convention of the Parties CoP17 (2016), effective January 2017'
+      }
     ]
   },
   {
