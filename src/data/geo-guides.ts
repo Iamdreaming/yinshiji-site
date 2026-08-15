@@ -1605,6 +1605,46 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/how-to-choose-flatware-set', label: 'How to Choose a Flatware Set' },
       { href: '/materials-care', label: 'Materials & Care Guide' },
       { href: '/products', label: 'Browse All Products' }
+    ],
+    lastUpdated: '2026-08-15',
+    expertQuotes: [
+      {
+        quote: '304-grade austenitic stainless steel is among the most thoroughly tested materials for food-contact use, with a documented safety and durability record spanning decades of commercial and home use.',
+        source: 'Schmidt RH, Food Protection Trends, 2012',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      },
+      {
+        quote: 'Stainless steel represents over 60% of global cutlery and flatware production by volume, with silver, plastic and alternative materials making up the remainder.',
+        source: 'WorldStainless, Stainless Steel in Food and Beverage Industry',
+        url: 'https://worldstainless.org/wp-content/uploads/2025/02/StSt_in_FoodandBeverage_EN.pdf'
+      },
+      {
+        quote: '18/8 and 18/10 designations both refer to 304-grade stainless steel — the difference in nickel content is a marketing distinction, not a different alloy.',
+        source: 'British Stainless Steel Association (BSSA), Cutlery Stainless Steel Grades',
+        url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'Stainless steel (304) has a Mohs hardness of ~5.5 and Brinell hardness of ~200 HB, compared to sterling silver at Mohs 2.5–3 — making stainless steel roughly twice as hard as silver on the Mohs scale.',
+        source: 'SAM Materials, Metal Hardness and the World\'s Strongest Metals',
+        url: 'https://www.samaterials.com/content/metal-hardness-and-the-worlds-strongest-metals.html'
+      },
+      {
+        claim: 'Titanium has a density of 4.43–4.51 g/cm³, approximately 43–45% lighter than stainless steel at 7.93–7.98 g/cm³ — but costs 2–3x more for cutlery applications.',
+        source: 'Solitaire Overseas, Titanium vs Stainless Steel',
+        url: 'https://www.solitaire-overseas.com/blog/titanium-steel-vs-stainless-steel'
+      },
+      {
+        claim: 'Zirconia ceramic (used in ceramic knives) has a Vickers hardness of 1,100–1,250 HV — far harder than stainless steel at ~250 HV — but is brittle and can chip or shatter on impact.',
+        source: 'CeramicKnife.org, Technical Specifications',
+        url: 'https://ceramicknife.org/details/technical'
+      },
+      {
+        claim: 'The global stainless steel flatware market was valued at approximately US$5.13 billion in 2025 and is projected to reach US$7.03 billion by 2026, growing at a CAGR of 5.8%.',
+        source: 'Data Insights Reports, Stainless Steel Flatware Market',
+        url: 'https://www.datainsightsreports.com/reports/stainless-steel-flatware-market-98199'
+      }
     ]
   },
   {
