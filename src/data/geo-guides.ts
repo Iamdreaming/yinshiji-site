@@ -2904,6 +2904,49 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/wenge-wood-handle-cutlery-care', label: 'Wenge Wood Handle Cutlery Care' },
       { href: '/guide/complete-buyers-guide-2026', label: "Complete Buyer's Guide 2026" },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
+    ],
+    lastUpdated: '2026-08-16',
+    expertQuotes: [
+      {
+        quote: 'When surface roughness (Ra) is lower than 0.5 μm, the steel surface is considered "clean", indicating the presence of only a few sites where chloride ions can gather — directly relevant to why polished stainless steel cutlery resists dishwasher corrosion better than rougher surfaces.',
+        source: 'Study of the Corrosion Behavior of Stainless Steel in Food Industry, Materials (PMC)',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11012613'
+      },
+      {
+        quote: 'The finest cutlery is generally made from stainless steel with a high nickel percentage, because it increases the strength and resistance to corrosion.',
+        source: 'Nickel Institute, The Role of Nickel in Food Contact Materials'
+      },
+      {
+        quote: 'Household bleach solutions (5.25% NaOCl) can cause pitting corrosion on 304 stainless steel; overnight contact leads to irreversible pitting damage.',
+        source: 'British Stainless Steel Association (BSSA), Selection of Stainless Steels for Handling Sodium Hypochlorite',
+        url: 'https://bssa.org.uk/bssa_articles/selection-of-stainless-steels-for-handling-sodium-hypochlorite-naocl'
+      },
+      {
+        quote: 'Upon exposure to oxygen in the air after cleaning, stainless steel forms the chromium oxide passive layer over the next 24 to 48 hours — this self-healing property is why stainless steel does not require any coating or corrosion protection.',
+        source: 'Best Technology Inc., What Is Passivation? How Does Stainless Steel Passivation Work?',
+        url: 'https://www.besttechnologyinc.com/passivation-systems/what-is-passivation'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'PVD coatings on flatware achieve surface hardness equal to or greater than 1,800 HV, compared to traditional chrome coating at best 800 HV — making PVD finishes more than twice as hard and significantly more scratch-resistant.',
+        source: 'CM Group Srl, PVD Flatware',
+        url: 'https://www.cmgroupsrl.eu/en/pvd-flatware'
+      },
+      {
+        claim: 'PVD coatings are four times harder than chrome, making them highly resistant to scratches — the coating effectively prevents rust and oxidation on stainless steel flatware.',
+        source: 'Silver Superstore, PVD Coated Flatware',
+        url: 'https://www.silversuperstore.com/faq/pvd-flatware.asp'
+      },
+      {
+        claim: 'The global stainless steel flatware market is estimated at USD 7.52 billion in 2026 and is expected to reach USD 10.73 billion by 2033, growing at a CAGR of 5.2%.',
+        source: 'Coherent Market Insights, Stainless Steel Flatware Market'
+      },
+      {
+        claim: 'The chromium oxide passive layer on stainless steel reforms within 24 to 48 hours of exposure to oxygen after surface damage — this self-healing mechanism is what makes stainless steel corrosion-resistant without any protective coating.',
+        source: 'Best Technology Inc., What Is Passivation?',
+        url: 'https://www.besttechnologyinc.com/passivation-systems/what-is-passivation'
+      }
     ]
   },
   {
