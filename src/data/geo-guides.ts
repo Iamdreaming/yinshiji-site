@@ -2792,7 +2792,32 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/cutlery-set-sizes-explained', label: 'Cutlery Set Sizes Explained' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
       { href: '/products/rosewood-5-piece-set', label: 'Wenge Wood Handle 5-Piece Set' },
-    ]
+    ],
+    lastUpdated: '2026-08-17',
+    expertQuotes: [
+      {
+        quote: 'Changing the plateware [and cutlery] can affect the perceived taste and flavour of food… the weight, size, shape, and colour of the plateware [and cutlery] can all influence the diner\'s perception.',
+        source: 'Harrar & Spence, "The taste of food is affected by the weight, size, shape, and colour of the cutlery", Flavour (Springer Nature)',
+        url: 'https://link.springer.com/article/10.1186/2044-7248-2-21',
+      },
+    ],
+    statistics: [
+      {
+        claim: 'The average 5-piece place setting weighs 325 grams (11.5 ounces), with heavy-gauge sets exceeding 340g (12 oz) per setting.',
+        source: 'Silver Superstore: Average Size & Weight of Flatware',
+        url: 'https://www.silversuperstore.com/faq/average-size-of-flatware.asp',
+      },
+      {
+        claim: 'The global stainless steel flatware market is valued at USD 7.52 billion in 2026, projected to reach USD 10.73 billion by 2033 (CAGR 5.2%). The household/residential segment accounts for 57.1% of market share.',
+        source: 'Coherent Market Insights: Stainless Steel Flatware Market Report 2026',
+        url: 'https://www.coherentmarketinsights.com/industry-reports/stainless-steel-flatware-market',
+      },
+      {
+        claim: 'The global flatware market was valued at USD 11,500 million in 2025 and is projected to reach USD 18,100 million by 2035 (CAGR 4.5%), driven by demand for premium and sustainable dining solutions.',
+        source: 'Future Market Insights: Flatware Market Size, Demand & Trends 2025-2035',
+        url: 'https://www.futuremarketinsights.com/reports/flatware-market',
+      },
+    ],
   },
   {
     slug: 'dishwasher-safe-stainless-steel-cutlery',
