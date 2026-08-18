@@ -3500,6 +3500,39 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/what-is-in-a-5-piece-cutlery-set', label: 'What Is in a 5-Piece Set' },
       { href: '/products/rosewood-5-piece-set', label: 'Wenge Wood Handle 5-Piece Set' },
       { href: '/products/gold-carved-5-piece-set', label: 'Gold Tone Carved 5-Piece Set' }
+    ],
+    lastUpdated: '2026-08-18',
+    expertQuotes: [
+      {
+        quote: 'In China, two things show how your upbringing is: how you eat and your handwriting. Using chopsticks properly displays elegance in eating. Eating food with chopsticks also will slow you down and help you enjoy your food more.',
+        source: 'Q. Edward Wang, Chopsticks: A Cultural and Culinary History (Cambridge University Press, 2015), via Rowan University',
+        url: 'https://today.rowan.edu/news/2015/02/considering-chopsticks-professors-book-documents-historical-cultural-significance.html'
+      },
+      {
+        quote: 'The standard length of Chinese chopsticks is 7.6 cun (approximately 23–24 cm), which symbolically corresponds to the seven emotions and six desires in traditional thought, highlighting the role of chopsticks in regulating self-discipline and harmony.',
+        source: 'Yi-Chen, Georgia Tech CHIN3813 Chinese Food Culture, Spring 2025',
+        url: 'https://sites.gatech.edu/chinesefoodculture/course-projects-spring-2025/yi-chens-final-project-the-appearance-of-chopsticks-and-their-connection-to-the-cultural-backgrounds-of-different-countries'
+      },
+      {
+        quote: 'Communal dining plays a central role in Chinese society, reflecting close familial and social bonds while emphasizing ideals of unity and harmony. As a result, longer chopsticks are preferred, as they make it easier to reach and share dishes placed farther away on the table.',
+        source: 'Yi-Chen, Georgia Tech CHIN3813 Chinese Food Culture, Spring 2025',
+        url: 'https://sites.gatech.edu/chinesefoodculture/course-projects-spring-2025/yi-chens-final-project-the-appearance-of-chopsticks-and-their-connection-to-the-cultural-backgrounds-of-different-countries'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'The global tableware market was valued at USD 50.86 billion in 2024 and is projected to reach USD 84.81 billion by 2032, growing at a CAGR of 6.6%.',
+        source: 'Verified Market Research, Tableware Market Report',
+        url: 'https://www.verifiedmarketresearch.com/product/tableware-market'
+      },
+      {
+        claim: 'China is the dominant national market in Asia-Pacific ceramic tableware, with a base-year value of USD 3.9 billion and an 8.9% CAGR, reflecting the scale of Chinese domestic consumption and the country\'s status as the world\'s leading producer and exporter of ceramic tableware.',
+        source: 'GM Insights, Ceramic Tableware Market Analysis 2026–2035'
+      },
+      {
+        claim: 'China\'s kitchenware market (including tableware) was valued at USD 6.68 billion in 2024 and is projected to grow to USD 11.59 billion by 2033, with a CAGR of 6.4%.',
+        source: 'ResearchAndMarkets, China Kitchenware Market Trends Analysis Report 2025–2033'
+      }
     ]
   },
   {
