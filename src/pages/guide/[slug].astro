@@ -20,6 +20,13 @@ const alternateLinks = [
   { lang: 'x-default', href: pagePath },
 ];
 
+// Map guide article to a collection OG image based on slug keywords
+const slugLower = article.slug.toLowerCase();
+const guideOgImage =
+  slugLower.includes('gold') ? '/images/products/collection-gold-carved.webp'
+  : slugLower.includes('wenge') || slugLower.includes('wood') || slugLower.includes('rosewood') || slugLower.includes('bamboo') ? '/images/products/collection-rosewood-handle.webp'
+  : '/images/products/collection-silver-carved.webp';
+
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
@@ -73,6 +80,7 @@ const breadcrumbSchema = {
   description={article.description}
   canonical={pagePath}
   ogType="article"
+  ogImage={guideOgImage}
   lang="en"
   homeUrl="/"
   navItems={navItems}

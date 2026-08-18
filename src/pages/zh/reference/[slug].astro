@@ -20,6 +20,13 @@ const alternateLinks = [
   { lang: 'x-default', href: `/reference/${article.slug}` },
 ];
 
+// Map reference article to a collection OG image based on slug keywords
+const slugLower = article.slug.toLowerCase();
+const refOgImage =
+  slugLower.includes('gold') ? '/images/products/collection-gold-carved.webp'
+  : slugLower.includes('wenge') || slugLower.includes('wood') || slugLower.includes('rosewood') || slugLower.includes('bamboo') ? '/images/products/collection-rosewood-handle.webp'
+  : '/images/products/collection-silver-carved.webp';
+
 const navItems = [
   { href: '/zh/', label: '首页' },
   { href: '/zh/products', label: '产品' },
@@ -60,6 +67,7 @@ const breadcrumbSchema = {
   description={article.descriptionZh}
   canonical={pagePath}
   ogType="article"
+  ogImage={refOgImage}
   lang="zh-CN"
   homeUrl="/zh/"
   navItems={navItems}
