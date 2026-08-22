@@ -1839,10 +1839,39 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/stainless-vs-other-cutlery-materials', label: 'Stainless Steel vs Other Materials' },
       { href: '/guide/what-is-in-a-5-piece-cutlery-set', label: 'What Is in a 5-Piece Cutlery Set?' },
       { href: '/materials-care', label: 'Materials & Care Guide' }
+    ],
+    lastUpdated: '2026-08-22',
+    expertQuotes: [
+      {
+        quote: 'How we experience food is a multisensory experience involving taste, feel of the food in our mouths, aroma, and the feasting of our eyes.',
+        source: 'Prof. Charles Spence, Crossmodal Research Lab (University of Oxford), \"Cutlery can influence food taste\" (2013)',
+        url: 'https://www.psy.ox.ac.uk/news/cutlery-can-influence-food-taste'
+      },
+      {
+        quote: 'Approximately 50% of all stainless steel produced is 304 stainless steel.',
+        source: 'R. H. Schmidt, Food Protection Trends, Vol. 32 No. 10 (2012)',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      }
+    ],
+    statistics: [
+      {
+        claim: '304 stainless steel accounts for roughly 50% of all stainless steel produced globally and is the most widely specified grade for food-contact surfaces.',
+        source: 'Schmidt, Food Protection Trends 32(10), 574-584 (2012)',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      },
+      {
+        claim: '410 (13/0) stainless steel reaches HRC 40-45 after quenching and tempering, roughly double the surface hardness of 304 (HRC 20-25) - which is why lower-grade martensitic steel is favoured for knife blades but less corrosion-resistant for forks and spoons.',
+        source: 'Kongfang Metal, "304 vs 410 Stainless Steel: Which One Should You Choose?"',
+        url: 'https://kongfangmetal.com/304-vs-410-stainless-steel'
+      },
+      {
+        claim: 'An average 5-piece stainless flatware setting weighs about 325 g (11.5 oz); heavier fork pieces (55-65 g) are a recognised premium-tier indicator.',
+        source: 'Silver Superstore, "Average Size of Flatware"',
+        url: 'https://www.silversuperstore.com/faq/average-size-of-flatware.asp'
+      }
     ]
   },
-  {
-    slug: 'cutlery-myths-debunked',
+  {slug: 'cutlery-myths-debunked',
     title: "Stainless Steel Cutlery Myths: What's True and What's Marketing?",
     description: 'Debunking common stainless steel cutlery myths — surgical grade steel, 18/10 guarantees, dishwasher-safe claims, and what marketing language actually means for your forks, knives and spoons.',
     eyebrow: 'Myth busting',
