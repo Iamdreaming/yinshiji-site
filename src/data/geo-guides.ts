@@ -701,7 +701,38 @@ export const guideArticles: GeoGuideArticle[] = [
     relatedLinks: [
       { href: '/guide/what-is-in-a-5-piece-cutlery-set', label: '5-Piece Set Composition' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' }
+    ],
+    lastUpdated: '2026-08-23',
+    expertQuotes: [
+      {
+        quote: "A five-piece place setting adds a soup spoon, a utensil used to eat cereal and at a multi-course meal that begins with hot soup.",
+        source: 'Etiquette Scholar, "Purchasing Flatware"',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
+      },
+      {
+        quote: "How we experience food is a multisensory experience involving taste, feel of the food in our mouths, aroma, and the feasting of our eyes.",
+        source: 'Professor Charles Spence & Dr Vanessa Harrar, University of Oxford Crossmodal Research Lab',
+        url: 'https://www.psy.ox.ac.uk/news/cutlery-can-influence-food-taste'
+      }
+    ],
+    statistics: [
+      {
+        claim: "The minimum traditional place setting is three pieces: dinner knife, dinner fork, and teaspoon.",
+        source: 'Etiquette Scholar, "Purchasing Flatware"',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
+      },
+      {
+        claim: "A five-piece place setting adds a soup spoon (used for cereal and soup courses).",
+        source: 'Etiquette Scholar, "Purchasing Flatware"',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
+      },
+      {
+        claim: "A 5-piece stainless steel flatware set typically weighs about 325 g (11.5 oz).",
+        source: 'Silver Superstore, "Average Size of Flatware" FAQ',
+        url: 'https://www.silversuperstore.com/faq/average-size-of-flatware.asp'
+      }
     ]
+
   },
 
   {
@@ -4476,7 +4507,33 @@ export const guideArticlesZh: GeoGuideArticle[] = [
     relatedLinks: [
       { href: '/zh/products/silver-carved-5-piece-set', label: '银色雕花五件套' },
       { href: '/zh/guide/what-is-in-a-5-piece-cutlery-set', label: '五件套组成说明' }
+    ],
+    lastUpdated: '2026-08-23',
+    expertQuotes: [
+      {
+        quote: "一套五件套餐位会加一把汤勺——用来吃麦片，或在以热汤开场的多道菜正餐中使用。",
+        source: 'Etiquette Scholar, "Purchasing Flatware"（西式礼仪指南）',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
+      },
+      {
+        quote: "我们对食物味道的感知是多感官的——包括味觉、食物在口中的触感、香气，以及眼睛看到的一切。",
+        source: 'Charles Spence 教授与 Vanessa Harrar 博士，牛津大学 Crossmodal 研究实验室',
+        url: 'https://www.psy.ox.ac.uk/news/cutlery-can-influence-food-taste'
+      }
+    ],
+    statistics: [
+      {
+        claim: "西式礼仪中最小套餐位是三件：餐刀、餐叉、茶勺。",
+        source: 'Etiquette Scholar, "Purchasing Flatware"',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
+      },
+      {
+        claim: "传统五件套餐位在四件基础上加一把汤勺（用于汤和麦片）。",
+        source: 'Etiquette Scholar, "Purchasing Flatware"',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
+      }
     ]
+
   },
 ];
 
