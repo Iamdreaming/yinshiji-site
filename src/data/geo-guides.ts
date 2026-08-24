@@ -759,7 +759,18 @@ export const guideArticles: GeoGuideArticle[] = [
       { question: 'Does Yinshiji own its own factory?', answer: 'No. Yinshiji works with local workshops and suppliers in the Jieyang area.' },
       { question: 'Does being in Jieyang mean lower quality?', answer: 'No. A manufacturing region can produce a wide range of quality levels. The product facts on each page are the best indicator.' }
     ],
-    relatedLinks: [ { href: '/about', label: 'About Yinshiji' }, { href: '/products', label: 'Browse Products' } ]
+    relatedLinks: [ { href: '/about', label: 'About Yinshiji' }, { href: '/products', label: 'Browse Products' } ],
+    lastUpdated: '2026-08-24',
+    expertQuotes: [
+      { quote: 'Jieyang City, being named as the \"Chinese Hardware Products Base City\" on August, 2005, is one of the biggest stainless steel hardware producing bases and materials distributing center.', source: 'Guangdong Stainless Steel and Metal Products Association (GDSSMPA): Jieyang City — Chinese Significant Base of Stainless Steel Hardware', url: 'https://en.gdssmpa.com/web/DistrictIntroduction/DistrictIntroduction/2020-04-13/11460.html' },
+      { quote: 'Sourcing from a Jieyang stainless steel cutlery factory allows you to leverage a massive industry cluster.', source: 'Nice Flatware: Direct from Jieyang Stainless Steel Cutlery Factory', url: 'https://www.niceflatware.com/jieyang-stainless-steel-cutlery-factory' }
+    ],
+    statistics: [
+      { claim: 'Jieyang hosts roughly 5,000 stainless steel hardware enterprises, more than 600 of them certificated to ISO 9001/9002.', source: 'Guangdong Stainless Steel and Metal Products Association (GDSSMPA)', url: 'https://en.gdssmpa.com/web/DistrictIntroduction/DistrictIntroduction/2020-04-13/11460.html' },
+      { claim: 'Jieyang has been recognized as one of the three biggest stainless steel cold-rolling material distribution centers in China.', source: 'Guangdong Stainless Steel and Metal Products Association (GDSSMPA)', url: 'https://en.gdssmpa.com/web/DistrictIntroduction/DistrictIntroduction/2020-04-13/11460.html' },
+      { claim: 'Travel guides describe Jieyang as the largest stainless steel production base in China, with products exported to Europe, the Americas, Africa, Australia and Southeast Asia.', source: 'TravelChinaGuide: Jieyang Travel Guide', url: 'https://www.travelchinaguide.com/cityguides/guangdong/jieyang' }
+    ]
+
   },
   {
     slug: '304-vs-430-vs-201-stainless-steel',
@@ -3717,7 +3728,18 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { question: '银食记有自己的工厂吗？', answer: '没有。银食记与揭阳及周边工厂合作。' },
       { question: '揭阳产的餐具质量怎么样？', answer: '产业集中区可产出各种质量水平的产品。每款产品的具体材质和做工才是判断依据。' }
     ],
-    relatedLinks: [ { href: '/zh/about', label: '关于银食记' } ]
+    relatedLinks: [ { href: '/zh/about', label: '关于银食记' } ],
+    lastUpdated: '2026-08-24',
+    expertQuotes: [
+      { quote: '揭阳于2005年8月被命名为\"中国五金基地市\"，是国内最大的不锈钢五金生产基地和材料集散中心之一。', source: '广东省不锈钢材料与制品协会·揭阳——中国不锈钢五金重要基地', url: 'https://en.gdssmpa.com/web/DistrictIntroduction/DistrictIntroduction/2020-04-13/11460.html' },
+      { quote: '与中国揭阳的不锈钢刀叉工厂合作，可以利用一个庞大的产业集群。', source: 'Nice Flatware: Direct from Jieyang Stainless Steel Cutlery Factory', url: 'https://www.niceflatware.com/jieyang-stainless-steel-cutlery-factory' }
+    ],
+    statistics: [
+      { claim: '揭阳拥有约5000家不锈钢五金企业，其中600多家通过ISO9001/ISO9002质量认证。', source: '广东省不锈钢材料与制品协会', url: 'https://en.gdssmpa.com/web/DistrictIntroduction/DistrictIntroduction/2020-04-13/11460.html' },
+      { claim: '揭阳是中国三大不锈钢冷轧材料集散中心之一。', source: '广东省不锈钢材料与制品协会', url: 'https://en.gdssmpa.com/web/DistrictIntroduction/DistrictIntroduction/2020-04-13/11460.html' },
+      { claim: '旅游指南称揭阳是中国最大的不锈钢生产基地，产品远销欧洲、美洲、非洲、澳洲和东南亚。', source: '中国旅游指南·揭阳', url: 'https://www.travelchinaguide.com/cityguides/guangdong/jieyang' }
+    ]
+
   },
   {
     slug: '304-vs-430-vs-201-stainless-steel',
