@@ -1235,7 +1235,37 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/materials-care', label: 'Materials & Care Guide' },
       { href: '/guide/304-vs-410-stainless-steel-cutlery', label: '304 vs 410 Stainless Steel Cutlery' },
       { href: '/guide/304-vs-316-stainless-steel-cutlery', label: '304 vs 316 Stainless Steel Cutlery' }
-    ]
+    ],    expertQuotes: [
+      {
+        quote: "How we experience food is a multisensory experience. We see it, taste it, smell it, feel it — and a large part of what we eat is also judged on the basis of its aesthetics, the tableware, and the weight of the cutlery.",
+        source: 'Charles Spence, Crossmodal Research Laboratory, University of Oxford',
+        url: 'https://www.psy.ox.ac.uk/news/cutlery-can-influence-food-taste'
+      },
+      {
+        quote: "Approximately 50% of all stainless steel produced globally is grade 304 stainless steel, the most widely specified material for food-contact surfaces in commercial and residential settings.",
+        source: 'R.H. Schmidt, Food Protection Trends 32(10), International Association for Food Protection',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'The global stainless steel flatware market was valued at $7.52 billion in 2026 and is projected to reach $10.73 billion by 2033, a CAGR of 5.2%; household use accounts for about 57% of the market.',
+        source: 'Coherent Market Insights: Stainless Steel Flatware Market Report',
+        url: 'https://www.coherentmarketinsights.com/industry-reports/stainless-steel-flatware-market'
+      },
+      {
+        claim: 'Cutlery weight, shape and colour measurably influence how food tastes, based on a peer-reviewed study in the journal Flavour.',
+        source: 'Harrar & Spence, Flavour 2:21 (Springer Nature)',
+        url: 'https://link.springer.com/article/10.1186/2044-7248-2-21'
+      },
+      {
+        claim: 'Grade 304 stainless steel (18% chromium, 8% nickel) accounts for roughly half of global stainless steel production and is the standard default for food-contact surfaces.',
+        source: 'R.H. Schmidt, Food Protection Trends 32(10)',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      }
+    ],
+    lastUpdated: '2026-08-25',
+
   },
   {
     slug: 'cutlery-gifting-guide',
