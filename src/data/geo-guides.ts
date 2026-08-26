@@ -1574,9 +1574,17 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/how-to-choose-flatware-set', label: 'How to Choose a Flatware Set' },
       { href: '/materials-care', label: 'Materials & Care Guide' },
       { href: '/products', label: 'Browse All Products' }
-    ]
-  },
-  {
+    ],
+    expertQuotes: [
+      { quote: 'How we experience food is a multisensory experience involving taste, feel of the food in our mouths, aroma, and the feasting of our eyes. Even before we put food into our mouths our brains have made a judgment about it, which affects our overall experience.', source: 'Dr Vanessa Harrar & Prof Charles Spence, University of Oxford, in "The taste of cutlery" (Flavour 2:21, 2013)', url: 'https://www.sciencedaily.com/releases/2013/06/130626113420.htm' },
+      { quote: 'Subtly changing eating implements and tableware can affect how pleasurable, or filling, food appears. So, when serving a dish, one should keep in mind that the color of the food appears different depending on the background on which it is presented (plate or cutlery) and, therefore, tastes different.', source: 'Dr Vanessa Harrar, University of Oxford, "The taste of cutlery" (Flavour 2:21, 2013)', url: 'https://www.sciencedaily.com/releases/2013/06/130626113420.htm' }
+    ],
+    statistics: [
+      { claim: 'In controlled testing, white yoghurt eaten from a white spoon was rated sweeter, more liked and more expensive than when eaten from a black spoon — evidence that cutlery color measurably changes taste perception and perceived value.', source: 'Harrar & Spence, "The taste of cutlery" (Flavour 2:21, 2013), reported via ScienceDaily', url: 'https://www.sciencedaily.com/releases/2013/06/130626113420.htm' },
+      { claim: 'The global flatware market is valued at approximately $11.5 billion in 2025 and projected to reach $18.1 billion by 2035 (CAGR 4.5%), with growth driven partly by demand for premium, visually appealing dining essentials — the segment that gold-tone and decorative finishes target.', source: 'Future Market Insights, Flatware Market report', url: 'https://www.futuremarketinsights.com/reports/flatware-market' }
+    ],
+    lastUpdated: '2026-08-26',
+  },  {
     slug: 'stainless-vs-other-cutlery-materials',
     title: 'Stainless Steel vs Other Materials: Which Cutlery Is Best?',
     description: 'A practical comparison of stainless steel cutlery against silver, titanium, ceramic and plastic — covering cost, durability, maintenance, weight, and which material makes sense for different households.',
