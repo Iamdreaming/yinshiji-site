@@ -1829,6 +1829,31 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/how-to-choose-flatware-set', label: 'Complete Buyer\'s Guide 2026' },
       { href: '/materials-care', label: 'Materials & Care Guide' },
       { href: '/products', label: 'Browse All Products' }
+    ],
+    lastUpdated: '2026-08-27',
+    expertQuotes: [
+      {
+        quote: 'A five-piece place setting adds a soup spoon, a utensil used to eat cereal and at a multi-course meal that begins with hot soup. The minimum number is three: dinner knife, dinner fork, and teaspoon.',
+        source: 'Etiquette Scholar, "Flatware Buying Guide"',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
+      },
+      {
+        quote: 'Well-made flatware is recognized by substantial weight and good balance. Lightweight flatware lacks balance; the knife and fork feel clumsy to hold and uncomfortable, almost as if they might bend.',
+        source: 'Etiquette Scholar, "Flatware Buying Guide"',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'The global stainless steel flatware market is valued at USD 7.52 billion in 2026 and projected to reach USD 10.73 billion by 2033 (CAGR 5.2%)',
+        source: 'Coherent Market Insights, "Stainless Steel Flatware Market"',
+        url: 'https://www.coherentmarketinsights.com/industry-reports/stainless-steel-flatware-market'
+      },
+      {
+        claim: 'Buying flatware by the set rather than as open-stock single pieces saves approximately 30 percent',
+        source: 'Etiquette Scholar, "Flatware Buying Guide"',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
+      }
     ]
   },
   {
