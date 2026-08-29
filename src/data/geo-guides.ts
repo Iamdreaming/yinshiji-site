@@ -3217,7 +3217,22 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/gold-flatware-safety-and-durability', label: 'Gold Flatware Safety and Durability' },
       { href: '/guide/complete-buyers-guide-2026', label: 'Complete Buyer Guide 2026' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
-    ]
+    ],
+    lastUpdated: '2026-08-29',
+    expertQuotes: [
+      {
+        quote: 'Calcium deposits (also called scale or hard water stains) form when hard tap water leaves behind minerals like calcium and sulfates as it evaporates. On stainless steel this shows up as a white, chalky bloom on the surface.',
+        source: 'Made In Cookware: "How to Remove Calcium Deposits From Stainless Clad Cookware"',
+        url: 'https://madeincookware.com/blogs/how-to-remove-calcium-deposits-from-stainless-steel',
+      },
+    ],
+    statistics: [
+      {
+        claim: '85% of American homes have hard water to some degree, based on USGS data. The USGS classifies water hardness as: soft (0—60 mg/L or 0—3.5 gpg), moderately hard (61—120 mg/L or 3.5—7 gpg), hard (121—180 mg/L or 7—10.5 gpg), and very hard (>180 mg/L or >10.5 gpg).',
+        source: 'Crystal Quest (citing USGS Water Science School)',
+        url: 'https://crystalquest.com/pages/water-hardness-map',
+      },
+    ],
   },
   {
     slug: 'wenge-wood-vs-rosewood-vs-bamboo-handles',
