@@ -3777,6 +3777,31 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/304-vs-410-stainless-steel-cutlery', label: '304 vs 410 Stainless Steel Cutlery' },
       { href: '/guide/18-10-vs-18-8-vs-18-0-flatware', label: '18/10 vs 18/8 vs 18/0 Flatware' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' }
+    ],
+    lastUpdated: '2026-08-30',
+    expertQuotes: [
+      {
+        quote: 'Knives tend to be made of harder steel that gives a lasting edge but is more likely to rust, eventually, from repeated washing in a dishwasher.',
+        source: 'CHOICE (Australia) - How to avoid rust on your stainless steel cutlery',
+        url: 'https://www.choice.com.au/home-and-living/kitchen/dishwashers/articles/stainless-steel-rusting'
+      },
+      {
+        quote: 'When there is sufficient exposure to oxygen, an invisible protective passive chromium-rich oxide film forms on the surface.',
+        source: 'SSINA (Specialty Steel Industry of North America) - Technical Resources',
+        url: 'https://www.ssina.com/education/technical-resources'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'Approximately 85% of American homes have hard water, which leaves mineral deposits that can contribute to surface staining and rust on flatware.',
+        source: 'Crystal Quest Water - Water Hardness Map (citing US Geological Survey)',
+        url: 'https://crystalquest.com/pages/water-hardness-map'
+      },
+      {
+        claim: 'Grade 410 martensitic stainless steel contains about 11.5% chromium, noticeably less than the 18% of 304 austenitic — which is why knife blades are more prone to rust than fork and spoon bodies.',
+        source: 'AZoM - Stainless Steel Grade 410 (UNS S41000)',
+        url: 'https://www.azom.com/article.aspx?ArticleID=970'
+      }
     ]
   },
 ];
