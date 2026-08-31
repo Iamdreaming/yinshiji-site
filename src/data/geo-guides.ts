@@ -1469,7 +1469,29 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/materials-care', label: 'Materials & Care Guide' },
       { href: '/about', label: 'About Yinshiji' },
       { href: '/products', label: 'Browse Products' }
+    ],
+
+    lastUpdated: '2026-08-31',
+    expertQuotes: [
+      {
+        quote: 'Jieyang City, being named as the "Chinese Hardware Products Base City" on August 2005, is one of the biggest stainless steel hardware producing bases and materials distributing center.',
+        source: 'Guangdong Stainless Steel & Metal Products Association: "Jieyang City - Chinese Significant Base of Stainless Steel Hardware"',
+        url: 'https://en.gdssmpa.com/web/DistrictIntroduction/DistrictIntroduction/2020-04-13/11460.html'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'China produced 40.87 million tonnes of stainless steel in 2025, about 63.7% of the world total of 64.2 million tonnes.',
+        source: 'WorldStainless press release: "Stainless steel melt shop production increases by 2.1% in 2025"',
+        url: 'https://worldstainless.org/media/press-releases/stainless-steel-melt-shop-production-increases-by-2-1-in-2025'
+      },
+      {
+        claim: 'Jieyang hosts roughly 5,000 stainless steel hardware enterprises, with more than 600 holding ISO9001/ISO9002 quality certification.',
+        source: 'Guangdong Stainless Steel & Metal Products Association: "Jieyang City - Chinese Significant Base of Stainless Steel Hardware"',
+        url: 'https://en.gdssmpa.com/web/DistrictIntroduction/DistrictIntroduction/2020-04-13/11460.html'
+      }
     ]
+
   },
   {
     slug: 'silver-vs-gold-tone-cutlery',
