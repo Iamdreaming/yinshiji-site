@@ -2826,6 +2826,31 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/complete-buyers-guide-2026', label: "Complete Buyer's Guide 2026" },
       { href: '/products/gold-carved-5-piece-set', label: 'Gold Tone Carved 5-Piece Set' },
       { href: '/materials-care', label: 'Materials & Care Guide' },
+    ],
+    lastUpdated: '2026-09-01',
+    expertQuotes: [
+      {
+        quote: 'For years now the American FDA (Food and Drug Administration) has classified the coatings in PVD as suitable for use in the food sector.',
+        source: 'PVD Technologies (Rivestimenti in PVD), "PVD coating for cutlery"',
+        url: 'https://www.rivestimentiinpvd.it/industry-application/cutlery-pvd-coating?lang=en'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'PVD coatings achieve a hardness of at least 1,800 HV (Vickers), more than double the up-to-800 HV maximum of traditional chrome plating.',
+        source: 'CM Group Srl, "PVD Flatware"',
+        url: 'https://www.cmgroupsrl.eu/en/pvd-flatware'
+      },
+      {
+        claim: 'A flatware manufacturer benchmarks its PVD gold finish as passing over 100 dishwasher cycles in testing, versus roughly 15 cycles for lower-grade coatings.',
+        source: 'Flatware Supplier, "Is Gold Flatware Dishwasher Safe?"',
+        url: 'https://www.flatwaresupplier.com/is-gold-flatware-dishwasher-safe'
+      },
+      {
+        claim: 'The global flatware market is projected to grow from US$11.5 billion in 2025 to US$18.1 billion by 2035 (4.5% CAGR), driven partly by premium, visually distinctive finishes such as gold tone.',
+        source: 'Future Market Insights, "Flatware Market Report"',
+        url: 'https://www.futuremarketinsights.com/reports/flatware-market'
+      }
     ]
   },
   {
