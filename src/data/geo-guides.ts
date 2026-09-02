@@ -2275,6 +2275,31 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/cutlery-gifting-guide', label: 'Cutlery Gifting Guide: When and Who to Gift For' },
       { href: '/guide/complete-buyers-guide-2026', label: "Complete Buyer's Guide 2026" },
       { href: '/materials-care', label: 'Materials & Care Guide' }
+    ],
+    lastUpdated: '2026-09-02',
+    expertQuotes: [
+      {
+        quote: 'How we experience food is a multisensory experience ... [including] taste, feel, aroma, the feasting of our eyes.',
+        source: 'Charles Spence, Crossmodal Research Laboratory, University of Oxford',
+        url: 'https://www.psy.ox.ac.uk/news/cutlery-can-influence-food-taste'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'Approximately 50% of all stainless steel produced is 304 stainless steel, which is why it is the default material for premium food-contact tableware.',
+        source: 'Schmidt R.H., Food Protection Trends 32(10)',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      },
+      {
+        claim: 'The global flatware market is projected to grow from about $11.5 billion in 2025 to $18.1 billion by 2035 (4.5% CAGR), with growth driven in part by premium and visually distinctive dining essentials such as gold-tone and decorative finishes.',
+        source: 'Future Market Insights: Flatware Market Report',
+        url: 'https://www.futuremarketinsights.com/reports/flatware-market'
+      },
+      {
+        claim: 'A typical 5-piece flatware setting weighs about 325 g (11.5 oz); substantial per-piece weight is a reliable quality signal for gifting.',
+        source: 'Silver Superstore: Average Size of Flatware',
+        url: 'https://www.silversuperstore.com/faq/average-size-of-flatware.asp'
+      }
     ]
   },
   {
