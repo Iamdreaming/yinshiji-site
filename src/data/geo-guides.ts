@@ -2086,6 +2086,46 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/complete-buyers-guide-2026', label: "Complete Buyer's Guide 2026" },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
       { href: '/materials-care', label: 'Materials & Care Guide' }
+    ],
+    lastUpdated: '2026-09-03',
+    expertQuotes: [
+      {
+        quote: "\"18/10\" is claimed to indicate a better quality steel than \"18/8\", and is essentially the same as the 304 (1.4301) grade. In practice the \"10\" does not indicate an actual higher Ni content and is purely a marketing ploy.",
+        source: 'British Stainless Steel Association (BSSA), Cutlery Stainless Steel Grades',
+        url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades'
+      },
+      {
+        quote: "How we experience food is a multisensory experience. Even before we put food into our mouths our brains have made a judgment about it, which affects our overall experience.",
+        source: 'Prof Charles Spence & Dr Vanessa Harrar, Crossmodal Research Lab, University of Oxford',
+        url: 'https://www.psy.ox.ac.uk/news/cutlery-can-influence-food-taste'
+      },
+      {
+        quote: "When there is sufficient exposure to oxygen, an invisible protective passive chromium-rich oxide film forms on the surface.",
+        source: 'Specialty Steel Industry of North America (SSINA), Technical Resources',
+        url: 'https://www.ssina.com/education/technical-resources'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'Approximately 50% of all stainless steel produced is 304 stainless steel — the same austenitic grade most mid-range cutlery is made from.',
+        source: 'Schmidt RH, Food Protection Trends, Journal of Food Protection',
+        url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      },
+      {
+        claim: '18/0 (ferritic/430) stainless steel is attracted by a magnet like pure iron and carries nearer 17% chromium than the 18% its name suggests, giving it lower corrosion resistance than 18/8 or 18/10.',
+        source: 'British Stainless Steel Association (BSSA), Cutlery Stainless Steel Grades',
+        url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades'
+      },
+      {
+        claim: 'Grade 410 martensitic steel carries roughly 11.5% chromium, giving it lower corrosion resistance than austenitic 304 (about 18% chromium) — the trade-off that lets it harden into knife blade edges.',
+        source: 'AZoM, Stainless Steel - Grade 410 (UNS S41000)',
+        url: 'https://www.azom.com/article.aspx?ArticleID=970'
+      },
+      {
+        claim: 'US food-contact stainless steel must contain a minimum of 16% chromium; 304 steel exceeds this at 18% chromium.',
+        source: 'Boulder Engineering Studio, Food-Contact-Safe Stainless Steel',
+        url: 'https://www.boulderes.com/resource-library/food-contact-safe-stainless-steel'
+      }
     ]
   },
   {
