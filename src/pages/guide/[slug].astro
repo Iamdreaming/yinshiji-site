@@ -123,6 +123,29 @@ const breadcrumbSchema = {
                 {section.bullets.map((bullet) => <li>{bullet}</li>)}
               </ul>
             )}
+            {section.table && (
+              <div class="guide-table-wrap" style="overflow-x:auto; margin-top:1.2rem;">
+                {section.table.caption && <p class="guide-table-caption" style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:0.4rem;">{section.table.caption}</p>}
+                <table class="guide-table" style="width:100%; border-collapse:collapse; font-size:0.92rem;">
+                  <thead>
+                    <tr>
+                      {section.table.headers.map((h) => (
+                        <th style="text-align:left; padding:0.55rem 0.7rem; border-bottom:2px solid var(--color-border, #d8cfc0); background:rgba(0,0,0,0.03); font-weight:600;">{h}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {section.table.rows.map((row) => (
+                      <tr>
+                        {row.cells.map((c) => (
+                          <td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">{c}</td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </section>
         ))}
 
