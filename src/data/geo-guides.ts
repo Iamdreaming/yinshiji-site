@@ -1401,6 +1401,23 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/materials-care', label: 'Materials & Care Guide' },
       { href: '/guide/how-to-choose-flatware-set', label: 'How to Choose a Flatware Set' },
       { href: '/guide/what-is-in-a-5-piece-cutlery-set', label: '5-Piece Set Composition Guide' }
+    ],
+    lastUpdated: '2026-09-06',
+    expertQuotes: [
+      {
+        quote:
+          'Even before we put food into our mouths our brains have made a judgment about it. How we experience food is a multisensory experience - involving taste, feel, aroma and the feasting of our eyes.',
+        source: 'Charles Spence, Crossmodal Research Laboratory, University of Oxford',
+        url: 'https://www.psy.ox.ac.uk/news/cutlery-can-influence-food-taste'
+      }
+    ],
+    statistics: [
+      {
+        claim:
+          'The global flatware market was valued at US$11.5 billion in 2025 and is projected to reach US$18.1 billion by 2035 (CAGR 4.5%), with growth driven largely by premium and visually attractive dining essentials - the gold-tone and decorative-finish segment Yinshiji options sit in.',
+        source: 'Future Market Insights, Flatware Market',
+        url: 'https://www.futuremarketinsights.com/reports/flatware-market'
+      }
     ]
   },
   {
