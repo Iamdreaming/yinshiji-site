@@ -265,6 +265,34 @@ export const guideArticles: GeoGuideArticle[] = [
         ]
       },
       {
+        heading: 'How to wash, dry and oil wenge handles at a glance',
+        table: {
+          caption: 'Wenge handle cutlery care quick reference',
+          headers: ['Task', 'How often', 'How to do it'],
+          rows: [
+            { cells: ['Hand wash', 'After each use', 'Mild dish soap in warm water, rinse, dry right away'] },
+            { cells: ['Light oil', 'Every few months, or when the handle feels dry', 'Food-safe mineral oil or wooden-utensil oil, applied sparingly'] },
+            { cells: ['Deep soak', 'Never', 'Wood handles can absorb water and swell or crack'] },
+            { cells: ['Dishwasher', 'Never', 'Heat, detergent and long water exposure stress the handle'] }
+          ]
+        },
+        paragraphs: [
+          'The short version: hand wash, dry promptly, and oil only when the handle feels dry. Most wenge handles need very little maintenance because the wood is naturally rich in oils.'
+        ]
+      },
+      {
+        heading: 'Which oil, and how to apply it',
+        paragraphs: [
+          'Use a food-safe oil. The two common options are food-grade mineral oil and products labelled for wooden utensils or cutting boards. Wenge is naturally rich in its own oils, so it needs only light, occasional conditioning — not heavy saturation.'
+        ],
+        bullets: [
+          'Apply a few drops to a clean cloth, not directly onto the handle.',
+          'Rub along the grain, let it sit a few minutes, then wipe off the excess.',
+          'Do it when the handle feels dry — usually every few months, not every week.',
+          'If the handle never feels dry, skip the oil. Over-oiling can attract dust.'
+        ]
+      },
+      {
         heading: 'Which Yinshiji set includes chopsticks?',
         paragraphs: [
           'The Wenge Wood Handle 5-Piece Set includes a dinner knife, dinner fork, dinner spoon, chopsticks and small spoon. It does not include a small fork. This matters because it makes the set more suitable for Chinese daily meals than a conventional western 5-piece set.'
@@ -281,7 +309,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products/rosewood-5-piece-set', label: 'Wenge Wood Handle 5-Piece Set' },
       { href: '/guide/what-is-in-a-5-piece-cutlery-set', label: 'What is in a 5-piece set?' }
     ],
-    lastUpdated: '2026-07-31',
+    lastUpdated: '2026-09-07',
     expertQuotes: [
       {
         quote: 'Wenge (Millettia laurentii) has a Janka hardness of 1,930 lbf and an average dried weight of 870 kg/m³, placing it in the medium-high density tier. Its coarse, open-pore texture means a food-safe oil finish is important to seal the surface and prevent food particle trapping in the grain.',
@@ -4350,6 +4378,34 @@ export const guideArticlesZh: GeoGuideArticle[] = [
         ]
       },
       {
+        heading: '怎么洗、晾干、上油：一图看懂',
+        table: {
+          caption: '鸡翅木柄餐具护理速览',
+          headers: ['操作', '频率', '怎么做'],
+          rows: [
+            { cells: ['手洗', '每次使用后', '温和洗洁精 + 温水，冲净后马上擦干'] },
+            { cells: ['轻量上油', '每隔几个月，或手柄感觉偏干时', '食品级矿物油或木器专用油，少量涂抹'] },
+            { cells: ['长时间浸泡', '从不', '木柄吸水可能膨胀或开裂'] },
+            { cells: ['洗碗机', '从不', '高温、洗洁剂和长期水汽会损伤木柄'] }
+          ]
+        },
+        paragraphs: [
+          '一句话：手洗、及时擦干，手柄偏干时才上油。大部分鸡翅木手柄只需很少维护，因为这种木料本身含油量较高。'
+        ]
+      },
+      {
+        heading: '用什么油、怎么上油',
+        paragraphs: [
+          '选食品级油。常见两种：食品级矿物油，或标注用于木器/砧板的专用油。鸡翅木本身含油量高，只需要轻量、偶尔的保养——不需要大量浸透。'
+        ],
+        bullets: [
+          '用干净布沾几滴油，不要直接倒在手柄上。',
+          '顺着木纹擦拭，停留几分钟后再擦掉多余油分。',
+          '手柄感觉偏干时再上——通常每隔几个月，不用每周。',
+          '如果手柄一直不觉得干，就不必上油。上油太多容易沾灰。'
+        ]
+      },
+      {
         heading: '哪款包含筷子？',
         paragraphs: [
           '银食记鸡翅木五件套包含餐刀、主叉、主勺、筷子和小勺，不包含小叉。这让它比传统西式五件套更适合米饭、面条、汤品和办公室带饭场景。'
@@ -4366,7 +4422,7 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/products/rosewood-5-piece-set', label: '鸡翅木五件套' },
       { href: '/zh/guide/what-is-in-a-5-piece-cutlery-set', label: '五件套组成说明' }
     ],
-    lastUpdated: '2026-07-31',
+    lastUpdated: '2026-09-07',
     expertQuotes: [
       {
         quote: '鸡翅木（Millettia laurentii）詹卡硬度 1,930 lbf，平均干重 870 kg/m³，属于中高密度木材。其粗纹理和大孔隙意味着需要食品级油封住表面，防止食物残渣嵌入木纹。',
