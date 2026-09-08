@@ -2287,6 +2287,26 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/complete-buyers-guide-2026', label: "Complete Buyer's Guide 2026" },
       { href: '/guide/stainless-vs-other-cutlery-materials', label: 'Stainless Steel vs Other Materials' },
       { href: '/materials-care', label: 'Materials & Care Guide' }
+    ],
+    lastUpdated: '2026-09-08',
+    expertQuotes: [
+      {
+        quote: "Single-use utensils can take up to 1,000 years to decompose. Most plastic utensils are made of polystyrene, which can release toxic chemicals",
+        source: 'National Geographic: How bringing your own cutlery helps solve the plastic crisis',
+        url: 'https://www.nationalgeographic.com/environment/article/carrying-your-own-fork-spoon-help-plastic-crisis'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'Carrying your own reusable cutlery is one of the simplest everyday actions that keeps single-use plastic utensils out of landfill',
+        source: 'National Geographic: How bringing your own cutlery helps solve the plastic crisis',
+        url: 'https://www.nationalgeographic.com/environment/article/carrying-your-own-fork-spoon-help-plastic-crisis'
+      },
+      {
+        claim: 'The global disposable cutlery market was valued at about $13.14 billion in 2025 and is projected to grow to $21.45 billion',
+        source: 'Stellar Market Research: Disposable Cutlery Market report',
+        url: 'https://www.stellarmr.com/report/disposable-cutlery-market/2651'
+      }
     ]
   },
   {
