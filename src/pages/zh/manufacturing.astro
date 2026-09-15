@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const alternateLinks = [
+  { lang: 'en', href: '/manufacturing' },
+  { lang: 'zh-CN', href: '/zh/manufacturing' },
+  { lang: 'x-default', href: '/manufacturing' },
+];
+
+const navItems = [
+  { href: '/zh/', label: '首页' },
+  { href: '/zh/products', label: '产品' },
+  { href: '/zh/guide', label: '选购指南' },
+  { href: '/zh/reference', label: '资料库' },
+  { href: '/zh/about', label: '关于银食记' },
+  { href: '/zh/materials-care', label: '材质与护理' },
+  { href: '/zh/manufacturing', label: '工厂与出口' },
+  { href: '/zh/faq', label: '常见问题' },
+];
+---
+
+<BaseLayout
+  title="工厂与出口｜银食记"
+  description="银食记餐具产自揭阳——中国不锈钢之都。雕花不锈钢与鸡翅木餐具，MOQ、打样、付款与 FOB 深圳出口条款。"
+  canonical="/zh/manufacturing"
+  ogType="website"
+  lang="zh-CN"
+  homeUrl="/zh/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+  footerNote="当前批次 — 库存、价格与批发细节以询盘沟通为准。"
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <h1 class="section-title">工厂与出口</h1>
+
+      <div class="prose">
+        <p class="lead" style="font-size:1.15rem; line-height:1.7; max-width:760px;">
+          <strong>银食记</strong>餐具产自<strong>广东揭阳</strong>——中国不锈钢之都，
+          中国餐具产业发源地。我们把雕花不锈钢与鸡翅木工艺结合，做中高端差异化餐具，
+          服务进口商、经销商、酒店与寻求 OEM/ODM 的品牌方。
+        </p>
+
+        <h2>产地：揭阳，中国不锈钢之都</h2>
+        <p>
+          揭阳数十年来一直是中国不锈钢餐具产业的中心：材料供应商、冲压锻造厂、表面处理
+          作坊高度聚集。产地直连意味着与生产线的沟通更短、打样周期更快、
+          对材质等级和表面质量的把控更直接。
+        </p>
+
+        <h2>工艺能力</h2>
+        <ul>
+          <li><strong>雕花工艺</strong>——银食记标志性的刀、叉、勺柄雕花（银色与金色饰面；金色为饰面工艺，非真金）。</li>
+          <li><strong>鸡翅木拼接</strong>——天然鸡翅木柄与不锈钢头拼接，温润的中西融合日用感。</li>
+          <li><strong>钢级</strong>——叉/勺为 304 食品级不锈钢；雕花刀为 410（淬火硬化保证切削性）。如实标注，不作营销话术。</li>
+          <li><strong>开模定制</strong>——OEM/ODM 项目的新造型、Logo、包装。</li>
+        </ul>
+
+        <h2>MOQ 分档</h2>
+        <div style="overflow-x:auto; margin-top:1.2rem;">
+          <table style="width:100%; border-collapse:collapse; font-size:0.92rem;">
+            <thead>
+              <tr>
+                <th style="text-align:left; padding:0.55rem 0.7rem; border-bottom:2px solid var(--color-border, #d8cfc0); background:rgba(0,0,0,0.03); font-weight:600;">产品类型</th>
+                <th style="text-align:left; padding:0.55rem 0.7rem; border-bottom:2px solid var(--color-border, #d8cfc0); background:rgba(0,0,0,0.03); font-weight:600;">MOQ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">单件（叉 / 勺 / 刀）</td><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">300 件</td></tr>
+              <tr><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">小套装（2–3 件）</td><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">200 套</td></tr>
+              <tr><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">五件套</td><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">100 套</td></tr>
+              <tr><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">新开模 / 定制</td><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">1,000 件</td></tr>
+              <tr><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">首单试单</td><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">50–100 件起步</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>打样政策</h2>
+        <ul>
+          <li><strong>现货：</strong>免费打样，运费到付。</li>
+          <li><strong>定制样品：</strong>$30–80，订单满 500 件可抵扣。</li>
+          <li><strong>新开模：</strong>模具费 ¥2,000–5,000，量产 1,000 件返 50%。</li>
+        </ul>
+
+        <h2>付款条款</h2>
+        <ul>
+          <li>30% 定金 + 70% 发货前结清，T/T 电汇。</li>
+          <li>老客户可走 L/C 信用证。</li>
+          <li>开模费用 100% 预付。</li>
+          <li>跨境收款支持万里汇（WorldFirst）与 T/T。</li>
+        </ul>
+
+        <h2>出口与交付</h2>
+        <p>
+          报价 <strong>FOB 深圳</strong>——揭阳最近的可靠集装箱港口（报价含揭阳→深圳拖车费
+          ¥800–1,500/柜）。主力市场为欧洲与北美，中东礼盒市场为第二战场。
+        </p>
+
+        <h2>质检状态——如实说明</h2>
+        <p>
+          独立 <strong>SGS 检测目前进行中（pending）</strong>。我们不会声称尚未取得的认证。
+          材质如实标注（304 / 410 钢级、真鸡翅木），检测结果出炉后会第一时间公布。
+        </p>
+
+        <div style="text-align:center; margin:2.5rem 0 1rem;">
+          <a href="/zh/inquiry" class="btn btn-primary" style="padding:0.7rem 2.5rem; font-size:1rem;">
+            发送询盘
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,255 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const alternateLinks = [
+  { lang: 'en', href: '/inquiry' },
+  { lang: 'zh-CN', href: '/zh/inquiry' },
+  { lang: 'x-default', href: '/inquiry' },
+];
+---
+
+<BaseLayout
+  title="Wholesale Inquiry – Yinshiji Tableware"
+  description="Request a wholesale quote from Yinshiji — carved stainless steel cutlery and wenge wood handle flatware from Jieyang, China. FOB Shenzhen, MOQ applies."
+  canonical="/inquiry"
+  ogType="website"
+  lang="en"
+  homeUrl="/"
+  alternateLinks={alternateLinks}
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container" style="max-width:960px;">
+      <h1 class="section-title">Wholesale Inquiry</h1>
+
+      <div class="inquiry-grid" style="display:grid; grid-template-columns:1fr 300px; gap:2.5rem; align-items:start;">
+        <div class="prose">
+          <p>
+            Tell us about your project — target market, quantity, and use case — and we will get back
+            to you with current batch availability and a wholesale quote, usually within 24 hours on
+            business days. You can also email us directly at
+            <strong><a href="mailto:hello@tableorie.com">hello@tableorie.com</a></strong>.
+          </p>
+
+          <form id="inquiry-form" style="margin-top:2rem;">
+            <div style="margin-bottom:1rem;">
+              <label for="company" style="display:block; font-weight:600; margin-bottom:0.3rem;">Company name</label>
+              <input type="text" id="company" name="company" placeholder="Your company or brand"
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;" />
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="name" style="display:block; font-weight:600; margin-bottom:0.3rem;">Contact name *</label>
+              <input type="text" id="name" name="name" required
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;" />
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="email" style="display:block; font-weight:600; margin-bottom:0.3rem;">Work email *</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com"
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;" />
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="country" style="display:block; font-weight:600; margin-bottom:0.3rem;">Country / Region *</label>
+              <select id="country" name="country" required
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;">
+                <option value="">Select…</option>
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Other Europe">Other Europe</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Other Middle East">Other Middle East</option>
+                <option value="Australia">Australia</option>
+                <option value="Japan">Japan</option>
+                <option value="Southeast Asia">Southeast Asia</option>
+                <option value="Other Asia">Other Asia</option>
+                <option value="Latin America">Latin America</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="product" style="display:block; font-weight:600; margin-bottom:0.3rem;">Product interest</label>
+              <select id="product" name="product"
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;">
+                <option value="">Select…</option>
+                <option value="Silver Carved">Silver Carved Collection</option>
+                <option value="Gold Carved">Gold Tone Carved Collection</option>
+                <option value="Wenge Wood">Wenge Wood Handle Collection</option>
+                <option value="Multiple">Multiple collections</option>
+                <option value="OEM Custom">OEM / Custom</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="quantity" style="display:block; font-weight:600; margin-bottom:0.3rem;">Estimated quantity *</label>
+              <select id="quantity" name="quantity" required
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;">
+                <option value="">Select…</option>
+                <option value="Under 500">Under 500 (trial order)</option>
+                <option value="500-2000">500 – 2,000</option>
+                <option value="2000-10000">2,000 – 10,000</option>
+                <option value="10000+">10,000+</option>
+                <option value="TBD">TBD / to discuss</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="usecase" style="display:block; font-weight:600; margin-bottom:0.3rem;">Use case</label>
+              <select id="usecase" name="usecase"
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;">
+                <option value="">Select…</option>
+                <option value="Resale">Resale / distribution</option>
+                <option value="Hotel-Restaurant">Hotel / restaurant</option>
+                <option value="OEM-ODM">OEM / ODM</option>
+                <option value="Corporate gifting">Corporate gifting</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="message" style="display:block; font-weight:600; margin-bottom:0.3rem;">Message *</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Target market, finishing preferences, sample needs, timeline…"
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff; resize:vertical; font-family:inherit;"></textarea>
+            </div>
+
+            <!-- Honeypot: invisible to humans, bots will fill it -->
+            <div style="opacity:0;position:absolute;top:0;left:0;height:0;width:0;overflow:hidden;" aria-hidden="true">
+              <label for="website">Do not fill this out</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <button type="submit" id="submit-btn"
+              style="background:var(--color-accent); color:#fff; border:none; padding:0.7rem 2rem; font-size:1rem; border-radius:var(--radius); cursor:pointer; font-weight:600;">
+              Send Inquiry
+            </button>
+            <span id="form-status" style="margin-left:1rem; font-size:0.9rem;"></span>
+          </form>
+        </div>
+
+        <aside style="background:#f9f7f4; border:1px solid var(--color-border); border-radius:var(--radius-large); padding:1.5rem;">
+          <h2 style="font-size:1rem; margin-bottom:1rem;">How wholesale works</h2>
+
+          <div style="margin-bottom:1.25rem;">
+            <div style="font-weight:600; font-size:0.9rem; margin-bottom:0.4rem;">MOQ tiers</div>
+            <ul style="font-size:0.85rem; color:var(--color-text-muted); padding-left:1.1rem; margin:0;">
+              <li>Single piece: 300 pcs</li>
+              <li>Small sets: 200 sets</li>
+              <li>5-piece sets: 100 sets</li>
+              <li>New mold / custom: 1,000 pcs</li>
+              <li>Trial order: 50–100 pcs welcome</li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom:1.25rem;">
+            <div style="font-weight:600; font-size:0.9rem; margin-bottom:0.4rem;">Incoterms</div>
+            <p style="font-size:0.85rem; color:var(--color-text-muted); margin:0;">FOB Shenzhen (Jieyang origin, trucking to port included)</p>
+          </div>
+
+          <div style="margin-bottom:1.25rem;">
+            <div style="font-weight:600; font-size:0.9rem; margin-bottom:0.4rem;">Payment</div>
+            <p style="font-size:0.85rem; color:var(--color-text-muted); margin:0;">
+              30% deposit, 70% before shipment via T/T. WorldFirst (万里汇) accepted for overseas transfers.
+            </p>
+          </div>
+
+          <div>
+            <div style="font-weight:600; font-size:0.9rem; margin-bottom:0.4rem;">Samples</div>
+            <p style="font-size:0.85rem; color:var(--color-text-muted); margin:0;">
+              Stock items: free sample, freight collect. Custom sample: $30–80 (credited back on orders of 500+).
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Pre-fill product interest from ?product= slug
+    const params = new URLSearchParams(window.location.search);
+    const productParam = params.get('product');
+    if (productParam) {
+      const productSelect = document.getElementById('product');
+      const slugToLabel = {
+        'silver-carved-fork': 'Silver Carved',
+        'silver-carved-spoon': 'Silver Carved',
+        'silver-carved-knife': 'Silver Carved',
+        'silver-carved-5-piece-set': 'Silver Carved',
+        'silver-carved-3-piece-set': 'Silver Carved',
+        'silver-carved-8-piece-set': 'Silver Carved',
+        'gold-carved-fork': 'Gold Carved',
+        'gold-carved-spoon': 'Gold Carved',
+        'gold-carved-knife': 'Gold Carved',
+        'gold-carved-5-piece-set': 'Gold Carved',
+        'gold-carved-3-piece-set': 'Gold Carved',
+        'gold-carved-8-piece-set': 'Gold Carved',
+        'rosewood-handle-fork': 'Wenge Wood',
+        'rosewood-handle-spoon': 'Wenge Wood',
+        'rosewood-handle-knife': 'Wenge Wood',
+        'rosewood-5-piece-set': 'Wenge Wood',
+        'rosewood-3-piece-set': 'Wenge Wood',
+        'rosewood-8-piece-set': 'Wenge Wood',
+      };
+      const label = slugToLabel[productParam];
+      if (label) {
+        [...productSelect.options].forEach((opt) => {
+          if (opt.value === label) opt.selected = true;
+        });
+      }
+    }
+
+    document.getElementById('inquiry-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const btn = document.getElementById('submit-btn');
+      const status = document.getElementById('form-status');
+
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      status.textContent = '';
+      status.style.color = '';
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: form.name.value.trim(),
+            email: form.email.value.trim(),
+            subject: `[Wholesale Inquiry] ${form.country.value || ''} - ${form.company.value || 'No company'} - ${form.quantity.value || 'qty TBD'}`,
+            message: [
+              `Company: ${form.company.value.trim() || '-'}`,
+              `Country/Region: ${form.country.value}`,
+              `Product interest: ${form.product.value || '-'}`,
+              `Estimated quantity: ${form.quantity.value}`,
+              `Use case: ${form.usecase.value || '-'}`,
+              ``,
+              form.message.value.trim(),
+            ].join('\n'),
+            website: form.website ? form.website.value.trim() : '',
+          }),
+        });
+        const data = await res.json();
+
+        if (res.ok && data.success) {
+          status.textContent = '✓ Inquiry sent! We will get back to you within 24 hours (business days).';
+          status.style.color = '#2a7d4f';
+          form.reset();
+        } else {
+          status.textContent = data.error || 'Failed to send. Please try again.';
+          status.style.color = '#c0392b';
+        }
+      } catch (err) {
+        status.textContent = 'Network error. Please email us directly at hello@tableorie.com.';
+        status.style.color = '#c0392b';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Send Inquiry';
+      }
+    });
+  </script>
+</BaseLayout>

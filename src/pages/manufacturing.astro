@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const alternateLinks = [
+  { lang: 'en', href: '/manufacturing' },
+  { lang: 'zh-CN', href: '/zh/manufacturing' },
+  { lang: 'x-default', href: '/manufacturing' },
+];
+---
+
+<BaseLayout
+  title="Manufacturing & Export – Yinshiji Tableware"
+  description="Yinshiji cutlery is made in Jieyang, China's stainless steel capital — carved stainless steel and wenge wood handle flatware. MOQ, sampling, payment, and export terms."
+  canonical="/manufacturing"
+  ogType="website"
+  lang="en"
+  homeUrl="/"
+  alternateLinks={alternateLinks}
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <h1 class="section-title">Manufacturing & Export</h1>
+
+      <div class="prose">
+        <p class="lead" style="font-size:1.15rem; line-height:1.7; max-width:760px;">
+          <strong>Yinshiji</strong> flatware is manufactured in <strong>Jieyang, Guangdong</strong> —
+          the stainless steel capital of China, where the country's cutlery industry was born.
+          We combine carved stainless steel with wenge wood handles for mid-to-high-end
+          differentiated tableware, and we work with importers, distributors, hotels,
+          and brands looking for OEM/ODM.
+        </p>
+
+        <h2>Origin: Jieyang, China's Stainless Steel Capital</h2>
+        <p>
+          Jieyang has been the center of China's stainless steel tableware industry for decades,
+          with a dense cluster of material suppliers, stamping and forging shops, and finishing
+          workshops. Being based here means shorter communication with the production line,
+          faster sampling cycles, and direct control over material grade and surface finish.
+        </p>
+
+        <h2>Process Capabilities</h2>
+        <ul>
+          <li><strong>Carved engraving</strong> — our signature carved motifs on fork, spoon, and knife handles (silver and gold tone finishes; gold tone is a finish, not real gold).</li>
+          <li><strong>Wenge wood handle assembly</strong> — natural wenge wood handles paired with stainless steel heads, for a warm Chinese-Western hybrid look.</li>
+          <li><strong>Steel grades</strong> — fork/spoon heads in 304 food-grade stainless steel; carved knives in 410 (hardened for cutting performance). Stated honestly, not as a marketing claim.</li>
+          <li><strong>Custom molds</strong> — new shapes, logos, and packaging for OEM/ODM projects.</li>
+        </ul>
+
+        <h2>MOQ</h2>
+        <div style="overflow-x:auto; margin-top:1.2rem;">
+          <table style="width:100%; border-collapse:collapse; font-size:0.92rem;">
+            <thead>
+              <tr>
+                <th style="text-align:left; padding:0.55rem 0.7rem; border-bottom:2px solid var(--color-border, #d8cfc0); background:rgba(0,0,0,0.03); font-weight:600;">Product type</th>
+                <th style="text-align:left; padding:0.55rem 0.7rem; border-bottom:2px solid var(--color-border, #d8cfc0); background:rgba(0,0,0,0.03); font-weight:600;">MOQ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">Single pieces (fork / spoon / knife)</td><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">300 pcs</td></tr>
+              <tr><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">Small sets (2–3 piece)</td><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">200 sets</td></tr>
+              <tr><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">5-piece sets</td><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">100 sets</td></tr>
+              <tr><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">New mold / custom items</td><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">1,000 pcs</td></tr>
+              <tr><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">Trial order</td><td style="text-align:left; padding:0.5rem 0.7rem; border-bottom:1px solid var(--color-border, #ece6da); vertical-align:top;">50–100 pcs to start</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Sampling</h2>
+        <ul>
+          <li><strong>Stock items:</strong> free sample, freight collect.</li>
+          <li><strong>Custom sample:</strong> $30–80, credited back when the order reaches 500+ pcs.</li>
+          <li><strong>New mold:</strong> ¥2,000–5,000 tooling, 50% refunded at a production order of 1,000 pcs.</li>
+        </ul>
+
+        <h2>Payment Terms</h2>
+        <ul>
+          <li>30% deposit + 70% balance before shipment, by T/T.</li>
+          <li>Established customers: L/C available.</li>
+          <li>Mold development: 100% paid in advance.</li>
+          <li>Cross-border settlement via WorldFirst (万里汇) or T/T.</li>
+        </ul>
+
+        <h2>Export & Delivery</h2>
+        <p>
+          Quoted <strong>FOB Shenzhen</strong> — the closest reliable container port for our region
+          (quotes include Jieyang-to-Shenzhen trucking at ¥800–1,500 per container). We primarily
+          serve Europe and North America, with the Middle East as a second market for gift sets.
+        </p>
+
+        <h2>Quality Status — Honest Note</h2>
+        <p>
+          Independent <strong>SGS testing is pending</strong> at this time. We do not claim a
+          certification that has not been issued. Materials are specified honestly (304 / 410 steel
+          grades, real wenge wood), and we will publish test results as soon as they are available.
+        </p>
+
+        <div style="text-align:center; margin:2.5rem 0 1rem;">
+          <a href="/inquiry" class="btn btn-primary" style="padding:0.7rem 2.5rem; font-size:1rem;">
+            Request a Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

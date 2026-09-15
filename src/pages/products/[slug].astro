@@ -53,10 +53,13 @@ const productSchema = {
   offers: {
     '@type': 'Offer',
     url: productUrl,
-    priceCurrency: 'CNY',
-    price: product.price,
     availability: 'https://schema.org/InStock',
     seller: { '@type': 'Organization', name: 'Yinshiji' },
+    priceSpecification: {
+      '@type': 'PriceSpecification',
+      valueAddedTaxIncluded: false,
+      description: 'Wholesale pricing — contact for quote',
+    },
   },
   additionalProperty: product.specs.map((item) => ({
     '@type': 'PropertyValue',
@@ -191,24 +194,23 @@ const alternateLinks = [
 
           <div style="background:#f9f7f4; border:1px solid var(--color-border); border-radius:var(--radius); padding:1.25rem; margin-bottom:1.5rem;">
             <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:0.5rem;">
-              <strong style="color:var(--color-text);">Selected Batch</strong>
+              <strong style="color:var(--color-text);">Wholesale Pricing</strong>
             </p>
             <p style="font-size:0.85rem; color:var(--color-text-muted);">
-              {product.priceNote}
+              Contact for wholesale pricing. FOB Shenzhen. MOQ applies.
             </p>
           </div>
 
           <div style="display:flex; gap:1rem; flex-wrap:wrap; align-items:center;">
-            <button
-              id="buy-now-btn"
+            <a
+              href={`/inquiry?product=${product.slug}`}
               class="btn btn-primary"
-              style="font-size:0.85rem; padding:0.5rem 1.5rem; cursor:pointer;"
-              data-slug={product.slug}
+              style="font-size:0.85rem; padding:0.5rem 1.5rem;"
             >
-              Buy Now — International Shipping
-            </button>
-            <a href={siteLinks.taobao} class="btn btn-outline" target="_blank" rel="noopener noreferrer nofollow" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
-              Buy on Taobao (国内)
+              Request Quote
+            </a>
+            <a href="/manufacturing" class="btn btn-outline" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
+              Manufacturing &amp; Export
             </a>
             <a href="/materials-care" class="btn btn-outline" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
               Materials &amp; Care Guide
@@ -273,7 +275,7 @@ const alternateLinks = [
 
       <section class="detail-section">
         <h2>How to Order</h2>
-        <p>Yinshiji products are available in curated batches. The site focuses on product information and material transparency first, without displaying fake inventory or reviews.</p>
+        <p>Yinshiji products are available in curated batches. For wholesale inquiries, use the inquiry form — tell us your quantity, target market, and use case.</p>
         <ol class="order-list">
           {product.orderSteps.map((step) => <li>{step}</li>)}
         </ol>
@@ -315,35 +317,4 @@ const alternateLinks = [
     </div>
   </section>
 
-  <script>
-    const buyBtn = document.getElementById('buy-now-btn');
-    if (buyBtn) {
-      buyBtn.addEventListener('click', async () => {
-        const slug = buyBtn.dataset.slug;
-        buyBtn.textContent = 'Processing…';
-        buyBtn.setAttribute('disabled', '');
-
-        try {
-          const resp = await fetch('/api/checkout', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ slug, quantity: 1 }),
-          });
-          const data = await resp.json();
-
-          if (data.url) {
-            window.location.href = data.url;
-          } else {
-            alert(data.error || 'Failed to start checkout. Please try again.');
-            buyBtn.textContent = 'Buy Now — International Shipping';
-            buyBtn.removeAttribute('disabled');
-          }
-        } catch (err) {
-          alert('Network error. Please check your connection and try again.');
-          buyBtn.textContent = 'Buy Now — International Shipping';
-          buyBtn.removeAttribute('disabled');
-        }
-      });
-    }
-  </script>
 </BaseLayout>

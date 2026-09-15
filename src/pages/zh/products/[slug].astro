@@ -156,16 +156,23 @@ const navItems = [
 
           <div style="background:#f9f7f4; border:1px solid var(--color-border); border-radius:var(--radius); padding:1.25rem; margin-bottom:1.5rem;">
             <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:0.5rem;">
-              <strong style="color:var(--color-text);">当前批次</strong>
+              <strong style="color:var(--color-text);">批发价格</strong>
             </p>
             <p style="font-size:0.85rem; color:var(--color-text-muted);">
-              {product.priceNote}
+              批发价请联系询价。FOB 深圳，起订量另询。
             </p>
           </div>
 
           <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-            <a href={siteLinks.taobao} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
-              去淘宝购买 / 咨询
+            <a
+              href={`/zh/inquiry?product=${product.slug}`}
+              class="btn btn-primary"
+              style="font-size:0.85rem; padding:0.5rem 1.5rem;"
+            >
+              询价
+            </a>
+            <a href="/zh/manufacturing" class="btn btn-outline" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
+              工厂与出口
             </a>
             <a href="/zh/materials-care" class="btn btn-outline" style="font-size:0.85rem; padding:0.5rem 1.5rem;">
               查看材质与护理
@@ -230,8 +237,8 @@ const navItems = [
       </section>
 
       <section class="detail-section">
-        <h2>如何购买</h2>
-        <p>银食记产品按批次供应。站点先做真实的产品信息和材质说明，不做虚假库存和评价。</p>
+        <h2>如何下单</h2>
+        <p>银食记产品按批次供应。如需批发询价，请通过询盘表单联系我们，说明数量、目标市场和用途。</p>
         <ol class="order-list">
           {product.orderSteps.map((step) => <li>{step}</li>)}
         </ol>

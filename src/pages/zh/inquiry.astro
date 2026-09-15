@@ -1,0 +1,268 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const alternateLinks = [
+  { lang: 'en', href: '/inquiry' },
+  { lang: 'zh-CN', href: '/zh/inquiry' },
+  { lang: 'x-default', href: '/inquiry' },
+];
+
+const navItems = [
+  { href: '/zh/', label: '首页' },
+  { href: '/zh/products', label: '产品' },
+  { href: '/zh/guide', label: '选购指南' },
+  { href: '/zh/reference', label: '资料库' },
+  { href: '/zh/about', label: '关于银食记' },
+  { href: '/zh/materials-care', label: '材质与护理' },
+  { href: '/zh/manufacturing', label: '工厂与出口' },
+  { href: '/zh/faq', label: '常见问题' },
+];
+---
+
+<BaseLayout
+  title="批发询盘｜银食记"
+  description="向银食记提交批发询盘——揭阳雕花不锈钢餐具与鸡翅木餐具，FOB 深圳，MOQ 分档，T/T 与万里汇收款。"
+  canonical="/zh/inquiry"
+  ogType="website"
+  lang="zh-CN"
+  homeUrl="/zh/"
+  navItems={navItems}
+  alternateLinks={alternateLinks}
+  footerNote="当前批次 — 库存、价格与批发细节以询盘沟通为准。"
+>
+  <section class="section" style="padding-top:3rem;">
+    <div class="container" style="max-width:960px;">
+      <h1 class="section-title">批发询盘</h1>
+
+      <div class="inquiry-grid" style="display:grid; grid-template-columns:1fr 300px; gap:2.5rem; align-items:start;">
+        <div class="prose">
+          <p>
+            请告诉我们您的目标市场、预估数量和用途，我们会在工作日 24 小时内回复当前批次的供货情况
+            与批发报价。也可以直接发邮件到
+            <strong><a href="mailto:hello@tableorie.com">hello@tableorie.com</a></strong>。
+          </p>
+
+          <form id="inquiry-form" style="margin-top:2rem;">
+            <div style="margin-bottom:1rem;">
+              <label for="company" style="display:block; font-weight:600; margin-bottom:0.3rem;">公司名称</label>
+              <input type="text" id="company" name="company" placeholder="公司或品牌名"
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;" />
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="name" style="display:block; font-weight:600; margin-bottom:0.3rem;">联系人 *</label>
+              <input type="text" id="name" name="name" required
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;" />
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="email" style="display:block; font-weight:600; margin-bottom:0.3rem;">工作邮箱 *</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com"
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;" />
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="country" style="display:block; font-weight:600; margin-bottom:0.3rem;">国家 / 地区 *</label>
+              <select id="country" name="country" required
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;">
+                <option value="">请选择…</option>
+                <option value="United States">美国</option>
+                <option value="Canada">加拿大</option>
+                <option value="United Kingdom">英国</option>
+                <option value="Germany">德国</option>
+                <option value="France">法国</option>
+                <option value="Other Europe">欧洲其他</option>
+                <option value="United Arab Emirates">阿联酋</option>
+                <option value="Saudi Arabia">沙特</option>
+                <option value="Other Middle East">中东其他</option>
+                <option value="Australia">澳大利亚</option>
+                <option value="Japan">日本</option>
+                <option value="Southeast Asia">东南亚</option>
+                <option value="Other Asia">亚洲其他</option>
+                <option value="Latin America">拉美</option>
+                <option value="China / Domestic">中国大陆</option>
+                <option value="Other">其他</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="product" style="display:block; font-weight:600; margin-bottom:0.3rem;">产品兴趣</label>
+              <select id="product" name="product"
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;">
+                <option value="">请选择…</option>
+                <option value="Silver Carved">银色雕花系列</option>
+                <option value="Gold Carved">金色雕花系列</option>
+                <option value="Wenge Wood">鸡翅木系列</option>
+                <option value="Multiple">多系列</option>
+                <option value="OEM Custom">OEM 定制</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="quantity" style="display:block; font-weight:600; margin-bottom:0.3rem;">预估数量 *</label>
+              <select id="quantity" name="quantity" required
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;">
+                <option value="">请选择…</option>
+                <option value="Under 500">500 以下（试单）</option>
+                <option value="500-2000">500 – 2,000</option>
+                <option value="2000-10000">2,000 – 10,000</option>
+                <option value="10000+">10,000 以上</option>
+                <option value="TBD">待定 / 需沟通</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="usecase" style="display:block; font-weight:600; margin-bottom:0.3rem;">用途</label>
+              <select id="usecase" name="usecase"
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff;">
+                <option value="">请选择…</option>
+                <option value="Resale">转售 / 分销</option>
+                <option value="Hotel-Restaurant">酒店 / 餐饮</option>
+                <option value="OEM-ODM">OEM / ODM</option>
+                <option value="Corporate gifting">企业礼品</option>
+                <option value="Other">其他</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <label for="message" style="display:block; font-weight:600; margin-bottom:0.3rem;">消息 *</label>
+              <textarea id="message" name="message" rows="6" required placeholder="目标市场、表面处理偏好、打样需求、时间计划……"
+                style="width:100%; padding:0.6rem 0.8rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; background:#fff; resize:vertical; font-family:inherit;"></textarea>
+            </div>
+
+            <!-- Honeypot: invisible to humans, bots will fill it -->
+            <div style="opacity:0;position:absolute;top:0;left:0;height:0;width:0;overflow:hidden;" aria-hidden="true">
+              <label for="website">Do not fill this out</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <button type="submit" id="submit-btn"
+              style="background:var(--color-accent); color:#fff; border:none; padding:0.7rem 2rem; font-size:1rem; border-radius:var(--radius); cursor:pointer; font-weight:600;">
+              发送询盘
+            </button>
+            <span id="form-status" style="margin-left:1rem; font-size:0.9rem;"></span>
+          </form>
+        </div>
+
+        <aside style="background:#f9f7f4; border:1px solid var(--color-border); border-radius:var(--radius-large); padding:1.5rem;">
+          <h2 style="font-size:1rem; margin-bottom:1rem;">批发交易要点</h2>
+
+          <div style="margin-bottom:1.25rem;">
+            <div style="font-weight:600; font-size:0.9rem; margin-bottom:0.4rem;">MOQ 分档</div>
+            <ul style="font-size:0.85rem; color:var(--color-text-muted); padding-left:1.1rem; margin:0;">
+              <li>单件：300 件</li>
+              <li>小套装：200 套</li>
+              <li>五件套：100 套</li>
+              <li>新开模 / 定制：1,000 件</li>
+              <li>首单试单：50–100 件可谈</li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom:1.25rem;">
+            <div style="font-weight:600; font-size:0.9rem; margin-bottom:0.4rem;">贸易条款</div>
+            <p style="font-size:0.85rem; color:var(--color-text-muted); margin:0;">FOB 深圳（揭阳出货，含到港拖车费）</p>
+          </div>
+
+          <div style="margin-bottom:1.25rem;">
+            <div style="font-weight:600; font-size:0.9rem; margin-bottom:0.4rem;">付款</div>
+            <p style="font-size:0.85rem; color:var(--color-text-muted); margin:0;">
+              30% 定金 + 70% 发货前 T/T；支持万里汇（WorldFirst）跨境收款。
+            </p>
+          </div>
+
+          <div>
+            <div style="font-weight:600; font-size:0.9rem; margin-bottom:0.4rem;">打样</div>
+            <p style="font-size:0.85rem; color:var(--color-text-muted); margin:0;">
+              现货免费打样、运费到付；定制样品 $30–80（订单满 500 件可抵扣）。
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Pre-fill product interest from ?product= slug
+    const params = new URLSearchParams(window.location.search);
+    const productParam = params.get('product');
+    if (productParam) {
+      const productSelect = document.getElementById('product');
+      const slugToLabel = {
+        'silver-carved-fork': 'Silver Carved',
+        'silver-carved-spoon': 'Silver Carved',
+        'silver-carved-knife': 'Silver Carved',
+        'silver-carved-5-piece-set': 'Silver Carved',
+        'silver-carved-3-piece-set': 'Silver Carved',
+        'silver-carved-8-piece-set': 'Silver Carved',
+        'gold-carved-fork': 'Gold Carved',
+        'gold-carved-spoon': 'Gold Carved',
+        'gold-carved-knife': 'Gold Carved',
+        'gold-carved-5-piece-set': 'Gold Carved',
+        'gold-carved-3-piece-set': 'Gold Carved',
+        'gold-carved-8-piece-set': 'Gold Carved',
+        'rosewood-handle-fork': 'Wenge Wood',
+        'rosewood-handle-spoon': 'Wenge Wood',
+        'rosewood-handle-knife': 'Wenge Wood',
+        'rosewood-5-piece-set': 'Wenge Wood',
+        'rosewood-3-piece-set': 'Wenge Wood',
+        'rosewood-8-piece-set': 'Wenge Wood',
+      };
+      const label = slugToLabel[productParam];
+      if (label) {
+        [...productSelect.options].forEach((opt) => {
+          if (opt.value === label) opt.selected = true;
+        });
+      }
+    }
+
+    document.getElementById('inquiry-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const btn = document.getElementById('submit-btn');
+      const status = document.getElementById('form-status');
+
+      btn.disabled = true;
+      btn.textContent = '发送中…';
+      status.textContent = '';
+      status.style.color = '';
+
+      try {
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: form.name.value.trim(),
+            email: form.email.value.trim(),
+            subject: `[批发询盘] ${form.country.value || ''} - ${form.company.value || '无公司'} - ${form.quantity.value || '数量待定'}`,
+            message: [
+              `公司: ${form.company.value.trim() || '-'}`,
+              `国家/地区: ${form.country.value}`,
+              `产品兴趣: ${form.product.value || '-'}`,
+              `预估数量: ${form.quantity.value}`,
+              `用途: ${form.usecase.value || '-'}`,
+              ``,
+              form.message.value.trim(),
+            ].join('\n'),
+            website: form.website ? form.website.value.trim() : '',
+          }),
+        });
+        const data = await res.json();
+
+        if (res.ok && data.success) {
+          status.textContent = '✓ 询盘已发送！我们将在工作日内回复。';
+          status.style.color = '#2a7d4f';
+          form.reset();
+        } else {
+          status.textContent = data.error || '发送失败，请重试。';
+          status.style.color = '#c0392b';
+        }
+      } catch (err) {
+        status.textContent = '网络错误，请直接发邮件到 hello@tableorie.com。';
+        status.style.color = '#c0392b';
+      } finally {
+        btn.disabled = false;
+        btn.textContent = '发送询盘';
+      }
+    });
+  </script>
+</BaseLayout>

@@ -1,3 +1,4 @@
+/* [B2B] Stripe B2C helpers disabled — kept for B2C regression
 // ── Stripe product catalog (slug → Stripe Price ID) ──
 // Created via Stripe CLI. Use `stripe prices list` to verify.
 const STRIPE_PRICES = {
@@ -63,6 +64,7 @@ async function verifyWebhookSignature(payload, signatureHeader, secret) {
     throw new Error('Webhook signature verification failed');
   }
 }
+*/
 
 // ── In-memory rate limiter (per-IP, per-worker instance) ──
 const rateLimiter = new Map(); // ip → { count, resetAt }
@@ -98,6 +100,7 @@ export default {
     const accept = request.headers.get('Accept') || '';
 
     // ── Stripe: Create Checkout Session ──
+    /* [B2B] Checkout disabled — kept for B2C regression
     if (url.pathname === '/api/checkout' && request.method === 'POST') {
       try {
         const { slug, quantity = 1 } = await request.json();
@@ -131,8 +134,10 @@ export default {
         return jsonResponse({ error: 'Failed to create checkout session' }, 500);
       }
     }
+    */
 
     // ── Stripe: Webhook handler ──
+    /* [B2B] Stripe B2C webhook disabled — kept for B2C regression
     if (url.pathname === '/api/stripe-webhook' && request.method === 'POST') {
       const payload = await request.text();
       const sig = request.headers.get('stripe-signature');
@@ -195,9 +200,10 @@ export default {
         publishableKey: env.STRIPE_PUBLISHABLE_KEY || null,
       });
     }
+    */
 
-    // ── Contact form API ──
-    if (url.pathname === '/api/contact') {
+    // ── Contact / Inquiry form API (B2B) ──
+    if (url.pathname === '/api/contact' || url.pathname === '/api/inquiry') {
       if (request.method === 'OPTIONS') {
         return new Response(null, { headers: corsHeaders });
       }
