@@ -386,6 +386,22 @@ export const guideArticles: GeoGuideArticle[] = [
         paragraphs: [
           'Choose Silver Carved or Gold Tone Carved if you want a classic western-style setting with a small fork. Choose Wenge Wood Handle if chopsticks matter more for daily use. The right set is the one whose pieces match the meals you actually eat.'
         ]
+      },
+      {
+        heading: 'Which 5-piece set for which table: a quick comparison',
+        paragraphs: [
+          'A quick way to choose is to match the set to the meal. The table below compares Yinshiji 5-piece sets across common dining scenarios.'
+        ],
+        table: {
+          caption: 'Yinshiji 5-piece sets by dining scenario.',
+          headers: ['Scenario', 'Silver Carved / Gold Tone Carved', 'Wenge Wood Handle'],
+          rows: [
+            { cells: ['Western-style place setting', 'Knife, dinner fork, dinner spoon, small fork, small spoon', 'Knife, dinner fork, dinner spoon, chopsticks, small spoon (no small fork)'] },
+            { cells: ['Chinese / mixed daily meals', 'No chopsticks; western composition only', 'Chopsticks included; suits rice, noodles, soup'] },
+            { cells: ['Hosting a dinner', 'Classic 5-piece western cover', 'Warm wood look; chopsticks for guests who prefer them'] },
+            { cells: ['Gift presentation', 'Sleek carved metal, gift-friendly', 'Wenge wood handle, distinctive look'] }
+          ]
+        }
       }
     ],
     faqs: [
@@ -398,7 +414,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products/gold-carved-5-piece-set', label: 'Gold Tone Carved 5-Piece Set' },
       { href: '/products/rosewood-5-piece-set', label: 'Wenge Wood Handle 5-Piece Set' }
     ],
-    lastUpdated: '2026-08-02',
+    lastUpdated: '2026-09-16',
     expertQuotes: [
       {
         quote: 'Flatware sets should have, at a minimum, five pieces: a smaller fork suitable for salads and desserts, a larger fork for main courses, a smaller spoon for desserts or tea, a larger spoon for soup and stews, and a table knife.',
@@ -4539,6 +4555,22 @@ export const guideArticlesZh: GeoGuideArticle[] = [
         paragraphs: [
           '如果你想要更传统的西式完整席位，选银色或金色雕花五件套。如果你日常更常用碗、米饭、面条和筷子，鸡翅木五件套更实用。'
         ]
+      },
+      {
+        heading: '哪一套适合什么餐桌：快速对比',
+        paragraphs: [
+          '快速选择的方法是让餐具匹配你吃的饭。下表按常见用餐场景对比银食记五件套。'
+        ],
+        table: {
+          caption: '银食记五件套按用餐场景对比。',
+          headers: ['场景', '银色雕花 / 金色雕花', '鸡翅木'],
+          rows: [
+            { cells: ['西式完整席位', '餐刀、主叉、主勺、小叉、小勺', '餐刀、主叉、主勺、筷子、小勺（无小叉）'] },
+            { cells: ['中式日常 / 混合用餐', '无筷子；只有西式组成', '含筷子；适合米饭、面条、汤品'] },
+            { cells: ['小型聚餐', '经典五件套西式摆台', '暖木质感；偏好筷子的客人可用'] },
+            { cells: ['礼赠展示', '雕花金属、适合送礼', '鸡翅木柄、造型独特'] }
+          ]
+        }
       }
     ],
     faqs: [
@@ -4551,7 +4583,7 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/products/gold-carved-5-piece-set', label: '金色雕花五件套' },
       { href: '/zh/products/rosewood-5-piece-set', label: '鸡翅木五件套' }
     ],
-    lastUpdated: '2026-08-02',
+    lastUpdated: '2026-09-16',
     expertQuotes: [
       {
         quote: 'Flatware sets should have, at a minimum, five pieces: a smaller fork suitable for salads and desserts, a larger fork for main courses, a smaller spoon for desserts or tea, a larger spoon for soup and stews, and a table knife.',
