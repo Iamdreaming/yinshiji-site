@@ -2565,6 +2565,7 @@ export const guideArticles: GeoGuideArticle[] = [
       {
         quote: 'Grade 304 is a widely used, cost-effective choice for general food and beverage applications. Both 304 and 316 stainless steels are classified as food-grade and meet regulatory standards for direct contact with food, including FDA regulations, EU Framework Regulation (EC) No 1935/2004, and NSF/ANSI 51 certification.',
         source: 'AZoM, "Food Grade Stainless Steel: 304 vs 316" (Atif Suhail)',
+        url: 'https://www.azom.com/article.aspx?ArticleID=24472',
       },
     ],
     statistics: [
