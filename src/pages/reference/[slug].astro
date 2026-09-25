@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { referenceArticles } from '../../data/reference-articles';
+import { guideArticles } from '../../data/geo-guides';
 
 export function getStaticPaths() {
   return referenceArticles.map((article) => ({
@@ -147,6 +148,10 @@ const faqSchema = faqItems.length > 0
             {article.related.map((slug) => {
               const relatedArticle = referenceArticles.find((item) => item.slug === slug);
               return relatedArticle ? <a href={`/reference/${relatedArticle.slug}`} class="btn btn-outline">{relatedArticle.title}</a> : null;
+            })}
+            {article.relatedGuides?.map((slug) => {
+              const relatedGuide = guideArticles.find((item) => item.slug === slug);
+              return relatedGuide ? <a href={`/guide/${relatedGuide.slug}`} class="btn btn-outline">{relatedGuide.title}</a> : null;
             })}
             <a href="/reference" class="btn btn-outline">All reference pages</a>
           </div>

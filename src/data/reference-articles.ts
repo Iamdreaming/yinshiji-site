@@ -28,6 +28,7 @@ export interface ReferenceArticle {
   sectionsZh: ArticleSection[];
   sources: SourceRef[];
   related: string[];
+  relatedGuides?: string[];
 }
 
 export const sourcesMap: Record<string, SourceRef> = {
@@ -158,6 +159,7 @@ export const referenceArticles: ReferenceArticle[] = [
       { id: 'nhc-gb-4806', organization: 'National Health Commission of PRC', title: 'NHC announcement of GB 4806.9-2023', url: 'https://www.nhc.gov.cn/wjw/c100175/202309/bb7158019984496ca14e51e41cc2d1c2.shtml', tier: 'official-regulation', sense: 'Confirms the Chinese title, release date, and scope of GB 4806.9-2023.', note: 'Use the official Chinese text for clause-level claims. English summaries are not the legal text.' },
     ],
     related: ['stainless-steel-grades-cutlery', 'food-contact-safety-migration'],
+    relatedGuides: ['complete-buyers-guide-2026', 'budget-vs-premium-cutlery'],
   },
   {
     slug: 'stainless-steel-grades-cutlery',
@@ -271,6 +273,7 @@ export const referenceArticles: ReferenceArticle[] = [
       { id: 'worldstainless-food-beverage', organization: 'Worldstainless / Euro Inox', title: 'Stainless Steel in the Food and Beverage Industry', url: 'https://worldstainless.org/wp-content/uploads/2025/02/StSt_in_FoodandBeverage_EN.pdf', tier: 'industry-association', sense: 'Stainless steel families, grade selection for food and beverage applications.' },
     ],
     related: ['stainless-steel-cutlery-standards', 'food-contact-safety-migration'],
+    relatedGuides: ['304-vs-410-stainless-steel-cutlery', '18-10-vs-18-8-vs-18-0-flatware'],
   },
   {
     slug: 'food-contact-safety-migration',
@@ -374,6 +377,7 @@ export const referenceArticles: ReferenceArticle[] = [
       { id: 'nhc-gb-4806', organization: 'National Health Commission of PRC', title: 'GB 4806.9-2023', url: 'https://www.nhc.gov.cn/wjw/c100175/202309/bb7158019984496ca14e51e41cc2d1c2.shtml', tier: 'official-regulation', sense: 'China metal food-contact standard with dedicated release limits and raw material requirements.', note: 'Use official Chinese text for clause-level claims.' },
     ],
     related: ['stainless-steel-cutlery-standards', 'stainless-steel-grades-cutlery'],
+    relatedGuides: ['what-does-food-grade-stainless-steel-mean', 'gold-flatware-safety-and-durability'],
   },
   
   // ============================================================
@@ -470,6 +474,7 @@ export const referenceArticles: ReferenceArticle[] = [
       { id: 'bssa-cutlery-grades', organization: 'BSSA', title: 'Cutlery stainless steel grades — 18/8, 18/10, 18/0', url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades', tier: 'industry-association', sense: 'Grade comparison: 304 vs 430 passive layer robustness.' },
     ],
     related: ['why-stainless-steel-can-rust', 'stainless-steel-grades-cutlery'],
+    relatedGuides: ['what-does-304-mean-on-cutlery', 'how-to-clean-stainless-steel-cutlery'],
   },
 
   // ============================================================
@@ -570,6 +575,7 @@ export const referenceArticles: ReferenceArticle[] = [
       { id: 'bssa-cutlery-grades', organization: 'BSSA', title: 'Cutlery stainless steel grades — 18/8, 18/10, 18/0', url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades', tier: 'industry-association', sense: 'Grade-specific corrosion resistance and care guidance for 304, 430, and 410.' },
     ],
     related: ['passive-layer-explained', 'stainless-steel-grades-cutlery', 'dishwasher-and-cutlery'],
+    relatedGuides: ['stainless-steel-flatware-rust-prevention', 'how-to-clean-stainless-steel-cutlery'],
   },
 
   // ============================================================
@@ -674,6 +680,7 @@ export const referenceArticles: ReferenceArticle[] = [
       { id: 'worldstainless-food-beverage', organization: 'Worldstainless / Euro Inox', title: 'Stainless Steel in the Food and Beverage Industry', url: 'https://worldstainless.org/wp-content/uploads/2025/02/StSt_in_FoodandBeverage_EN.pdf', tier: 'industry-association', sense: 'Work hardening magnetism in cold-formed austenitic stainless steel.' },
     ],
     related: ['stainless-steel-grades-cutlery', 'cutlery-surface-finishes'],
+    relatedGuides: ['304-vs-430-vs-201-stainless-steel'],
   },
   {
     slug: 'cutlery-surface-finishes',
@@ -784,6 +791,7 @@ export const referenceArticles: ReferenceArticle[] = [
       },
     ],
     related: ['stainless-steel-grades-cutlery', 'dishwasher-and-cutlery'],
+    relatedGuides: ['how-to-choose-flatware-set', 'silver-vs-gold-tone-cutlery'],
   },
   {
     slug: 'jieyang-stainless-industry',
@@ -895,6 +903,7 @@ export const referenceArticles: ReferenceArticle[] = [
       },
     ],
     related: ['stainless-steel-grades-cutlery', 'cutlery-surface-finishes'],
+    relatedGuides: ['jieyang-stainless-steel-capital', 'jieyang-stainless-steel-region'],
   },
   {
     slug: 'dishwasher-and-cutlery',
@@ -1009,6 +1018,7 @@ export const referenceArticles: ReferenceArticle[] = [
       },
     ],
     related: ['passive-layer-explained', 'why-stainless-steel-can-rust', 'stainless-steel-grades-cutlery'],
+    relatedGuides: ['dishwasher-safe-stainless-steel-cutlery', 'how-to-care-for-stainless-steel-cutlery'],
   },
 
   {
@@ -1123,6 +1133,7 @@ export const referenceArticles: ReferenceArticle[] = [
       { id: 'bssa-cutlery-grades', organization: 'BSSA', title: 'Cutlery stainless steel grades — 18/8, 18/10, 18/0', url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades', tier: 'industry-association', sense: '304/430 cutlery grade mapping; practical adequacy of 304 for cutlery.' },
     ],
     related: ['stainless-steel-grades-cutlery', 'food-contact-safety-migration'],
+    relatedGuides: ['what-does-food-grade-stainless-steel-mean'],
   },
   {
     slug: 'nickel-allergy-cutlery',
@@ -1246,5 +1257,6 @@ export const referenceArticles: ReferenceArticle[] = [
       { id: 'worldstainless-food-beverage', organization: 'Worldstainless / Euro Inox', title: 'Stainless Steel in the Food and Beverage Industry', url: 'https://worldstainless.org/wp-content/uploads/2025/02/StSt_in_FoodandBeverage_EN.pdf', tier: 'industry-association', sense: 'Passive layer, surface finish effects; bulk composition vs release rate.' },
     ],
     related: ['stainless-steel-grades-cutlery', 'food-contact-safety-migration', 'cutlery-surface-finishes'],
+    relatedGuides: ['stainless-vs-other-cutlery-materials'],
   },
 ];
