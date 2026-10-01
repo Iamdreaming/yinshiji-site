@@ -202,12 +202,12 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products/gold-carved-5-piece-set', label: 'Gold Tone Carved 5-Piece Set' },
       { href: '/materials-care', label: 'Materials & Care' }
     ],
-    lastUpdated: '2026-07-29',
+    lastUpdated: '2026-10-01',
     expertQuotes: [
       {
         quote: 'PVD-coated flatware uses titanium nitride (TiN), a hard ceramic material that is biocompatible and non-toxic — making it 100% safe for food contact. The coating bonds at a molecular level, unlike electroplating which simply deposits a soft metal layer on top.',
-        source: 'Zink Foodservice, PVD Flatware technical specification',
-        url: 'https://zinkfsg.com/product/pvd-flatware'
+        source: 'GPA Coatings, TiN coating data sheet',
+        url: 'https://www.gpa-coatings.com/en/titanium-nitride-tin'
       },
       {
         quote: 'Gold flatware made with a modern PVD coating can last for more than 10 years, even with daily use and dishwashing. Traditional gold electroplating may show significant wear and fading in just 1-3 years.',
@@ -494,7 +494,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products', label: 'Browse Products' },
       { href: '/materials-care', label: 'Materials & Care' }
     ],
-    lastUpdated: '2026-08-03',
+    lastUpdated: '2026-10-01',
     expertQuotes: [
       {
         quote: 'In a realistic restaurant study, diners using heavier banquet-style cutlery liked the main course more, judged it as more artistic, and indicated a higher willingness to pay — on the order of roughly a 15% lift — than those using lighter canteen-style flatware, even though the food was identical.',
@@ -527,7 +527,7 @@ export const guideArticles: GeoGuideArticle[] = [
     eyebrow: 'Design guide',
     quickAnswer:
       'Chinese-inspired flatware is not just western cutlery with a decorative label. For Yinshiji, it means restrained carved patterns, warm wenge wood handles, honest material descriptions, and set compositions that can fit Chinese daily meals as well as western-style place settings.',
-    lastUpdated: '2026-07-30',
+    lastUpdated: '2026-10-01',
     expertQuotes: [
       {
         quote: 'Consumers prioritize material selection when evaluating contemporary Chinese-style furniture, with "redwood" and natural wood demanding the most intensive cognitive processing — suggesting that material honesty matters more than decorative excess.',
@@ -639,7 +639,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products', label: 'Browse Products' },
       { href: '/guide/what-is-in-a-5-piece-cutlery-set', label: '5-Piece Set Composition' }
     ],
-    lastUpdated: '2026-08-04',
+    lastUpdated: '2026-10-01',
     expertQuotes: [
       {
         quote: 'Cutlery comes from the craft of the cutler — the knife-maker — and expanded over centuries of British usage to cover the whole place setting. Flatware comes from the silversmith\'s technical vocabulary, distinguishing flat eating implements from hollow serving vessels, and expanded into everyday American usage as a general term for eating implements.',
@@ -705,7 +705,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
       { href: '/guide/what-is-in-a-5-piece-cutlery-set', label: '5-Piece Set Composition' }
     ],
-    lastUpdated: '2026-08-05',
+    lastUpdated: '2026-10-01',
     expertQuotes: [
       {
         quote: 'A set of flatware typically contains five forks: dinner fork, fish fork, luncheon fork, salad or dessert fork, and seafood fork. The salad fork is approximately 6 inches long with flatter, slightly broader tines than a dinner fork.',
@@ -4374,12 +4374,12 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/products/gold-carved-5-piece-set', label: '金色雕花五件套' },
       { href: '/zh/materials-care', label: '材质与护理' }
     ],
-    lastUpdated: '2026-07-29',
+    lastUpdated: '2026-10-01',
     expertQuotes: [
       {
         quote: 'PVD 涂层餐具使用氮化钛（TiN），这是一种硬质陶瓷材料，具有生物兼容性和无毒性——100% 安全用于食品接触。涂层在分子层面结合，不同于电镀仅在表面沉积软金属层。',
-        source: 'Zink Foodservice, PVD Flatware 技术规格',
-        url: 'https://zinkfsg.com/product/pvd-flatware'
+        source: 'GPA Coatings, TiN 涂层数据表',
+        url: 'https://www.gpa-coatings.com/en/titanium-nitride-tin'
       },
       {
         quote: '采用现代 PVD 涂层的金色餐具即使日常使用和机洗也能使用 10 年以上。传统金电镀可能在 1-3 年内出现明显磨损和褪色。',
@@ -4664,7 +4664,7 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/products', label: '查看产品' },
       { href: '/zh/materials-care', label: '材质与护理' }
     ],
-    lastUpdated: '2026-08-03',
+    lastUpdated: '2026-10-01',
     expertQuotes: [
       {
         quote: '在一项餐厅实地研究中，使用较重的宴会风格餐具的食客对主菜评价更高，认为菜品更具艺术感，并表现出更高的支付意愿——在相同菜品条件下，比使用较轻餐具的食客提升约15%。',
@@ -4697,7 +4697,7 @@ export const guideArticlesZh: GeoGuideArticle[] = [
     eyebrow: '设计指南',
     quickAnswer:
       '中式灵感餐具不是给西式餐具贴一个中文标签。对银食记来说，它包括克制的雕花细节、鸡翅木手柄、真实材质描述，以及能适配中式日常饭菜的组成方式。',
-    lastUpdated: '2026-07-30',
+    lastUpdated: '2026-10-01',
     expertQuotes: [
       {
         quote: '消费者在评估当代中式风格家具时，最优先关注材质选择——天然木材（如红木）在认知加工阶段获得最多注意力，说明材质诚实比装饰堆砌更重要。',
@@ -4806,7 +4806,7 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/products', label: '查看产品' },
       { href: '/zh/guide/what-is-in-a-5-piece-cutlery-set', label: '五件套组成说明' }
     ],
-    lastUpdated: '2026-08-04',
+    lastUpdated: '2026-10-01',
     expertQuotes: [
       {
         quote: 'Cutlery 来自制刀匠（cutler）的工艺，经过几个世纪的英式用法扩展到涵盖整套餐具。Flatware 来自银匠的技术词汇，用于区分扁平餐具与空心器皿（hollowware），后来在美式英语中扩展为餐具的通用称呼。',
@@ -4872,7 +4872,7 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/products/silver-carved-5-piece-set', label: '银色雕花五件套' },
       { href: '/zh/guide/what-is-in-a-5-piece-cutlery-set', label: '五件套组成说明' }
     ],
-    lastUpdated: '2026-08-05',
+    lastUpdated: '2026-10-01',
     expertQuotes: [
       {
         quote: '一套餐具通常包含五种叉：主叉、鱼叉、午餐叉、沙拉/甜点叉和海鲜叉。沙拉叉约 6 英寸长，齿比主叉更平、略宽。',
