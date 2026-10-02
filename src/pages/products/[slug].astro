@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { products } from '../../data/products';
-import { siteLinks } from '../../data/site-links';
 
 export function getStaticPaths() {
   return products.map((p) => ({
@@ -105,7 +104,7 @@ if (isGold) {
 }
 faqEntries.push({
   q: `Where can I buy the ${product.name}?`,
-  a: `Domestic customers can purchase through the Taobao store when in stock. For current availability or wholesale inquiries, contact us directly.`,
+  a: `For current availability or wholesale inquiries, contact us directly.`,
 });
 
 const faqSchema = {

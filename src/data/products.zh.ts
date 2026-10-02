@@ -39,7 +39,7 @@ export const productsZh: ProductZh[] = [
       '建议手洗以保持表面细节状态',
     ],
     careNotes: '建议手洗，避免钢丝球和强腐蚀清洁剂，清洗后及时擦干。',
-    priceNote: '当前批次 — 具体价格与库存以咨询或淘宝页面为准。',
+    priceNote: '当前批次 — 具体价格与库存以直接咨询为准。',
     specs: [
         {
             "label": "材质",
@@ -77,7 +77,7 @@ export const productsZh: ProductZh[] = [
     orderSteps: [
         "先查看本页的产品组成、材质和护理说明。",
         "联系银食记确认当前批次、库存、价格和拿样情况。",
-        "国内用户可在商品可售时通过淘宝店完成购买。",
+        "当前库存与批发咨询请直接联系我们。",
         "如需批发、礼赠或合作，请先说明数量、用途和期望交付时间。"
     ],
     imagePlaceholder: '/images/products/silver-carved-fork-single.webp',
@@ -100,7 +100,7 @@ export const productsZh: ProductZh[] = [
       '适合作为家用或礼赠起步套装',
     ],
     careNotes: '建议手洗，避免强腐蚀清洁剂和粗糙刷具，洗净后及时擦干。',
-    priceNote: '当前批次 — 具体价格与库存以咨询或淘宝页面为准。',
+    priceNote: '当前批次 — 具体价格与库存以直接咨询为准。',
     specs: [
         {
             "label": "材质",
@@ -138,7 +138,7 @@ export const productsZh: ProductZh[] = [
     orderSteps: [
         "先查看本页的产品组成、材质和护理说明。",
         "联系银食记确认当前批次、库存、价格和拿样情况。",
-        "国内用户可在商品可售时通过淘宝店完成购买。",
+        "当前库存与批发咨询请直接联系我们。",
         "如需批发、礼赠或合作，请先说明数量、用途和期望交付时间。"
     ],
     imagePlaceholder: '/images/products/silver-carved-5-piece-set-final.webp',
@@ -161,7 +161,7 @@ export const productsZh: ProductZh[] = [
       '建议手洗以延长表面状态',
     ],
     careNotes: '建议手洗，避免长时间浸泡、漂白剂和硬质摩擦工具。',
-    priceNote: '当前批次 — 具体价格与库存以咨询或淘宝页面为准。',
+    priceNote: '当前批次 — 具体价格与库存以直接咨询为准。',
     specs: [
         {
             "label": "材质",
@@ -199,7 +199,7 @@ export const productsZh: ProductZh[] = [
     orderSteps: [
         "先查看本页的产品组成、材质和护理说明。",
         "联系银食记确认当前批次、库存、价格和拿样情况。",
-        "国内用户可在商品可售时通过淘宝店完成购买。",
+        "当前库存与批发咨询请直接联系我们。",
         "如需批发、礼赠或合作，请先说明数量、用途和期望交付时间。"
     ],
     imagePlaceholder: '/images/products/gold-carved-fork.webp',
@@ -222,7 +222,7 @@ export const productsZh: ProductZh[] = [
       '建议手洗保养',
     ],
     careNotes: '建议手洗并及时擦干，避免粗糙刷具、强酸碱清洁剂和长时间浸泡。',
-    priceNote: '当前批次 — 具体价格与库存以咨询或淘宝页面为准。',
+    priceNote: '当前批次 — 具体价格与库存以直接咨询为准。',
     specs: [
         {
             "label": "材质",
@@ -260,7 +260,7 @@ export const productsZh: ProductZh[] = [
     orderSteps: [
         "先查看本页的产品组成、材质和护理说明。",
         "联系银食记确认当前批次、库存、价格和拿样情况。",
-        "国内用户可在商品可售时通过淘宝店完成购买。",
+        "当前库存与批发咨询请直接联系我们。",
         "如需批发、礼赠或合作，请先说明数量、用途和期望交付时间。"
     ],
     imagePlaceholder: '/images/products/gold-carved-5-piece-set.webp',
@@ -283,7 +283,7 @@ export const productsZh: ProductZh[] = [
       '建议手洗与定期基础养护',
     ],
     careNotes: '木柄部分建议手洗，不要长时间浸泡；清洗后及时擦干，必要时可少量使用食品级木器保养油。',
-    priceNote: '当前批次 — 具体价格与库存以咨询或淘宝页面为准。',
+    priceNote: '当前批次 — 具体价格与库存以直接咨询为准。',
     specs: [
         {
             "label": "材质",
@@ -321,7 +321,7 @@ export const productsZh: ProductZh[] = [
     orderSteps: [
         "先查看本页的产品组成、材质和护理说明。",
         "联系银食记确认当前批次、库存、价格和拿样情况。",
-        "国内用户可在商品可售时通过淘宝店完成购买。",
+        "当前库存与批发咨询请直接联系我们。",
         "如需批发、礼赠或合作，请先说明数量、用途和期望交付时间。"
     ],
     imagePlaceholder: '/images/products/rosewood-handle-fork-single-clean.webp',
@@ -344,7 +344,7 @@ export const productsZh: ProductZh[] = [
       '建议手洗保养',
     ],
     careNotes: '木柄与筷子均建议手洗，不要长时间浸泡，不建议洗碗机清洗，使用后及时擦干。',
-    priceNote: '当前批次 — 具体价格与库存以咨询或淘宝页面为准。',
+    priceNote: '当前批次 — 具体价格与库存以直接咨询为准。',
     specs: [
         {
             "label": "材质",
@@ -382,7 +382,7 @@ export const productsZh: ProductZh[] = [
     orderSteps: [
         "先查看本页的产品组成、材质和护理说明。",
         "联系银食记确认当前批次、库存、价格和拿样情况。",
-        "国内用户可在商品可售时通过淘宝店完成购买。",
+        "当前库存与批发咨询请直接联系我们。",
         "如需批发、礼赠或合作，请先说明数量、用途和期望交付时间。"
     ],
     imagePlaceholder: '/images/products/rosewood-5-piece-set.webp',

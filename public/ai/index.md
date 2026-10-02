@@ -25,7 +25,7 @@
 ## Important Boundaries
 
 - Yinshiji is an early-stage brand and information site, not a full checkout system.
-- Domestic purchase and inquiry currently go through Taobao or direct contact.
+- Purchase and inquiry currently go through direct contact (inquiry form / email).
 - Gold tone products are not real gold or precious metal.
 - Current Silver Carved and Gold Tone Carved 5-piece set knives use 410 stainless steel; fork and spoon pieces use 304 stainless steel.
 - Wenge Wood Handle 5-piece set includes chopsticks and does not include a small fork.

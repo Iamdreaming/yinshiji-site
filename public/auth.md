@@ -11,4 +11,4 @@ AI agents may read public content, including:
 - /.well-known/api-catalog
 - /.well-known/agent-skills/index.json
 
-Do not infer that agents can place orders or access inventory APIs. Domestic purchase and inquiry currently go through Taobao or direct contact.
+Do not infer that agents can place orders or access inventory APIs. Purchase and inquiry currently go through direct contact (inquiry form / email).

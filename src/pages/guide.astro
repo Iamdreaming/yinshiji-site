@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { siteLinks } from '../data/site-links';
 
 const alternateLinks = [
   { lang: 'en', href: '/guide' },
@@ -181,12 +180,11 @@ const navItems = [
       <section class="detail-section">
         <h2>Current Ordering Path</h2>
         <p>
-          Yinshiji is still validating early batches. Use the Taobao store as the current domestic purchase and inquiry entrance.
+          Yinshiji is still validating early batches. For current availability and inquiries, please contact us directly.
           Availability and product combinations may change by batch.
         </p>
         <div style="margin-top:1rem; display:flex; gap:1rem; flex-wrap:wrap;">
           <a href="/products" class="btn btn-outline">Browse Products</a>
-          <a href={siteLinks.taobao} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow">Open Taobao Store</a>
         </div>
       </section>
     </div>

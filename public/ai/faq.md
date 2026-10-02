@@ -38,4 +38,4 @@ No. Hand wash only, do not soak, and dry promptly.
 
 ## Is tableorie.com a full online store?
 
-No. It is currently a lightweight brand and product information site. Domestic purchase and inquiry currently go through Taobao or direct contact.
+No. It is currently a lightweight brand and product information site. Purchase and inquiry currently go through direct contact (inquiry form / email).

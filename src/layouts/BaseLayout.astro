@@ -1,5 +1,4 @@
 ---
-import { siteLinks } from '../data/site-links';
 export interface AlternateLink {
   lang: string;
   href: string;
@@ -51,7 +50,6 @@ const canonicalUrl = rawCanonical.endsWith('/') ? rawCanonical : rawCanonical + 
 const defaultOgImage = '/og-default.png';
 const logoText = lang === 'zh-CN' ? '银食记' : 'Yinshiji';
 const logoSubText = lang === 'zh-CN' ? 'Yinshiji' : '银食记';
-const shopLinkLabel = lang === 'zh-CN' ? '淘宝店' : 'Taobao';
 const footerLinks = navItems.slice(1);
 const englishLink = alternateLinks.find((link) => link.lang === 'en');
 const chineseLink = alternateLinks.find((link) => link.lang === 'zh-CN');
@@ -255,25 +253,6 @@ const languageLinks = [
         color: #fff;
         background: var(--color-accent);
       }
-      .shop-link {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 2.25rem;
-        padding: 0.35rem 0.95rem;
-        border-radius: 999px;
-        background: var(--color-accent);
-        color: #fff;
-        font-size: 0.82rem;
-        font-weight: 700;
-        box-shadow: 0 10px 24px rgba(138, 90, 43, 0.16);
-      }
-      .shop-link:hover {
-        color: #fff;
-        background: var(--color-accent-deep);
-        transform: translateY(-1px);
-      }
-
 
       .site-footer {
         margin-top: auto;
@@ -318,8 +297,7 @@ const languageLinks = [
         gap: 0.75rem;
         flex-wrap: wrap;
       }
-      .footer-contact-btn,
-      .footer-taobao-btn {
+      .footer-contact-btn {
         white-space: nowrap;
       }
       .footer-email {
@@ -1179,9 +1157,6 @@ const languageLinks = [
               ))}
             </nav>
           )}
-          <a class="shop-link" href={siteLinks.taobao} target="_blank" rel="noopener noreferrer nofollow">
-            {shopLinkLabel}
-          </a>
         </div>
       </div>
     </header>
@@ -1200,9 +1175,6 @@ const languageLinks = [
           <div class="footer-contact-actions">
             <a href={lang === 'zh-CN' ? '/zh/contact' : '/contact'} class="btn btn-primary footer-contact-btn">
               {lang === 'zh-CN' ? '联系我们' : 'Contact Us'}
-            </a>
-            <a href={siteLinks.taobao} target="_blank" rel="noopener noreferrer nofollow" class="btn btn-outline footer-taobao-btn">
-              {shopLinkLabel}
             </a>
             <a href="mailto:hello@tableorie.com" class="footer-email">hello@tableorie.com</a>
           </div>

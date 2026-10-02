@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { siteLinks } from '../../data/site-links';
 
 const alternateLinks = [
   { lang: 'en', href: '/faq' },
@@ -37,7 +36,7 @@ const faqs = [
   },
   {
     q: '现在怎么购买银食记产品？',
-    a: '国内用户可在商品可售时通过淘宝店购买。如需确认当前批次库存、拿样、批发或合作，建议先直接联系确认。',
+    a: '如需确认当前批次库存、拿样、批发或合作，请直接联系我们。',
   },
   {
     q: '支持批发或拿样吗？',
@@ -65,7 +64,7 @@ const faqSchema = {
   homeUrl="/zh/"
   navItems={navItems}
   alternateLinks={alternateLinks}
-  footerNote="当前批次 — 库存、价格与购买以淘宝或直接沟通为准。"
+  footerNote="当前批次 — 库存、价格与购买以直接沟通为准。"
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -87,10 +86,7 @@ const faqSchema = {
       </div>
       <div class="statement-panel" style="margin-top:2rem;">
         <h2 class="section-title" style="font-size:1.5rem;">对这组系列感兴趣？</h2>
-        <p>产品按批次供应。淘宝店是当前国内购买和咨询入口。</p>
-        <div style="margin-top:1rem;">
-          <a href={siteLinks.taobao} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow">前往淘宝店</a>
-        </div>
+        <p>产品按批次供应。当前库存与咨询请直接联系我们。</p>
       </div>
     </div>
   </section>

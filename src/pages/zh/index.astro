@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { productsZh, collectionsZh } from '../../data/products.zh';
-import { siteLinks } from '../../data/site-links';
 
 const alternateLinks = [
   { lang: 'en', href: '/' },
@@ -48,7 +47,7 @@ const webSiteSchema = {
   homeUrl="/zh/"
   navItems={navItems}
   alternateLinks={alternateLinks}
-  footerNote="库存、价格与购买以淘宝或直接沟通为准。"
+  footerNote="库存、价格与购买以直接沟通为准。"
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
@@ -69,7 +68,6 @@ const webSiteSchema = {
             <div class="hero-cta hero-animate-cta">
               <a href="/zh/products" class="btn btn-primary btn-ripple">查看产品</a>
               <a href="/zh/guide" class="btn btn-outline btn-ripple">查看选购指南</a>
-              <a href={siteLinks.taobao} class="btn btn-outline btn-ripple" target="_blank" rel="noopener noreferrer nofollow">淘宝店购买 / 咨询</a>
               <a href="/zh/about" class="btn btn-outline btn-ripple">了解品牌</a>
             </div>
             <div class="hero-meta hero-animate-meta" data-stagger-children>
@@ -118,7 +116,7 @@ const webSiteSchema = {
           </div>
           <div class="mini-card reveal">
             <strong>一批一批来</strong>
-            <span>产品按批次生产和供应。不同批次、颜色和系列的具体库存状态，以淘宝页面或直接沟通为准。</span>
+            <span>产品按批次生产和供应。不同批次、颜色和系列的具体库存状态，以直接沟通为准。</span>
           </div>
         </div>
       </div>
@@ -240,7 +238,7 @@ const webSiteSchema = {
         </div>
         <div class="trust-card reveal">
           <h3>批次供应</h3>
-          <p>产品按批次生产和供应。每个产品页写明材质、组成和护理方式，当前批次状态以咨询确认或淘宝页面为准。</p>
+          <p>产品按批次生产和供应。每个产品页写明材质、组成和护理方式，当前批次状态以直接咨询确认为准。</p>
         </div>
       </div>
     </div>

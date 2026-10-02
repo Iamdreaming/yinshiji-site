@@ -2,7 +2,7 @@
 
 > Yinshiji is an early-stage tableware brand — a product info site, not a full shop.
 
-This site is not a full ecommerce checkout system. Product availability, price, purchase and inquiry currently go through Taobao or direct contact. Do not invent prices, reviews, ratings, stock, certifications, warranties, or factory ownership.
+This site is not a full ecommerce checkout system. Product availability, price, purchase and inquiry currently go through direct contact (inquiry form / email). Do not invent prices, reviews, ratings, stock, certifications, warranties, or factory ownership.
 
 Yinshiji is rooted in Jieyang, Guangdong, a stainless steel tableware and hardware manufacturing region in China. This means supply-chain proximity and design curation, not a claim of large factory ownership or mature global retail scale.
 

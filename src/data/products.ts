@@ -83,7 +83,7 @@ export const products: Product[] = [
     orderSteps: [
         "Review the product details and care notes on this page.",
         "Contact Yinshiji for current availability, batch status, and sample options.",
-        "Domestic customers can complete the purchase through the Taobao store when the item is available.",
+        "For current availability and wholesale inquiries, please contact us directly.",
         "For wholesale, gifting, or collaboration inquiries, share the intended quantity and use case first."
     ],
     imagePlaceholder: '/images/products/silver-carved-fork-single.webp',
@@ -145,7 +145,7 @@ export const products: Product[] = [
     orderSteps: [
         "Review the product details and care notes on this page.",
         "Contact Yinshiji for current availability, batch status, and sample options.",
-        "Domestic customers can complete the purchase through the Taobao store when the item is available.",
+        "For current availability and wholesale inquiries, please contact us directly.",
         "For wholesale, gifting, or collaboration inquiries, share the intended quantity and use case first."
     ],
     imagePlaceholder: '/images/products/silver-carved-5-piece-set-final.webp',
@@ -207,7 +207,7 @@ export const products: Product[] = [
     orderSteps: [
         "Review the product details and care notes on this page.",
         "Contact Yinshiji for current availability, batch status, and sample options.",
-        "Domestic customers can complete the purchase through the Taobao store when the item is available.",
+        "For current availability and wholesale inquiries, please contact us directly.",
         "For wholesale, gifting, or collaboration inquiries, share the intended quantity and use case first."
     ],
     imagePlaceholder: '/images/products/gold-carved-fork.webp',
@@ -269,7 +269,7 @@ export const products: Product[] = [
     orderSteps: [
         "Review the product details and care notes on this page.",
         "Contact Yinshiji for current availability, batch status, and sample options.",
-        "Domestic customers can complete the purchase through the Taobao store when the item is available.",
+        "For current availability and wholesale inquiries, please contact us directly.",
         "For wholesale, gifting, or collaboration inquiries, share the intended quantity and use case first."
     ],
     imagePlaceholder: '/images/products/gold-carved-5-piece-set.webp',
@@ -331,7 +331,7 @@ export const products: Product[] = [
     orderSteps: [
         "Review the product details and care notes on this page.",
         "Contact Yinshiji for current availability, batch status, and sample options.",
-        "Domestic customers can complete the purchase through the Taobao store when the item is available.",
+        "For current availability and wholesale inquiries, please contact us directly.",
         "For wholesale, gifting, or collaboration inquiries, share the intended quantity and use case first."
     ],
     imagePlaceholder: '/images/products/rosewood-handle-fork-single-clean.webp',
@@ -393,7 +393,7 @@ export const products: Product[] = [
     orderSteps: [
         "Review the product details and care notes on this page.",
         "Contact Yinshiji for current availability, batch status, and sample options.",
-        "Domestic customers can complete the purchase through the Taobao store when the item is available.",
+        "For current availability and wholesale inquiries, please contact us directly.",
         "For wholesale, gifting, or collaboration inquiries, share the intended quantity and use case first."
     ],
     imagePlaceholder: '/images/products/rosewood-5-piece-set.webp',
@@ -461,7 +461,7 @@ export const products: Product[] = [
     orderSteps: [
         "Review the product details and care notes on this page.",
         "Contact Yinshiji for current availability, batch status, and sample options.",
-        "Domestic customers can complete the purchase through the Taobao store when the item is available.",
+        "For current availability and wholesale inquiries, please contact us directly.",
         "For wholesale, gifting, or collaboration inquiries, share the intended quantity and use case first."
     ],
     imagePlaceholder: '/images/products/silver-carved-5-piece-set-final.webp',
@@ -526,7 +526,7 @@ export const products: Product[] = [
     orderSteps: [
         "Review the product details and care notes on this page.",
         "Contact Yinshiji for current availability, batch status, and sample options.",
-        "Domestic customers can complete the purchase through the Taobao store when the item is available.",
+        "For current availability and wholesale inquiries, please contact us directly.",
         "For wholesale, gifting, or collaboration inquiries, share the intended quantity and use case first."
     ],
     imagePlaceholder: '/images/products/silver-carved-5-piece-set-final.webp',
@@ -595,7 +595,7 @@ export const products: Product[] = [
     orderSteps: [
         "Review the product details and care notes on this page.",
         "Contact Yinshiji for current availability, batch status, and sample options.",
-        "Domestic customers can complete the purchase through the Taobao store when the item is available.",
+        "For current availability and wholesale inquiries, please contact us directly.",
         "For wholesale, gifting, or collaboration inquiries, share the intended quantity and use case first."
     ],
     imagePlaceholder: '/images/products/gold-carved-5-piece-set.webp',
@@ -660,7 +660,7 @@ export const products: Product[] = [
     orderSteps: [
         "Review the product details and care notes on this page.",
         "Contact Yinshiji for current availability, batch status, and sample options.",
-        "Domestic customers can complete the purchase through the Taobao store when the item is available.",
+        "For current availability and wholesale inquiries, please contact us directly.",
         "For wholesale, gifting, or collaboration inquiries, share the intended quantity and use case first."
     ],
     imagePlaceholder: '/images/products/rosewood-5-piece-set.webp',

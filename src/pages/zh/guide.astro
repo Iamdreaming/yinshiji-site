@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { siteLinks } from '../../data/site-links';
 
 const alternateLinks = [
   { lang: 'en', href: '/guide' },
@@ -21,14 +20,14 @@ const navItems = [
 
 <BaseLayout
   title="选购指南｜银食记"
-  description="银食记选购指南：银色雕花、金色雕花、鸡翅木怎么选，单支和五件套怎么选，以及护理和淘宝购买路径。"
+  description="银食记选购指南：银色雕花、金色雕花、鸡翅木怎么选，单支和五件套怎么选，以及护理和购买咨询路径。"
   canonical="/zh/guide"
   ogType="website"
   lang="zh-CN"
   homeUrl="/zh/"
   navItems={navItems}
   alternateLinks={alternateLinks}
-  footerNote="当前为早期测款与品牌预备阶段，库存、价格与购买路径以淘宝或联系沟通为准。"
+  footerNote="当前为早期测款与品牌预备阶段，库存、价格与购买路径以直接联系为准。"
 >
   <section class="section" style="padding-top:3rem;">
     <div class="container">
@@ -182,11 +181,10 @@ const navItems = [
       <section class="detail-section">
         <h2>当前购买路径</h2>
         <p>
-          银食记目前还在早期测款阶段，淘宝店是当前国内购买和咨询入口。不同批次的库存、组合和价格可能会调整，以下单或沟通时的信息为准。
+          银食记目前还在早期测款阶段。不同批次的库存、组合和价格可能会调整，请直接联系我们确认，以下单或沟通时的信息为准。
         </p>
         <div style="margin-top:1rem; display:flex; gap:1rem; flex-wrap:wrap;">
           <a href="/zh/products" class="btn btn-outline">查看产品</a>
-          <a href={siteLinks.taobao} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow">打开淘宝店</a>
         </div>
       </section>
     </div>

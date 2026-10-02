@@ -1,9 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { products, collections } from '../data/products';
-import { siteLinks } from '../data/site-links';
-
-const taobaoUrl = siteLinks.taobao;
 
 const alternateLinks = [
   { lang: 'en', href: '/' },
@@ -38,7 +35,6 @@ const organizationSchema = {
     'Chinese-inspired tableware',
   ],
   sameAs: [
-    taobaoUrl,
     'https://www.xiaohongshu.com/search_result?keyword=%E9%93%B6%E9%A3%9F%E8%AE%B0',
   ],
 };
@@ -82,7 +78,6 @@ const webSiteSchema = {
             <div class="hero-cta hero-animate-cta">
               <a href="/products" class="btn btn-primary btn-ripple">Browse Products</a>
               <a href="/guide" class="btn btn-outline btn-ripple">Read the Choosing Guide</a>
-              <a href={siteLinks.taobao} class="btn btn-outline btn-ripple" target="_blank" rel="noopener noreferrer nofollow">Taobao Store</a>
               <a href="/about" class="btn btn-outline btn-ripple">Our Story</a>
             </div>
             <div class="hero-meta hero-animate-meta" data-stagger-children>

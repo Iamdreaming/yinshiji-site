@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { siteLinks } from '../data/site-links';
 
 const alternateLinks = [
   { lang: 'en', href: '/faq' },
@@ -37,7 +36,7 @@ const faqs = [
   },
   {
     q: 'Where can I buy Yinshiji products?',
-    a: 'Domestic customers can purchase through the Taobao store when the item is available. For current batch status, sample requests, wholesale, or collaboration inquiries, please contact us directly first.',
+    a: 'For current batch status, sample requests, wholesale, or collaboration inquiries, please contact us directly.',
   },
   {
     q: 'Do you support wholesale or sample inquiries?',
@@ -86,10 +85,7 @@ const faqSchema = {
       </div>
       <div class="statement-panel" style="margin-top:2rem;">
         <h2 class="section-title" style="font-size:1.5rem;">Interested in this collection?</h2>
-        <p>Products are available by curated batch. Use the Taobao store for domestic purchase and inquiry.</p>
-        <div style="margin-top:1rem;">
-          <a href={siteLinks.taobao} class="btn btn-primary" target="_blank" rel="noopener noreferrer nofollow">Visit Taobao Store</a>
-        </div>
+        <p>Products are available by curated batch. For current availability and inquiries, please contact us directly.</p>
       </div>
     </div>
   </section>

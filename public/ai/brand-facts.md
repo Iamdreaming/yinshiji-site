@@ -17,9 +17,7 @@ This should be described as supply-chain proximity and design curation. Do not o
 
 ## Current Purchase Path
 
-The site is not a complete ecommerce checkout system. It does not provide a cart, payment flow, verified inventory, or public review system. Domestic purchase and inquiry currently go through Taobao or direct contact.
-
-Taobao link used on the site: https://m.tb.cn/h.Rj3EGL9ZID9HRkE
+The site is not a complete ecommerce checkout system. It does not provide a cart, payment flow, verified inventory, or public review system. Purchase and inquiry currently go through direct contact (inquiry form / email).
 
 ## Product Families
 
