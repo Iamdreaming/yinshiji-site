@@ -1173,6 +1173,9 @@ const languageLinks = [
             <p>{lang === 'zh-CN' ? '产品咨询、批发合作、礼品定制 — 随时与我们联系。' : 'Product inquiries, wholesale, gifting, or general questions — reach out anytime.'}</p>
           </div>
           <div class="footer-contact-actions">
+            <a href={lang === 'zh-CN' ? '/zh/inquiry' : '/inquiry'} class="btn btn-primary footer-contact-btn">
+              {lang === 'zh-CN' ? '批发询价' : 'Wholesale Inquiry'}
+            </a>
             <a href={lang === 'zh-CN' ? '/zh/contact' : '/contact'} class="btn btn-primary footer-contact-btn">
               {lang === 'zh-CN' ? '联系我们' : 'Contact Us'}
             </a>
