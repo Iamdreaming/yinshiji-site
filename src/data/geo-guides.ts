@@ -2860,8 +2860,9 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/complete-buyers-guide-2026', label: "Complete Buyer's Guide 2026" },
       { href: '/reference/stainless-steel-grades-cutlery', label: 'Reference: Stainless Steel Grades Explained' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set (304 Stainless Steel)' },
+      { href: '/inquiry', label: 'Wholesale & OEM Inquiry (MOQ, FOB Shenzhen)' },
     ],
-    lastUpdated: '2026-08-06',
+    lastUpdated: '2026-11-02',
     expertQuotes: [
       {
         quote: "'18/10' is a designation used on some cutlery and holloware as an alternative to '18/8'. This designation is claimed to indicate a better quality steel than '18/8', and is essentially the same as the '304 (1.4301) grade. In practice the '10' does not indicate an actual higher Ni content and is purely a marketing ploy.",
