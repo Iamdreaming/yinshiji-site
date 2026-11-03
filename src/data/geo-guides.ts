@@ -2860,7 +2860,6 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/complete-buyers-guide-2026', label: "Complete Buyer's Guide 2026" },
       { href: '/reference/stainless-steel-grades-cutlery', label: 'Reference: Stainless Steel Grades Explained' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set (304 Stainless Steel)' },
-      { href: '/inquiry', label: 'Wholesale & OEM Inquiry (MOQ, FOB Shenzhen)' },
     ],
     lastUpdated: '2026-11-02',
     expertQuotes: [
