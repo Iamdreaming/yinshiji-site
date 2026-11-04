@@ -877,7 +877,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { question: 'Does Yinshiji use 201?', answer: 'No. Current Yinshiji products use 304 and 410.' }
     ],
     relatedLinks: [ { href: '/materials-care', label: 'Materials & Care' }, { href: '/guide/304-vs-410-stainless-steel-cutlery', label: '304 vs 410 Guide' } ],
-    lastUpdated: '2026-08-07',
+    lastUpdated: '2026-11-04',
     expertQuotes: [
       {
         quote: '201 is typical of the 200 series of stainless steels. These steels use manganese to replace nickel in austenitic stainless steels, mainly in order to make them lower cost. 201 is broadly similar to 304 for corrosion resistance but with some important differences in mechanical properties.',
@@ -4119,7 +4119,7 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { question: '银食记用 201 吗？', answer: '不用。银食记使用 304 和 410。' }
     ],
     relatedLinks: [ { href: '/zh/materials-care', label: '材质与护理' }, { href: '/zh/guide/304-vs-410-stainless-steel-cutlery', label: '304 与 410 指南' } ],
-    lastUpdated: '2026-08-07',
+    lastUpdated: '2026-11-04',
     expertQuotes: [
       {
         quote: '201 is typical of the 200 series of stainless steels. These steels use manganese to replace nickel in austenitic stainless steels, mainly in order to make them lower cost. 201 is broadly similar to 304 for corrosion resistance but with some important differences in mechanical properties.',
