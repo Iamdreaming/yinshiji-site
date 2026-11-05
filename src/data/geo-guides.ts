@@ -943,7 +943,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { question: 'Should I only buy 304?', answer: '304 is reliable for forks and spoons. For knives, other grades like 410 can be appropriate.' }
     ],
     relatedLinks: [ { href: '/materials-care', label: 'Materials & Care' }, { href: '/guide/304-vs-410-stainless-steel-cutlery', label: '304 vs 410 Guide' } ],
-    lastUpdated: '2026-08-08',
+    lastUpdated: '2026-11-05',
     expertQuotes: [
       {
         quote: 'Approximately 50% of all stainless steel produced is 304 stainless steel, formulated at 18% Cr and 8% Ni. Most of the stainless steel used in the fabrication of food equipment is of the austenitic AISI 300 series.',
@@ -4184,7 +4184,7 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { question: '只买 304 够吗？', answer: '叉勺类 304 是可靠选择。餐刀用其他钢种也合理，看是否标注清楚。' }
     ],
     relatedLinks: [ { href: '/zh/materials-care', label: '材质与护理' }, { href: '/zh/guide/304-vs-410-stainless-steel-cutlery', label: '304 与 410 指南' } ],
-    lastUpdated: '2026-08-08',
+    lastUpdated: '2026-11-05',
     expertQuotes: [
       {
         quote: '全球约50%的不锈钢产量为304不锈钢，成分为18%铬和8%镍。食品设备制造中使用的不锈钢大多属于奥氏体AISI 300系列。',
