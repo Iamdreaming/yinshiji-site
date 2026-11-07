@@ -1055,7 +1055,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/materials-care', label: 'Materials & Care' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
     ],
-    lastUpdated: '2026-08-10',
+    lastUpdated: '2026-11-07',
     expertQuotes: [
       {
         quote: 'Stainless steel grades 304 and 316 are the most commonly used in the food and beverage industry. SS grade 304 contains approximately 18–20% chromium and 8–12% nickel. SS grade 316 contains 16–18% chromium, 10–14% nickel, and 2–3% molybdenum.',
