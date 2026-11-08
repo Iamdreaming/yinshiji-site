@@ -3741,7 +3741,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/stainless-steel-flatware-rust-prevention', label: 'Stainless Steel Flatware Rust Prevention' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
     ],
-    lastUpdated: '2026-08-11',
+    lastUpdated: '2026-11-08',
     expertQuotes: [
       {
         quote: 'Approximately 50% of all stainless steel produced is 304 stainless steel, formulated at 18% Cr and 8% Ni. Most of the stainless steel used in the fabrication of food equipment is of the austenitic AISI 300 series.',
