@@ -1188,7 +1188,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
       { href: '/products/rosewood-5-piece-set', label: 'Wenge Wood Handle 5-Piece Set' },
     ],
-    lastUpdated: '2026-08-12',
+    lastUpdated: '2026-11-10',
     expertQuotes: [
       {
         quote: 'Stainless steel\'s resistance to corrosion comes from its chromium content of 10.5% or more, which forms a passive film that protects the metal. If the surface is scratched, the chromium oxide layer regenerates itself in the presence of oxygen — this self-healing behavior is the biggest reason stainless steel is so reliable against corrosion.',
@@ -1197,7 +1197,6 @@ export const guideArticles: GeoGuideArticle[] = [
       {
         quote: 'Hand washing of cutlery is recommended with mild washing-up liquid; avoid any products with abrasive properties. Wire wool or other abrasive cleaners are prohibited. Cutlery should not be left to soak at any time. Always remove and hand-dry cutlery as soon as the wash cycle has finished — cutlery left in damp conditions can become stained or damaged.',
         source: 'SolaSwiss: Advice on Cutlery Care',
-        url: 'https://www.solaswiss.com/guidance/detail/advice-on-cutlery-care',
       },
       {
         quote: 'Skip harsh chemicals: do not use bleach or harsh detergents, as they can damage the finish and cause discoloration. No steel wool: avoid scouring pads or steel wool, which can scratch the surface. Don\'t leave in ambient moisture: leaving flatware in closed, moist conditions can cause spotting or even pitting.',
