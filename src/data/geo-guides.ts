@@ -2711,7 +2711,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/materials-care', label: 'Materials & Care Guide' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
     ],
-    lastUpdated: '2026-08-13',
+    lastUpdated: '2026-11-11',
     expertQuotes: [
       {
         quote: 'Approximately 50% of all stainless steel produced is 304 stainless steel, formulated at 18% Cr and 8% Ni. Most of the stainless steel used in the fabrication of food equipment is from the austenitic AISI 300 series.',
@@ -2721,12 +2721,11 @@ export const guideArticles: GeoGuideArticle[] = [
       {
         quote: 'Rinse with hot water immediately after use to reduce chemical reaction of salts or acids. Do not leave to soak in water overnight as mineral salts may attack the metal surface. Always remove and hand-dry the cutlery as soon as the wash cycle has finished.',
         source: 'SolaSwiss: Advice on Cutlery Care',
-        url: 'https://www.solaswiss.com/guidance/detail/advice-on-cutlery-care',
       },
       {
-        quote: 'The passive chromium oxide layer is self-healing in the presence of oxygen, but only if the underlying surface is clean and properly conditioned. Passivation improves corrosion resistance by selectively removing surface contaminants and allowing chromium to react with oxygen to form a stable oxide layer.',
-        source: 'SilcoTek: Corrosion Resistance of Stainless Steel — Passivation and SilcoTek Coatings',
-        url: 'https://www.silcotek.com/blog/corrosion-resistance-of-stainless-steel-passivation-and-silcotek-coatings',
+        quote: 'When there is sufficient exposure to oxygen, an invisible protective passive chromium-rich oxide film forms on the surface.',
+        source: 'Specialty Steel Industry of North America (SSINA): Technical Resources',
+        url: 'https://www.ssina.com/education/technical-resources',
       },
       {
         quote: 'Pitting corrosion has been reported from household bleach spills on stainless steel (304 type) sinks in domestic environments. If this occurs, immediate dilution by rinsing should avoid pitting, but if left overnight, pitting can result. The hypochlorite ion is aggressive to stainless steels, acting in a similar way to wet chlorine gas.',
