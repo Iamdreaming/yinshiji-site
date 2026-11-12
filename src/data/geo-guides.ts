@@ -3602,7 +3602,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/dishwasher-safe-stainless-steel-cutlery', label: 'Dishwasher-Safe Stainless Steel Cutlery' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
     ],
-    lastUpdated: '2026-08-14',
+    lastUpdated: '2026-11-12',
     expertQuotes: [
       {
         quote: 'This wood species is not listed in the CITES Appendices, but is on the IUCN Red List. It is listed as endangered due to a population reduction of over 50% in the past three generations, caused by a decline in its natural range, and exploitation.',
