@@ -1800,7 +1800,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/materials-care', label: 'Materials & Care Guide' },
       { href: '/products', label: 'Browse All Products' }
     ],
-    lastUpdated: '2026-08-15',
+    lastUpdated: '2026-11-13',
     expertQuotes: [
       {
         quote: '304-grade austenitic stainless steel is among the most thoroughly tested materials for food-contact use, with a documented safety and durability record spanning decades of commercial and home use.',
