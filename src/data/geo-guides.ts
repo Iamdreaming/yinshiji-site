@@ -3308,7 +3308,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/complete-buyers-guide-2026', label: "Complete Buyer's Guide 2026" },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
     ],
-    lastUpdated: '2026-08-16',
+    lastUpdated: '2026-11-14',
     expertQuotes: [
       {
         quote: 'When surface roughness (Ra) is lower than 0.5 μm, the steel surface is considered "clean", indicating the presence of only a few sites where chloride ions can gather — directly relevant to why polished stainless steel cutlery resists dishwasher corrosion better than rougher surfaces.',
