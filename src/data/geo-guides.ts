@@ -3171,7 +3171,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
       { href: '/products/rosewood-5-piece-set', label: 'Wenge Wood Handle 5-Piece Set' },
     ],
-    lastUpdated: '2026-08-17',
+    lastUpdated: '2026-11-15',
     expertQuotes: [
       {
         quote: 'Changing the plateware [and cutlery] can affect the perceived taste and flavour of food… the weight, size, shape, and colour of the plateware [and cutlery] can all influence the diner\'s perception.',
