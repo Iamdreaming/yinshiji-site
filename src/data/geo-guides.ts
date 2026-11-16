@@ -3894,7 +3894,7 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/products/rosewood-5-piece-set', label: 'Wenge Wood Handle 5-Piece Set' },
       { href: '/products/gold-carved-5-piece-set', label: 'Gold Tone Carved 5-Piece Set' }
     ],
-    lastUpdated: '2026-08-18',
+    lastUpdated: '2026-11-16',
     expertQuotes: [
       {
         quote: 'In China, two things show how your upbringing is: how you eat and your handwriting. Using chopsticks properly displays elegance in eating. Eating food with chopsticks also will slow you down and help you enjoy your food more.',
@@ -3919,8 +3919,8 @@ export const guideArticles: GeoGuideArticle[] = [
         url: 'https://www.verifiedmarketresearch.com/product/tableware-market'
       },
       {
-        claim: 'China is the dominant national market in Asia-Pacific ceramic tableware, with a base-year value of USD 3.9 billion and an 8.9% CAGR, reflecting the scale of Chinese domestic consumption and the country\'s status as the world\'s leading producer and exporter of ceramic tableware.',
-        source: 'GM Insights, Ceramic Tableware Market Analysis 2026–2035'
+        claim: 'The global ceramic tableware market was valued at USD 13.1 billion in 2025 and is projected to reach USD 24.3 billion by 2035, a 6.4% CAGR over 2026-2035. Asia Pacific is the largest regional market at USD 5.61 billion, 43% of 2025 revenue.',
+        source: 'GM Insights, Ceramic Tableware Market Size & Share 2026–2035 (Report GMI10922, Aug 2026)'
       },
       {
         claim: 'China\'s kitchenware market (including tableware) was valued at USD 6.68 billion in 2024 and is projected to grow to USD 11.59 billion by 2033, with a CAGR of 6.4%.',
