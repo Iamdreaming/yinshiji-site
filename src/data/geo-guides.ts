@@ -4288,7 +4288,8 @@ export const guideArticlesZh: GeoGuideArticle[] = [
     relatedLinks: [
       { href: '/zh/materials-care', label: '材质与护理' },
       { href: '/zh/products/silver-carved-5-piece-set', label: '银色雕花五件套' },
-      { href: '/zh/products/gold-carved-5-piece-set', label: '金色雕花五件套' }
+      { href: '/zh/products/gold-carved-5-piece-set', label: '金色雕花五件套' },
+      { href: '/zh/guide/stainless-steel-flatware-rust-prevention', label: '不锈钢餐具生锈的原因与预防' }
     ],
     lastUpdated: '2026-09-05',
     expertQuotes: [
@@ -4476,7 +4477,8 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/products/rosewood-handle-fork', label: '鸡翅木主叉' },
       { href: '/zh/products/rosewood-5-piece-set', label: '鸡翅木五件套' },
       { href: '/zh/guide/what-is-in-a-5-piece-cutlery-set', label: '五件套组成说明' },
-      { href: '/zh/guide/dishwasher-safe-stainless-steel-cutlery', label: '不锈钢餐具能不能进洗碗机' }
+      { href: '/zh/guide/dishwasher-safe-stainless-steel-cutlery', label: '不锈钢餐具能不能进洗碗机' },
+      { href: '/zh/guide/stainless-steel-flatware-rust-prevention', label: '餐具锈点怎么处理和预防' }
     ],
     lastUpdated: '2026-09-07',
     expertQuotes: [
@@ -5060,7 +5062,8 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/guide/what-does-food-grade-stainless-steel-mean', label: '食品级不锈钢是什么意思' },
       { href: '/zh/guide/gold-tone-flatware-not-real-gold', label: '金色餐具不是真金' },
       { href: '/zh/guide/wenge-wood-handle-cutlery-care', label: '鸡翅木柄餐具保养' },
-      { href: '/zh/materials-care', label: '材质与护理' }
+      { href: '/zh/materials-care', label: '材质与护理' },
+      { href: '/zh/guide/stainless-steel-flatware-rust-prevention', label: '不锈钢餐具为什么会生锈' }
     ],
     lastUpdated: '2026-11-17',
     expertQuotes: [
@@ -5101,6 +5104,130 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       },
       {
         claim: '不锈钢表面的铬氧化物钝化层在受损后 24 至 48 小时内随接触氧气重新形成。',
+        source: 'Best Technology Inc.：什么是钝化',
+        url: 'https://www.besttechnologyinc.com/passivation-systems/what-is-passivation'
+      }
+    ]
+  },
+  {
+    slug: 'stainless-steel-flatware-rust-prevention',
+    title: '不锈钢餐具为什么会生锈——刀、叉、勺分开看',
+    description: '不锈钢是耐锈，不是不生锈。这篇说明餐具上的锈点从哪来、为什么餐刀最先出问题、日常怎么预防，以及已经出现锈点后怎么处理。',
+    eyebrow: '护理指南',
+    quickAnswer:
+      '不锈钢餐具出现锈点，通常是表面那层极薄的铬氧化膜被破坏后的结果。常见诱因有四种：氯离子（盐、含氯洗涤剂、漂白水）、长时间潮湿、和别的金属贴着放在潮湿环境里，以及钢丝球带来的铁屑污染。同一套里最先出问题的通常是餐刀——刀片多用马氏体钢（如 410），铬含量比叉勺的 304 低，用耐腐蚀性换取锋利度。预防归结为三个习惯：及时冲洗、立刻擦干、别让盐和酸长时间留在表面。',
+    sections: [
+      {
+        heading: '不锈钢不是「不生锈的钢」',
+        paragraphs: [
+          '「不锈钢」这个名字容易让人以为它不会生锈。更准确的说法是耐锈：它靠表面一层极薄、能自修复的铬氧化膜，把下面的铁和空气、水隔开。膜完整时，腐蚀很慢；膜被破坏、又来不及修复时，锈点就出现了。',
+          '这层膜只有几个原子厚，肉眼看不见。它不是涂层，也不会被「用完」——只要表面干净、能接触氧气，它就会自己重新形成。理解这一点，后面的预防逻辑就很直接：别破坏它，破坏之后给它时间和氧气修回来。'
+        ]
+      },
+      {
+        heading: '锈点通常来自四种情况',
+        paragraphs: [
+          '餐具上的锈点，绝大多数能归到下面四类。先判断自己属于哪一类，比笼统地「小心使用」有用得多。'
+        ],
+        bullets: [
+          '氯离子侵蚀：食盐、含氯洗碗粉、漂白水、酸性食物（柠檬汁、醋、番茄酱）都会消耗氧化膜。洗碗机洗涤剂碱性很强，氯离子在高温下更容易造成点蚀。',
+          '长时间潮湿：洗完不擦、沥水架里积水、水汽闷在不通风的刀架里，都会让水（尤其是含铁、钙、镁的硬水）长时间贴在表面。',
+          '异种金属接触：不锈钢和碳钢、铸铁在潮湿环境里接触，会形成微小的电偶电流，加速电位低的一方腐蚀。把不同材质的刀具堆在潮湿的沥水篮里，就是常见触发点。',
+          '表面铁屑污染：钢丝球、碳钢工具或金属粉尘会在不锈钢表面留下铁颗粒。这些颗粒自己先锈，看起来和钢体生锈一模一样。'
+        ]
+      },
+      {
+        heading: '为什么餐刀比叉勺更容易生锈',
+        paragraphs: [
+          '如果锈点主要出现在刀片上，有明确的材料原因。多数品质餐具的叉和勺用 18/10 或 18/8 不锈钢（对应 304），铬约 18%、镍 8–10%，耐腐蚀底子好。',
+          '餐刀要保住锋利度，刀片必须更硬。常见做法是用马氏体不锈钢（410、420 一类），碳更高、铬更低（410 约 11.5%）、几乎不含镍。结果是刀刃更耐用，耐腐蚀性更弱。澳大利亚消费者组织 CHOICE 的说明很直接——餐刀用更硬的钢换取持久锋利，在洗碗机里反复清洗后更容易生锈，所以腐蚀主要发生在刀，而不是叉勺。',
+          '银食记的雕花五件套也是同样的材料分工：叉勺件用 304，餐刀用 410。这不是省成本，而是餐具行业为了锋利度做的常规取舍。知道这一点，就会明白刀需要更仔细地对待——用完冲干净、擦干，别让它泡在水里。'
+        ]
+      },
+      {
+        heading: '日常怎么预防',
+        paragraphs: [
+          '预防不需要特殊工具，三个习惯能挡掉大部分问题：'
+        ],
+        bullets: [
+          '用完就冲：别让咸的、酸的、含淀粉的食物残留在餐具上过夜。快速冲洗能在腐蚀性物质攻击氧化膜之前把它们带走。',
+          '洗完立刻擦干：手洗用软布擦干；洗碗机程序结束后 30 分钟内取出擦干，别让餐具在机器里过夜，也别放在积水的水槽里风干。',
+          '避开高氯环境：尽量用不含氯漂白剂的洗涤产品；不要用漂白水浸泡餐具；洗碗机里餐具篮别塞太满，让水流得过去。',
+          '和别的金属分开存放：不锈钢餐具不要和碳钢刀、铸铁锅具在潮湿状态下堆在一起。干燥、通风的餐具盒最稳妥。',
+          '不用钢丝球和研磨海绵：它们会划伤表面、嵌入铁屑，等于给腐蚀制造新起点。软海绵或布就够了。'
+        ]
+      },
+      {
+        heading: '已经出现锈点怎么处理',
+        paragraphs: [
+          '表层锈点通常可以去掉，不代表这件餐具报废了。按从温和到强力的顺序试：'
+        ],
+        bullets: [
+          '小苏打糊：小苏打加少量水调成糊，敷在锈点上 15–30 分钟，用软布沿纹理方向轻擦，然后冲净擦干。适合轻的表面锈迹。',
+          '白醋浸泡：顽固一点的锈点可以用白醋泡 5–10 分钟，取出轻擦、立刻擦干。不要超过 10 分钟——醋酸长时间接触会侵蚀钢面。',
+          '不锈钢专用清洁剂：含草酸的产品（如 Bar Keepers Friend）对氧化铁有效，按产品说明使用，之后彻底冲净并擦干。',
+          '处理完正常清洗一遍，完全擦干再收纳。表面干净、接触空气后，氧化膜会在 24 到 48 小时内自己长回来。'
+        ]
+      },
+      {
+        heading: '银食记餐具的具体注意事项',
+        paragraphs: [
+          '银色雕花和金色雕花系列：叉勺件 304、餐刀 410。餐刀在潮湿、高盐环境下最先可能出现锈点，这是马氏体刀钢的正常表现，不是产品缺陷。',
+          '金色表面多一层 PVD 或电镀装饰层，护理时避开漂白水、研磨工具和长时间浸泡，保住颜色均匀。',
+          '鸡翅木手柄系列不能进洗碗机，手洗后要立刻擦干柄部，避免木材吸水后开裂或变形。',
+          '按材质分开护理的完整说明，可以看「材质与护理」页面和每件产品的规格说明。'
+        ]
+      }
+    ],
+    faqs: [
+      { question: '不锈钢餐具上的锈对健康有害吗？', answer: '没有。不锈钢上的锈是氧化铁，和铸铁锅上的锈是同一种东西，无毒，但会影响食物味道和观感。发现后及时去掉，再调整护理习惯避免复发即可。' },
+      { question: '银食记餐具能进洗碗机吗？', answer: '纯金属件（银色雕花、金色雕花的叉和勺）可以进洗碗机，但手洗并及时擦干更利于保持外观。餐刀（410 钢）在洗碗机里更容易出锈点。鸡翅木手柄件不要进洗碗机。具体判断按钢种、表面工艺和手柄三项分开看，详见洗碗机指南。' },
+      { question: '为什么只有刀生锈，叉和勺没事？', answer: '刀片用更硬的马氏体钢（如 410），铬含量约 11.5%，比叉勺常用的 304（铬约 18%）低，耐腐蚀性更弱。这是餐具行业的常规取舍：硬度换锋利度，代价是更容易生锈。' },
+      { question: '304 不锈钢会生锈吗？', answer: '会，但条件更苛刻。304 比 430、410 和碳钢耐锈得多，可长时间接触氯离子（盐水、漂白水、部分洗碗粉）仍可能出现点蚀或表面锈斑。及时冲洗、彻底擦干、不用含氯清洁剂，304 餐具可以用很多年不出问题。' }
+    ],
+    relatedLinks: [
+      { href: '/zh/guide/dishwasher-safe-stainless-steel-cutlery', label: '不锈钢餐具能不能进洗碗机' },
+      { href: '/zh/guide/304-vs-410-stainless-steel-cutlery', label: '304 与 410 的区别' },
+      { href: '/zh/guide/what-does-food-grade-stainless-steel-mean', label: '食品级不锈钢是什么意思' },
+      { href: '/zh/guide/wenge-wood-handle-cutlery-care', label: '鸡翅木柄餐具保养' },
+      { href: '/zh/materials-care', label: '材质与护理' }
+    ],
+    lastUpdated: '2026-11-18',
+    expertQuotes: [
+      {
+        quote: '餐刀通常用更硬的钢，边缘更耐用，但在洗碗机里反复清洗后更容易生锈——腐蚀主要发生在刀，而不是叉勺。',
+        source: 'CHOICE（澳大利亚消费者组织）：如何避免不锈钢餐具生锈',
+        url: 'https://www.choice.com.au/home-and-living/kitchen/dishwashers/articles/stainless-steel-rusting'
+      },
+      {
+        quote: '只要表面保持清洁并接触氧气，这层看不见的富铬氧化膜就会自动形成；铬含量更高、再添入氮和钼等合金元素时，这层膜的保护力还会增强。',
+        source: 'SSINA（北美特殊钢工业协会）：技术资料',
+        url: 'https://www.ssina.com/education/technical-resources'
+      },
+      {
+        quote: '次氯酸根离子对不锈钢有很强的攻击性，作用方式类似湿氯气，是危险的局部点蚀来源；家用漂白液约含 5.25% 次氯酸钠，在 5% 溶液、常温下，多数不锈钢牌号都可能发生点蚀或缝隙腐蚀。',
+        source: '英国不锈钢协会（BSSA）：处理次氯酸钠应选用的不锈钢',
+        url: 'https://bssa.org.uk/bssa_articles/selection-of-stainless-steels-for-handling-sodium-hypochlorite-naocl'
+      },
+      {
+        quote: '酸洗后暴露在空气中的氧气里，不锈钢会在接下来的 24 到 48 小时内重新形成铬氧化物层——表面铬比例越高，这层膜越厚、保护性越好。',
+        source: 'Best Technology Inc.：什么是钝化，不锈钢钝化如何工作',
+        url: 'https://www.besttechnologyinc.com/passivation-systems/what-is-passivation'
+      }
+    ],
+    statistics: [
+      {
+        claim: '410 马氏体不锈钢含铬约 11.5%，明显低于 304 奥氏体不锈钢的 18%——这是餐刀比叉勺更容易生锈的材料原因。',
+        source: 'AZoM：Stainless Steel Grade 410（UNS S41000）',
+        url: 'https://www.azom.com/article.aspx?ArticleID=970'
+      },
+      {
+        claim: '410 不锈钢成分为铬 11.5–13.5%、镍 ≤0.75%；304 不锈钢为铬 18–20%、镍 8–11%。镍与铬的差距直接决定了叉勺件和刀片的耐腐蚀差异。',
+        source: 'Essentra Components（依据 ASTM A240）：理解不锈钢牌号',
+        url: 'https://www.essentracomponents.com/en-us/news/solutions/access-hardware/understanding-stainless-steel-grades'
+      },
+      {
+        claim: '不锈钢表面的铬氧化物钝化层受损后，在接触氧气的情况下会在 24 至 48 小时内重新形成。',
         source: 'Best Technology Inc.：什么是钝化',
         url: 'https://www.besttechnologyinc.com/passivation-systems/what-is-passivation'
       }
