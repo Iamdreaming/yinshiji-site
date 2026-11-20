@@ -2059,12 +2059,12 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/what-is-in-a-5-piece-cutlery-set', label: 'What Is in a 5-Piece Cutlery Set?' },
       { href: '/materials-care', label: 'Materials & Care Guide' }
     ],
-    lastUpdated: '2026-08-22',
+    lastUpdated: '2026-11-20',
     expertQuotes: [
       {
-        quote: 'How we experience food is a multisensory experience involving taste, feel of the food in our mouths, aroma, and the feasting of our eyes.',
-        source: 'Prof. Charles Spence, Crossmodal Research Lab (University of Oxford), \"Cutlery can influence food taste\" (2013)',
-        url: 'https://www.psy.ox.ac.uk/news/cutlery-can-influence-food-taste'
+        quote: 'How we experience food is a multisensory experience involving taste, feel of the food in our mouths, aroma, and the feasting of our eyes. Even before we put food into our mouths our brains have made a judgment about it, which affects our overall experience.',
+        source: 'Dr Vanessa Harrar & Prof Charles Spence, University of Oxford, in \"The taste of cutlery\" (Flavour 2:21, 2013), reported via ScienceDaily',
+        url: 'https://www.sciencedaily.com/releases/2013/06/130626113420.htm'
       },
       {
         quote: 'Approximately 50% of all stainless steel produced is 304 stainless steel.',
@@ -2079,14 +2079,18 @@ export const guideArticles: GeoGuideArticle[] = [
         url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
       },
       {
-        claim: '410 (13/0) stainless steel reaches HRC 40-45 after quenching and tempering, roughly double the surface hardness of 304 (HRC 20-25) - which is why lower-grade martensitic steel is favoured for knife blades but less corrosion-resistant for forks and spoons.',
+        claim: '410 (13/0) martensitic stainless reaches HRC 40-45 after quenching and tempering, while 304 stays at HRB <=92 because austenitic grades cannot be hardened by heat treatment - which is why 410 suits knife blades but resists corrosion less well on forks and spoons.',
         source: 'Kongfang Metal, "304 vs 410 Stainless Steel: Which One Should You Choose?"',
         url: 'https://kongfangmetal.com/304-vs-410-stainless-steel'
       },
       {
         claim: 'An average 5-piece stainless flatware setting weighs about 325 g (11.5 oz); heavier fork pieces (55-65 g) are a recognised premium-tier indicator.',
-        source: 'Silver Superstore, "Average Size of Flatware"',
-        url: 'https://www.silversuperstore.com/faq/average-size-of-flatware.asp'
+        source: 'Silver Superstore, "Average Size & Weight of Flatware"'
+      },
+      {
+        claim: 'The global flatware market was valued at about $11.5 billion in 2025 and is projected to reach $18.1 billion by 2035 (CAGR 4.5%), with premium and design-led tableware among the growth pockets.',
+        source: 'Future Market Insights, Flatware Market report (2025-2035)',
+        url: 'https://www.futuremarketinsights.com/reports/flatware-market'
       }
     ]
   },
