@@ -2871,17 +2871,12 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/reference/stainless-steel-grades-cutlery', label: 'Reference: Stainless Steel Grades Explained' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set (304 Stainless Steel)' },
     ],
-    lastUpdated: '2026-11-02',
+    lastUpdated: '2026-11-23',
     expertQuotes: [
       {
         quote: "'18/10' is a designation used on some cutlery and holloware as an alternative to '18/8'. This designation is claimed to indicate a better quality steel than '18/8', and is essentially the same as the '304 (1.4301) grade. In practice the '10' does not indicate an actual higher Ni content and is purely a marketing ploy.",
         source: "British Stainless Steel Association (BSSA), \"Cutlery stainless steel grades\"",
         url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades'
-      },
-      {
-        quote: 'There is no difference between 18/8 and 18/10 stainless steel in flatware. The difference between the two is purely a marketing effort. When a manufacturer purchases stainless steel from a steel mill, they purchase stainless steel Grade 304, which has a range of 18-20% chromium, and 8-10% nickel content.',
-        source: 'Silver Superstore, "Stainless Flatware Quality Differences"',
-        url: 'https://www.silversuperstore.com/stainless_quality.asp'
       },
       {
         quote: "18/0 is a 'ferritic' stainless steel type, which is attracted by a magnet (like pure iron). This steel is known as '430' in the AISI system or 1.4016 in the European standard. It is used where corrosion resistance is not too demanding as an alternative to the 18/8 304 type. The chromium content is optimistically said to be 18% but is nearer 17%.",
@@ -2893,7 +2888,7 @@ export const guideArticles: GeoGuideArticle[] = [
       {
         claim: 'ASTM A240 specifies 304 stainless steel as containing 18.00-20.00% chromium and 8.00-10.50% nickel. Both 18/8 and 18/10 stamps fall within this single grade specification.',
         source: 'Penn Stainless Products, "Stainless Steel Plate 304/304L ASTM A240"',
-        url: 'https://www.pennstainless.com/stainless-steel-plate-304-304l-astm-a240'
+        url: 'https://pennstainless.com/stainless-steel-plate-304-304l-astm-a240'
       },
       {
         claim: '410 stainless steel (used for knife blades): 11.5-13.5% chromium, ≤0.75% nickel. 430 stainless steel (18/0 flatware): 16-18% chromium, ≤0.75% nickel. 304 stainless steel (18/8 and 18/10): 18-20% chromium, 8-10.5% nickel.',
