@@ -4305,7 +4305,8 @@ export const guideArticlesZh: GeoGuideArticle[] = [
       { href: '/zh/materials-care', label: '材质与护理' },
       { href: '/zh/products/silver-carved-5-piece-set', label: '银色雕花五件套' },
       { href: '/zh/products/gold-carved-5-piece-set', label: '金色雕花五件套' },
-      { href: '/zh/guide/stainless-steel-flatware-rust-prevention', label: '不锈钢餐具生锈的原因与预防' }
+      { href: '/zh/guide/stainless-steel-flatware-rust-prevention', label: '不锈钢餐具生锈的原因与预防' },
+      { href: '/zh/guide/18-10-vs-18-8-vs-18-0-flatware', label: '18/10、18/8、18/0 怎么分' }
     ],
     lastUpdated: '2026-09-05',
     expertQuotes: [
@@ -5404,6 +5405,152 @@ export const guideArticlesZh: GeoGuideArticle[] = [
         source: 'Flatware Supplier, Is Gold Flatware Dishwasher Safe（制造商技术文章，引用 FANGYUAN 测试数据）',
         url: 'https://www.flatwaresupplier.com/is-gold-flatware-dishwasher-safe'
       },
+    ]
+  },
+  {
+    slug: '18-10-vs-18-8-vs-18-0-flatware',
+    title: '18/10、18/8、18/0 不锈钢餐具差在哪？',
+    description:
+      '把餐具背面那串数字讲清楚：18/10 和 18/8 是同一种 304 不锈钢，18/0 是另一种铁素体钢。哪些差别是真的，哪些只是标签。',
+    eyebrow: '材质指南',
+    quickAnswer:
+      '18/10、18/8、18/0 写的是不锈钢里的铬和镍含量。前一个数字 18 是铬，决定防锈；后一个数字 8、10 或 0 是镍，影响光泽和耐腐蚀。关键一点：18/10 和 18/8 是同一种钢——AISI 304，304 的镍含量本来就在 8–10.5% 之间浮动，两种标法不是两个等级。18/0 是 18% 铬、0% 镍，属于 430 铁素体钢：有磁性、颜色偏灰、耐腐蚀弱一档。真正值得加钱的一步，是从 18/0 升到 304，而不是从 18/8 升到 18/10。',
+    sections: [
+      {
+        heading: '餐具背面的 18/10、18/8、18/0 是什么意思？',
+        paragraphs: [
+          '把叉子翻过来，看手柄背面。标注认真的餐具通常会在那里压一行小字：18/10、18/8、18/0，或者只写 Stainless Steel。这串数字是合金成分的简写，也是判断一套餐具用料最直接的线索。',
+          '前一个数字 18 是铬含量，也就是 18% 铬。铬是不锈钢「不锈」的原因：它在表面形成一层看不见的氧化铬钝化膜，把氧气和水汽挡在金属外面。铬不足，钢就会锈；18% 铬足够应付几十年的日常使用和反复的洗碗机循环。ASTM A240 对 304 的规定是铬 18.00–20.00%、镍 8.00–10.50%，这是后面所有讨论的基础。',
+          '后一个数字 8、10 或 0 是镍含量。镍做三件事：稳定奥氏体结构、带来偏银白的光泽、在铬之外再加一层耐腐蚀能力。镍高一点，通常更亮更白；但 8% 和 10% 在实际使用中的差别，远没有营销话术说得那么大。'
+        ],
+        bullets: [
+          '第一个数字（18）= 铬含量，管防锈。18% 是食品接触级餐具的行业基线。',
+          '第二个数字（8、10、0）= 镍含量，管光泽和额外耐腐蚀，餐具常见区间是 8–10%。',
+          '「18/0」= 18% 铬、0% 镍，属于铁素体 430 钢系：能用，但视觉上明显更暗。'
+        ]
+      },
+      {
+        heading: '速览：四种常见标号对照',
+        paragraphs: [
+          '四个标号放在一起看，差别其实集中在两列：镍含量和磁性。下面按 ASTM A240 的成分口径整理。'
+        ],
+        table: {
+          caption: '餐具常见标示与实际钢种对照（成分按 ASTM A240 口径）。',
+          headers: ['标示', '实际钢种', '铬 %', '镍 %', '磁性', '日常表现'],
+          rows: [
+            { cells: ['18/8', 'AISI 304（奥氏体）', '18.00–20.00', '8.00–10.50', '基本无磁', '亮银白，耐腐蚀好，日用首选'] },
+            { cells: ['18/10', 'AISI 304（同一钢种）', '18.00–20.00', '8.00–10.50', '基本无磁', '与 18/8 同钢种，只是标签不同'] },
+            { cells: ['18/0', '430（铁素体）', '标称 18，实际约 17', '0（标准上限 0.75）', '有磁', '偏灰，耐腐蚀弱一档，价格低'] },
+            { cells: ['13/0', '410（马氏体）', '11.5–13.5', '≤0.75', '有磁', '硬度高，多用于刀片'] }
+          ]
+        },
+        bullets: [
+          '18/8 与 18/10 的成分区间完全相同，因为两者本来就是同一钢种。',
+          '18/0 和 13/0 都无镍、有磁性，差别主要在铬含量和硬度。'
+        ]
+      },
+      {
+        heading: '18/10 真的比 18/8 高级吗？',
+        paragraphs: [
+          '这是多数餐具品牌不会主动说的一段：18/10 和 18/8 都是 AISI 304 不锈钢，同一个冶金等级。英国不锈钢协会（BSSA）在讲餐具钢种时写得很直接——18/10 是相对 18/8 的「营销说法」，并不代表另一种镍含量更高的钢。',
+          '为什么会有 18/10 这个标法？因为 304 的镍含量本身是一个区间：8–10.5%。同一批钢水，化验出来 8.3% 可以标 18/8，9.7% 可以标 18/10——产品没变，标签变了。',
+          '那是不是所有标 18/10 的餐具都一样？也不尽然。真正用 304 的厂家，不管压 18/8 还是 18/10，用料都在同一个等级上。差距真正拉开的地方，是 304（18/8 或 18/10）与平价钢（18/0、13/0）之间。'
+        ],
+        bullets: [
+          '18/10 = AISI 304，和 18/8 是同一种钢。',
+          '两者都落在 8–10.5% 的镍区间；为「18/10」多付的钱，买不到更好的钢。',
+          '真正值得跨的那一步，是从 18/0 到 18/8，而不是从 18/8 到 18/10。'
+        ]
+      },
+      {
+        heading: '18/0 餐具：便宜在哪，牺牲了什么？',
+        paragraphs: [
+          '18/0 是 18% 铬、0% 镍。没有镍，晶体结构从奥氏体（300 系）变成铁素体（400 系，通常是 430），几个实际差别跟着来。',
+          '最直观的是外观。18/0 偏灰、光泽内敛，镜面抛光做不过 304，看上去更有工具感。BSSA 还提到一个细节：这类钢的铬含量标称 18%，实际往往更接近 17%——耐腐蚀余量比数字看上去更薄，长期潮湿或酸性食物残留时更容易起点锈。',
+          '另一面，18/0 有磁性，商用厨房的磁吸餐具收集器用得上；价格也明显低于 304。对预算敏感、使用频率不高、或者餐具周转很快的场景（食堂、活动、外烩），18/0 是务实的选择。'
+        ],
+        bullets: [
+          '外观：明显偏灰，反射不如 18/8 或 18/10。',
+          '耐腐蚀：弱一档，长期潮湿或接触酸性食物更容易起锈点。',
+          '磁性：有。304 基本无磁，或只有极弱磁性。',
+          '成本：明显更低，适合预算场景或高频更换场景。',
+          '耐用度：能用，但日常使用一两年后磨损会更明显。'
+        ]
+      },
+      {
+        heading: '13/0 又是什么？',
+        paragraphs: [
+          '更便宜的餐具会标 13/0：13% 铬、0% 镍，通常是 410 马氏体不锈钢，和刀片是同一支钢系。13% 铬是食品级不锈钢的下限，耐腐蚀能力比 18% 铬差一截。',
+          '按 WebstaurantStore 的行业说明，多数正餐刀和甜品刀正是用 13/0 制造——马氏体钢能淬硬，适合做刃口。所以「刀是 13/0、叉勺是 18/10」这种组合在五件套里很常见，是按件的功能分配。',
+          '如果你看到一套很便宜的餐具只写「不锈钢」而不写任何数字，多半就是 13/0 或同类平价钢。'
+        ]
+      },
+      {
+        heading: '怎么判断手里这套到底是什么钢？',
+        paragraphs: ['多数餐具不会在每一件上压钢号，只有中高端套装会。可以按这几步看：'],
+        bullets: [
+          '翻看叉子或勺子的手柄背面：找 18/10、18/8、18/0，或者什么数字都没有的 Stainless Steel。',
+          '写 18/10 或 18/8：都是 304，日常使用都够好。',
+          '写 18/0：是 430 铁素体钢，能用，但等级低一档。',
+          '只写 Stainless Steel 不写数字：从 304 到 13/0 都有可能，直接问卖家具体钢种。',
+          '重量是实用的旁证：304 的餐叉通常明显更压手，平价 18/0 或 13/0 偏轻。',
+          '看耐锈承诺：正规 304 产品会明确写洗碗机可用、耐锈；包装上避开这些词的，钢种多半偏低。',
+          '价格也能说明问题：同样五件套，304 与 18/0 的价差通常来自材料和抛光工艺，而不是品牌溢价。'
+        ]
+      },
+      {
+        heading: '家用、商用、礼赠，各选哪种？',
+        paragraphs: [
+          '日常家用：304（18/8 或 18/10）最稳，外观、耐用、耐腐蚀和价格平衡得最好。银食记雕花系列的叉勺件用 304，餐刀用 410——刀要硬度和刃口，叉勺要耐腐蚀，这是按件的材质分配。',
+          '商用厨房、餐厅、高周转场景：18/0 更务实。成本低、换新便宜，磁性也方便磁吸收纳。',
+          '正式宴客、礼赠、或者想一套用很多年：304 是明确的选择。它的亮银白和上手的分量，是平价钢追不上的部分。',
+          '银食记还在早期阶段，产品线不大，所以我们更愿意把每一件的材质写清楚，而不是用一句「全套 304」概括一整套餐具。'
+        ]
+      }
+    ],
+    faqs: [
+      { question: '18/10 比 18/8 更好吗？', answer: '不是。两者都是 AISI 304 不锈钢，镍含量都在 8–10.5% 的区间内，同一批钢水也可能分别标成 18/8 和 18/10。英国不锈钢协会把 18/10 描述为相对 18/8 的营销说法，不必为这个标签多付钱。' },
+      { question: '18/0 餐具能放心用吗？', answer: '能。18/0 含 18% 铬，满足食品接触的安全要求。要接受的是外观偏灰、耐腐蚀弱于 304；日常洗碗机使用或常接触酸性食物时，更容易出现表面锈点。' },
+      { question: '18/10 餐具里有真银吗？', answer: '没有。「18/10」只说明不锈钢里铬 18%、镍 10%，和银无关。它看起来偏银白，是镍带来的光泽，不是银，也不是镀银。' },
+      { question: '同一套里混着 18/10 和 18/8 正常吗？', answer: '正常，两者是同一种钢（304）。外观、重量和耐用度没有实际差别，很多厂家会按批次钢水的化验结果分别打标。' },
+      { question: '有磁性的不锈钢餐具就是质量差吗？', answer: '不能这样判断。18/0（430）有磁性，是因为它属于铁素体不锈钢；304 基本无磁或只有极弱磁性。磁性本身不是质量指标，真正要看的是这套餐具用 304，还是 18/0 或 13/0。' }
+    ],
+    relatedLinks: [
+      { href: '/zh/reference/stainless-steel-grades-cutlery', label: '资料库：304、410、430 到底代表什么' },
+      { href: '/zh/guide/304-vs-410-stainless-steel-cutlery', label: '304 与 410 在餐具上的区别' },
+      { href: '/zh/guide/304-vs-430-vs-201-stainless-steel', label: '304、430、201 三种钢种对比' },
+      { href: '/zh/guide/what-does-food-grade-stainless-steel-mean', label: '「食品级」不锈钢是什么' },
+      { href: '/zh/products/silver-carved-5-piece-set', label: '银色雕花五件套' }
+    ],
+    lastUpdated: '2026-11-23',
+    expertQuotes: [
+      {
+        quote: "'18/10' is a designation used on some cutlery and holloware as an alternative to '18/8'. This designation is claimed to indicate a better quality steel than '18/8', and is essentially the same as the '304 (1.4301) grade. In practice the '10' does not indicate an actual higher Ni content and is purely a marketing ploy.",
+        source: 'British Stainless Steel Association (BSSA), \"Cutlery stainless steel grades\"',
+        url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades'
+      },
+      {
+        quote: "18/0 is a 'ferritic' stainless steel type, which is attracted by a magnet (like pure iron). This steel is known as '430' in the AISI system or 1.4016 in the European standard. It is used where corrosion resistance is not too demanding as an alternative to the 18/8 304 type. The chromium content is optimistically said to be 18% but is nearer 17%.",
+        source: 'British Stainless Steel Association (BSSA), \"Cutlery stainless steel grades\"',
+        url: 'https://bssa.org.uk/bssa_articles/cutlery-stainless-steel-grades'
+      }
+    ],
+    statistics: [
+      {
+        claim: 'ASTM A240 规定 304 不锈钢含铬 18.00–20.00%、镍 8.00–10.50%；18/8 与 18/10 两种标示都落在同一钢种范围内。',
+        source: 'Penn Stainless Products, \"Stainless Steel Plate 304/304L ASTM A240\"',
+        url: 'https://pennstainless.com/stainless-steel-plate-304-304l-astm-a240'
+      },
+      {
+        claim: '18/0 不锈钢含铬 18%、镍 0%，有磁性，适合磁吸餐具收集器；13/0 含铬 13%、镍 0%，多数正餐刀与甜品刀用 13/0 制造，因为马氏体钢适合锻造刃口。',
+        source: 'WebstaurantStore, \"Types of Flatware: 18/10 vs 18/0 Stainless Steel & More\"',
+        url: 'https://www.webstaurantstore.com/guide/585/different-types-of-flatware.html'
+      },
+      {
+        claim: '全球不锈钢餐具市场 2026 年约 75.2 亿美元，预计 2033 年达 107.3 亿美元（CAGR 5.2%）；家用/住宅端占 2026 年市场约 57.1%。',
+        source: 'Coherent Market Insights, \"Stainless Steel Flatware Market Size and Share Analysis 2026–2033\"',
+        url: 'https://www.coherentmarketinsights.com/industry-reports/stainless-steel-flatware-market'
+      }
     ]
   },
 ];
