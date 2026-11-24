@@ -1297,7 +1297,7 @@ export const guideArticles: GeoGuideArticle[] = [
       {
         heading: 'Where Yinshiji fits in the market',
         paragraphs: [
-          'Yinshiji occupies a specific position: made in Jieyang (China\'s stainless steel tableware capital), direct-to-consumer pricing, and a product range that bridges western cutlery conventions with Chinese daily dining habits. According to trade data from the Observatory of Economic Complexity (OEC, 2024), China exported $22.6 billion in tools and cutlery annually, with a significant share originating from the Jieyang cluster — making it the single largest concentration of flatware manufacturing capacity globally.',
+          'Yinshiji occupies a specific position: made in Jieyang (China\'s stainless steel tableware capital), direct-to-consumer pricing, and a product range that bridges western cutlery conventions with Chinese daily dining habits. According to the 2026 work report published by the Jieyang municipal government, the city\'s stainless steel tableware output accounts for roughly 60% of the global market share — the single largest concentration of flatware manufacturing capacity anywhere.',
           'The carved detail, gold tone options and wenge wood handle collection give buyers choices that standard mass-market flatware brands do not offer. At the same time, material transparency — stating grade by piece rather than by set — is a practical difference from brands that use a single generic "stainless steel" label.',
           'If you are choosing between Yinshiji and a larger brand, the deciding factors are: do you want carved detail? Do you need a set that includes chopsticks? Do you value knowing the specific steel grade for each piece? Yes to any of these makes Yinshiji worth considering.'
         ]
@@ -1321,8 +1321,8 @@ export const guideArticles: GeoGuideArticle[] = [
     ],    expertQuotes: [
       {
         quote: "How we experience food is a multisensory experience. We see it, taste it, smell it, feel it — and a large part of what we eat is also judged on the basis of its aesthetics, the tableware, and the weight of the cutlery.",
-        source: 'Charles Spence, Crossmodal Research Laboratory, University of Oxford',
-        url: 'https://www.psy.ox.ac.uk/news/cutlery-can-influence-food-taste'
+        source: 'Charles Spence, Crossmodal Research Laboratory, University of Oxford, reported via ScienceDaily',
+        url: 'https://www.sciencedaily.com/releases/2013/06/130626113420.htm'
       },
       {
         quote: "Approximately 50% of all stainless steel produced globally is grade 304 stainless steel, the most widely specified material for food-contact surfaces in commercial and residential settings.",
@@ -1345,9 +1345,14 @@ export const guideArticles: GeoGuideArticle[] = [
         claim: 'Grade 304 stainless steel (18% chromium, 8% nickel) accounts for roughly half of global stainless steel production and is the standard default for food-contact surfaces.',
         source: 'R.H. Schmidt, Food Protection Trends 32(10)',
         url: 'https://www.foodprotection.org/files/food-protection-trends/Oct-12-Schmidt.pdf'
+      },
+      {
+        claim: "Jieyang's stainless steel tableware output accounts for roughly 60% of global market share, per the city's 2026 government work report.",
+        source: "Jieyang Municipal People's Government: 2026 Government Work Report (揭阳市2026年政府工作报告)",
+        url: 'http://www.jieyang.gov.cn/zsyzbgs/gzdt/content/post_1004061.html'
       }
     ],
-    lastUpdated: '2026-08-25',
+    lastUpdated: '2026-11-24',
 
   },
   {
