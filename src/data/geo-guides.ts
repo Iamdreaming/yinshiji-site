@@ -1887,7 +1887,7 @@ export const guideArticles: GeoGuideArticle[] = [
           'A 20-piece set typically includes 5 pieces per person (knife, fork, spoon, small fork, small spoon) for 4 people. This is the entry-level standard — enough for a small household of 1-2 people who occasionally have a guest over, but tight for a family of 4 on a regular basis.',
           'A 24-piece set adds a teaspoon to each place setting (6 pieces per person × 4), or covers 8 people with just the basics. The extra teaspoon is genuinely useful for coffee, tea or dessert courses.',
           'A 30-piece set is service for 6 with 5 pieces each. This is where most families should start: enough for daily meals for 4-6 people, plus two extra settings when guests come. It handles a standard dinner party without stress.',
-          'A 45-piece set usually means service for 8 with 5-6 pieces each, sometimes including serving pieces such as a slotted spoon, gravy ladle, sugar spoon or butter knife. This is the right size for families of 4-6 who host dinner parties, holiday meals or extended family gatherings.',
+          'A 45-piece set is the classic service for 8: eight 5-piece settings (40 pieces) plus five serving utensils — usually two serving spoons (one solid, one pierced), a serving fork, a meat fork and a butter spreader. Some brands instead give six pieces per setting and fewer serving pieces; the total stays 45 but the mix changes. This is the right size for families of 4-6 who host dinner parties, holiday meals or extended family gatherings.',
           'A 65+ piece set covers service for 12 and often includes serving pieces as well. This is for serious hosting — Thanksgiving, Christmas, large family dinners — or for those who simply want a complete set that never runs out.',
           'The piece count alone matters less than the breakdown: a 48-piece set might give you 8 complete 6-piece settings, while a 50-piece set might give 8 five-piece settings plus 10 steak knives. Check what is actually included, not just the total number.'
         ],
@@ -1895,10 +1895,24 @@ export const guideArticles: GeoGuideArticle[] = [
           '20-piece = 4 settings x 5 pieces. Minimum for a small household.',
           '24-piece = 4 settings x 6 pieces or 8 settings x basic. Better daily coverage.',
           '30-piece = 6 settings x 5 pieces. The sweet spot for most families.',
-          '45-piece = 8 settings x 5-6 pieces, often with serving utensils.',
+          '45-piece = 8 settings x 5 pieces + 5 serving utensils (40 place pieces + 5 serving).',
           '65+ piece = 12 settings x 5-6 pieces plus extras. Full service capacity.',
           'Always check the piece breakdown — a 48-piece and a 50-piece can serve very different functions.'
-        ]
+        ],
+        table: {
+          caption: 'Typical composition of common set sizes in US retail catalogs, per Etiquette Scholar guidance.',
+          headers: ['Set size', 'Place settings', 'Place-setting pieces', 'Serving utensils included'],
+          rows: [
+            { cells: ['20-piece', '4', '5 per setting', 'None'] },
+            { cells: ['24-piece', '4', '6 per setting', 'None'] },
+            { cells: ['30-piece', '6', '5 per setting', 'None'] },
+            { cells: ['43-piece', '8', '5 per setting', '3'] },
+            { cells: ['44-piece', '8', '5 per setting', '4'] },
+            { cells: ['45-piece', '8', '5 per setting', '5'] },
+            { cells: ['64-piece', '12', '5 per setting', '4'] },
+            { cells: ['66-piece', '12', '5 per setting', '6'] }
+          ]
+        }
       },
       {
         heading: 'What does a single place setting include?',
@@ -1910,12 +1924,31 @@ export const guideArticles: GeoGuideArticle[] = [
         ]
       },
       {
+        heading: 'Why a 45-piece set has 45 pieces: the serving-utensil math',
+        paragraphs: [
+          'Piece counts are not arbitrary. Place settings account for most of the number, and the rest is serving utensils. That is why a service for 8 can be sold as 43, 44 or 45 pieces: the settings are identical (8 x 5 = 40), and the difference is how many serving pieces the brand packs in.',
+          'Etiquette Scholar breaks down the common US catalog counts precisely: a 43-piece service for eight includes a tablespoon, sugar spoon and gravy ladle; a 44-piece adds a cold-meat fork; a 45-piece includes two serving spoons (solid and pierced), a serving fork, a meat fork and a butter spreader. Service for twelve follows the same logic at 64 pieces (4 serving utensils) or 66 pieces (6 serving utensils).',
+          'This matters when you compare prices: two sets described as "service for 8" can differ by two serving pieces, and you pay for those pieces whether you use them or not. If you host, the serving utensils are the useful part. If you eat at the kitchen table, they are the part that sits in the drawer unused — which is why buying a smaller set and adding a separate serving set later can make more sense.'
+        ],
+        table: {
+          caption: 'Serving utensils included in common US set sizes (Etiquette Scholar, "Flatware Buying Guide").',
+          headers: ['Set size', 'Place settings', 'Serving utensils', 'What the serving pieces are'],
+          rows: [
+            { cells: ['43-piece', '8', '3', 'tablespoon, sugar spoon, gravy ladle'] },
+            { cells: ['44-piece', '8', '4', 'tablespoon, sugar spoon, gravy ladle, cold-meat fork'] },
+            { cells: ['45-piece', '8', '5', 'two serving spoons (solid and pierced), serving fork, meat fork, butter spreader'] },
+            { cells: ['64-piece', '12', '4', 'tablespoon, sugar spoon, gravy ladle, cold-meat fork'] },
+            { cells: ['66-piece', '12', '6', 'two serving spoons (solid and pierced), cold-meat fork, pie server, sugar shell, butter knife'] }
+          ]
+        }
+      },
+      {
         heading: 'How to choose the right set size for your household',
         paragraphs: [
           'The right set size depends on three things: how many people live in your home, how often you have guests, and whether you use a dishwasher. Here is a practical decision framework:',
           'Living alone or as a couple: a 20-piece set (service for 4) is enough. You will rarely use all four settings at once, but having extras means you can skip washing for a meal or two.',
           'Family of 3-4: start with service for 6 (30-36 pieces). This gives you enough for the family plus 2 guests. Daily meals use 4-6 settings, and you have spare capacity for dinner parties without needing a second set.',
-          'Family of 4-6 who host regularly: go for service for 8 (45-50 pieces). This handles large family meals, casual hosting and holiday dinners without running out. Many 45-piece sets include serving pieces (slotted spoon, gravy ladle), which add real value if you host.',
+          'Family of 4-6 who host regularly: go for service for 8 (45-50 pieces). This handles large family meals, casual hosting and holiday dinners without running out. Many 45-piece sets include five serving utensils (serving spoons, a serving fork, a meat fork and a butter spreader), which add real value if you host.',
           'Households with a dishwasher: buy a set that covers your peak dining capacity plus 2-4 extra settings. Running a full load every day or two is more efficient than washing by hand between meals.',
           'Households without a dishwasher: buy only what you need for daily use. A service for 4 or 6 means less hand washing and less clutter. Add a small backup set for guests.',
           'No matter the size, choose a set you can supplement later. Many brands, including Yinshiji, offer matching open-stock pieces and serving utensils so you can expand from a 4-piece setting to a full service over time.'
@@ -1964,6 +1997,10 @@ export const guideArticles: GeoGuideArticle[] = [
       {
         question: 'Does Yinshiji offer different set sizes?',
         answer: 'Yinshiji currently sells 5-piece individual sets — not bulk services. Each Silver Carved or Gold Tone Carved set covers one place setting. To build a service for 6, you would buy 6 individual 5-piece sets. For the Wenge Wood Handle set, the same applies. This open-stock approach lets you buy exactly as many settings as you need, and add more later as your household or hosting needs grow.'
+      },
+      {
+        question: 'Why does a 45-piece set for 8 contain 45 pieces?',
+        answer: 'Because the count includes serving utensils. Eight 5-piece place settings account for 40 pieces, and the remaining five are serving pieces — typically two serving spoons (one solid, one pierced), a serving fork, a meat fork and a butter spreader. If you rarely host, those five pieces are the part you pay for and seldom use.'
       }
     ],
     relatedLinks: [
@@ -1975,10 +2012,15 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/materials-care', label: 'Materials & Care Guide' },
       { href: '/products', label: 'Browse All Products' }
     ],
-    lastUpdated: '2026-08-27',
+    lastUpdated: '2026-11-26',
     expertQuotes: [
       {
-        quote: 'A five-piece place setting adds a soup spoon, a utensil used to eat cereal and at a multi-course meal that begins with hot soup. The minimum number is three: dinner knife, dinner fork, and teaspoon.',
+        quote: 'A five-piece place setting adds a soup spoon, a utensil used to eat cereal and at a multi-course meal that begins with hot soup.',
+        source: 'Etiquette Scholar, "Flatware Buying Guide"',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
+      },
+      {
+        quote: 'The minimum number is three: dinner knife, dinner fork, and teaspoon.',
         source: 'Etiquette Scholar, "Flatware Buying Guide"',
         url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
       },
@@ -1996,6 +2038,11 @@ export const guideArticles: GeoGuideArticle[] = [
       },
       {
         claim: 'Buying flatware by the set rather than as open-stock single pieces saves approximately 30 percent',
+        source: 'Etiquette Scholar, "Flatware Buying Guide"',
+        url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
+      },
+      {
+        claim: 'A 45-piece service for eight includes five serving utensils: two serving spoons (solid and pierced), a serving fork, a meat fork and a butter spreader',
         source: 'Etiquette Scholar, "Flatware Buying Guide"',
         url: 'https://www.etiquettescholar.com/dining_etiquette/table_setting/place_setting/flatware/buy_flatware.html'
       }
