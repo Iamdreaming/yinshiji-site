@@ -3442,7 +3442,7 @@ export const guideArticles: GeoGuideArticle[] = [
         paragraphs: [
           'Those white, cloudy or chalky marks on your forks and spoons are not a defect in the steel. They are mineral deposits — mostly calcium and magnesium carbonate — left behind when water droplets evaporate on the surface. In areas with hard water, these minerals are present in high concentration and settle out as the water dries.',
           'The key distinction: water spots sit on top of the metal. They do not eat into the surface the way rust or etching does. A water spot can be wiped or soaked off. Rust and etching cannot. If you can feel a rough patch with your fingernail, it may be early pitting corrosion rather than a simple mineral deposit — and that needs a different approach (see our guide on how to clean stainless steel cutlery).',
-          'According to the United States Geological Survey, about 85 percent of American homes have hard water. If you live in one of them, water spots on flatware are almost inevitable unless you take specific steps to prevent them.'
+          'Hard water is the norm in much of the US rather than the exception: the EPA notes that many homes sit in hard-water regions, especially the Southwest and Midwest and where households rely on groundwater. Industry sources often quote a figure of about 85 percent of US homes, but that number does not appear in the USGS\'s own hardness documentation; what the USGS publishes is the scale below. Your utility\'s annual water-quality report is the number that actually predicts spots in your kitchen.'
         ]
       },
       {
@@ -3466,17 +3466,21 @@ export const guideArticles: GeoGuideArticle[] = [
           'Etching is permanent microscopic damage to the surface of the metal or glass. It appears as a cloudy, iridescent or rainbow-hued film that does not wipe off. If you hold the piece at an angle to the light and see a rainbow sheen, that is etching — not a water spot. Etching cannot be reversed.',
           'Etching on stainless steel flatware is rare. It is more common on glassware and happens when overly soft water combines with highly alkaline dishwasher detergent over many cycles. On stainless steel, the more common permanent mark is pitting corrosion (small dark pits), which is caused by chloride exposure rather than hard water minerals.'
         ],
-        bullets: [
-          'Water spot: white or chalky, wipes off with vinegar, metal is undamaged.',
-          'Etching: rainbow or iridescent sheen, does not wipe off, permanent surface damage.',
-          'Pitting: small dark or rust-colored pits in the metal, caused by chlorides, not hard water.'
-        ]
+        table: {
+          caption: 'Telling marks apart: water spots, etching and pitting look similar but behave differently and need different fixes.',
+          headers: ['Mark', 'What it looks like', 'How it feels', 'Cause', 'Reversible?'],
+          rows: [
+            { cells: ['Water spot', 'White, chalky or cloudy film, often a ring where a droplet dried', 'Slightly rough or powdery; soaks or wipes off', 'Calcium and magnesium left behind when hard water evaporates', 'Yes: warm vinegar soak or a gentle polish'] },
+            { cells: ['Etching', 'Cloudy, rainbow or iridescent film that stays after washing', 'Smooth to the touch, with no deposit to remove', 'Very soft water combined with highly alkaline dishwasher detergent over many cycles', 'No: the surface itself is changed'] },
+            { cells: ['Pitting', 'Small dark or rust-colored pits, often in clusters', 'A definite rough spot under a fingernail', 'Chloride attack from salt, bleach or acidic food residue left on the steel', 'No, but cleaning the pit stops the corrosion spreading'] }
+          ]
+        }
       },
       {
         heading: 'Why hard water causes spots on flatware',
         paragraphs: [
           'Hard water contains dissolved minerals — primarily calcium and magnesium — picked up as water moves through limestone and chalk rock formations. When a water droplet sits on a flatware surface and evaporates, those minerals crystallize and bond to the metal.',
-          'The harder your water, the more mineral content each droplet carries, and the more visible the spots. The USGS classifies water hardness in grains per gallon: soft (0 to 1 gpg), moderately hard (3.5 to 7 gpg), and very hard (7 to 10.5 gpg). Homes above 7 gpg will see water spots on flatware consistently unless they take preventive measures.',
+          'The harder your water, the more mineral content each droplet carries, and the more visible the spots. The USGS scale runs from soft (0-60 mg/L, up to 3.5 gpg) through moderately hard (61-120 mg/L, 3.5-7 gpg) to hard (121-180 mg/L, 7-10.5 gpg) and very hard (above 180 mg/L, above 10.5 gpg). Above 120 mg/L (about 7 gpg, the EPA\'s hard-water line), spotting becomes consistent unless you take preventive steps; above 180 mg/L, scale builds quickly.',
           'Dishwashers make the problem worse because the heated dry cycle bakes mineral deposits onto the surface. The high temperature causes minerals to bond more firmly than they would at room temperature. This is why flatware hand-washed and towel-dried immediately rarely develops water spots, even in hard water areas.'
         ]
       },
@@ -3539,18 +3543,23 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/complete-buyers-guide-2026', label: 'Complete Buyer Guide 2026' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' },
     ],
-    lastUpdated: '2026-08-29',
+    lastUpdated: '2026-11-27',
     expertQuotes: [
       {
-        quote: 'Calcium deposits (also called scale or hard water stains) form when hard tap water leaves behind minerals like calcium and sulfates as it evaporates. On stainless steel this shows up as a white, chalky bloom on the surface.',
+        quote: 'Calcium deposits are also called scale, limescale, hard water stains, or mineral deposits. They\'re caused by buildup from "hard" tap water that contains a high amount of calcium or mineral sulfates, which occurs when water flows through deposits of hard minerals like gypsum, chalk, or limestone.',
         source: 'Made In Cookware: "How to Remove Calcium Deposits From Stainless Clad Cookware"',
         url: 'https://madeincookware.com/blogs/how-to-remove-calcium-deposits-from-stainless-steel',
       },
     ],
     statistics: [
       {
-        claim: '85% of American homes have hard water to some degree, based on USGS data. The USGS classifies water hardness as: soft (0—60 mg/L or 0—3.5 gpg), moderately hard (61—120 mg/L or 3.5—7 gpg), hard (121—180 mg/L or 7—10.5 gpg), and very hard (>180 mg/L or >10.5 gpg).',
-        source: 'Crystal Quest (citing USGS Water Science School)',
+        claim: 'USGS hardness scale: soft 0-60 mg/L (up to 3.5 gpg), moderately hard 61-120 mg/L (3.5-7 gpg), hard 121-180 mg/L (7-10.5 gpg), very hard above 180 mg/L (above 10.5 gpg). Water above 120 mg/L is where the EPA draws the hard-water line.',
+        source: 'Crystal Quest: Water Hardness Map (reproducing USGS levels)',
+        url: 'https://crystalquest.com/pages/water-hardness-map',
+      },
+      {
+        claim: 'Utility-weighted average tap water hardness by state runs from 15.1 gpg (259 mg/L) in Indiana to 0.5 gpg in Maine, so how fast flatware spots depends heavily on where the supply comes from.',
+        source: 'Crystal Quest: Water Hardness Map (state averages, updated September 2026)',
         url: 'https://crystalquest.com/pages/water-hardness-map',
       },
     ],
