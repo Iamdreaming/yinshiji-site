@@ -4036,7 +4036,7 @@ export const guideArticles: GeoGuideArticle[] = [
         ],
         bullets: [
           'Chloride exposure: salt, dishwasher detergent, bleach and acidic foods (lemon juice, vinegar, tomato sauce) can break down the chromium oxide layer. Dishwasher detergent is highly alkaline and contains chlorides that accelerate pitting, especially at high temperatures.',
-          'Prolonged moisture: leaving flatware wet or air-drying allows water — especially hard water containing iron, calcium and magnesium minerals — to sit on the surface. According to the US Geological Survey, approximately 85% of American homes have hard water, making mineral deposit corrosion a widespread issue.',
+          'Prolonged moisture: leaving flatware wet or air-drying allows water — especially hard water containing iron, calcium and magnesium minerals — to sit on the surface. Hard water is the norm across much of the US (industry sources often quote about 85% of homes, although that figure does not appear in USGS documentation), and the minerals it leaves behind can contribute to surface staining.',
           'Galvanic contact: when stainless steel touches a different metal (carbon steel, iron) in a wet environment, a small electrical current can form. This galvanic interaction accelerates corrosion on the less noble metal — often the stainless piece. Storing mixed-metal utensils together in a damp dishwasher basket is a common trigger.',
           'Surface contamination: iron particles from steel wool, carbon steel tools or metal dust can embed in the stainless surface and "flash rust." These particles rust independently of the stainless steel beneath them, but the orange spots look the same.'
         ]
@@ -4108,10 +4108,10 @@ export const guideArticles: GeoGuideArticle[] = [
       { href: '/guide/18-10-vs-18-8-vs-18-0-flatware', label: '18/10 vs 18/8 vs 18/0 Flatware' },
       { href: '/products/silver-carved-5-piece-set', label: 'Silver Carved 5-Piece Set' }
     ],
-    lastUpdated: '2026-08-30',
+    lastUpdated: '2026-11-28',
     expertQuotes: [
       {
-        quote: 'Knives tend to be made of harder steel that gives a lasting edge but is more likely to rust, eventually, from repeated washing in a dishwasher.',
+        quote: '…your knives tend to be made of harder steel that gives a lasting edge but is more likely to rust, eventually, from repeated washing in a dishwasher. That\'s why corrosion is largely the providence of the knife, not the fork or spoon.',
         source: 'CHOICE (Australia) - How to avoid rust on your stainless steel cutlery',
         url: 'https://www.choice.com.au/home-and-living/kitchen/dishwashers/articles/stainless-steel-rusting'
       },
@@ -4123,8 +4123,8 @@ export const guideArticles: GeoGuideArticle[] = [
     ],
     statistics: [
       {
-        claim: 'Approximately 85% of American homes have hard water, which leaves mineral deposits that can contribute to surface staining and rust on flatware.',
-        source: 'Crystal Quest Water - Water Hardness Map (citing US Geological Survey)',
+        claim: 'The USGS hardness scale runs from soft (0-60 mg/L) through moderately hard (61-120 mg/L) and hard (121-180 mg/L) to very hard (above 180 mg/L). The widely repeated industry figure of about 85% of US homes having hard water does not appear in the USGS\'s own hardness documentation — what the USGS publishes is the scale and a water-hardness map.',
+        source: 'Crystal Quest - Water Hardness Map (reproducing USGS levels)',
         url: 'https://crystalquest.com/pages/water-hardness-map'
       },
       {
